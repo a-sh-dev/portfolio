@@ -3,7 +3,7 @@
   "private": true,
   "author": "a-sh-dev",
   "scripts": {
-    "dev": "next dev -p 5050",
+    "dev": "next dev -p 5007",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
