@@ -1,0 +1,15 @@
+{
+  "presets": [
+    "next/babel"
+  ],
+  "plugins": [
+    "styled-components",
+    [
+      "babel-plugin-twin",
+      {
+        "debug": false
+      }
+    ],
+    "babel-plugin-macros"
+  ]
+}
