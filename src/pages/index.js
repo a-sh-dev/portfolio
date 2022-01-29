@@ -1,6 +1,8 @@
 import Head from 'next/head';
 // import styled from 'styled-components';
-import tw, { styled } from 'twin.macro';
+import 'twin.macro';
+import AshLogo from '../components/Svgs/AshLogo';
+import { RiEmotionHappyLine } from 'react-icons/ri';
 
 export default function Home() {
   return (
@@ -12,16 +14,20 @@ export default function Home() {
       </Head>
 
       <main className="flex gap-4 flex-col items-center justify-center w-full flex-1 px-20">
+        <AshLogo className="text-primary-dark text-8xl" />
         <h1 className="font-extrabold text-8xl pt-6 text-primary-dark">
           Hello World!
         </h1>
         <p className="text-left text-lg">
+          <span className="inline-block mr-2 text-primary-dark">
+            <RiEmotionHappyLine />
+          </span>
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis eius
           magni sapiente, corrupti dolor expedita, distinctio, consequatur
           excepturi fuga architecto totam aspernatur qui temporibus veniam
           eligendi ducimus facilis dolore sed?
         </p>
-        <span className="font-mono italic">And I'm loving it! So far</span>
+        <span className="font-mono italic">And I am loving it! So far</span>
       </main>
     </div>
   );
