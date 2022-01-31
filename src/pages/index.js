@@ -11,6 +11,12 @@ export default function Home() {
       </h1>
       <h2>Test</h2>
       <EnvelopeIcon className="fill-pink-400 text-8xl" />
+      <Image
+        src="/images/plus_white.svg"
+        alt="test svg"
+        width={72}
+        height={72}
+      />
     </div>
   );
 }

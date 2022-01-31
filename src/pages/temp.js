@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import Image from 'next/image';
 // import styled from 'styled-components';
 import 'twin.macro';
 import { RiEmotionHappyLine } from 'react-icons/ri';
@@ -18,6 +19,12 @@ export default function Home() {
         <h1 className="font-extrabold text-8xl pt-6 text-primary-dark">
           Hello World!
         </h1>
+        <Image
+          src="/images/plus_white.svg"
+          alt="test svg"
+          width={72}
+          height={72}
+        />
 
         <p className="text-left text-lg">
           <span className="inline-block mr-2 text-primary-dark">
