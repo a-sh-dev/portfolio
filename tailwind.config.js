@@ -26,6 +26,7 @@ module.exports = {
         // current: 'currentColor',
         'primary-light': withOpacityValue('--color-primary-light'),
         'primary-dark': withOpacityValue('--color-primary-dark'),
+        'primary-darkest': withOpacityValue('--color-primary-darkest'),
         'accent-teal': withOpacityValue('--color-accent-teal'),
         'accent-olive': withOpacityValue('--color-accent-olive'),
         'accent-gray': withOpacityValue('--color-accent-gray'),

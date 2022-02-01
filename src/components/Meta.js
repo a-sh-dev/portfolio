@@ -9,14 +9,14 @@ const Meta = ({ title, keywords, description }) => {
         <meta name="description" content={description} />
         <meta charSet="utf-8" />
         <link rel="icon" href="/favicon.ico" />
-        <title>{title}</title>
+        <title>a-sh.{title && ` : ${title}`}</title>
       </Head>
     </>
   );
 };
 
 Meta.defaultProps = {
-  title: 'a-sh-dev.',
+  title: '',
   keywords:
     'designer-developer portfolio, front-end developer, melbourne australia, fullstack developer, programmer, a-sh., a-sh-dev, angie sh, angie hentri',
   description:

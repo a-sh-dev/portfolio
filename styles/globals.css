@@ -19,6 +19,7 @@ $beige: #eacfbc; */
 :root {
   --color-primary-light: 228 223 215;
   --color-primary-dark: 93 104 109;
+  --color-primary-darkest: 62 74 77;
   --color-white: 255 255 255;
 
   --color-accent-teal: 192 216 213;
@@ -34,12 +35,17 @@ body {
   padding: 0;
   margin: 0;
   font-family: "Work Sans", sans-serif;
+  background-color: #e4dfd7;
 }
 
 a {
   color: inherit;
   text-decoration: none;
 }
+
+/* * {
+  border: 1px solid lightslategrey;
+} */
 
 *,
 *::after,
