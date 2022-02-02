@@ -1,4 +1,5 @@
 import { Sticker } from '..';
+import { HiMusicNote } from 'react-icons/hi';
 
 const MainHero = () => {
   return (
@@ -13,7 +14,9 @@ const MainHero = () => {
         pursuing a front-end developer career.
       </p>
       {/* eslint-disable-next-line react/no-unescaped-entities */}
-      <Sticker text="It is me you're looking for~" />
+      <Sticker text="It is me you're looking for~">
+        <HiMusicNote />
+      </Sticker>
     </section>
   );
 };
