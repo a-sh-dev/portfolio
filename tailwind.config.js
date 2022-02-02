@@ -34,6 +34,9 @@ module.exports = {
         'accent-blue': withOpacityValue('--color-accent-blue'),
         'accent-purple': withOpacityValue('--color-accent-purple'),
       },
+      animation: {
+        'spin-slow': 'spin 30s linear infinite',
+      },
     },
   },
   variants: {

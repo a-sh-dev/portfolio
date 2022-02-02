@@ -1,14 +1,7 @@
 import tw, { styled } from 'twin.macro';
+import { bgColorVariants } from '../data';
 
 // ! Sticker is the highlighted label in italic Space Mono
-
-const colorVariants = {
-  teal: tw`bg-accent-teal`,
-  olive: tw`bg-accent-olive`,
-  pink: tw`bg-accent-pink`,
-  purple: tw`bg-accent-purple`,
-  blue: tw`bg-accent-blue`,
-};
 
 const StickerWrapper = styled.div(() => [
   tw`
@@ -19,7 +12,7 @@ const StickerWrapper = styled.div(() => [
     my-4
   `,
   `transform: rotate(-1.5deg);`,
-  ({ color = 'teal' }) => colorVariants[color],
+  ({ color = 'teal' }) => bgColorVariants[color],
 ]);
 
 const Text = tw.h5`

@@ -1,4 +1,4 @@
-import { Sticker } from '..';
+import { SloganSticker, Sticker } from '..';
 import { HiMusicNote } from 'react-icons/hi';
 
 const MainHero = () => {
@@ -13,10 +13,10 @@ const MainHero = () => {
         An experienced graphic designer who fell in love with coding and is
         pursuing a front-end developer career.
       </p>
-      {/* eslint-disable-next-line react/no-unescaped-entities */}
       <Sticker text="It is me you're looking for~">
         <HiMusicNote />
       </Sticker>
+      <SloganSticker />
     </section>
   );
 };
