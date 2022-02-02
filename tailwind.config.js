@@ -37,6 +37,9 @@ module.exports = {
       animation: {
         'spin-slow': 'spin 30s linear infinite',
       },
+      backgroundImage: {
+        profile: "url('/images/il_ash_profile_600x693.png')",
+      },
     },
   },
   variants: {

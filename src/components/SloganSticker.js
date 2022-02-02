@@ -7,26 +7,28 @@ const StickerWrapper = styled.div(() => [
     inline-grid
     place-items-center
     text-8xl
-    p-3.5
+    p-3
     rounded-full
     relative
     text-primary-dark
-    hover:text-primary-darkest
-    hover:bg-white
+    hover:bg-primary-darkest
+    hover:text-white
     transition-all
     duration-500
   `,
   ({ color = 'pink' }) => bgColorVariants[color],
 ]);
 
-const SloganSticker = ({ color = 'pink', withLogo, children }) => {
+const SloganSticker = ({ color = 'pink', withLogo, sm, children }) => {
   return (
-    <StickerWrapper {...{ color }}>
-      {withLogo && <AshLogo className="absolute text-5xl fill-current" />}
-      <span className="animate-spin-slow">
-        <CareRingIcon className="fill-current" />
-      </span>
-    </StickerWrapper>
+    <div className={sm && `scale-90`}>
+      <StickerWrapper {...{ color }}>
+        {withLogo && <AshLogo className="absolute text-5xl fill-current" />}
+        <span className="animate-spin-slow">
+          <CareRingIcon className="fill-current" />
+        </span>
+      </StickerWrapper>
+    </div>
   );
 };
 
