@@ -19,6 +19,7 @@ $beige: #eacfbc; */
 :root {
   --color-primary-light: 228 223 215;
   --color-primary-dark: 93 104 109;
+  --color-css-primary-dark: rgba(93, 104, 109, 1);
   --color-primary-darkest: 62 74 77;
   --color-white: 255 255 255;
 

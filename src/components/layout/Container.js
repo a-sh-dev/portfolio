@@ -4,8 +4,10 @@ const StyledContainer = tw.div`
   container
   border
   px-6
-  md:px-24
-  xl:px-32
+  max-w-screen-xl
+  mx-auto
+  // md:px-24
+  // xl:px-32
   
   border-gray-600
 `;
