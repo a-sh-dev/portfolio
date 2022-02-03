@@ -25,7 +25,7 @@ const SloganSticker = ({ color = 'pink', withLogo, sm, children }) => {
       <StickerWrapper {...{ color }}>
         {withLogo && <AshLogo className="absolute text-5xl fill-current" />}
         <span className="animate-spin-slow">
-          <CareRingIcon className="fill-current" />
+          <CareRingIcon />
         </span>
       </StickerWrapper>
     </div>
