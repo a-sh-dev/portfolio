@@ -31,7 +31,7 @@ const Icon = tw.span`
 
 const Sticker = ({ text, color = 'teal', children }) => {
   return (
-    <StickerWrapper {...{ color }}>
+    <StickerWrapper color={color}>
       <Text>
         {text}
         {children && <Icon>{children}</Icon>}

@@ -6,9 +6,21 @@ import { HiMusicNote } from 'react-icons/hi';
 const Container = styled.header(() => [
   tw`
     // bg-gray-300
-    mt-14
+    // mt-14
     grid
     justify-items-center
+  `,
+  `
+    height: 80vh;
+    grid-template-areas: 
+      ".. ot .. .. .. .."
+      "l1 l1 l1 l1 .. .."
+      ".. tl tl tl .. .."
+      ".. l2 l2 l2 l2 l2"
+      ".. tx tx pf pf .."
+      ".. l3 l3 pf pf .."
+      ".. .. .. pf pf .."
+      "st st st st st st";
   `,
 ]);
 
@@ -16,25 +28,25 @@ const Container = styled.header(() => [
 // grid-template-rows: repeat(8, auto);
 
 const Line1 = styled.div`
-  /* grid-area: l1; */
-  justify-self: start;
-  width: 90%;
-  margin-bottom: -0.25rem;
+  grid-area: l1;
+  width: 100%;
 `;
 
 const Line2 = styled.div`
-  width: 90%;
-  justify-self: end;
+  grid-area: l2;
 `;
 
 const Line3 = styled.div`
-  width: 80%;
+  grid-area: l3;
 `;
 
-const StickerWrapper = styled.div``;
+const StickerWrapper = styled.div`
+  grid-area: st;
+`;
 
 const OverTitle = styled.h2(() => [
   tw`
+    // inline-block
     font-mono
     uppercase
     text-3xl
@@ -42,7 +54,9 @@ const OverTitle = styled.h2(() => [
     md:text-6xl
     tracking-widest
     text-primary-dark
+    // py-3
   `,
+  `grid-area: ot`,
 ]);
 
 const Title = styled.h1(() => [
@@ -52,26 +66,27 @@ const Title = styled.h1(() => [
     text-6xl
     md:text-9xl
     tracking-tight
+    pt-3
+    pb-5
   `,
+  `grid-area: tl`,
 ]);
 
 const Text = styled.p(() => [
   tw`
     text-primary-dark
-    text-lg
-    font-medium
   `,
-  `
-    width: 80%;
-  `,
+  `grid-area: tx`,
 ]);
 
 const Profile = styled.div`
+  /* display: flex; */
+  grid-area: pf;
+  grid-row: l2 / st-start;
   position: relative;
-  padding: 1rem;
 `;
 
-const MainHero = () => {
+const MainHeroOld = () => {
   return (
     <>
       <Container>
@@ -84,8 +99,8 @@ const MainHero = () => {
           <Line />
         </Line2>
         <Text>
-          An experienced graphic designer based in Melbourne who fell in love
-          with coding and is pursuing a front-end developer career.
+          An experienced graphic designer who fell in love with coding and is
+          pursuing a front-end developer career.
         </Text>
         <Line3>
           <Line />
@@ -111,4 +126,4 @@ const MainHero = () => {
   );
 };
 
-export default MainHero;
+export default MainHeroOld;
