@@ -7,10 +7,10 @@ const StyledContainer = styled.div(() => [
   tw`
     px-6
     mx-auto
-    // md:px-24
+    md:px-16
     // xl:px-32 
     border
-  border-gray-600
+  // border-gray-600
   `,
   ({ maxWidth = 'xl' }) => maxWidthVariants[maxWidth],
 ]);

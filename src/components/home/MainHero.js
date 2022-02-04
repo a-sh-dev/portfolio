@@ -6,12 +6,11 @@ import { HiMusicNote } from 'react-icons/hi';
 const FluidContainer = styled.header(() => [
   tw`
     pt-20
-    md:pt-24
+    md:pt-32
     grid
     md:flex
     justify-items-center
     md:relative
-    // md:bg-gray-300
   `,
 ]);
 
@@ -24,7 +23,6 @@ const MainColumn = tw.div`
   xl:max-w-screen-lg
   xl:border-b
   xl:border-primary-dark
-  // md:bg-gray-400
 `;
 
 const SideColumn = tw.div`
@@ -51,7 +49,12 @@ const Line2 = tw.div`
   md:my-4
 `;
 
-const StickerWrapper = styled.div``;
+const StickerWrapper = styled.div(() => [
+  tw`
+    mb-14
+    md:mb-0
+  `,
+]);
 
 const Greetings = styled.h2(() => [
   tw`
@@ -62,7 +65,6 @@ const Greetings = styled.h2(() => [
     text-primary-dark
     text-3xl
     md:text-6xl
-    xl:text-7xl
     md:pl-1
   `,
 ]);
@@ -76,7 +78,6 @@ const Title = styled.h1(() => [
     pb-1
     whitespace-nowrap
     md:text-9xl
-    xl:text-10xl
   `,
 ]);
 
@@ -84,7 +85,6 @@ const IntroWrapper = tw.div`
   w-5/6
   md:flex
   md:relative 
-  // md:bg-blue-100
   md:w-full
   md:pt-3
   md:pb-5
@@ -101,9 +101,8 @@ const Intro = styled.p(() => [
     md:font-normal
     text-lg
     md:text-2xl
-    xl:text-3xl
     md:leading-relaxed
-    xl:leading-[1.7]
+    xl:leading-[1.75]
     md:w-3/5
     px-2
     pb-7
@@ -121,11 +120,12 @@ const ProfileDesktop = styled.div(() => [
     md:p-6
     md:-top-20
     md:-right-20
-    xl:-top-14
+    xl:-top-28
+    xl:-right-6
   `,
   `
     @media (min-width: 1280px) {
-      transform: scale(1.25);
+      transform: scale(1.35);
     }
   `,
 ]);
@@ -148,7 +148,7 @@ const MainHero = () => {
     <>
       <FluidContainer>
         <SideColumn>
-          <div className="md:pt-[72px] xl:pt-[84px]">
+          <div className="md:pt-[72px]">
             <Line />
           </div>
         </SideColumn>
@@ -164,7 +164,7 @@ const MainHero = () => {
           <IntroWrapper>
             <Intro>
               An experienced graphic designer based in Melbourne who fell in
-              love with coding and is pursuing a front-end developer career.
+              love with coding and is pursuing a front-end development career.
             </Intro>
             <ProfileDesktop>
               <Image
@@ -180,13 +180,13 @@ const MainHero = () => {
           </IntroWrapper>
         </MainColumn>
         <SideColumn>
-          <div className="md:pt-[257px] xl:pt-[317px]">
+          <div className="md:pt-[257px]">
             <Line />
           </div>
         </SideColumn>
       </FluidContainer>
 
-      <VLine length="32rem">
+      <VLine length="38rem">
         <Profile>
           <Image
             src="/images/ash_profile_circle.svg"

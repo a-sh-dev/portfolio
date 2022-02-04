@@ -1,8 +1,14 @@
+import { Section } from '../layout';
+import { Heading } from '../typography';
+
 const Tldr = () => {
   return (
-    <div>
-      <h1>TL;DR Component</h1>
-    </div>
+    <Section>
+      <Heading align="center" variant="sm">
+        TL;DR
+      </Heading>
+      <h2>(long story short...)</h2>
+    </Section>
   );
 };
 

@@ -4,7 +4,7 @@ const StyledVLine = styled.div`
   display: grid;
   place-items: center;
   width: 100%;
-  height: ${({ length }) => length || '100%'};
+  height: ${({ length }) => length || 'inherit'};
   background: linear-gradient(
       var(--color-css-primary-dark),
       var(--color-css-primary-dark)
@@ -13,7 +13,7 @@ const StyledVLine = styled.div`
 `;
 
 const VLine = ({ length, children }) => {
-  return <StyledVLine {...{ length }}>{children}</StyledVLine>;
+  return <StyledVLine length={length}>{children}</StyledVLine>;
 };
 
 export default VLine;

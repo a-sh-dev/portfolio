@@ -29,6 +29,10 @@ $beige: #eacfbc; */
   --color-accent-pink: 234 201 198;
   --color-accent-blue: 181 210 222;
   --color-accent-purple: 208 202 222;
+
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1280px;
 }
 
 html,
