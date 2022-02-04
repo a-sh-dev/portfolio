@@ -21,6 +21,9 @@ module.exports = {
         sans: ['Work Sans', ...defaultTheme.fontFamily.sans],
         mono: ['Space Mono', ...defaultTheme.fontFamily.mono],
       },
+      fontSize: {
+        '10xl': '11rem',
+      },
       colors: {
         // transparent: 'transparent',
         // current: 'currentColor',

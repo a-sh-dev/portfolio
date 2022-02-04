@@ -15,15 +15,16 @@ const StickerWrapper = styled.div(() => [
     hover:text-white
     transition-all
     duration-500
+    md:(text-9xl p-4)
   `,
   ({ color = 'pink' }) => bgColorVariants[color],
 ]);
 
-const SloganSticker = ({ color = 'pink', withLogo, sm, children }) => {
+const SloganSticker = ({ color = 'pink', withLogo, sm }) => {
   return (
     <div className={sm && `scale-90`}>
-      <StickerWrapper {...{ color }}>
-        {withLogo && <AshLogo className="absolute text-5xl fill-current" />}
+      <StickerWrapper color={color}>
+        {withLogo && <AshLogo className="absolute text-5xl md:text-6xl" />}
         <span className="animate-spin-slow">
           <CareRingIcon />
         </span>
