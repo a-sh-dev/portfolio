@@ -6,6 +6,7 @@ const CareRingIcon = (props) => (
     viewBox="0 0 100 100"
     width="1em"
     height="1em"
+    aria-hidden="true"
     fill="currentColor"
     {...props}
   >

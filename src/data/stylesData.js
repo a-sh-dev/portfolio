@@ -8,3 +8,10 @@ export const bgColorVariants = {
   purple: tw`bg-accent-purple`,
   blue: tw`bg-accent-blue`,
 };
+
+export const maxWidthVariants = {
+  sm: tw`max-w-screen-sm`,
+  md: tw`max-w-screen-md`,
+  lg: tw`max-w-screen-lg`,
+  xl: tw`max-w-screen-xl`,
+};

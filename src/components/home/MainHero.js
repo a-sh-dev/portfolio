@@ -3,18 +3,16 @@ import Image from 'next/image';
 import { Line, SloganSticker, Sticker, VLine } from '..';
 import { HiMusicNote } from 'react-icons/hi';
 
-const Container = styled.header(() => [
+const FluidContainer = styled.header(() => [
   tw`
-    mt-14
-    md:mt-24
+    pt-20
+    md:pt-24
     grid
     justify-items-center
     md:relative
+    md:bg-gray-300
   `,
 ]);
-
-// grid-template-columns: repeat(2, auto) repeat(3, 1fr) auto;
-// grid-template-rows: repeat(8, auto);
 
 const Line1 = tw.div`
   justify-self-start
@@ -55,6 +53,7 @@ const OverTitle = styled.h2(() => [
     text-3xl
     md:text-6xl
     md:w-8/12
+    md:pl-1
   `,
 ]);
 
@@ -64,28 +63,35 @@ const Title = styled.h1(() => [
     text-primary-dark
     tracking-tight
     text-6xl
+    pb-1
     md:text-9xl
     md:w-8/12
   `,
 ]);
 
-const Text = styled.p(() => [
+const Intro = styled.p(() => [
   tw`
     text-primary-dark
     font-medium
     md:font-normal
     text-lg
     md:text-2xl
-    w-4/5
+    md:leading-relaxed
+    w-5/6
     md:w-8/12
     md:pr-96
+    px-2
+    pt-1
+    pb-7
+    border-b
+    border-primary-dark
   `,
 ]);
 
 const Profile = tw.div`
   flex
   relative
-  p-6
+  p-4
   md:hidden
 `;
 
@@ -101,7 +107,7 @@ const ProfileDesktop = tw.div`
 const MainHero = () => {
   return (
     <>
-      <Container>
+      <FluidContainer>
         <OverTitle>Hello,World~</OverTitle>
         <Line1>
           <Line />
@@ -110,14 +116,14 @@ const MainHero = () => {
         <Line2>
           <Line />
         </Line2>
-        <Text>
+        <Intro>
           An experienced graphic designer based in Melbourne who fell in love
           with coding and is pursuing a front-end developer career.
-        </Text>
-        <Line3>
+        </Intro>
+        {/* <Line3>
           <Line />
-        </Line3>
-        {/* PROFILE FOR BIGGER SCREEN */}
+        </Line3> */}
+
         <ProfileDesktop>
           <Image
             src="/images/ash_profile_circle.svg"
@@ -131,13 +137,12 @@ const MainHero = () => {
         </ProfileDesktop>
 
         <VLine length="32rem">
-          {/* PROFILE FOR MOBILE */}
           <Profile>
             <Image
               src="/images/ash_profile_circle.svg"
               alt="a-sh profile illustration"
-              width={230}
-              height={230}
+              width={250}
+              height={250}
             />
             <div className="absolute -top-6 -right-4">
               <SloganSticker />
@@ -145,11 +150,11 @@ const MainHero = () => {
           </Profile>
           <StickerWrapper>
             <Sticker text="It is me you're looking for~">
-              <HiMusicNote />
+              <HiMusicNote aria-hidden="true" />
             </Sticker>
           </StickerWrapper>
         </VLine>
-      </Container>
+      </FluidContainer>
     </>
   );
 };

@@ -10,8 +10,22 @@ const StickerWrapper = styled.div(() => [
     pt-1.5
     pb-2
     my-4
+    whitespace-nowrap
+    rounded-sm
+    border-b-2
+    border-primary-light
+    transition-all
+    duration-500
+    text-sm
+    md:text-lg
   `,
-  `transform: rotate(-1.5deg);`,
+  `
+    transform: rotate(-1.5deg);
+    &:hover {
+      transform: rotate(0deg);
+      transform: scale(1.15)
+    }
+  `,
   ({ color = 'teal' }) => bgColorVariants[color],
 ]);
 
@@ -29,7 +43,7 @@ const Icon = tw.span`
   ml-1.5
 `;
 
-const Sticker = ({ text, color = 'teal', children }) => {
+const Sticker = ({ text, color, children }) => {
   return (
     <StickerWrapper color={color}>
       <Text>
