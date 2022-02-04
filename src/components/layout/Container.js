@@ -5,13 +5,11 @@ import { maxWidthVariants } from '../../data';
 
 const StyledContainer = styled.div(() => [
   tw`
-    container
-    border
     px-6
-    max-w-screen-xl
     mx-auto
     // md:px-24
     // xl:px-32 
+    border
   border-gray-600
   `,
   ({ maxWidth = 'xl' }) => maxWidthVariants[maxWidth],
