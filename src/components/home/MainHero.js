@@ -35,9 +35,10 @@ const Line1 = tw.div`
   justify-self-start
   w-11/12
   my-1  
-  md:w-11/12
+  md:w-5/6
   md:mt-3
   md:mb-1
+  xl:w-2/3
 `;
 
 const Line2 = tw.div`

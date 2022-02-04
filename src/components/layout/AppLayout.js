@@ -1,5 +1,5 @@
+import { Navigation } from '.';
 import Meta from '../Meta';
-import Navigation from './nav/Navigation';
 import Footer from './Footer';
 
 const AppLayout = ({ children }) => {
@@ -7,9 +7,7 @@ const AppLayout = ({ children }) => {
     <>
       <Meta />
       <Navigation />
-      <div>
-        <main>{children}</main>
-      </div>
+      <main>{children}</main>
       <Footer />
     </>
   );
