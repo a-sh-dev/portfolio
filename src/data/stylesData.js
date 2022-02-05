@@ -33,3 +33,7 @@ export const sectionVariants = {
   default: tw`border-t border-b`,
   top: tw`border-t`,
 };
+
+export const layoutVariants = {
+  grid: tw`grid grid-cols-4 gap-x-4 md:grid-cols-8 lg:grid-cols-12 lg:gap-x-6`,
+};
