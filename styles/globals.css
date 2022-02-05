@@ -18,12 +18,13 @@ $beige: #eacfbc; */
 
 :root {
   --color-primary-light: 228 223 215;
+  --color-css-primary-light: rgba(228, 223, 215, 1);
   --color-primary-dark: 93 104 109;
   --color-css-primary-dark: rgba(93, 104, 109, 1);
   --color-primary-darkest: 62 74 77;
   --color-white: 255 255 255;
 
-  --color-accent-teal: 192 216 213;
+  --color-accent-teal: 188 220 217;
   --color-accent-olive: 219 216 185;
   --color-accent-gray: 201 201 201;
   --color-accent-pink: 234 201 198;

@@ -7,19 +7,23 @@ const NavWrapper = tw.div`
   sticky
   top-0
   z-50
+  pt-4
+  pb-1
   bg-primary-light
 `;
 
-const NavBar = tw.nav`
-  flex
-  items-center
-  py-2
-`;
+const NavBar = styled.nav(() => [
+  tw`
+    flex
+    items-center
+    // bg-accent-teal
+  `,
+]);
 
 const LogoWrapper = tw.div`
   text-primary-dark
   text-6xl
-  md:text-8xl
+  md:text-7xl
 `;
 
 const NavLine = tw.div`
@@ -43,7 +47,7 @@ const NavLink = tw.li`
 const Navigation = () => {
   return (
     <NavWrapper>
-      <Container>
+      <Container maxWidth="max">
         <NavBar>
           <LogoWrapper>
             <AshLogo />

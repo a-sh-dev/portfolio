@@ -4,7 +4,7 @@ import { sectionVariants } from '../../data';
 const StyledSection = styled.section(() => [
   tw`
     container
-    bg-blue-300
+    bg-accent-gray
     py-8
     border-primary-dark
   `,

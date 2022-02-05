@@ -14,6 +14,7 @@ export const maxWidthVariants = {
   md: tw`max-w-screen-md`,
   lg: tw`max-w-screen-lg`,
   xl: tw`max-w-screen-xl`,
+  max: tw`max-w-screen-2xl`,
 };
 
 export const textAlignVariants = {

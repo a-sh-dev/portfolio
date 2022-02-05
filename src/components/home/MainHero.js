@@ -6,11 +6,12 @@ import { HiMusicNote } from 'react-icons/hi';
 const FluidContainer = styled.header(() => [
   tw`
     pt-20
-    md:pt-32
     grid
-    md:flex
     justify-items-center
+    md:pt-32
+    md:flex
     md:relative
+    xl:pt-44
   `,
 ]);
 
@@ -21,8 +22,6 @@ const MainColumn = tw.div`
   md:flex-col
   md:max-w-screen-md
   xl:max-w-screen-lg
-  xl:border-b
-  xl:border-primary-dark
 `;
 
 const SideColumn = tw.div`
@@ -36,8 +35,10 @@ const Line1 = tw.div`
   w-11/12
   my-1  
   md:w-5/6
-  md:mt-3
-  md:mb-1
+  md:mt-2
+  md:mb-0
+  xl:mb-1
+  xl:mt-3
   xl:w-2/3
 `;
 
@@ -47,7 +48,8 @@ const Line2 = tw.div`
   mt-1
   mb-2
   md:w-full
-  md:my-4
+  md:my-3
+  xl:my-4
 `;
 
 const StickerWrapper = styled.div(() => [
@@ -65,8 +67,9 @@ const Greetings = styled.h2(() => [
     whitespace-nowrap
     text-primary-dark
     text-3xl
-    md:text-6xl
+    md:text-5xl
     md:pl-1
+    xl:text-6xl
   `,
 ]);
 
@@ -78,38 +81,36 @@ const Title = styled.h1(() => [
     text-6xl
     pb-1
     whitespace-nowrap
-    md:text-9xl
+    md:text-8xl
+    xl:text-9xl
   `,
 ]);
 
 const IntroWrapper = tw.div`
   w-5/6
+  pb-7
+  border-b
+  border-primary-dark
   md:flex
   md:relative 
   md:w-full
-  md:pt-3
-  md:pb-5
-  xl:pb-6
-  md:border-b
-  md:border-primary-dark
-  xl:border-none
+  md:pt-2
+  md:pb-10
+  xl:pb-12
 `;
 
 const Intro = styled.p(() => [
   tw`
     text-primary-dark
     font-medium
-    md:font-normal
-    text-lg
-    md:text-2xl
-    md:leading-relaxed
-    xl:leading-[1.75]
-    md:w-3/5
     px-2
-    pb-7
-    border-b
-    border-primary-dark
-    md:border-none
+    text-lg
+    md:font-normal
+    md:text-xl
+    md:leading-relaxed
+    md:w-3/5
+    xl:text-2xl
+    xl:leading-[1.8]
   `,
 ]);
 
@@ -119,8 +120,8 @@ const ProfileDesktop = styled.div(() => [
     md:flex
     md:absolute
     md:p-6
-    md:-top-20
-    md:-right-20
+    md:-top-32
+    md:-right-16
     xl:-top-28
     xl:-right-6
   `,
@@ -149,7 +150,7 @@ const MainHero = () => {
     <>
       <FluidContainer>
         <SideColumn>
-          <div className="md:pt-[72px]">
+          <div className="md:pt-[56px] xl:pt-[72px]">
             <Line />
           </div>
         </SideColumn>
@@ -181,7 +182,7 @@ const MainHero = () => {
           </IntroWrapper>
         </MainColumn>
         <SideColumn>
-          <div className="md:pt-[257px]">
+          <div className="md:pt-[201px] xl:pt-[257px]">
             <Line />
           </div>
         </SideColumn>

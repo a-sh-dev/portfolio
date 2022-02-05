@@ -7,7 +7,7 @@ const AppLayout = ({ children }) => {
     <>
       <Meta />
       <Navigation />
-      <main>{children}</main>
+      {children}
       <Footer />
     </>
   );
