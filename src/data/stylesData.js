@@ -7,6 +7,25 @@ export const bgColorVariants = {
   pink: tw`bg-accent-pink`,
   purple: tw`bg-accent-purple`,
   blue: tw`bg-accent-blue`,
+  gray: tw`bg-accent-gray`,
+  dark: tw`bg-primary-dark`,
+  darkest: tw`bg-primary-darkest`,
+  light: tw`bg-primary-light`,
+  white: tw`bg-white`,
+  white50: tw`bg-white/50`,
+};
+
+export const textColorVariants = {
+  teal: tw`text-accent-teal`,
+  olive: tw`text-accent-olive`,
+  pink: tw`text-accent-pink`,
+  purple: tw`text-accent-purple`,
+  blue: tw`text-accent-blue`,
+  gray: tw`text-accent-gray`,
+  dark: tw`text-primary-dark`,
+  darkest: tw`text-primary-darkest`,
+  light: tw`text-primary-light`,
+  white: tw`text-white`,
 };
 
 export const maxWidthVariants = {
