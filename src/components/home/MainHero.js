@@ -26,6 +26,7 @@ const MainColumn = tw.div`
 
 const SideColumn = tw.div`
   hidden
+  md:relative
   md:block
   md:flex-1
 `;
@@ -117,6 +118,7 @@ const Intro = styled.p(() => [
 const ProfileDesktop = styled.div(() => [
   tw`
     hidden
+    md:z-10
     md:flex
     md:absolute
     md:p-6
@@ -145,13 +147,15 @@ const SloganWrapper = tw.div`
   -right-4
 `;
 
+// md:pt-[56px] xl:pt-[72px]
+
 const MainHero = () => {
   return (
     <>
       <FluidContainer>
         <SideColumn>
-          <div className="md:pt-[56px] xl:pt-[72px]">
-            <Line />
+          <div className="md:absolute md:w-full md:top-[72px] xl:top-[88px]">
+            <Line noGutter />
           </div>
         </SideColumn>
         <MainColumn>
@@ -182,8 +186,8 @@ const MainHero = () => {
           </IntroWrapper>
         </MainColumn>
         <SideColumn>
-          <div className="md:pt-[201px] xl:pt-[257px]">
-            <Line />
+          <div className="md:absolute md:w-full md:pt-[217px] xl:pt-[273px]">
+            <Line noGutter />
           </div>
         </SideColumn>
       </FluidContainer>

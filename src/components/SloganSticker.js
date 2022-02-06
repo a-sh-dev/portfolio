@@ -20,7 +20,7 @@ const StickerWrapper = styled.div(() => [
   ({ color = 'pink' }) => bgColorVariants[color],
 ]);
 
-const SloganSticker = ({ color = 'pink', withLogo, sm }) => {
+const SloganSticker = ({ color, withLogo, sm }) => {
   return (
     <div className={sm && `scale-90`}>
       <StickerWrapper color={color}>
