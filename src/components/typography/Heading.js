@@ -6,6 +6,7 @@ const StyledHeading = styled.h1(() => [
     text-primary-dark
     font-extrabold
     tracking-tight
+    md:mb-4
   `,
   ({ align = 'left' }) => textAlignVariants[align],
   ({ variant = 'page' }) => headingVariants[variant],

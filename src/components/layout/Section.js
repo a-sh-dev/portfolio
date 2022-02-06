@@ -3,10 +3,9 @@ import { layoutVariants, sectionVariants } from '../../data';
 
 const StyledSection = styled.section(() => [
   tw`
-    // container
-    py-12
+    py-14
+    md:py-20
     border-primary-dark
-    // bg-accent-olive
   `,
   ({ variant = 'default' }) => sectionVariants[variant],
   ({ layout = '' }) => layoutVariants[layout],

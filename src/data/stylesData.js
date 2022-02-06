@@ -43,6 +43,15 @@ export const textAlignVariants = {
   justify: tw`text-justify`,
 };
 
+export const fontStyleVariants = {
+  normal: tw`font-normal`,
+  bold: tw`font-bold`,
+  'semi-bold': tw`font-semibold`,
+  'extra-bold': tw`font-extrabold`,
+  italic: tw`italic`,
+  'italic-bold': tw`font-bold italic`,
+};
+
 export const headingVariants = {
   page: tw`text-5xl md:text-8xl`,
   sm: tw`text-4xl md:text-6xl`,
@@ -54,5 +63,26 @@ export const sectionVariants = {
 };
 
 export const layoutVariants = {
-  grid: tw`grid grid-cols-4 gap-x-4 md:grid-cols-8 lg:grid-cols-12 lg:gap-x-6`,
+  grid: tw`grid grid-cols-4 gap-x-5 md:gap-x-7 md:grid-cols-12 xl:gap-x-10`,
+};
+
+export const gridColVariants = {
+  'span-4': tw`md:col-span-4`, // third 12/4
+  'span-6': tw`md:col-span-6`, // half 12/6
+  'span-8': tw`md:col-span-8`, // 12/8
+};
+
+export const gridColStartVariants = {
+  'start-1': tw`col-start-1`,
+  'start-2': tw`col-start-2`,
+  'start-3': tw`col-start-3`,
+  'start-4': tw`col-start-4`,
+  'start-5': tw`col-start-5`,
+  'start-6': tw`col-start-6`,
+  'start-7': tw`col-start-7`,
+  'start-8': tw`col-start-8`,
+  'start-9': tw`col-start-9`,
+  'start-10': tw`col-start-10`,
+  'start-11': tw`col-start-11`,
+  'start-12': tw`col-start-12`,
 };

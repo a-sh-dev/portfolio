@@ -1,3 +1,5 @@
+import tw, { styled } from 'twin.macro';
+
 const Skills = () => {
   return (
     <div>
