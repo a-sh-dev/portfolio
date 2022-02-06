@@ -3,6 +3,7 @@ import tw, { styled } from 'twin.macro';
 const StyledVLine = styled.div`
   display: grid;
   place-items: center;
+  position: relative;
   width: 100%;
   height: ${({ length }) => length || 'inherit'};
   background: linear-gradient(

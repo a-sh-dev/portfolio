@@ -53,13 +53,6 @@ const Line2 = tw.div`
   xl:my-4
 `;
 
-const StickerWrapper = styled.div(() => [
-  tw`
-    mb-14
-    md:mb-0
-  `,
-]);
-
 const Greetings = styled.h2(() => [
   tw`
     font-mono
@@ -138,6 +131,8 @@ const Profile = tw.div`
   flex
   relative
   p-4
+  mt-4
+  mb-64
   md:hidden
 `;
 
@@ -147,7 +142,12 @@ const SloganWrapper = tw.div`
   -right-4
 `;
 
-// md:pt-[56px] xl:pt-[72px]
+const StickerWrapper = tw.div`
+  mb-24
+  md:mt-96
+  md:pt-96
+  // md:mb-20
+`;
 
 const MainHero = () => {
   return (
@@ -192,23 +192,25 @@ const MainHero = () => {
         </SideColumn>
       </FluidContainer>
 
-      <VLine length="38rem">
-        <Profile>
-          <Image
-            src="/images/ash_profile_circle.svg"
-            alt="a-sh profile illustration"
-            width={250}
-            height={250}
-          />
-          <SloganWrapper>
-            <SloganSticker />
-          </SloganWrapper>
-        </Profile>
-        <StickerWrapper>
-          <Sticker text="It is me you're looking for~">
-            <HiMusicNote aria-hidden="true" />
-          </Sticker>
-        </StickerWrapper>
+      <VLine>
+        <div className="h-fit grid grid-flow-row place-items-center">
+          <Profile>
+            <Image
+              src="/images/ash_profile_circle.svg"
+              alt="a-sh profile illustration"
+              width={250}
+              height={250}
+            />
+            <SloganWrapper>
+              <SloganSticker />
+            </SloganWrapper>
+          </Profile>
+          <StickerWrapper>
+            <Sticker text="It is me you're looking for~">
+              <HiMusicNote aria-hidden="true" />
+            </Sticker>
+          </StickerWrapper>
+        </div>
       </VLine>
     </>
   );

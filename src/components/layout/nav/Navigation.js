@@ -10,6 +10,7 @@ const NavWrapper = tw.div`
   pt-4
   pb-1
   bg-primary-light
+  md:pt-8
 `;
 
 const NavBar = styled.nav(() => [
@@ -23,7 +24,7 @@ const NavBar = styled.nav(() => [
 const LogoWrapper = tw.div`
   text-primary-dark
   text-6xl
-  md:text-7xl
+  md:text-8xl
 `;
 
 const NavLine = tw.div`

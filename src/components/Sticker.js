@@ -18,6 +18,7 @@ const StickerWrapper = styled.div(() => [
     duration-500
     text-sm
     md:text-lg
+    xl:text-xl
   `,
   `
     transform: rotate(-1.5deg);
