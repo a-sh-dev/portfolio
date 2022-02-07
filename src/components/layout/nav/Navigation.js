@@ -56,10 +56,11 @@ const NavLineEnd = tw.div`
   xl:w-8
 `;
 
-const NavMenu = tw.ul`
+const NavMenu = tw.div`
   hidden
   md:flex
   md:items-center
+  bg-white/40
 `;
 
 const MobileBtnMenu = styled.button(() => [
