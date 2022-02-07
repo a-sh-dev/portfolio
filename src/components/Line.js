@@ -1,4 +1,5 @@
 import tw, { styled } from 'twin.macro';
+import { bgColorVariants } from '../data';
 
 const Wrapper = styled.div(({ noGutter }) => [
   tw`
@@ -9,16 +10,19 @@ const Wrapper = styled.div(({ noGutter }) => [
   noGutter && tw`my-0`,
 ]);
 
-const StyledLine = tw.div`
-  h-px
-  bg-primary-dark
-  flex-1
-`;
+const StyledLine = styled.div(() => [
+  tw`
+    h-px
+    flex-1
+    bg-primary-dark
+  `,
+  ({ color = 'dark' }) => bgColorVariants[color],
+]);
 
-const Line = ({ noGutter, children }) => {
+const Line = ({ color, noGutter, children }) => {
   return (
     <Wrapper {...{ noGutter }}>
-      <StyledLine>{children}</StyledLine>
+      <StyledLine color={color}>{children}</StyledLine>
     </Wrapper>
   );
 };
