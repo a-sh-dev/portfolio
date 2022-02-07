@@ -13,7 +13,7 @@ const StyledParagraph = styled.p(() => [
   ({ color = 'dark' }) => textColorVariants[color],
 ]);
 
-const BodyText = ({ color, children }) => {
+const Paragraph = ({ color, children }) => {
   return (
     <>
       <StyledParagraph color={color}>{children}</StyledParagraph>
@@ -21,4 +21,4 @@ const BodyText = ({ color, children }) => {
   );
 };
 
-export default BodyText;
+export default Paragraph;

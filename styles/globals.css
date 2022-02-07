@@ -58,3 +58,8 @@ a {
 *::before {
   box-sizing: border-box;
 }
+
+.em-dash {
+  padding-inline: 0.15rem;
+  letter-spacing: -0.25rem;
+}

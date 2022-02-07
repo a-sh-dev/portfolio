@@ -67,9 +67,15 @@ export const layoutVariants = {
 };
 
 export const gridColVariants = {
+  'span-2': tw`md:col-span-2`, // 12/2
+  'span-3': tw`md:col-span-3`, // 12/3
   'span-4': tw`md:col-span-4`, // third 12/4
+  'span-5': tw`md:col-span-5`, // 12/5
   'span-6': tw`md:col-span-6`, // half 12/6
+  'span-7': tw`md:col-span-7`, // 12/7
   'span-8': tw`md:col-span-8`, // 12/8
+  'span-9': tw`md:col-span-9`, // 12/9
+  'span-10': tw`md:col-span-10`, // 12/10
 };
 
 export const gridColStartVariants = {

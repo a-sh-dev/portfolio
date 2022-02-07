@@ -2,7 +2,7 @@ import tw, { styled } from 'twin.macro';
 import { GridColumn, Section } from '../layout';
 import {
   BodyIntro,
-  BodyText,
+  Paragraph,
   Heading,
   Icon,
   SubHeading,
@@ -10,7 +10,7 @@ import {
 } from '../typography';
 import { FaRobot } from 'react-icons/fa';
 
-const HeaderWrapper = tw.header`
+const HeaderWrapper = tw.article`
   col-span-full
   mx-auto
   text-center
@@ -33,23 +33,28 @@ const Tldr = () => {
           designer.
         </SubHeading>
       </HeaderWrapper>
-      <GridColumn col="span-6">
+      <GridColumn col="span-5">
         <BodyIntro>
-          They said coding was easy-peasy, and in 10 months, I could get
-          certified with an IT Diploma. So, I jumped into the Coder Academy
-          Fullstack Bootcamp and began my journey... Well, it was not easy at
-          all!
+          <em>&quot;Coding is easy-peasy&quot;</em>, they said and in 10 months,
+          I could get certified with an IT Diploma. So, I jumped into the Coder
+          Academy Fullstack Bootcamp and began my journey... Honestly, it was
+          not easy at all!
         </BodyIntro>
       </GridColumn>
-      <GridColumn col="span-6">
-        <BodyText>
-          However, surprisingly, despite its challenges, I came to really,
-          really, really enjoy it. The coding passion has grown so much that I
-          want to pursue this career, not (just) as a graphic designer who can
-          code but as a developer who understands visual design communication.
-          Furthermore, I hope to gain professional experience and learn beyond
-          web development. I hope to make a meaningful difference in the tech
-          world for humanity one day!{' '}
+      <GridColumn col="span-7">
+        <Paragraph>
+          However, despite its challenges, surprisingly, I came to really,
+          really, really enjoy it. Especially the learning part. The coding
+          passion has grown so much that I want to pursue this career
+          <span className="em-dash">----</span>not (just) as a graphic designer
+          who can code but as a developer who understands visual communication
+          design.
+        </Paragraph>
+        <Paragraph>
+          Furthermore, I hope to gain professional experience while learning
+          beyond web development. With the dream of making a meaningful
+          difference in the tech world for humanity one day, especially as a
+          woman!{' '}
           <span className="text-sm font-mono italic">
             (and not be intimidated by robots!
           </span>
@@ -57,7 +62,7 @@ const Tldr = () => {
             <FaRobot />
           </Icon>
           ).
-        </BodyText>
+        </Paragraph>
       </GridColumn>
     </Section>
   );

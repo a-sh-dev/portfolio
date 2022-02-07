@@ -5,14 +5,13 @@ const StyledParagraph = styled.p(() => [
   tw`
    font-sans 
    text-lg
-   font-bold
+   font-semibold
    tracking-tight
    mb-6
-   md:pr-12
+  //  md:pr-12
    md:text-xl
-   md:font-semibold
    md:leading-relaxed
-   xl:pr-16
+  //  xl:pr-16
    xl:text-2xl
    xl:leading-10
   `,

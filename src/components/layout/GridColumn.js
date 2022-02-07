@@ -5,6 +5,12 @@ const StyledGridColumn = styled.div(({ relative }) => [
   tw`
     col-span-full
   `,
+  // targets any non first paragraph
+  `
+    p + p {
+      margin-top: 1rem;
+    }
+  `,
   relative && tw`relative`,
   ({ col = 'span-6' }) => gridColVariants[col],
   ({ start = 'start-1' }) => gridColStartVariants[start],
