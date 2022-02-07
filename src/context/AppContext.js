@@ -1,6 +1,6 @@
 import React from 'react';
 
-export const AppContext = React.createContext();
+const AppContext = React.createContext();
 
 export const AppProvider = ({ children }) => {
   const [isNavOpen, setIsNavOpen] = React.useState(false);
