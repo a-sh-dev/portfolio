@@ -9,7 +9,7 @@ const StyledSubHeading = styled.h2(() => [
    text-2xl
    my-12
    md:my-16
-   md:text-3xl
+   md:text-4xl
    xl:text-5xl
    xl:leading-tight
   `,

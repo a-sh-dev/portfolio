@@ -1,2 +1,2 @@
 export * from './stylesData';
-export * from './navLinksData';
+export * from './linksData';

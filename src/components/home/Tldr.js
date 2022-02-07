@@ -14,7 +14,8 @@ const HeaderWrapper = tw.article`
   col-span-full
   mx-auto
   text-center
-  md:mb-6
+  md:px-7
+  // md:mb-4
 `;
 const ContentWrapper = tw.main`
   // col-span-full
