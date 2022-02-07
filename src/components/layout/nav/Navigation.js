@@ -1,3 +1,4 @@
+import { useAppContext } from '../../../context';
 import Link from 'next/link';
 import tw, { styled } from 'twin.macro';
 import { Container } from '..';
@@ -47,6 +48,8 @@ const NavLink = tw.li`
 `;
 
 const Navigation = () => {
+  const { openNavMenu } = useAppContext();
+
   return (
     <NavWrapper>
       <Container maxWidth="max">
