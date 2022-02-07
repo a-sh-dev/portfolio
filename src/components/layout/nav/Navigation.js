@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import tw, { styled } from 'twin.macro';
 import { Container } from '..';
 import { Line } from '../..';

@@ -1,6 +1,7 @@
+import Link from 'next/link';
 import tw, { styled } from 'twin.macro';
 
-const NavLinks = () => {
+const NavItem = () => {
   return (
     <div>
       <h1>Core Skills & Capabilities Component</h1>
@@ -8,4 +9,4 @@ const NavLinks = () => {
   );
 };
 
-export default NavLinks;
+export default NavItem;
