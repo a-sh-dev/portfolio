@@ -15,10 +15,6 @@ const HeaderWrapper = tw.article`
   mx-auto
   text-center
   md:px-7
-  // md:mb-4
-`;
-const ContentWrapper = tw.main`
-  // col-span-full
 `;
 
 const Tldr = () => {

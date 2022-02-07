@@ -5,8 +5,9 @@ import { Container } from '..';
 import { Line } from '../..';
 import { AshLogo } from '../../svgs';
 import { HiOutlineX } from 'react-icons/hi';
-import { navTransition } from '../../../data';
+import { navLinks, navTransition } from '../../../data';
 import NavMenuMobile from './NavMenuMobile';
+import NavItem from './NavItem';
 
 const NavWrapper = styled.div(({ isNavOpen }) => [
   tw`
@@ -47,6 +48,14 @@ const NavLine = tw.div`
   flex-1
 `;
 
+const NavLineEnd = tw.div`
+  hidden
+  md:block
+  md:w-5
+  md:ml-2.5
+  xl:w-8
+`;
+
 const NavMenu = tw.ul`
   hidden
   md:flex
@@ -77,10 +86,6 @@ const MobileBtnCloseMenu = tw.button`
   md:hidden
 `;
 
-const NavLink = tw.li`
-
-`;
-
 const Navigation = () => {
   const { isNavOpen, openNavMenu, closeNavMenu } = useAppContext();
 
@@ -97,7 +102,19 @@ const Navigation = () => {
             <NavLine>
               <Line color={isNavOpen ? 'light' : 'dark'} />
             </NavLine>
-            <NavMenu>Link1 Link2</NavMenu>
+            <NavMenu>
+              {navLinks.map((link) => {
+                return (
+                  <>
+                    <NavItem link={link} />
+                  </>
+                );
+              })}
+            </NavMenu>
+            <NavLineEnd>
+              <Line />
+            </NavLineEnd>
+
             {isNavOpen ? (
               <MobileBtnCloseMenu onClick={closeNavMenu}>
                 <HiOutlineX />

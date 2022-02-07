@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import tw, { styled } from 'twin.macro';
+import { SloganSticker } from '../..';
 import { useAppContext } from '../../../context';
 import { navLinks, navTransition } from '../../../data';
 
@@ -12,6 +13,8 @@ const NavMenuWrapper = styled.div(({ isNavOpen }) => [
     w-screen
     h-full
     z-50
+    overflow-hidden
+    grid
   `,
   `
     transform: translate(-100%)
@@ -19,6 +22,22 @@ const NavMenuWrapper = styled.div(({ isNavOpen }) => [
   isNavOpen && `transform: translate(0)`,
 
   navTransition,
+]);
+
+const SloganWrapper = styled.div(() => [
+  tw`
+    place-self-end
+    p-16
+    z-20
+    absolute
+    bottom-14
+    -right-6
+  `,
+  `
+    > * {
+      transform: scale(1.25)
+    }
+  `,
 ]);
 
 const NavMenu = tw.div`
@@ -43,9 +62,7 @@ const NavMobileItem = styled.a(() => [
     border-b
     hover:(text-white bg-black/10)
   `,
-  `
 
-  `,
   navTransition,
 ]);
 
@@ -76,6 +93,9 @@ const NavMenuMobile = () => {
               );
             })}
           </NavMenu>
+          <SloganWrapper>
+            <SloganSticker color="teal" />
+          </SloganWrapper>
         </NavMenuWrapper>
       )}
     </>
