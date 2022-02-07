@@ -5,9 +5,10 @@ import { Container } from '..';
 import { Line } from '../..';
 import { AshLogo } from '../../svgs';
 import { HiOutlineX } from 'react-icons/hi';
+import { navTransition } from '../../../data';
 import NavMenuMobile from './NavMenuMobile';
 
-const NavWrapper = styled.div(() => [
+const NavWrapper = styled.div(({ isNavOpen }) => [
   tw`
     sticky
     top-0
@@ -17,24 +18,28 @@ const NavWrapper = styled.div(() => [
     bg-primary-light
     md:pt-8
   `,
-  ({ isNavOpen }) => tw`bg-primary-darkest`,
+  isNavOpen && tw`bg-primary-darkest md:bg-primary-light`,
+
+  navTransition,
 ]);
 
 const NavBar = styled.nav(() => [
   tw`
     flex
     items-center
-    // bg-accent-teal
   `,
 ]);
 
-const LogoWrapper = styled.div(() => [
+const LogoWrapper = styled.div(({ isNavOpen }) => [
   tw`
     text-primary-dark
     text-6xl
+    hover:text-primary-darkest
     md:text-8xl
   `,
-  ({ isNavOpen }) => tw`text-primary-light`,
+  isNavOpen && tw`text-primary-light hover:text-white md:text-primary-dark`,
+
+  navTransition,
 ]);
 
 const NavLine = tw.div`
@@ -48,23 +53,28 @@ const NavMenu = tw.ul`
   md:items-center
 `;
 
-const MobileBtnMenu = tw.button`
-  md:hidden
-  uppercase
-  tracking-widest
-  font-semibold
-  border
-  border-primary-dark
-  text-xs
-  text-primary-dark
-  py-2
-  px-4
-  rounded-full
-`;
+const MobileBtnMenu = styled.button(() => [
+  tw`
+    md:hidden
+    uppercase
+    tracking-widest
+    font-semibold
+    border
+    border-primary-dark
+    text-xs
+    text-primary-dark
+    py-2
+    px-4
+    rounded-full
+    hover:(bg-primary-dark text-primary-light)
+`,
+  navTransition,
+]);
 
-const CloseMenuContainer = tw.div`
+const MobileBtnCloseMenu = tw.button`
   text-4xl
   text-primary-light
+  md:hidden
 `;
 
 const NavLink = tw.li`
@@ -72,31 +82,33 @@ const NavLink = tw.li`
 `;
 
 const Navigation = () => {
-  // const { isNavOpen, openNavMenu, closeNavMenu } = useAppContext();
-
-  let isNavOpen = true;
+  const { isNavOpen, openNavMenu, closeNavMenu } = useAppContext();
 
   return (
-    <NavWrapper>
-      <Container maxWidth="max">
-        <NavBar>
-          <LogoWrapper>
-            <AshLogo />
-          </LogoWrapper>
-          <NavLine>
-            <Line color={isNavOpen ? 'light' : 'dark'} />
-          </NavLine>
-          <NavMenu>Link1 Link2</NavMenu>
-          {isNavOpen ? (
-            <CloseMenuContainer>
-              <HiOutlineX />
-            </CloseMenuContainer>
-          ) : (
-            <MobileBtnMenu>Menu</MobileBtnMenu>
-          )}
-        </NavBar>
-      </Container>
-      <NavMenuMobile />
+    <NavWrapper {...{ isNavOpen }}>
+      <div className="relative">
+        <Container maxWidth="max">
+          <NavBar>
+            <LogoWrapper {...{ isNavOpen }}>
+              <Link href="/" passHref>
+                <AshLogo />
+              </Link>
+            </LogoWrapper>
+            <NavLine>
+              <Line color={isNavOpen ? 'light' : 'dark'} />
+            </NavLine>
+            <NavMenu>Link1 Link2</NavMenu>
+            {isNavOpen ? (
+              <MobileBtnCloseMenu onClick={closeNavMenu}>
+                <HiOutlineX />
+              </MobileBtnCloseMenu>
+            ) : (
+              <MobileBtnMenu onClick={openNavMenu}>Menu</MobileBtnMenu>
+            )}
+          </NavBar>
+        </Container>
+        <NavMenuMobile />
+      </div>
     </NavWrapper>
   );
 };

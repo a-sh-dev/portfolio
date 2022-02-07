@@ -1,6 +1,9 @@
 // Keeping things DRY - reusable variants
 import tw from 'twin.macro';
 
+export const uniformTransition = tw`transition-all duration-300`;
+export const navTransition = tw`transition-all duration-100`;
+
 export const bgColorVariants = {
   teal: tw`bg-accent-teal`,
   olive: tw`bg-accent-olive`,

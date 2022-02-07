@@ -1,5 +1,5 @@
 import tw, { styled } from 'twin.macro';
-import { bgColorVariants } from '../data';
+import { bgColorVariants, uniformTransition } from '../data';
 
 // ! Sticker is the highlighted label in italic Space Mono
 
@@ -14,8 +14,6 @@ const StickerWrapper = styled.div(() => [
     rounded-sm
     border-b-2
     border-primary-light
-    transition-all
-    duration-500
     text-sm
     md:text-lg
     xl:text-2xl
@@ -28,6 +26,8 @@ const StickerWrapper = styled.div(() => [
     }
   `,
   ({ color = 'teal' }) => bgColorVariants[color],
+
+  uniformTransition,
 ]);
 
 const Text = tw.h5`

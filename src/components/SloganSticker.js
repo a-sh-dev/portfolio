@@ -1,6 +1,6 @@
 import tw, { styled } from 'twin.macro';
 import { AshLogo, CareRingIcon } from './svgs';
-import { bgColorVariants } from '../data';
+import { bgColorVariants, uniformTransition } from '../data';
 
 const StickerWrapper = styled.div(() => [
   tw`
@@ -13,11 +13,11 @@ const StickerWrapper = styled.div(() => [
     text-primary-dark
     hover:bg-primary-darkest
     hover:text-white
-    transition-all
-    duration-500
     md:(text-9xl p-4)
   `,
   ({ color = 'pink' }) => bgColorVariants[color],
+
+  uniformTransition,
 ]);
 
 const SloganSticker = ({ color, withLogo, sm }) => {

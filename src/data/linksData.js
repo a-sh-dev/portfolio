@@ -18,9 +18,9 @@ let router;
 export const navLinks = [
   {
     id: 1,
-    name: 'Projects',
-    url: '/projects',
-    current: router?.pathname.includes('/projects'),
+    name: 'Home',
+    url: '/',
+    current: router?.pathname.includes('/'),
     svg: <HomeIcon />,
   },
   {
