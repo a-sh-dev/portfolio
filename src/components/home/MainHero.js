@@ -1,6 +1,6 @@
 import tw, { styled } from 'twin.macro';
 import Image from 'next/image';
-import { Line, SloganSticker, Sticker, VLine } from '..';
+import { Line, SloganSticker, Sticker, VLineBg } from '..';
 import { HiMusicNote } from 'react-icons/hi';
 
 const FluidContainer = styled.header(() => [
@@ -146,7 +146,7 @@ const StickerWrapper = tw.div`
   mb-24
   md:mt-96
   md:pt-96
-  // md:mb-20
+  md:mb-20
 `;
 
 const MainHero = () => {
@@ -192,7 +192,7 @@ const MainHero = () => {
         </SideColumn>
       </FluidContainer>
 
-      <VLine>
+      <VLineBg>
         <div className="h-fit grid grid-flow-row place-items-center">
           <Profile>
             <Image
@@ -206,12 +206,12 @@ const MainHero = () => {
             </SloganWrapper>
           </Profile>
           <StickerWrapper>
-            <Sticker text="It is me you're looking for~">
+            <Sticker text="Is it me you're looking for~?">
               <HiMusicNote aria-hidden="true" />
             </Sticker>
           </StickerWrapper>
         </div>
-      </VLine>
+      </VLineBg>
     </>
   );
 };

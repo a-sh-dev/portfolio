@@ -59,7 +59,7 @@ const Tldr = () => {
             (and not be intimidated by robots!
           </span>
           <Icon nudgeTop>
-            <FaRobot />
+            <FaRobot aria-hidden="true" />
           </Icon>
           ).
         </Paragraph>

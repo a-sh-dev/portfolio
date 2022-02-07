@@ -13,8 +13,8 @@ const StyledVLine = styled.div`
     no-repeat center/1px 100%;
 `;
 
-const VLine = ({ length, children }) => {
+const VLineBg = ({ length, children }) => {
   return <StyledVLine length={length}>{children}</StyledVLine>;
 };
 
-export default VLine;
+export default VLineBg;
