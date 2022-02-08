@@ -9,7 +9,7 @@ import { navLinks, uniformTransition } from '../../../data';
 import NavMenuMobile from './NavMenuMobile';
 import NavItem from './NavItem';
 
-const NavWrapper = styled.div(({ isNavOpen }) => [
+const NavWrapper = styled.div(() => [
   tw`
     sticky
     top-0
@@ -19,8 +19,6 @@ const NavWrapper = styled.div(({ isNavOpen }) => [
     bg-primary-light
     md:pt-8
   `,
-  // isNavOpen && tw`bg-primary-darkest md:bg-primary-light`,
-
   uniformTransition,
 ]);
 
@@ -31,15 +29,13 @@ const NavBar = styled.nav(() => [
   `,
 ]);
 
-const LogoWrapper = styled.div(({ isNavOpen }) => [
+const LogoWrapper = styled.div(() => [
   tw`
     text-primary-dark
     text-6xl
     hover:text-primary-darkest
     md:text-8xl
   `,
-  // isNavOpen && tw`text-primary-light hover:text-white md:text-primary-dark`,
-
   uniformTransition,
 ]);
 
@@ -59,7 +55,6 @@ const NavMenu = tw.div`
   hidden
   md:flex
   md:items-center
-  // bg-white/40
 `;
 
 const outlinedBtnBase = tw`border border-primary-dark text-primary-dark rounded-full hover:(bg-primary-dark text-primary-light) md:hidden`;
@@ -91,11 +86,11 @@ const Navigation = () => {
   const { isNavOpen, openNavMenu, closeNavMenu } = useAppContext();
 
   return (
-    <NavWrapper {...{ isNavOpen }}>
+    <NavWrapper>
       <div className="relative">
         <Container maxWidth="max">
           <NavBar>
-            <LogoWrapper {...{ isNavOpen }}>
+            <LogoWrapper>
               <Link href="/" passHref>
                 <AshLogo />
               </Link>
@@ -103,6 +98,8 @@ const Navigation = () => {
             <NavLine>
               <Line />
             </NavLine>
+
+            {/* DESKTOP NAV MENU */}
             <NavMenu>
               {navLinks.map((link) => {
                 return (
@@ -116,6 +113,7 @@ const Navigation = () => {
               <Line />
             </NavLineEnd>
 
+            {/* MOBILE NAV MENU */}
             {isNavOpen ? (
               <MobileBtnCloseMenu onClick={closeNavMenu}>
                 <HiOutlineX />
@@ -125,6 +123,8 @@ const Navigation = () => {
             )}
           </NavBar>
         </Container>
+
+        {/* MOBILE NAV MENU LINKS BAR */}
         <NavMenuMobile />
       </div>
     </NavWrapper>

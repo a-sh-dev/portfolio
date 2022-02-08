@@ -2,7 +2,7 @@ import Link from 'next/link';
 import tw, { styled } from 'twin.macro';
 import { SloganSticker } from '../..';
 import { useAppContext } from '../../../context';
-import { navLinks, navTransition } from '../../../data';
+import { navLinks, uniformTransition } from '../../../data';
 
 const NavMenuWrapper = styled.div(({ isNavOpen }) => [
   tw`
@@ -21,7 +21,7 @@ const NavMenuWrapper = styled.div(({ isNavOpen }) => [
   `,
   isNavOpen && `transform: translate(0)`,
 
-  navTransition,
+  uniformTransition,
 ]);
 
 const SloganWrapper = styled.div(() => [
@@ -63,7 +63,7 @@ const NavMobileItem = styled.a(() => [
     hover:(text-white bg-black/10)
   `,
 
-  navTransition,
+  uniformTransition,
 ]);
 
 const NavMobileIconWrapper = tw.span`

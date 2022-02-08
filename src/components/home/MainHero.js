@@ -5,7 +5,7 @@ import { HiMusicNote } from 'react-icons/hi';
 
 const FluidContainer = styled.header(() => [
   tw`
-    pt-20
+    pt-10
     grid
     justify-items-center
     md:pt-32
