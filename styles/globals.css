@@ -25,7 +25,9 @@ $beige: #eacfbc; */
   --color-white: 255 255 255;
 
   --color-accent-teal: 188 220 217;
+  --color-css-accent-teal: rgba(188, 220, 217, 1);
   --color-accent-olive: 219 216 185;
+  --color-css-accent-olive: rgba(219, 216, 185, 1);
   --color-accent-gray: 201 201 201;
   --color-accent-pink: 234 201 198;
   --color-accent-blue: 181 210 222;
