@@ -5,7 +5,8 @@ import { Container } from '..';
 import { Line } from '../..';
 import { AshLogo } from '../../svgs';
 import { HiOutlineX } from 'react-icons/hi';
-import { navLinks, uniformTransition } from '../../../data';
+import { navLinks } from '../../../data';
+import { uniformTransition } from '../../../../styles/stylesData';
 import NavMenuMobile from './NavMenuMobile';
 import NavItem from './NavItem';
 

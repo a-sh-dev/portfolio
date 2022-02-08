@@ -1,5 +1,5 @@
 import tw, { styled } from 'twin.macro';
-import { headingVariants, textAlignVariants } from '../../data';
+import { headingVariants, textAlignVariants } from '../../../styles/stylesData';
 
 const StyledHeading = styled.h1(() => [
   tw`

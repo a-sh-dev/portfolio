@@ -1,5 +1,8 @@
 import tw, { styled } from 'twin.macro';
-import { gridColStartVariants, gridColVariants } from '../../data';
+import {
+  gridColStartVariants,
+  gridColVariants,
+} from '../../../styles/stylesData';
 
 const StyledGridColumn = styled.div(({ relative }) => [
   tw`

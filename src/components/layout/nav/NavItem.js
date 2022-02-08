@@ -1,8 +1,6 @@
 import tw, { styled } from 'twin.macro';
 import Link from 'next/link';
-import { uniformTransition } from '../../../data';
-
-const btnSize = tw`w-6 h-6`;
+import { uniformTransition } from '../../../../styles/stylesData';
 
 const ItemContainer = styled.a(() => [
   tw`

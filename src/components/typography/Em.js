@@ -1,5 +1,5 @@
 import tw, { styled } from 'twin.macro';
-import { fontSizeVariants } from '../../data';
+import { fontSizeVariants } from '../../../styles/stylesData';
 
 const StyledEm = styled.span(() => [
   tw`

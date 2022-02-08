@@ -45,9 +45,10 @@ const Tldr = () => {
       </GridColumn>
       <GridColumn col="span-7">
         <Paragraph>
-          However, despite its challenges, surprisingly, I came to really,
-          really, really enjoy it. Especially the learning part. The coding
-          passion has grown so much that I want to pursue this career
+          Surprisingly, despite its challenges, I came to
+          <em> really, really, really </em>
+          enjoy coding. Especially the learning part. The passion has grown so
+          much that I want to pursue this career
           <span className="em-dash">-----</span>not (just) as a graphic designer
           who can code but as a developer who understands visual communication
           design.

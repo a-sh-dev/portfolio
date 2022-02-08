@@ -1,5 +1,11 @@
 import tw, { styled } from 'twin.macro';
 
+const IconWrapper = styled.div(() => [
+  tw`
+  
+  `,
+]);
+
 const Skills = () => {
   return (
     <div>

@@ -1,5 +1,5 @@
 import tw, { styled } from 'twin.macro';
-import { bgColorVariants, uniformTransition } from '../data';
+import { bgColorVariants, uniformTransition } from '../../styles/stylesData';
 
 // ! Sticker is the highlighted label in italic Space Mono
 

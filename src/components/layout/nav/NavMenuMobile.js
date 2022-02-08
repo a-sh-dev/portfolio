@@ -4,7 +4,8 @@ import { SloganSticker } from '../..';
 import { Icon } from '../../typography';
 import { useAppContext } from '../../../context';
 import { currentYear } from '../../../utils';
-import { navLinks, uniformTransition, copyright } from '../../../data';
+import { navLinks } from '../../../data';
+import { uniformTransition, copyright } from '../../../../styles/stylesData';
 import { GiCoffeePot } from 'react-icons/gi';
 
 const NavMenuWrapper = styled.div(() => [
@@ -113,7 +114,7 @@ const NavMenuMobile = () => {
                 &copy; {currentYear}
                 <span className="em-dash">--------</span> By a-sh.
                 <br /> {copyright.nav}{' '}
-                <Icon color="pink" nudgeTop>
+                <Icon color="teal" nudgeTop>
                   <GiCoffeePot />
                 </Icon>
               </div>
@@ -122,7 +123,7 @@ const NavMenuMobile = () => {
               </div>
             </Copyright>
             <SloganWrapper>
-              <SloganSticker color="pink" withLogo />
+              <SloganSticker color="teal" withLogo />
             </SloganWrapper>
           </Footer>
         </NavMenuWrapper>

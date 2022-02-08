@@ -1,5 +1,5 @@
 import tw, { styled } from 'twin.macro';
-import { bgColorVariants } from '../data';
+import { bgColorVariants } from '../../styles/stylesData';
 
 const Wrapper = styled.div(({ noGutter }) => [
   tw`

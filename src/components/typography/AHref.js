@@ -1,5 +1,5 @@
 import tw, { styled } from 'twin.macro';
-import { uniformSlowTransition } from '../../data';
+import { uniformSlowTransition } from '../../../styles/stylesData';
 
 const StyledAHref = styled.a(() => [
   tw`

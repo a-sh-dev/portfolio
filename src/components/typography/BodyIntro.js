@@ -1,5 +1,8 @@
 import tw, { styled } from 'twin.macro';
-import { textAlignVariants, textColorVariants } from '../../data';
+import {
+  textAlignVariants,
+  textColorVariants,
+} from '../../../styles/stylesData';
 
 const StyledParagraph = styled.p(() => [
   tw`

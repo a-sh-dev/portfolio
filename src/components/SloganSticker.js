@@ -1,6 +1,6 @@
 import tw, { styled } from 'twin.macro';
 import { AshLogo, CareRingIcon } from './svgs';
-import { bgColorVariants, uniformTransition } from '../data';
+import { bgColorVariants, uniformTransition } from '../../styles/stylesData';
 
 const StickerWrapper = styled.div(() => [
   tw`

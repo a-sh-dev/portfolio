@@ -1,5 +1,5 @@
 import tw, { styled } from 'twin.macro';
-import { maxWidthVariants } from '../../data';
+import { maxWidthVariants } from '../../../styles/stylesData';
 
 // default content max-width screen is 1280px (xl)
 

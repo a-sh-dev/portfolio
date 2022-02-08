@@ -3,7 +3,7 @@ import {
   fontStyleVariants,
   textAlignVariants,
   textColorVariants,
-} from '../../data';
+} from '../../../styles/stylesData';
 
 const StyledSubHeading = styled.p(() => [
   tw`

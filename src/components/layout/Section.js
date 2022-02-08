@@ -1,5 +1,5 @@
 import tw, { styled } from 'twin.macro';
-import { layoutVariants, sectionVariants } from '../../data';
+import { layoutVariants, sectionVariants } from '../../../styles/stylesData';
 
 const StyledSection = styled.section(() => [
   tw`
