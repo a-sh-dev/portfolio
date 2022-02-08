@@ -60,7 +60,7 @@ const NavMenu = tw.div`
   hidden
   md:flex
   md:items-center
-  bg-white/40
+  // bg-white/40
 `;
 
 const MobileBtnMenu = styled.button(() => [

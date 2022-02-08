@@ -2,28 +2,34 @@ import tw, { styled } from 'twin.macro';
 import Link from 'next/link';
 import { uniformTransition } from '../../../data';
 
-const btnSize = tw`w-10 h-10`;
+const btnSize = tw`w-6 h-6`;
 
 const ItemContainer = styled.a(() => [
   tw`
-    flex
+    inline-flex
     items-center
-    justify-center
-    overflow-hidden
+    justify-start
     rounded-full
-    bg-primary-dark
-    p-2
+    bg-primary-light
     cursor-pointer
+    border
+    border-primary-dark
+    p-1
+    mr-2
+    xl:p-1.5
+    xl:mr-3
   `,
-  btnSize,
   uniformTransition,
 ]);
 
 const ItemName = styled.span(() => [
   tw`
-    text-lg
-    text-primary-dark
-    font-semibold
+  text-primary-dark
+  font-semibold
+    px-2
+    whitespace-nowrap
+    xl:text-lg
+    xl:px-3
   `,
   uniformTransition,
 ]);
@@ -32,15 +38,11 @@ const IconWrapper = styled.span(() => [
   tw`
     grid
     place-items-center
-    text-xl
-    text-primary-light
-    mr-2
-    w-10
-    h-10
-    rounded-full
-    bg-primary-dark
+    text-lg
+    text-primary-dark
+    pl-2
+    xl:pl-3
   `,
-  btnSize,
   uniformTransition,
 ]);
 
@@ -48,10 +50,14 @@ const NavItem = ({ link }) => {
   const { id, name, svg, current, url } = link;
   return (
     <>
-      <ItemContainer key={id}>
-        <IconWrapper>{svg}</IconWrapper>
-        <ItemName>{name}</ItemName>
-      </ItemContainer>
+      <Link href={url} passHref>
+        <div className="group">
+          <ItemContainer key={id} className="group-hover:bg-primary-dark">
+            <IconWrapper className="group-hover:text-white">{svg}</IconWrapper>
+            <ItemName className="group-hover:text-white">{name}</ItemName>
+          </ItemContainer>
+        </div>
+      </Link>
     </>
   );
 };

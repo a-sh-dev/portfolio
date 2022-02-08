@@ -1,7 +1,8 @@
 // Keeping things DRY - reusable variants
 import tw from 'twin.macro';
 
-export const uniformTransition = tw`transition-all duration-300`;
+export const uniformTransition = tw`transition-all delay-75 duration-300 ease-out hover:(ease-in duration-200)`;
+export const uniformSlowTransition = tw`transition-all delay-150 duration-500 ease-out hover:(ease-in duration-300)`;
 export const navTransition = tw`transition-all duration-100`;
 
 export const bgColorVariants = {
