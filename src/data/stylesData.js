@@ -56,6 +56,18 @@ export const fontStyleVariants = {
   'italic-bold': tw`font-bold italic`,
 };
 
+export const fontSizeVariants = {
+  base: tw`text-base`, // 1rem
+  sm: tw`text-sm`, // 0.875rem
+  xs: tw`text-xs`, // 0.75rem
+  lg: tw`text-lg`, // 1.125rem
+  xl: tw`text-xl`, // 1.25rem
+  '2xl': tw`text-2xl`, // 1.5rem
+  '3xl': tw`text-3xl`, // 1.875rem
+  '4xl': tw`text-4xl`, // 2.25rem
+  '5xl': tw`text-5xl`, // 3rem
+};
+
 export const headingVariants = {
   page: tw`text-5xl md:text-8xl`,
   sm: tw`text-4xl md:text-6xl`,

@@ -10,6 +10,7 @@ import {
   AHref,
 } from '../typography';
 import { FaRobot } from 'react-icons/fa';
+import Em from '../typography/Em';
 
 const HeaderWrapper = tw.article`
   col-span-full
@@ -55,10 +56,7 @@ const Tldr = () => {
           Furthermore, I hope to gain professional experience while learning
           beyond web development. With the dream of making a meaningful
           difference in the tech world for humanity one day, especially as a
-          woman!{' '}
-          <span className="text-sm font-mono italic">
-            (and not be intimidated by robots!
-          </span>
+          woman! <Em size="sm">(and not be intimidated by robots!</Em>
           <Icon nudgeTop>
             <FaRobot aria-hidden="true" />
           </Icon>
