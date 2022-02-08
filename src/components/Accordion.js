@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import { useState } from 'react';
 import tw, { styled } from 'twin.macro';
 import { Heading, Paragraph } from './typography';

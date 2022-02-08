@@ -4,8 +4,8 @@ import { SloganSticker } from '../..';
 import { Icon } from '../../typography';
 import { useAppContext } from '../../../context';
 import { currentYear } from '../../../utils';
-import { navLinks } from '../../../data';
-import { uniformTransition, copyright } from '../../../../styles/stylesData';
+import { navLinks, copyright } from '../../../data';
+import { uniformTransition } from '../../../../styles/stylesData';
 import { GiCoffeePot } from 'react-icons/gi';
 
 const NavMenuWrapper = styled.div(() => [
@@ -18,6 +18,9 @@ const NavMenuWrapper = styled.div(() => [
     h-screen
     z-40
     overflow-hidden
+    border-t-2
+    border-dotted
+    border-t-primary-light
   `,
 
   uniformTransition,

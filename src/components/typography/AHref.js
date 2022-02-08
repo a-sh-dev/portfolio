@@ -1,5 +1,5 @@
 import tw, { styled } from 'twin.macro';
-import { uniformSlowTransition } from '../../../styles/stylesData';
+import { uniformTransition } from '../../../styles/stylesData';
 
 const StyledAHref = styled.a(() => [
   tw`
@@ -13,7 +13,7 @@ const StyledAHref = styled.a(() => [
   `
     box-shadow: inset 0 -1px 0 white;
   `,
-  uniformSlowTransition,
+  uniformTransition,
 ]);
 
 const AHref = ({ href, children }) => {

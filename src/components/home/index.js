@@ -1,6 +1,7 @@
 import MainHero from './MainHero';
-import Skills from './Skills';
 import Tldr from './Tldr';
+import FullStory from './FullStory';
+import Skills from './Skills';
 import Quote from './Quote';
 
-export { MainHero, Skills, Tldr, Quote };
+export { MainHero, Skills, Tldr, Quote, FullStory };

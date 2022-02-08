@@ -1,4 +1,4 @@
-const slogan = 'Carefully crafted with lots of caffeine';
+const slogan = 'Crafted with care & lots of caffeine';
 const siteInfo =
   'Site is built with Next.js with the help of twin.macro, combining the awesomeness of Tailwind CSS & Styled-Components.';
 
