@@ -15,7 +15,7 @@ const NavWrapper = styled.div(({ isNavOpen }) => [
     top-0
     z-50
     pt-4
-    pb-1
+    pb-2
     bg-primary-light
     md:pt-8
   `,

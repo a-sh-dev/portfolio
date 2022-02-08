@@ -1,31 +1,50 @@
 import Link from 'next/link';
 import tw, { styled } from 'twin.macro';
 import { SloganSticker } from '../..';
-import { Icon } from '../../typography';
 import { useAppContext } from '../../../context';
-import { currentYear } from '../../../utils';
-import { navLinks, uniformTransition, copyright } from '../../../data';
-import { GiCoffeePot } from 'react-icons/gi';
+import { navLinks, uniformTransition } from '../../../data';
 
-const NavMenuWrapper = styled.div(() => [
+const NavMenuWrapper = styled.div(({ isNavOpen }) => [
   tw`
     md:hidden
     fixed
-    top-[84px]
+    top-20
     bg-primary-darkest
     w-screen
-    h-screen
-    z-40
+    h-full
+    z-50
     overflow-hidden
+    grid
   `,
+  `
+    transform: translate(-100%)
+  `,
+  isNavOpen && `transform: translate(0)`,
 
   uniformTransition,
+]);
+
+const SloganWrapper = styled.div(() => [
+  tw`
+    place-self-end
+    p-16
+    z-20
+    absolute
+    bottom-14
+    -right-6
+  `,
+  `
+    > * {
+      transform: scale(1.25)
+    }
+  `,
 ]);
 
 const NavMenu = tw.div`
   grid
   place-items-center
   auto-rows-min
+  pt-10
 `;
 
 const NavMobileItem = styled.a(() => [
@@ -33,11 +52,11 @@ const NavMobileItem = styled.a(() => [
     flex
     items-center
     font-semibold
-    text-xl
+    text-2xl
     text-primary-light
     w-full
     h-full
-    p-8
+    p-10
     bg-primary-darkest
     border-primary-dark
     border-b
@@ -48,42 +67,9 @@ const NavMobileItem = styled.a(() => [
 ]);
 
 const NavMobileIconWrapper = tw.span`
-  text-xl
+  text-2xl
   text-primary-light
   mr-8
-`;
-
-const SloganWrapper = styled.div(() => [
-  tw`
-    self-start
-    p-8
-    absolute
-    bottom-6
-    right-6
-  `,
-  `
-    > * {
-      transform: scale(1.5)
-    }
-  `,
-]);
-
-const Copyright = tw.div`
-  place-self-start
-  text-primary-light
-  tracking-widest
-  text-sm
-  font-semibold
-  w-full
-  p-8
-`;
-
-const Footer = tw.footer`
-  grid
-  content-between
-  gap-4
-  grid-rows-2
-  relative
 `;
 
 const NavMenuMobile = () => {
@@ -91,7 +77,7 @@ const NavMenuMobile = () => {
   return (
     <>
       {isNavOpen && (
-        <NavMenuWrapper>
+        <NavMenuWrapper {...{ isNavOpen }}>
           <NavMenu>
             {navLinks.map((navItem) => {
               const { id, name, url, svg } = navItem;
@@ -107,24 +93,9 @@ const NavMenuMobile = () => {
               );
             })}
           </NavMenu>
-          <Footer>
-            <Copyright className="h-fit">
-              <div className="uppercase">
-                &copy; {currentYear}
-                <span className="em-dash">--------</span> By a-sh.
-                <br /> {copyright.nav}{' '}
-                <Icon color="pink" nudgeTop>
-                  <GiCoffeePot />
-                </Icon>
-              </div>
-              <div className="mt-4 font-normal text-xs tracking-normal">
-                {copyright.siteInfo}
-              </div>
-            </Copyright>
-            <SloganWrapper>
-              <SloganSticker color="pink" withLogo />
-            </SloganWrapper>
-          </Footer>
+          <SloganWrapper>
+            <SloganSticker color="teal" />
+          </SloganWrapper>
         </NavMenuWrapper>
       )}
     </>
