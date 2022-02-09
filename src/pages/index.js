@@ -2,6 +2,7 @@ import Image from 'next/image';
 import 'twin.macro';
 import {
   DevLife,
+  Facts,
   FullStory,
   MainHero,
   Quote,
@@ -18,10 +19,7 @@ export default function Home() {
         <Tldr />
         <FullStory />
         <DevLife />
-        <section>Random Fun Facts</section>
-        <section>
-          <Skills />
-        </section>
+        <Skills />
         <section>
           <Quote />
         </section>

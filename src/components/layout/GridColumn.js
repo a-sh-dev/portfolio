@@ -11,7 +11,7 @@ const StyledGridColumn = styled.div(({ relative }) => [
   // targets any non first paragraph
   `
     p + p {
-      margin-top: 1rem;
+      margin-top: 1.25rem;
     }
   `,
   relative && tw`relative`,

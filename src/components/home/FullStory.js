@@ -25,7 +25,7 @@ const FullStory = () => {
                 The story of a-sh.
               </Heading>
             </div>
-            <div className="my-2 md:hidden">
+            <div className="md:hidden">
               <Heading variant="sm" align="autoL">
                 The story of <br />
                 a-sh.

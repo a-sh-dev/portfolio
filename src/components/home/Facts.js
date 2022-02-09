@@ -8,22 +8,22 @@ const IconWrapper = styled.div(() => [
   `,
 ]);
 
-const Skills = () => {
+const Facts = () => {
   return (
     <Section variant="clean">
       <GridContainer>
-        <GridColumn col="span-3">
-          <Heading variant="monoBold" align="left">
-            Core skills & capabilities
+        <GridColumn>
+          <Heading variant="xs" align="autoL">
+            Some of a-sh&apos;s random (fun) facts
           </Heading>
         </GridColumn>
         <div>
-          <GridColumn></GridColumn>
-          <GridColumn></GridColumn>
+          <GridColumn>Card</GridColumn>
+          <GridColumn>Card</GridColumn>
         </div>
       </GridContainer>
     </Section>
   );
 };
 
-export default Skills;
+export default Facts;

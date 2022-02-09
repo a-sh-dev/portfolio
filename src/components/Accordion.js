@@ -4,8 +4,9 @@ import tw, { styled } from 'twin.macro';
 import { HiOutlinePlusSm, HiOutlineMinusSm } from 'react-icons/hi';
 import { MainButton } from '.';
 import { bgColorVariants } from '../../styles/stylesData';
+import { Heading } from './typography';
 
-const uniformPadding = tw`p-6 md:p-10`;
+const uniformPadding = tw`p-6 pb-10 md:p-10`;
 
 const AccordionContainer = styled.article((showInfo) => [
   tw`
@@ -34,19 +35,9 @@ const AccordionHeader = styled.header(({ showInfo }) => [
   showInfo && tw`border-dashed`,
 ]);
 
-const Title = styled.h1(() => [
-  tw`
-    font-mono
-    uppercase
-    text-primary-dark
-    tracking-widest
-    md:text-2xl
-  `,
-]);
-
 const AccordionContent = styled.main`
   ${uniformPadding};
-  padding: ${tw`pb-10 md:(px-12 pt-14 pb-16) xl:(px-16)`};
+  padding: ${tw`md:(px-12 pt-14 pb-16) xl:(px-16)`};
 `;
 
 const Accordion = ({ color, title, children }) => {
@@ -68,9 +59,9 @@ const Accordion = ({ color, title, children }) => {
     <AccordionContainer color={color} {...{ showInfo }}>
       <div onClick={handleClick} className="cursor-pointer">
         <AccordionHeader {...{ showInfo }}>
-          <Title>
+          <Heading variant="mono" noMargin noGutter>
             {showInfo ? 'Hide' : ''} {title}
-          </Title>
+          </Heading>
           <MainButton icon>
             {showInfo ? <HiOutlineMinusSm /> : <HiOutlinePlusSm />}
           </MainButton>
