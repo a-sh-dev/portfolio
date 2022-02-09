@@ -50,7 +50,7 @@ const NavItem = ({ link }) => {
     <>
       <Link href={url} passHref>
         <div className="group">
-          <ItemContainer key={id} className="group-hover:bg-primary-dark">
+          <ItemContainer className="group-hover:bg-primary-dark">
             <IconWrapper className="group-hover:text-white">{svg}</IconWrapper>
             <ItemName className="group-hover:text-white">{name}</ItemName>
           </ItemContainer>

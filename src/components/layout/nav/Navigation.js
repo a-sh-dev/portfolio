@@ -32,14 +32,13 @@ const NavBar = styled.nav(() => [
   `,
 ]);
 
-const LogoWrapper = styled.div(({ isNavOpen }) => [
+const LogoWrapper = styled.div(() => [
   tw`
     text-primary-dark
     text-6xl
     hover:text-primary-darkest
     md:text-8xl
   `,
-  // isNavOpen && tw`text-primary-light hover:text-white md:text-primary-dark`,
 
   uniformTransition,
 ]);
@@ -96,7 +95,7 @@ const Navigation = () => {
       <div className="relative">
         <Container maxWidth="max">
           <NavBar>
-            <LogoWrapper {...{ isNavOpen }}>
+            <LogoWrapper>
               <Link href="/" passHref>
                 <AshLogo />
               </Link>
@@ -108,7 +107,7 @@ const Navigation = () => {
               {navLinks.map((link) => {
                 return (
                   <>
-                    <NavItem link={link} />
+                    <NavItem key={link.id} link={link} />
                   </>
                 );
               })}

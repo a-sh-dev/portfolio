@@ -18,8 +18,8 @@ const NavMenuWrapper = styled.div(() => [
     h-screen
     z-40
     overflow-hidden
-    border-t-2
-    border-dotted
+    border-t
+    border-dashed
     border-t-primary-light
   `,
 

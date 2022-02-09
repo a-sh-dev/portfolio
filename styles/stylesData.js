@@ -71,6 +71,7 @@ export const fontSizeVariants = {
 export const headingVariants = {
   page: tw`text-5xl md:text-8xl`,
   sm: tw`text-4xl md:text-6xl`,
+  xs: tw`text-xl md:text-4xl`,
 };
 
 export const sectionVariants = {
