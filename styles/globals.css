@@ -73,6 +73,7 @@ a {
 }
 
 .content-visible {
+  border-bottom: 1px solid var(--color-css-primary-dark);
   opacity: 1;
   transition: height 0.3s ease-in-out, opacity 0.2s 0.2s ease-in-out;
 }

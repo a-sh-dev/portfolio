@@ -1,13 +1,11 @@
 import Image from 'next/image';
 import { useState, useEffect, useRef } from 'react';
 import tw, { styled } from 'twin.macro';
-import { Heading, Paragraph } from './typography';
 import { HiOutlinePlusSm, HiOutlineMinusSm } from 'react-icons/hi';
 import { MainButton } from '.';
-import { GridColumn, GridContainer } from './layout';
-import { bgColorVariants, uniformTransition } from '../../styles/stylesData';
+import { bgColorVariants } from '../../styles/stylesData';
 
-const uniformPadding = tw`p-4 md:p-6`;
+const uniformPadding = tw`p-6 md:p-10`;
 
 const AccordionContainer = styled.article((showInfo) => [
   tw`
@@ -29,6 +27,8 @@ const AccordionHeader = styled.header(({ showInfo }) => [
     uppercase
     border-b
     border-primary-dark
+    py-5
+    md:py-6
     hover:bg-black/5
   `,
   showInfo && tw`border-dashed`,
@@ -39,7 +39,6 @@ const Title = styled.h1(() => [
     font-mono
     uppercase
     text-primary-dark
-    font-bold
     tracking-widest
     md:text-2xl
   `,
@@ -47,16 +46,16 @@ const Title = styled.h1(() => [
 
 const AccordionContent = styled.main`
   ${uniformPadding};
+  padding: ${tw`pb-10`};
 `;
 
-const Accordion = ({ color }) => {
+const Accordion = ({ color, title, children }) => {
   const [showInfo, setShowInfo] = useState(false);
   const [contentHeight, setContentHeight] = useState();
 
   const heightRef = useRef();
 
   useEffect(() => {
-    console.log('heightRef--', heightRef);
     setContentHeight(`${heightRef.current.scrollHeight}px`);
   }, []);
 
@@ -64,16 +63,18 @@ const Accordion = ({ color }) => {
     setShowInfo(!showInfo);
   };
 
-  console.log(`showInfo--`, showInfo);
-
   return (
-    <AccordionContainer color="teal" {...{ showInfo }}>
-      <AccordionHeader {...{ showInfo }}>
-        <Title>{showInfo ? 'Hide' : 'Read'} full story</Title>
-        <MainButton icon onClick={handleClick}>
-          {showInfo ? <HiOutlineMinusSm /> : <HiOutlinePlusSm />}
-        </MainButton>
-      </AccordionHeader>
+    <AccordionContainer color={color} {...{ showInfo }}>
+      <div onClick={handleClick} className="cursor-pointer">
+        <AccordionHeader {...{ showInfo }}>
+          <Title>
+            {showInfo ? 'Hide' : ''} {title}
+          </Title>
+          <MainButton icon>
+            {showInfo ? <HiOutlineMinusSm /> : <HiOutlinePlusSm />}
+          </MainButton>
+        </AccordionHeader>
+      </div>
 
       <div
         className={
@@ -82,38 +83,7 @@ const Accordion = ({ color }) => {
         ref={heightRef}
         style={{ height: showInfo ? `${contentHeight}` : '0px' }}
       >
-        <AccordionContent {...{ showInfo }}>
-          <GridContainer>
-            <GridColumn col="span-4">
-              <div className="text-center">
-                <Image
-                  src="/images/ash_profile_smile.svg"
-                  alt="a-sh profile illustration"
-                  width={250}
-                  height={250}
-                />
-              </div>
-            </GridColumn>
-            <GridColumn col="span-8">
-              <div className="hidden md:block">
-                <Heading variant="sm">The story of a-sh.</Heading>
-              </div>
-              <div className="my-4 md:hidden">
-                <Heading variant="sm">
-                  The story of <br />
-                  a-sh.
-                </Heading>
-              </div>
-              <Paragraph>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Cupiditate eius sunt praesentium voluptates pariatur, ipsa
-                maiores nesciunt adipisci incidunt ipsum repudiandae corporis
-                perspiciatis sequi assumenda dolores accusamus repellendus
-                deleniti eveniet?
-              </Paragraph>
-            </GridColumn>
-          </GridContainer>
-        </AccordionContent>
+        <AccordionContent {...{ showInfo }}>{children}</AccordionContent>
       </div>
     </AccordionContainer>
   );

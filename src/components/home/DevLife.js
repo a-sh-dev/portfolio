@@ -3,10 +3,10 @@ import { Accordion } from '..';
 import { GridColumn, GridContainer } from '../layout';
 import { Heading, Paragraph } from '../typography';
 
-const FullStory = () => {
+const DevLife = () => {
   return (
     <>
-      <Accordion color="teal" title="full story">
+      <Accordion color="blue" title="life as a developer">
         <GridContainer>
           <GridColumn col="span-4">
             <div className="text-center">
@@ -41,4 +41,4 @@ const FullStory = () => {
   );
 };
 
-export default FullStory;
+export default DevLife;

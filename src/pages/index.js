@@ -1,6 +1,13 @@
 import Image from 'next/image';
 import 'twin.macro';
-import { FullStory, MainHero, Quote, Skills, Tldr } from '../components/home';
+import {
+  DevLife,
+  FullStory,
+  MainHero,
+  Quote,
+  Skills,
+  Tldr,
+} from '../components/home';
 import { Container } from '../components/layout';
 
 export default function Home() {
@@ -10,9 +17,8 @@ export default function Home() {
       <Container>
         <Tldr />
         <FullStory />
-
-        <section>Life as a Developer - Accordion Bar</section>
-        <section>Life outside Coding - Accordion Bar</section>
+        <DevLife />
+        <section>Random Fun Facts</section>
         <section>
           <Skills />
         </section>
