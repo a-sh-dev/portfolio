@@ -105,11 +105,7 @@ const Navigation = () => {
             </NavLine>
             <NavMenu>
               {navLinks.map((link) => {
-                return (
-                  <>
-                    <NavItem key={link.id} link={link} />
-                  </>
-                );
+                return <NavItem key={link.id} link={link} />;
               })}
             </NavMenu>
             <NavLineEnd>

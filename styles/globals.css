@@ -65,3 +65,14 @@ a {
   padding-inline: 0.2rem;
   letter-spacing: -0.25rem;
 }
+
+.accordion-content {
+  opacity: 0;
+  height: 0;
+  transition: opacity 0.2s ease-in-out, height 0.3s 0.2s ease-in-out;
+}
+
+.content-visible {
+  opacity: 1;
+  transition: height 0.3s ease-in-out, opacity 0.2s 0.2s ease-in-out;
+}

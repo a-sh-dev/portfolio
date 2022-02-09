@@ -7,7 +7,7 @@ const Wrapper = tw.article`
 
 const Layout = styled.div(() => [
   tw`
-    bg-red-300/20
+    
   `,
   ({ layout = 'grid' }) => layoutVariants[layout],
 ]);

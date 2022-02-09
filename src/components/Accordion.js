@@ -1,21 +1,23 @@
 import Image from 'next/image';
-import { useState } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import tw, { styled } from 'twin.macro';
 import { Heading, Paragraph } from './typography';
 import { HiOutlinePlusSm, HiOutlineMinusSm } from 'react-icons/hi';
 import { MainButton } from '.';
 import { GridColumn, GridContainer } from './layout';
-import { bgColorVariants } from '../../styles/stylesData';
+import { bgColorVariants, uniformTransition } from '../../styles/stylesData';
 
 const uniformPadding = tw`p-4 md:p-6`;
 
-const AccordionContainer = styled.article(() => [
+const AccordionContainer = styled.article((showInfo) => [
   tw`
     relative
     border-b
     border-primary-dark
   `,
   ({ color = 'light' }) => bgColorVariants[color],
+
+  showInfo && tw`border-b-0`,
 ]);
 
 const AccordionHeader = styled.header(({ showInfo }) => [
@@ -27,6 +29,7 @@ const AccordionHeader = styled.header(({ showInfo }) => [
     uppercase
     border-b
     border-primary-dark
+    hover:bg-black/5
   `,
   showInfo && tw`border-dashed`,
 ]);
@@ -38,63 +41,80 @@ const Title = styled.h1(() => [
     text-primary-dark
     font-bold
     tracking-widest
-    md:text-xl
+    md:text-2xl
   `,
 ]);
 
-const AccordionContent = styled.main(() => [
-  uniformPadding,
-  tw`
-    
-  `,
-]);
+const AccordionContent = styled.main`
+  ${uniformPadding};
+`;
 
 const Accordion = ({ color }) => {
-  const [showInfo, setShowInfo] = useState(true);
+  const [showInfo, setShowInfo] = useState(false);
+  const [contentHeight, setContentHeight] = useState();
+
+  const heightRef = useRef();
+
+  useEffect(() => {
+    console.log('heightRef--', heightRef);
+    setContentHeight(`${heightRef.current.scrollHeight}px`);
+  }, []);
 
   const handleClick = () => {
     setShowInfo(!showInfo);
   };
 
+  console.log(`showInfo--`, showInfo);
+
   return (
-    <AccordionContainer color="teal">
+    <AccordionContainer color="teal" {...{ showInfo }}>
       <AccordionHeader {...{ showInfo }}>
-        <Title>Read full story</Title>
+        <Title>{showInfo ? 'Hide' : 'Read'} full story</Title>
         <MainButton icon onClick={handleClick}>
           {showInfo ? <HiOutlineMinusSm /> : <HiOutlinePlusSm />}
         </MainButton>
       </AccordionHeader>
-      <AccordionContent>
-        <GridContainer>
-          <GridColumn col="span-4">
-            <div className="text-center ">
-              <Image
-                src="/images/ash_profile_smile.svg"
-                alt="a-sh profile illustration"
-                width={250}
-                height={250}
-              />
-            </div>
-          </GridColumn>
-          <GridColumn col="span-8">
-            <div className="hidden md:block">
-              <Heading variant="sm">The story of a-sh.</Heading>
-            </div>
-            <div className="my-4 md:hidden">
-              <Heading variant="sm">
-                The story of <br />
-                a-sh.
-              </Heading>
-            </div>
-            <Paragraph>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Cupiditate eius sunt praesentium voluptates pariatur, ipsa maiores
-              nesciunt adipisci incidunt ipsum repudiandae corporis perspiciatis
-              sequi assumenda dolores accusamus repellendus deleniti eveniet?
-            </Paragraph>
-          </GridColumn>
-        </GridContainer>
-      </AccordionContent>
+
+      <div
+        className={
+          showInfo ? 'accordion-content content-visible' : 'accordion-content'
+        }
+        ref={heightRef}
+        style={{ height: showInfo ? `${contentHeight}` : '0px' }}
+      >
+        <AccordionContent {...{ showInfo }}>
+          <GridContainer>
+            <GridColumn col="span-4">
+              <div className="text-center">
+                <Image
+                  src="/images/ash_profile_smile.svg"
+                  alt="a-sh profile illustration"
+                  width={250}
+                  height={250}
+                />
+              </div>
+            </GridColumn>
+            <GridColumn col="span-8">
+              <div className="hidden md:block">
+                <Heading variant="sm">The story of a-sh.</Heading>
+              </div>
+              <div className="my-4 md:hidden">
+                <Heading variant="sm">
+                  The story of <br />
+                  a-sh.
+                </Heading>
+              </div>
+              <Paragraph>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Cupiditate eius sunt praesentium voluptates pariatur, ipsa
+                maiores nesciunt adipisci incidunt ipsum repudiandae corporis
+                perspiciatis sequi assumenda dolores accusamus repellendus
+                deleniti eveniet?
+              </Paragraph>
+            </GridColumn>
+          </GridContainer>
+        </AccordionContent>
+      </div>
     </AccordionContainer>
   );
 };

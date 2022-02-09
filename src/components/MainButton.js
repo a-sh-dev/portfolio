@@ -44,13 +44,13 @@ const IconWrapper = styled.span(() => [
   `,
 ]);
 
-const MainButton = ({ icon, outlined, label, children }) => {
+const MainButton = ({ icon, outlined, label, onClick, children }) => {
   return icon ? (
-    <BtnIcon {...{ outlined }} className="h-fit">
+    <BtnIcon {...{ outlined }} className="h-fit" onClick={onClick}>
       <div className="h-fit aspect-square">{children}</div>
     </BtnIcon>
   ) : (
-    <BtnContainer {...{ outlined }}>
+    <BtnContainer {...{ outlined }} onClick={onClick}>
       {label}
       <IconWrapper>{children}</IconWrapper>
     </BtnContainer>
