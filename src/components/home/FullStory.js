@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import { Accordion } from '..';
 import { GridColumn, GridContainer } from '../layout';
-import { Heading, Paragraph } from '../typography';
+import { Heading, Paragraph, SubHeading2 } from '../typography';
 
 const FullStory = () => {
   return (
@@ -22,12 +22,13 @@ const FullStory = () => {
             <div className="hidden md:block">
               <Heading variant="sm">The story of a-sh.</Heading>
             </div>
-            <div className="my-4 md:hidden">
+            <div className="my-2 md:hidden">
               <Heading variant="sm">
                 The story of <br />
                 a-sh.
               </Heading>
             </div>
+            <SubHeading2>The journey so far...</SubHeading2>
             <Paragraph>
               Lorem ipsum dolor sit, amet consectetur adipisicing elit.
               Cupiditate eius sunt praesentium voluptates pariatur, ipsa maiores

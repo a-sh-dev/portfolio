@@ -5,17 +5,20 @@ const Wrapper = tw.article`
   relative
 `;
 
-const Layout = styled.div(() => [
+const Layout = styled.div(({ flowCol }) => [
   tw`
     
   `,
   ({ layout = 'grid' }) => layoutVariants[layout],
+  flowCol && tw`grid-flow-col`,
 ]);
 
-const GridContainer = ({ layout, children }) => {
+const GridContainer = ({ flowCol, layout, children }) => {
   return (
     <Wrapper>
-      <Layout layout={layout}>{children}</Layout>
+      <Layout layout={layout} {...{ flowCol }}>
+        {children}
+      </Layout>
     </Wrapper>
   );
 };

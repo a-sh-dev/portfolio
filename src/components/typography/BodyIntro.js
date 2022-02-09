@@ -11,10 +11,8 @@ const StyledParagraph = styled.p(() => [
    font-semibold
    tracking-tight
    mb-6
-  //  md:pr-12
    md:text-xl
    md:leading-relaxed
-  //  xl:pr-16
    xl:text-2xl
    xl:leading-10
   `,

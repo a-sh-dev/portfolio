@@ -66,6 +66,11 @@ a {
   letter-spacing: -0.25rem;
 }
 
+.em-dash-title {
+  padding-right: 0.5rem;
+  letter-spacing: -0.75rem;
+}
+
 .accordion-content {
   opacity: 0;
   height: 0;

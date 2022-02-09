@@ -11,8 +11,10 @@ const StyledSubHeading = styled.p(() => [
    text-lg
    md:my-4
    md:text-xl
+   md:mb-8
    xl:text-2xl
    xl:leading-tight
+   xl:mb-14
   `,
   ({ color = 'dark' }) => textColorVariants[color],
   ({ align = 'left' }) => textAlignVariants[align],

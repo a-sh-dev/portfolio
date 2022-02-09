@@ -46,7 +46,7 @@ const Title = styled.h1(() => [
 
 const AccordionContent = styled.main`
   ${uniformPadding};
-  padding: ${tw`pb-10`};
+  padding: ${tw`pb-10 md:(px-12 pt-14 pb-16) xl:(px-16)`};
 `;
 
 const Accordion = ({ color, title, children }) => {
