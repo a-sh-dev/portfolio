@@ -9,9 +9,9 @@ const StyledSubHeading = styled.p(() => [
   tw`
    font-mono 
    text-lg
-   md:my-4
+   mb-8
+   md:mt-4
    md:text-xl
-   md:mb-8
    xl:text-2xl
    xl:leading-tight
    xl:mb-14

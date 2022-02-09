@@ -45,6 +45,8 @@ export const textAlignVariants = {
   center: tw`text-center`,
   right: tw`text-right`,
   justify: tw`text-justify`,
+  autoL: tw`text-center md:text-left`,
+  autoR: tw`text-center md:text-right`,
 };
 
 export const fontStyleVariants = {

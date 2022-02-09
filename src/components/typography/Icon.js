@@ -5,7 +5,7 @@ const IconWrapper = styled.span(({ nudgeTop }) => [
   tw`
     inline-block
     align-baseline
-    mx-1.5
+    mx-1
     text-lg
     relative
   `,

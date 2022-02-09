@@ -27,7 +27,7 @@ const AccordionHeader = styled.header(({ showInfo }) => [
     uppercase
     border-b
     border-primary-dark
-    py-5
+    py-4
     md:py-6
     hover:bg-black/5
   `,
@@ -56,8 +56,9 @@ const Accordion = ({ color, title, children }) => {
   const heightRef = useRef();
 
   useEffect(() => {
+    console.log('--HEIGHT');
     setContentHeight(`${heightRef.current.scrollHeight}px`);
-  }, []);
+  }, [contentHeight]);
 
   const handleClick = () => {
     setShowInfo(!showInfo);
