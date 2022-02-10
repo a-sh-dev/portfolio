@@ -1,5 +1,5 @@
 import Heading from './Heading';
-import Icon from './Icon';
+import TextIcon from './TextIcon';
 import Paragraph from './Paragraph';
 import SubHeading from './SubHeading';
 import SubHeading2 from './SubHeading2';
@@ -11,7 +11,7 @@ import EmMed from './EmMed';
 
 export {
   Heading,
-  Icon,
+  TextIcon,
   Paragraph,
   SubHeading,
   SubHeading2,

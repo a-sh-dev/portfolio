@@ -1,7 +1,13 @@
 import Image from 'next/image';
 import { Collapsible } from '..';
 import { GridColumn, GridContainer } from '../layout';
-import { EmMed, Heading, Icon, Paragraph, SubHeading2 } from '../typography';
+import {
+  EmMed,
+  Heading,
+  TextIcon,
+  Paragraph,
+  SubHeading2,
+} from '../typography';
 import { FaRegGrinSquint } from 'react-icons/fa';
 
 const FullStory = () => {
@@ -48,9 +54,9 @@ const FullStory = () => {
               Last but not least, <strong>a-sh</strong> is naturally
               <EmMed> a shy human</EmMed>. Although <u>not</u> a sweet tooth,
               <strong> a-sh</strong> is <EmMed>a sweet-heart.</EmMed>
-              <Icon>
+              <TextIcon>
                 <FaRegGrinSquint aria-hidden="true" />
-              </Icon>
+              </TextIcon>
             </Paragraph>
           </GridColumn>
         </GridContainer>

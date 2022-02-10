@@ -14,7 +14,7 @@ const IconWrapper = styled.span(({ nudgeTop }) => [
   ({ color = 'darkest' }) => textColorVariants[color],
 ]);
 
-const Icon = ({ color, nudgeTop, children }) => {
+const TextIcon = ({ color, nudgeTop, children }) => {
   return (
     <IconWrapper color={color} {...{ nudgeTop }}>
       {children}
@@ -22,4 +22,4 @@ const Icon = ({ color, nudgeTop, children }) => {
   );
 };
 
-export default Icon;
+export default TextIcon;

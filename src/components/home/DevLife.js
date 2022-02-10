@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import { Collapsible } from '..';
 import { GridColumn, GridContainer } from '../layout';
-import { Heading, Icon, Paragraph, SubHeading2 } from '../typography';
+import { Heading, TextIcon, Paragraph, SubHeading2 } from '../typography';
 import { HiOutlineSparkles } from 'react-icons/hi';
 
 const DevLife = () => {
@@ -47,9 +47,9 @@ const DevLife = () => {
               better and improve productivity. Therefore, I welcome other
               people&apos;s constructive feedback and critiques
               <span className="em-dash">---</span>they are precious!
-              <Icon>
+              <TextIcon>
                 <HiOutlineSparkles />
-              </Icon>
+              </TextIcon>
             </Paragraph>
           </GridColumn>
         </GridContainer>

@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import tw, { styled } from 'twin.macro';
 import { SloganSticker } from '../..';
-import { Em, Icon } from '../../typography';
+import { Em, TextIcon } from '../../typography';
 import { useAppContext } from '../../../context';
 import { currentYear } from '../../../utils';
 import { navLinks, copyright } from '../../../data';
@@ -112,9 +112,9 @@ const NavMenuMobile = () => {
         <NavMenuWrapper>
           <Header>
             <Em>Is it me you&apos;re looking for~?</Em>
-            <Icon color="teal" nudgeTop>
+            <TextIcon color="teal" nudgeTop>
               <HiMusicNote aria-hidden="true" />
-            </Icon>
+            </TextIcon>
           </Header>
           <NavMenu>
             {navLinks.map((navItem) => {
@@ -137,9 +137,9 @@ const NavMenuMobile = () => {
                 &copy; {currentYear}
                 <span className="em-dash">--------</span> By a-sh.
                 <br /> {copyright.nav}
-                <Icon color="teal">
-                  <GiCoffeePot />
-                </Icon>
+                <TextIcon color="teal">
+                  <GiCoffeePot aria-hidden="true" />
+                </TextIcon>
               </div>
               <div className="mt-4 font-normal text-xs tracking-normal">
                 {copyright.siteInfo}

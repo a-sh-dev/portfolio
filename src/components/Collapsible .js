@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { useState, useEffect, useRef } from 'react';
+import { useState } from 'react';
 import tw, { styled } from 'twin.macro';
 import {
   HiOutlinePlusSm,
@@ -73,7 +73,11 @@ const Collapsible = ({ color, title, children }) => {
             {showInfo ? 'Hide' : ''} {title}
           </Heading>
           <MainButton icon>
-            {showInfo ? <HiOutlineMinusSm /> : <HiOutlinePlusSm />}
+            {showInfo ? (
+              <HiOutlineMinusSm aria-hidden="true" />
+            ) : (
+              <HiOutlinePlusSm aria-hidden="true" />
+            )}
           </MainButton>
         </Header>
 
@@ -81,7 +85,7 @@ const Collapsible = ({ color, title, children }) => {
           <Content {...{ showInfo }}>
             {children}
             <Footer>
-              <HiOutlineChevronUp /> Hide
+              <HiOutlineChevronUp aria-hidden="true" /> Hide
             </Footer>
           </Content>
         )}
