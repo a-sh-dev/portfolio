@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { Accordion } from '..';
+import { Collapsible } from '..';
 import { GridColumn, GridContainer } from '../layout';
 import { Heading, Icon, Paragraph, SubHeading2 } from '../typography';
 import { HiOutlineSparkles } from 'react-icons/hi';
@@ -7,7 +7,7 @@ import { HiOutlineSparkles } from 'react-icons/hi';
 const DevLife = () => {
   return (
     <>
-      <Accordion color="blue" title="life as a developer">
+      <Collapsible color="blue" title="life as a developer">
         <GridContainer flowCol>
           <GridColumn col="span-4" start="start-9">
             <div className="text-center my-4 md:my-0 w-full md:grid">
@@ -52,7 +52,7 @@ const DevLife = () => {
             </Paragraph>
           </GridColumn>
         </GridContainer>
-      </Accordion>
+      </Collapsible>
     </>
   );
 };

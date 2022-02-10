@@ -8,9 +8,9 @@ import {
   SubHeading,
   SubHeading2,
   AHref,
+  Em,
 } from '../typography';
 import { FaRobot } from 'react-icons/fa';
-import Em from '../typography/Em';
 
 const HeaderWrapper = tw.article`
   col-span-full

@@ -3,14 +3,14 @@ import { fontSizeVariants } from '../../../styles/stylesData';
 
 const StyledEm = styled.span(() => [
   tw`
-    font-mono
+    font-semibold
     italic
   `,
   ({ size = '' }) => fontSizeVariants[size],
 ]);
 
-const Em = ({ size, children }) => {
+const EmSemi = ({ size, children }) => {
   return <StyledEm size={size}>{children}</StyledEm>;
 };
 
-export default Em;
+export default EmSemi;
