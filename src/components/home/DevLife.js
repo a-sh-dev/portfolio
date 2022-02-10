@@ -21,16 +21,17 @@ const DevLife = () => {
           </GridColumn>
           <GridColumn col="span-8" start="start-1">
             <Heading variant="sm" align="autoL">
-              Designer<span className="em-dash-title">---</span>Developer
-              Duality
+              Designer<span className="em-dash-title">---</span>Developer Hybrid
             </Heading>
             <SubHeading2 align="autoL">The good and the bad</SubHeading2>
             <Paragraph>
-              During planning and development, I tend to spend <em>extra </em>
-              time deciding on the right font, colours and branding for my
-              project. Perhaps, that is the downside of having this duality. But
-              on the other hand, I enjoy problem-solving, translating subject
-              matters by integrating the technical and the visual aspects of
+              During planning and development for my projects, I tend to spend
+              <em> extra </em>
+              time deciding on the branding for the UI, such as the right font,
+              colours, and images. So, perhaps, that is the downside of having
+              this hybrid. However, that extra time is purposeful as part of the
+              problem-solving process. I enjoy translating subject matters
+              through integrating the technical and the visual aspects of
               achieving a well-presented UI and effective UX in every project.
             </Paragraph>
             <Paragraph>
@@ -43,7 +44,7 @@ const DevLife = () => {
               I am also driven by curiosity, eager to learn new things. Somehow,
               I find it enjoyable to read other people&apos;s source code to
               figure out how things work. Especially if it would help me code
-              better and improve productivity. Hence, I value other
+              better and improve productivity. Therefore, I welcome other
               people&apos;s constructive feedback and critiques
               <span className="em-dash">---</span>they are precious!
               <Icon>
