@@ -4,7 +4,8 @@ import { layoutVariants, sectionVariants } from '../../../styles/stylesData';
 const StyledSection = styled.section(() => [
   tw`
     py-14
-    md:py-20
+    md:py-28
+    xl:py-44
     border-primary-dark
   `,
   ({ variant = 'default' }) => sectionVariants[variant],
