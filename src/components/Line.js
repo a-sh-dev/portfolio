@@ -21,8 +21,10 @@ const StyledLine = styled.div(() => [
 
 const Line = ({ color, noGutter, children }) => {
   return (
-    <Wrapper {...{ noGutter }}>
-      <StyledLine color={color}>{children}</StyledLine>
+    <Wrapper {...{ noGutter }} aria-hidden="true">
+      <StyledLine color={color} aria-hidden="true">
+        {children}
+      </StyledLine>
     </Wrapper>
   );
 };
