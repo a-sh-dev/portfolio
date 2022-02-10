@@ -4,7 +4,7 @@ import {
   textColorVariants,
 } from '../../../styles/stylesData';
 
-const StyledSubHeading = styled.h2(() => [
+const StyledSubHeading = styled.h2(({ noMargin }) => [
   tw`
    font-sans 
    font-bold
@@ -16,14 +16,16 @@ const StyledSubHeading = styled.h2(() => [
    xl:text-5xl
    xl:leading-tight
   `,
+  noMargin && tw`m-0 md:m-0`,
+  ,
   ({ color = 'dark' }) => textColorVariants[color],
   ({ align = 'left' }) => textAlignVariants[align],
 ]);
 
-const SubHeading = ({ align, color, children }) => {
+const SubHeading = ({ noMargin, align, color, children }) => {
   return (
     <>
-      <StyledSubHeading align={align} color={color}>
+      <StyledSubHeading align={align} color={color} {...{ noMargin }}>
         {children}
       </StyledSubHeading>
     </>

@@ -1,17 +1,28 @@
 import tw, { styled } from 'twin.macro';
+import { Heading, SubHeading } from './typography';
 
-const IconWrapper = styled.div(() => [
+const Wrapper = styled.div(() => [
   tw`
   
   `,
 ]);
 
-const Skills = () => {
+const Header = styled.header(() => [
+  tw`
+    
+  `,
+]);
+
+const Table = () => {
   return (
-    <div>
-      <h1>Core Skills & Capabilities Component</h1>
-    </div>
+    <Wrapper>
+      <Header>
+        <Heading variant="xs" noMargin>
+          Fullstack capable front-end development
+        </Heading>
+      </Header>
+    </Wrapper>
   );
 };
 
-export default Skills;
+export default Table;

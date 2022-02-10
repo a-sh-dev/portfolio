@@ -60,7 +60,7 @@ export const fontStyleVariants = {
 
 export const fontSizeVariants = {
   paragraph: tw`text-base md:text-lg xl:text-xl xl:leading-9`,
-  base: tw`text-base`, // 1rem
+  base: tw`text-sm md:text-base`, // 1rem
   sm: tw`text-sm`, // 0.875rem
   xs: tw`text-xs`, // 0.75rem
   lg: tw`text-lg`, // 1.125rem
@@ -76,7 +76,7 @@ const monoBase = `font-mono uppercase text-base tracking-widest md:text-2xl`;
 export const headingVariants = {
   page: tw`text-5xl md:text-8xl`,
   sm: tw`text-4xl md:text-6xl`,
-  xs: tw`text-xl md:text-4xl`,
+  xs: tw`text-2xl md:text-4xl`,
   mono: tw`${monoBase} font-normal`,
   monoBold: tw`${monoBase} font-bold`,
 };
@@ -116,4 +116,10 @@ export const gridColStartVariants = {
   'start-10': tw`col-start-1 md:col-start-10`,
   'start-11': tw`col-start-1 md:col-start-11`,
   'start-12': tw`col-start-1 md:col-start-12`,
+};
+
+export const iconSizeVariants = {
+  normal: tw`text-4xl w-20 h-20`,
+  sm: tw`text-2xl w-14 h-14`,
+  lg: tw`text-5xl w-28 h-28`,
 };
