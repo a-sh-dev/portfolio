@@ -59,6 +59,7 @@ export const fontStyleVariants = {
 };
 
 export const fontSizeVariants = {
+  paragraph: tw`text-base md:text-lg xl:text-xl xl:leading-9`,
   base: tw`text-base`, // 1rem
   sm: tw`text-sm`, // 0.875rem
   xs: tw`text-xs`, // 0.75rem
