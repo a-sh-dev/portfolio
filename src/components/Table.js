@@ -1,5 +1,5 @@
 import tw, { styled } from 'twin.macro';
-import { BodyIntro, Heading, SubHeading, TextIcon } from './typography';
+import { BodyIntro, Heading, Tag } from './typography';
 import { HiOutlineArrowSmDown } from 'react-icons/hi';
 
 const Wrapper = styled.div(() => [
@@ -19,10 +19,10 @@ const Header = styled.header(() => [
   `,
 ]);
 
-const SubHeader = styled.div(() => [
+const TableRow = styled.div(() => [
   tw`
     pt-4
-    pb-2
+    pb-4
     flex
     items-center
     gap-1.5
@@ -37,21 +37,28 @@ const Content = styled.div(() => [
   `,
 ]);
 
-const Table = () => {
+const Table = ({ title, subTitle, children }) => {
   return (
     <Wrapper>
       <Header>
         <Heading variant="xs" noMargin noGutter>
-          Fullstack capable frontend development
+          {title}
         </Heading>
       </Header>
+
       <Content>
-        <SubHeader>
+        <TableRow>
           <span className="text-primary-dark text-2xl">
             <HiOutlineArrowSmDown aria-hidden="true" />
           </span>
           <BodyIntro noMargin>Languages</BodyIntro>
-        </SubHeader>
+        </TableRow>
+
+        <div className="flex flex-wrap">
+          <Tag>HTML5</Tag>
+          <Tag>CSS3</Tag>
+          <Tag>Saas</Tag>
+        </div>
       </Content>
     </Wrapper>
   );

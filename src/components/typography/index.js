@@ -8,7 +8,7 @@ import AHref from './AHref';
 import Em from './Em';
 import EmSemi from './EmSemi';
 import EmMed from './EmMed';
-import Tags from './Tags';
+import Tag from './Tag';
 
 export {
   Heading,
@@ -21,5 +21,5 @@ export {
   Em,
   EmSemi,
   EmMed,
-  Tags,
+  Tag,
 };
