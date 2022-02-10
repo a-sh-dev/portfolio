@@ -127,7 +127,7 @@ export const gridColAlignVariants = {
 };
 
 export const iconSizeVariants = {
-  normal: tw`text-4xl w-20 h-20 md:text-5xl md:w-24 md:h-24 xl:w-28 xl:h-28`,
+  normal: tw`text-4xl w-20 h-20 md:text-5xl md:w-24 md:h-24 xl:text-6xl xl:w-36 xl:h-36`,
   sm: tw`text-2xl w-14 h-14`,
   lg: tw`text-5xl w-28 h-28`,
 };

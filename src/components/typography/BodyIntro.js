@@ -4,7 +4,7 @@ import {
   textColorVariants,
 } from '../../../styles/stylesData';
 
-const StyledParagraph = styled.p(() => [
+const StyledParagraph = styled.p(({ noMargin }) => [
   tw`
    font-sans 
    text-lg
@@ -16,14 +16,15 @@ const StyledParagraph = styled.p(() => [
    xl:text-2xl
    xl:leading-10
   `,
+  noMargin && tw`m-0`,
   ({ color = 'dark' }) => textColorVariants[color],
   ({ align = 'left' }) => textAlignVariants[align],
 ]);
 
-const BodyIntro = ({ align, color, children }) => {
+const BodyIntro = ({ noMargin, align, color, children }) => {
   return (
     <>
-      <StyledParagraph color={color} align={align}>
+      <StyledParagraph color={color} align={align} {...{ noMargin }}>
         {children}
       </StyledParagraph>
     </>

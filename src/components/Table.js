@@ -1,13 +1,11 @@
 import tw, { styled } from 'twin.macro';
-import { Heading, SubHeading, TextIcon } from './typography';
+import { BodyIntro, Heading, SubHeading, TextIcon } from './typography';
 import { HiOutlineArrowSmDown } from 'react-icons/hi';
 
 const Wrapper = styled.div(() => [
   tw`
-    min-w-min
     mb-6
-    bg-red-300/30
-    `,
+  `,
 ]);
 
 const Header = styled.header(() => [
@@ -17,6 +15,7 @@ const Header = styled.header(() => [
     mt-4
     md:mt-0
     py-4
+
   `,
 ]);
 
@@ -48,10 +47,10 @@ const Table = () => {
       </Header>
       <Content>
         <SubHeader>
-          <span className="text-primary-dark">
+          <span className="text-primary-dark text-2xl">
             <HiOutlineArrowSmDown aria-hidden="true" />
           </span>
-          Languages
+          <BodyIntro noMargin>Languages</BodyIntro>
         </SubHeader>
       </Content>
     </Wrapper>
