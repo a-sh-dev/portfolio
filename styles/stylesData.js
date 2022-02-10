@@ -101,6 +101,8 @@ export const gridColVariants = {
   'span-8': tw`md:col-span-8`, // 12/8
   'span-9': tw`md:col-span-9`, // 12/9
   'span-10': tw`md:col-span-10`, // 12/10
+  auto: tw`md:auto-cols-max`,
+  full: tw`md:col-span-full`,
 };
 
 export const gridColStartVariants = {
@@ -118,8 +120,14 @@ export const gridColStartVariants = {
   'start-12': tw`col-start-1 md:col-start-12`,
 };
 
+export const gridColAlignVariants = {
+  left: tw`justify-self-start`,
+  right: tw`justify-self-end`,
+  center: tw`justify-self-center`,
+};
+
 export const iconSizeVariants = {
-  normal: tw`text-4xl w-20 h-20`,
+  normal: tw`text-4xl w-20 h-20 md:text-5xl md:w-24 md:h-24 xl:w-28 xl:h-28`,
   sm: tw`text-2xl w-14 h-14`,
   lg: tw`text-5xl w-28 h-28`,
 };

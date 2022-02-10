@@ -7,6 +7,7 @@ const StyledContainer = styled.div(() => [
   tw`
     px-8
     mx-auto
+    md:container
     md:px-16
     xl:px-0
   // border-gray-600
