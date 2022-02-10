@@ -1,7 +1,7 @@
 import tw, { styled } from 'twin.macro';
-import { Icon, Line, Table } from '..';
+import { Icon, Line, Table, TableRow } from '..';
 import { GridColumn, GridContainer, Section } from '../layout';
-import { Heading } from '../typography';
+import { Heading, Tag } from '../typography';
 import { HiOutlineCode, HiOutlineColorSwatch } from 'react-icons/hi';
 
 const Skill = styled.div(() => [
@@ -21,6 +21,14 @@ const SkillHeader = styled.header(() => [
   `,
 ]);
 
+const SkillIcon = styled.div(() => [
+  tw`
+    hidden
+    md:z-20 md:block md:relative md:-top-2
+    xl:-top-4
+  `,
+]);
+
 const Skills = () => {
   return (
     <Section variant="clean">
@@ -35,16 +43,27 @@ const Skills = () => {
           </GridColumn>
 
           <GridColumn col="span-2" align="center" relative>
-            <div className="hidden md:z-20 md:block md:relative md:-top-2 xl:-top-4">
+            <SkillIcon aria-hidden="true">
               <Icon>
                 <HiOutlineCode aria-hidden="true" />
               </Icon>
-            </div>
+            </SkillIcon>
           </GridColumn>
 
           <GridColumn col="span-8">
-            <Table />
-            <Table />
+            <Table title="Fullstack capable frontend development">
+              <TableRow subtitle="Languages">
+                Skill lists here (tags)
+                <Tag>HTML5</Tag>
+                <Tag>CSS3</Tag>
+              </TableRow>
+
+              <TableRow subtitle="Visual communication Design">
+                Skill lists here (tags)
+                <Tag>HTML5</Tag>
+                <Tag>CSS3</Tag>
+              </TableRow>
+            </Table>
           </GridColumn>
         </GridContainer>
       </Skill>

@@ -7,6 +7,7 @@ import Collapsible from './Collapsible ';
 import MainButton from './MainButton';
 import Icon from './Icon';
 import Table from './Table';
+import TableRow from './TableRow';
 
 export {
   Meta,
@@ -18,4 +19,5 @@ export {
   MainButton,
   Icon,
   Table,
+  TableRow,
 };

@@ -87,8 +87,11 @@ export const sectionVariants = {
   clean: tw`border-0`,
 };
 
+const gridGap = `gap-x-5 md:gap-x-7 xl:gap-x-10`;
+
 export const layoutVariants = {
-  grid: tw`grid grid-cols-4 gap-x-5 md:gap-x-7 md:grid-cols-12 xl:gap-x-10`,
+  grid: tw`grid grid-cols-4 md:grid-cols-12 ${gridGap}`,
+  'grid-cols-8': tw`grid md:grid-cols-8 ${gridGap}`,
 };
 
 export const gridColVariants = {

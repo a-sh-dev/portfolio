@@ -19,16 +19,6 @@ const Header = styled.header(() => [
   `,
 ]);
 
-const TableRow = styled.div(() => [
-  tw`
-    pt-4
-    pb-4
-    flex
-    items-center
-    gap-1.5
-  `,
-]);
-
 const Content = styled.div(() => [
   tw`
     border-primary-dark
@@ -37,7 +27,7 @@ const Content = styled.div(() => [
   `,
 ]);
 
-const Table = ({ title, subTitle, children }) => {
+const Table = ({ title, children }) => {
   return (
     <Wrapper>
       <Header>
@@ -46,20 +36,7 @@ const Table = ({ title, subTitle, children }) => {
         </Heading>
       </Header>
 
-      <Content>
-        <TableRow>
-          <span className="text-primary-dark text-2xl">
-            <HiOutlineArrowSmDown aria-hidden="true" />
-          </span>
-          <BodyIntro noMargin>Languages</BodyIntro>
-        </TableRow>
-
-        <div className="flex flex-wrap">
-          <Tag>HTML5</Tag>
-          <Tag>CSS3</Tag>
-          <Tag>Saas</Tag>
-        </div>
-      </Content>
+      <Content>{children}</Content>
     </Wrapper>
   );
 };
