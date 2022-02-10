@@ -6,9 +6,11 @@ const AppLayout = ({ children }) => {
   return (
     <>
       <Meta />
-      <Navigation />
-      {children}
-      <Footer />
+      <div className="flex flex-col min-h-screen">
+        <Navigation />
+        <div className="flex-1">{children}</div>
+        <Footer />
+      </div>
     </>
   );
 };
