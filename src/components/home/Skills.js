@@ -14,7 +14,7 @@ const Skills = () => {
       <GridContainer>
         <GridColumn col="span-3">
           <Heading variant="monoBold" align="left">
-            Core skills & capabilities
+            Core Tech skills
           </Heading>
         </GridColumn>
         <div>

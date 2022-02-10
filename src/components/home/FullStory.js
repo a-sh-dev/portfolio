@@ -20,17 +20,9 @@ const FullStory = () => {
             </div>
           </GridColumn>
           <GridColumn col="span-8">
-            <div className="hidden md:block">
-              <Heading variant="sm" align="autoL">
-                The story of a-sh.
-              </Heading>
-            </div>
-            <div className="md:hidden">
-              <Heading variant="sm" align="autoL">
-                The story of <br />
-                a-sh.
-              </Heading>
-            </div>
+            <Heading variant="sm" align="autoL">
+              The story of <span className="whitespace-nowrap">a-sh.</span>
+            </Heading>
             <SubHeading2 align="autoL">The journey so far...</SubHeading2>
             <Paragraph>
               <strong>a-sh</strong> is <EmMed>Angeline S Hentri</EmMed>, who
@@ -43,8 +35,8 @@ const FullStory = () => {
               and great to work with.
             </Paragraph>
             <Paragraph>
-              In addition to the newly gained coding skills,{' '}
-              <strong>a-sh</strong> has been <EmMed>a skilful helper</EmMed>{' '}
+              In addition to the newly gained coding skills,
+              <strong> a-sh </strong> has been <EmMed>a skilful helper </EmMed>
               with 10+ years of solid experience working in multidisciplinary
               design agencies. She loves branding, illustration, typography and
               can be a little bit nerdy with typesetting and file management.
@@ -53,11 +45,11 @@ const FullStory = () => {
               and success.
             </Paragraph>
             <Paragraph>
-              Last but not least, <strong>a-sh</strong> is naturally{' '}
-              <EmMed>a shy human</EmMed>. Although <u>not</u> a sweet tooth,{' '}
-              <strong>a-sh</strong> is <EmMed>a sweet-heart.</EmMed>
+              Last but not least, <strong>a-sh</strong> is naturally
+              <EmMed> a shy human</EmMed>. Although <u>not</u> a sweet tooth,
+              <strong> a-sh</strong> is <EmMed>a sweet-heart.</EmMed>
               <Icon>
-                <FaRegGrinSquint />
+                <FaRegGrinSquint aria-hidden="true" />
               </Icon>
             </Paragraph>
           </GridColumn>
