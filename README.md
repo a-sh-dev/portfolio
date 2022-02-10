@@ -1,6 +1,46 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Personal Portfolio
 
-## Getting Started
+```
+version 1.0
+```
+
+This is the second personal portfolio built since I've began my coding journey. The first one was built only using `HTML5` and `Sass`. [Go to the GitHub repo.](https://github.com/a-sh-dev/T1A2_Portfolio)
+
+ I fell in love with `Next.js`, a `React.js` framework that is meant to improve sites built with `React`, particularly the SEO improvements and the built-in router. 
+
+I spent so much time working on the typography, layout and content. This is the first project where I utilise `Tailwind CSS`, through the help of `Twin.macro` as a bridge to merge or combine the best of two worlds between `Tailwind CSS` and `Styled Components`. 
+
+By no means this is completely complete. There are so many improvements to be made!
+
+> Live: [www.a-sh.cc](https;//www.a-sh.cc)
+
+
+
+
+
+### Tech Stack
+
+
+
+### Future Improvements
+
+
+
+### Known Issues
+
+
+
+### Personal Reflections
+
+
+
+### 
+
+### 👋🏻  Feel Free to Clone & Experiment!
+
+<sub>This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).</sub>
+
+Built with `Node v16.13.0`, packaged with `Yarn`.
 
 First, run the development server:
 
@@ -10,25 +50,4 @@ npm run dev
 yarn dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+I use port 5007. Please open [http://localhost:5007](http://localhost:5007) with your browser to see the result.

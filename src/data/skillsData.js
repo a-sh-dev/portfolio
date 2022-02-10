@@ -63,9 +63,10 @@ export const capabilities = [
     name: 'tools',
     skills: [
       { id: 1, name: 'Vscode' },
-      { id: 2, name: 'Trello' },
-      { id: 3, name: 'Adobe Suite' },
-      { id: 4, name: 'Figma' },
+      { id: 2, name: 'Mark Down' },
+      { id: 3, name: 'Trello' },
+      { id: 4, name: 'Adobe Suite' },
+      { id: 5, name: 'Figma' },
     ],
   },
 ];
