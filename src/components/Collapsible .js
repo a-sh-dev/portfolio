@@ -79,7 +79,7 @@ const Collapsible = ({ color, title, children }) => {
 
         {showInfo && (
           <Content {...{ showInfo }}>
-            {children}{' '}
+            {children}
             <Footer>
               <HiOutlineChevronUp /> Hide
             </Footer>

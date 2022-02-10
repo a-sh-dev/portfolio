@@ -1,12 +1,15 @@
 import Link from 'next/link';
 import tw, { styled } from 'twin.macro';
 import { SloganSticker } from '../..';
-import { Icon } from '../../typography';
+import { Em, Icon } from '../../typography';
 import { useAppContext } from '../../../context';
 import { currentYear } from '../../../utils';
 import { navLinks, copyright } from '../../../data';
 import { uniformTransition } from '../../../../styles/stylesData';
 import { GiCoffeePot } from 'react-icons/gi';
+import { HiMusicNote } from 'react-icons/hi';
+
+const uniformPadding = tw`p-8`;
 
 const NavMenuWrapper = styled.div(() => [
   tw`
@@ -21,6 +24,7 @@ const NavMenuWrapper = styled.div(() => [
     border-t
     border-dashed
     border-t-primary-light
+    pt-4
   `,
 
   uniformTransition,
@@ -41,30 +45,30 @@ const NavMobileItem = styled.a(() => [
     text-primary-light
     w-full
     h-full
-    p-8
     bg-primary-darkest
     border-primary-dark
     border-b
+    first:border-t
     hover:(text-white bg-black/10)
   `,
-
+  uniformPadding,
   uniformTransition,
 ]);
 
 const NavMobileIconWrapper = tw.span`
   text-xl
-  text-primary-light
+  text-accent-teal
   mr-8
 `;
 
 const SloganWrapper = styled.div(() => [
   tw`
     self-start
-    p-8
     absolute
     bottom-6
     right-6
   `,
+  uniformPadding,
   `
     > * {
       transform: scale(1.5)
@@ -72,15 +76,25 @@ const SloganWrapper = styled.div(() => [
   `,
 ]);
 
-const Copyright = tw.div`
-  place-self-start
-  text-primary-light
-  tracking-widest
-  text-sm
-  font-semibold
-  w-full
-  p-8
-`;
+const Header = styled.header(() => [
+  tw`
+    text-sm
+    text-accent-teal
+  `,
+  uniformPadding,
+]);
+
+const Copyright = styled.div(() => [
+  tw`
+    place-self-start
+    text-primary-light
+    tracking-widest
+    text-sm
+    font-semibold
+    w-full
+  `,
+  uniformPadding,
+]);
 
 const Footer = tw.footer`
   grid
@@ -96,6 +110,12 @@ const NavMenuMobile = () => {
     <>
       {isNavOpen && (
         <NavMenuWrapper>
+          <Header>
+            <Em>Is it me you&apos;re looking for~?</Em>
+            <Icon color="teal" nudgeTop>
+              <HiMusicNote aria-hidden="true" />
+            </Icon>
+          </Header>
           <NavMenu>
             {navLinks.map((navItem) => {
               const { id, name, url, svg } = navItem;
@@ -116,8 +136,8 @@ const NavMenuMobile = () => {
               <div className="uppercase">
                 &copy; {currentYear}
                 <span className="em-dash">--------</span> By a-sh.
-                <br /> {copyright.nav}{' '}
-                <Icon color="teal" nudgeTop>
+                <br /> {copyright.nav}
+                <Icon color="teal">
                   <GiCoffeePot />
                 </Icon>
               </div>

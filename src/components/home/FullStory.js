@@ -56,7 +56,7 @@ const FullStory = () => {
               Last but not least, <strong>a-sh</strong> is naturally{' '}
               <EmMed>a shy human</EmMed>. Although <u>not</u> a sweet tooth,{' '}
               <strong>a-sh</strong> is <EmMed>a sweet-heart.</EmMed>
-              <Icon nudgeTop>
+              <Icon>
                 <FaRegGrinSquint />
               </Icon>
             </Paragraph>

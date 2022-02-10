@@ -18,27 +18,20 @@ let router;
 export const navLinks = [
   {
     id: 1,
-    name: 'Home',
-    url: '/',
-    current: router?.pathname.includes('/'),
-    svg: <HomeIcon />,
-  },
-  {
-    id: 2,
     name: 'Projects',
     url: '/projects',
     current: router?.pathname.includes('/projects'),
     svg: <HeartIcon />,
   },
   {
-    id: 3,
+    id: 2,
     name: 'Journal',
     url: '/journal',
     current: router?.pathname.includes('/journal'),
     svg: <JournalIcon />,
   },
   {
-    id: 4,
+    id: 3,
     name: 'Contact',
     url: '/contact',
     current: router?.pathname.includes('/contact'),

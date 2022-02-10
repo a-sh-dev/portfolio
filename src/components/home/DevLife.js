@@ -46,7 +46,7 @@ const DevLife = () => {
               better and improve productivity. Hence, I value other
               people&apos;s constructive feedback and critiques
               <span className="em-dash">---</span>they are precious!
-              <Icon nudgeTop>
+              <Icon>
                 <HiOutlineSparkles />
               </Icon>
             </Paragraph>

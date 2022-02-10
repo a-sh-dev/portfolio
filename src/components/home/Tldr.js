@@ -58,7 +58,7 @@ const Tldr = () => {
           beyond web development. With the dream of making a meaningful
           difference in the tech world for humanity one day, especially as a
           woman! <Em size="sm">(and not be intimidated by robots!</Em>
-          <Icon nudgeTop>
+          <Icon>
             <FaRobot aria-hidden="true" />
           </Icon>
           ).
