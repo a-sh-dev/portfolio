@@ -3,14 +3,14 @@ import Link from 'next/link';
 import tw, { styled } from 'twin.macro';
 import { Container } from '..';
 import { Line } from '../..';
-import { AshLogo } from '../../svgs';
 import { HiOutlineX } from 'react-icons/hi';
 import { navLinks } from '../../../data';
 import { uniformTransition } from '../../../../styles/stylesData';
 import NavMenuMobile from './NavMenuMobile';
 import NavItem from './NavItem';
+import NavLogo from './NavLogo';
 
-const NavWrapper = styled.div(({ isNavOpen }) => [
+const NavWrapper = styled.div(() => [
   tw`
     sticky
     top-0
@@ -20,8 +20,6 @@ const NavWrapper = styled.div(({ isNavOpen }) => [
     bg-primary-light
     md:pt-8
   `,
-  // isNavOpen && tw`bg-primary-darkest md:bg-primary-light`,
-
   uniformTransition,
 ]);
 
@@ -39,7 +37,6 @@ const LogoWrapper = styled.div(() => [
     hover:text-primary-darkest
     md:text-8xl
   `,
-
   uniformTransition,
 ]);
 
@@ -59,7 +56,6 @@ const NavMenu = tw.div`
   hidden
   md:flex
   md:items-center
-  // bg-white/40
 `;
 
 const outlinedBtnBase = tw`border border-primary-dark text-primary-dark rounded-full hover:(bg-primary-dark text-primary-light) md:hidden`;
@@ -97,7 +93,7 @@ const Navigation = () => {
           <NavBar>
             <LogoWrapper>
               <Link href="/" passHref>
-                <AshLogo />
+                <NavLogo />
               </Link>
             </LogoWrapper>
             <NavLine>
