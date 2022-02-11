@@ -26,6 +26,7 @@ const Content = styled.div(() => [
     flex
     flex-wrap
     gap-2
+    md:px-2
   `,
 ]);
 

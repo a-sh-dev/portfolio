@@ -1,7 +1,7 @@
 import tw, { styled } from 'twin.macro';
 import { Icon, Line, Table, TableRow } from '..';
 import { GridColumn, GridContainer, Section } from '../layout';
-import { Heading, Tag } from '../typography';
+import { Heading, Paragraph, Tag } from '../typography';
 import { HiOutlineCode, HiOutlineColorSwatch } from 'react-icons/hi';
 import { coreSkills } from '../../data';
 
@@ -64,6 +64,15 @@ const Skills = () => {
                   </TableRow>
                 );
               })}
+              <TableRow subtitle="Current Exploration">
+                <Paragraph>
+                  Deepening vanilla JavaScript and React.js fundamentals.
+                  Practice and utilise more unit testing (TDD). Additionally,
+                  being a designer, I am naturally drawn to CSS. Therefore, I am
+                  diving into creative explorations through CSS art and
+                  JavaScript animation.
+                </Paragraph>
+              </TableRow>
             </Table>
           </GridColumn>
         </GridContainer>

@@ -20,6 +20,7 @@ export const bgColorVariants = {
   light: tw`bg-primary-light`,
   white: tw`bg-white`,
   white50: tw`bg-white/50`,
+  black5: tw`bg-black/5`,
 };
 
 export const textColorVariants = {
@@ -33,6 +34,11 @@ export const textColorVariants = {
   darkest: tw`text-primary-darkest`,
   light: tw`text-primary-light`,
   white: tw`text-white`,
+};
+
+export const roundVariants = {
+  pill: tw`rounded-full`,
+  square: tw`rounded-sm`,
 };
 
 export const maxWidthVariants = {

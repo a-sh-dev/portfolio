@@ -43,6 +43,7 @@ export const coreSkills = [
       { id: 4, name: 'Firebase Storage' },
       { id: 5, name: 'Jest' },
       { id: 6, name: 'Rspec' },
+      { id: 7, name: 'Twin.macro' },
     ],
   },
 ];
