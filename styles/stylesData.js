@@ -46,6 +46,8 @@ export const textAlignVariants = {
   center: tw`text-center`,
   right: tw`text-right`,
   justify: tw`text-justify`,
+  'justify-md': tw`text-left md:text-justify`,
+  'justify-xl': tw`text-left xl:text-justify`,
   autoL: tw`text-center md:text-left`,
   autoR: tw`text-center md:text-right`,
 };
@@ -88,7 +90,7 @@ export const sectionVariants = {
   clean: tw`border-0`,
 };
 
-const gridGap = `gap-x-5 md:gap-x-7 xl:gap-x-10`;
+const gridGap = `gap-x-5 md:gap-x-8 xl:gap-x-10`;
 
 export const layoutVariants = {
   grid: tw`grid grid-cols-4 md:grid-cols-12 ${gridGap}`,
@@ -112,10 +114,13 @@ export const gridColVariants = {
 export const gridColStartVariants = {
   'start-1': tw`col-start-1`,
   'start-2': tw`col-start-2`,
+  'start-md-2': tw`col-start-1 md:col-start-2`,
   'start-3': tw`col-start-3`,
-  'start-4': tw`col-start-4`,
-  'start-5': tw`col-start-5`,
-  'start-6': tw`col-start-6`,
+  'start-md-3': tw`col-start-1 md:col-start-3`,
+  'start-4': tw`col-start-2 md:col-start-4`,
+  'start-md-4': tw`col-start-1 md:col-start-4`,
+  'start-5': tw`col-start-1 md:col-start-5`,
+  'start-6': tw`col-start-1 md:col-start-6`,
   'start-7': tw`col-start-1 md:col-start-7`,
   'start-8': tw`col-start-1 md:col-start-8`,
   'start-9': tw`col-start-1 md:col-start-9`,

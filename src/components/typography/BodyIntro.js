@@ -11,6 +11,7 @@ const StyledParagraph = styled.p(({ noMargin }) => [
    font-semibold
    tracking-tight
    mb-6
+   md:mb-10
    md:text-xl
    md:leading-relaxed
    xl:text-2xl

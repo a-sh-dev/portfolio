@@ -1,6 +1,7 @@
 import tw, { styled } from 'twin.macro';
 import {
   fontSizeVariants,
+  textAlignVariants,
   textColorVariants,
 } from '../../../styles/stylesData';
 
@@ -11,12 +12,13 @@ const StyledParagraph = styled.p(() => [
   `,
   ({ color = 'dark' }) => textColorVariants[color],
   ({ size = 'paragraph' }) => fontSizeVariants[size],
+  ({ align = 'left' }) => textAlignVariants[align],
 ]);
 
-const Paragraph = ({ color, size, children }) => {
+const Paragraph = ({ align, color, size, children }) => {
   return (
     <>
-      <StyledParagraph color={color} size={size}>
+      <StyledParagraph color={color} size={size} align={align}>
         {children}
       </StyledParagraph>
     </>

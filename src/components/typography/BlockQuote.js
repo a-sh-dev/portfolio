@@ -4,31 +4,43 @@ import {
   textColorVariants,
 } from '../../../styles/stylesData';
 
-const StyledSubHeading = styled.h2(({ noMargin }) => [
+const Wrapper = styled.div(({ noMargin }) => [
+  tw`
+    my-12
+    md:my-16
+    xl:my-20
+  `,
+  noMargin && tw`m-0 md:m-0`,
+]);
+
+const StyledBlockQuote = styled.p(() => [
   tw`
    font-sans 
    font-bold
    tracking-tight
-   text-2xl
-   my-12
-   md:my-16
-   md:text-4xl
-   xl:text-5xl
+   text-3xl
+   md:text-5xl
+   md:leading-tight
+   xl:text-7xl
    xl:leading-tight
   `,
-  noMargin && tw`m-0 md:m-0`,
-  ,
   ({ color = 'dark' }) => textColorVariants[color],
   ({ align = 'left' }) => textAlignVariants[align],
 ]);
 
+const QuoteBy = styled.p(() => [
+  tw`
+  
+  `,
+]);
+
 const BlockQuote = ({ noMargin, align, color, children }) => {
   return (
-    <>
-      <StyledSubHeading align={align} color={color} {...{ noMargin }}>
+    <Wrapper>
+      <StyledBlockQuote align={align} color={color} {...{ noMargin }}>
         {children}
-      </StyledSubHeading>
-    </>
+      </StyledBlockQuote>
+    </Wrapper>
   );
 };
 
