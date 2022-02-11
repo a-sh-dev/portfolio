@@ -14,6 +14,11 @@ const StyledUl = styled.ul(() => [
       color: var(--color-css-primary-darkest);
       margin-right: 0.85rem;
       padding-top: 1px;
+    
+      @media (min-width: 1280px) {
+        padding-top: 0.45rem;
+    }
+
     }
 
   `,
