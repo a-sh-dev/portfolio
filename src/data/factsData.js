@@ -24,14 +24,14 @@ export const randomFacts = [
   {
     id: 2,
     title: 'Born in Jakarta, Indonesia.',
-    desc: 'Then came to Melbourne in 1998 as a student and became an Aussie citizen in 2007.',
+    desc: 'Came to Melbourne in 1998 as an international student and then became an Australian citizen in 2007.',
     icon: <GiAustralia />,
     emoji: <FaRegSmileWink />,
   },
   {
     id: 3,
     title: 'Briefly worked as an Assistant Language Teacher in Japan.',
-    desc: 'Assisting local English teachers in public primary and secondary schools. Then went back to Melbourne just a week before the 2011 Tohoku earthquake and tsunami disaster.',
+    desc: 'Assisting local English teachers in public primary and secondary schools. Then came back to Melbourne just a week before the 2011 Tohoku earthquake and tsunami disaster.',
     icon: <FaChalkboardTeacher />,
     emoji: <FaRegFlushed />,
   },
@@ -45,8 +45,8 @@ export const randomFacts = [
   },
   {
     id: 5,
-    title: "Cloud gazing and puddles' reflections are therapeutic.",
-    desc: "Before the pandemic, I used to take lots of clouds photos. Also, enjoy watching puddles' reflections on drizzling days. It is fascinating and therapeutic.",
+    title: "Find cloud gazing and puddles' reflections therapeutic.",
+    desc: "Before the pandemic, I used to take lots of (fluffy) cloud photos. I also enjoy observing puddles' reflections on drizzling days. They are therapeutically fascinating!",
     icon: <BsFillCloudRainFill />,
     emoji: <FaRegGrinStars />,
   },

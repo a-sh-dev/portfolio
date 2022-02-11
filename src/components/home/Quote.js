@@ -19,9 +19,9 @@ const Quote = () => {
     <Section relative noTopMargin layout="grid">
       <GridColumn col="span-10">
         <BlockQuote>
-          I enjoy problem-solving by integrating the visual communication and
-          technical aspects of achieving purposeful, systematic UI & effective
-          UX of every project.
+          I enjoy problem-solving by integrating the visual and technical
+          aspects of achieving purposeful, systematic UI & effective UX in every
+          project.
         </BlockQuote>
       </GridColumn>
       <GridColumn col="span-2">

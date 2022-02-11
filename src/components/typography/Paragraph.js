@@ -9,7 +9,6 @@ const StyledParagraph = styled.p(({ smMargin }) => [
   tw`
     font-sans 
     leading-relaxed
-    max-w-prose
   `,
   smMargin && tw`mt-5 md:mt-0`, // 1.25rem
   ({ color = 'dark' }) => textColorVariants[color],

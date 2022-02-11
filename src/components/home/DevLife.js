@@ -29,11 +29,14 @@ const DevLife = () => {
               <em> extra </em>
               time deciding on the branding for the UI. From choosing the right
               font, colours, image assets to wireframing (including the
-              high-fidelity ones). So, perhaps, that is the downside of having
-              this hybrid. However, that extra time is purposeful as part of the
-              problem-solving process. I enjoy translating subject matters
-              through integrating the technical and the visual aspects of
-              achieving a well-presented UI and effective UX in every project.
+              high-fidelity ones). So, perhaps, that is the downside of the
+              hybrid.
+            </Paragraph>
+            <Paragraph>
+              However, that extra time is purposeful as part of the
+              problem-solving process. I enjoy translating subject matters by
+              integrating the technical and visual aspects of achieving a
+              well-presented UI and effective UX in every project.
             </Paragraph>
             <Paragraph>
               Having experience working in a team and independently, I work

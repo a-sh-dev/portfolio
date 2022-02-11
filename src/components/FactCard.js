@@ -15,9 +15,8 @@ const Wrapper = styled.div(() => [
     md:h-full
     md:mb-0
     md:p-8
-    md:border
-    md:border-primary-dark
-    md:rounded-md
+    md:border-0
+    md:rounded-sm
     xl:p-12
   `,
 ]);

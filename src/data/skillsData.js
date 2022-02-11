@@ -58,7 +58,8 @@ export const capabilities = [
       { id: 2, name: 'Typography' },
       { id: 3, name: 'Illustration' },
       { id: 4, name: 'UI & UX' },
-      { id: 5, name: 'Wireframing (low & high fidelity)' },
+      { id: 5, name: 'Wireframing' },
+      { id: 6, name: 'Design System' },
     ],
   },
   {
@@ -86,7 +87,7 @@ export const features = [
         name: 'Self-motivaed & a dedicated team player who also works well independently',
       },
       { id: 3, name: 'Well adapted & organised' },
-      { id: 4, name: 'Committed to quality' },
+      { id: 4, name: 'Highly committed to quality' },
       { id: 5, name: 'Comfortable working under pressure' },
       { id: 6, name: 'Determined, eager to learn & a fast learner' },
     ],

@@ -67,8 +67,8 @@ const Skills = () => {
               <TableRow subtitle="Current Exploration">
                 <Paragraph>
                   Deepening vanilla JavaScript and React.js fundamentals.
-                  Practice and utilise more unit testing (TDD). Additionally,
-                  being a designer, I am naturally drawn to CSS. Therefore, I am
+                  Practice and utilise more unit testing (TDD). Additionally, as
+                  a designer, I am naturally drawn to CSS. Therefore, I am
                   diving into creative explorations through CSS art and
                   JavaScript animation.
                 </Paragraph>
