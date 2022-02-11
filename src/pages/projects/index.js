@@ -1,8 +1,15 @@
+import { Meta } from '../../components';
+import { Container } from '../../components/layout';
+import { Heading } from '../../components/typography';
+
 const projects = () => {
   return (
-    <div>
-      <h1>Projects Index Page</h1>
-    </div>
+    <>
+      <Meta title="projects" />
+      <Container>
+        <Heading>Projects</Heading>
+      </Container>
+    </>
   );
 };
 

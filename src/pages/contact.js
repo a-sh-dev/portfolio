@@ -1,11 +1,15 @@
 import { Meta } from '../components';
+import { Container } from '../components/layout';
+import { Heading } from '../components/typography';
 
 const contact = () => {
   return (
-    <div>
+    <>
       <Meta title="contact" />
-      <h1>Contact Page</h1>
-    </div>
+      <Container>
+        <Heading>Let&apos;s get in touch</Heading>
+      </Container>
+    </>
   );
 };
 
