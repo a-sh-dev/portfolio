@@ -25,8 +25,6 @@ module.exports = {
         '10xl': '11rem',
       },
       colors: {
-        // transparent: 'transparent',
-        // current: 'currentColor',
         'primary-light': withOpacityValue('--color-primary-light'),
         'primary-dark': withOpacityValue('--color-primary-dark'),
         'primary-darkest': withOpacityValue('--color-primary-darkest'),
@@ -36,6 +34,7 @@ module.exports = {
         'accent-pink': withOpacityValue('--color-accent-pink'),
         'accent-blue': withOpacityValue('--color-accent-blue'),
         'accent-purple': withOpacityValue('--color-accent-purple'),
+        'accent-yellow': withOpacityValue('--color-accent-yellow'),
       },
       animation: {
         'spin-slow': 'spin 30s linear infinite',

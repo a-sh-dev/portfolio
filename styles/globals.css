@@ -2,19 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
-/* $base-color: #e4dfd7;
+/*
+$base-color: #e4dfd7;
 $dark-color: #5d686d;
 $white: #fff;
-$teal: #c0d8d5;
 $olive: #dbd8b9;
 $cool-gray: #c9c9c9;
+$teal: #c0d8d5;
 
-// Secondary Colors
+// Accent colors
 
 $pink: #eac9c6;
 $blue: #b5d2de;
 $purple: #d0cade;
-$beige: #eacfbc; */
+$beige: #eacfbc;
+$yellow: #F2D8AB;
+
+*/
 
 :root {
   --color-primary-light: 228 223 215;
@@ -32,6 +36,7 @@ $beige: #eacfbc; */
   --color-accent-pink: 234 201 198;
   --color-accent-blue: 181 210 222;
   --color-accent-purple: 208 202 222;
+  --color-accent-yellow: 242 216 171;
 
   --breakpoint-md: 768px;
   --breakpoint-lg: 1024px;
@@ -50,10 +55,6 @@ a {
   color: inherit;
   text-decoration: none;
 }
-
-/* * {
-  border: 1px solid lightslategrey;
-} */
 
 *,
 *::after,
