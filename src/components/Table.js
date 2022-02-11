@@ -19,15 +19,16 @@ const Header = styled.header(() => [
   `,
 ]);
 
-const Content = styled.div(() => [
+const Content = styled.div(({ clean }) => [
   tw`
     border-primary-dark
     border-t
     border-dashed
   `,
+  clean && tw`border-t-0`,
 ]);
 
-const Table = ({ title, children }) => {
+const Table = ({ title, clean, children }) => {
   return (
     <Wrapper>
       <Header>
@@ -36,7 +37,7 @@ const Table = ({ title, children }) => {
         </Heading>
       </Header>
 
-      <Content>{children}</Content>
+      <Content {...{ clean }}>{children}</Content>
     </Wrapper>
   );
 };

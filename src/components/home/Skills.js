@@ -3,6 +3,7 @@ import { Icon, Line, Table, TableRow } from '..';
 import { GridColumn, GridContainer, Section } from '../layout';
 import { Heading, Tag } from '../typography';
 import { HiOutlineCode, HiOutlineColorSwatch } from 'react-icons/hi';
+import { coreSkills } from '../../data';
 
 const Skill = styled.div(() => [
   tw`
@@ -51,18 +52,18 @@ const Skills = () => {
           </GridColumn>
 
           <GridColumn col="span-8">
-            <Table title="Fullstack capable frontend development">
-              <TableRow subtitle="Languages">
-                Skill lists here (tags)
-                <Tag>HTML5</Tag>
-                <Tag>CSS3</Tag>
-              </TableRow>
-
-              <TableRow subtitle="Visual communication Design">
-                Skill lists here (tags)
-                <Tag>HTML5</Tag>
-                <Tag>CSS3</Tag>
-              </TableRow>
+            <Table title="Fullstack capable frontend development" clean>
+              {coreSkills.map((skill) => {
+                const { id, name, skills } = skill;
+                return (
+                  <TableRow subtitle={name} key={id} skills={skills}>
+                    {skills.map((item) => {
+                      const { id, name } = item;
+                      return <Tag key={id}>{name}</Tag>;
+                    })}
+                  </TableRow>
+                );
+              })}
             </Table>
           </GridColumn>
         </GridContainer>

@@ -1,6 +1,6 @@
 import tw, { styled } from 'twin.macro';
 
-const Wrapper = styled.span(() => [
+const Wrapper = styled.span(({ withMargin }) => [
   tw`
     font-sans
     text-primary-dark
@@ -13,14 +13,15 @@ const Wrapper = styled.span(() => [
     tracking-wide
     text-xs
     font-medium
-    mr-1.5
-    md:mr-2
+    whitespace-nowrap
+    break-normal
     md:text-sm
   `,
+  withMargin && tw`mr-1.5 md:mr-2`,
 ]);
 
-const Tag = ({ children }) => {
-  return <Wrapper>{children}</Wrapper>;
+const Tag = ({ withMargin, children }) => {
+  return <Wrapper {...{ withMargin }}>{children}</Wrapper>;
 };
 
 export default Tag;
