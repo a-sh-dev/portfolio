@@ -3,6 +3,7 @@ import {
   gridColAlignVariants,
   gridColStartVariants,
   gridColVariants,
+  paragraphMargin,
 } from '../../../styles/stylesData';
 
 const StyledGridColumn = styled.div(({ relative }) => [
@@ -12,7 +13,7 @@ const StyledGridColumn = styled.div(({ relative }) => [
   // targets any non first paragraph
   `
     p + p {
-      margin-top: 1.25rem;
+      margin-top: ${paragraphMargin};
     }
   `,
   relative && tw`relative`,

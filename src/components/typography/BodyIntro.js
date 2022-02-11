@@ -17,7 +17,7 @@ const StyledParagraph = styled.p(({ noMargin }) => [
    xl:text-2xl
    xl:leading-10
   `,
-  noMargin && tw`m-0`,
+  noMargin && tw`m-0 md:m-0`,
   ({ color = 'dark' }) => textColorVariants[color],
   ({ align = 'left' }) => textAlignVariants[align],
 ]);

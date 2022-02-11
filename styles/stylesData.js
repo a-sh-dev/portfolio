@@ -5,6 +5,8 @@ export const uniformTransition = tw`transition-all delay-75 duration-300 ease-ou
 
 export const uniformSlowTransition = tw`transition-all delay-150 duration-500 ease-out hover:(ease-in duration-300)`;
 
+export const paragraphMargin = '1.25rem';
+
 export const bgColorVariants = {
   teal: tw`bg-accent-teal`,
   olive: tw`bg-accent-olive`,

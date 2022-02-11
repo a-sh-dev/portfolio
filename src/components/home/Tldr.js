@@ -55,7 +55,7 @@ const Tldr = () => {
         </Paragraph>
       </GridColumn>
       <GridColumn col="span-5" start="start-7">
-        <Paragraph align="justify-xl">
+        <Paragraph align="justify-xl" smMargin>
           Furthermore, I hope to gain professional experience while learning
           beyond web development. With the dream of making a meaningful
           difference in the tech world for humanity one day, especially as a
