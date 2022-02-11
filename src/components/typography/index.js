@@ -9,6 +9,7 @@ import Em from './Em';
 import EmSemi from './EmSemi';
 import EmMed from './EmMed';
 import Tag from './Tag';
+import UList from './UList';
 
 export {
   Heading,
@@ -22,4 +23,5 @@ export {
   EmSemi,
   EmMed,
   Tag,
+  UList,
 };

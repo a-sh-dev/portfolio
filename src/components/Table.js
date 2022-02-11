@@ -13,8 +13,9 @@ const Header = styled.header(() => [
     border-primary-dark
     border-t
     mt-4
-    md:mt-0
     py-4
+    md:mt-0
+    md:pl-2
 
   `,
 ]);

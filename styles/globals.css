@@ -26,6 +26,7 @@ $yellow: #F2D8AB;
   --color-primary-dark: 93 104 109;
   --color-css-primary-dark: rgba(93, 104, 109, 1);
   --color-primary-darkest: 62 74 77;
+  --color-css-primary-darkest: rgba(62, 74, 77, 1);
   --color-white: 255 255 255;
 
   --color-accent-teal: 188 220 217;

@@ -1,7 +1,7 @@
 import tw, { styled } from 'twin.macro';
 import { Icon, Line, Table, TableRow } from '..';
 import { GridColumn, GridContainer, Section } from '../layout';
-import { Heading, Paragraph, Tag } from '../typography';
+import { Heading, Paragraph, Tag, UList } from '../typography';
 import { HiOutlineCode, HiOutlineColorSwatch } from 'react-icons/hi';
 import { capabilities, coreSkills, features } from '../../data';
 
@@ -118,10 +118,16 @@ const Skills = () => {
                 const { id, skills } = skill;
                 return (
                   <TableRow key={id} noSub>
-                    {skills.map((item) => {
-                      const { id, name } = item;
-                      return <li key={id}>{name}</li>;
-                    })}
+                    <UList>
+                      {skills.map((item) => {
+                        const { id, name } = item;
+                        return (
+                          <li key={id}>
+                            <Paragraph>{name}</Paragraph>
+                          </li>
+                        );
+                      })}
+                    </UList>
                   </TableRow>
                 );
               })}
