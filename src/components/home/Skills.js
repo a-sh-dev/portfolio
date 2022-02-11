@@ -3,7 +3,7 @@ import { Icon, Line, Table, TableRow } from '..';
 import { GridColumn, GridContainer, Section } from '../layout';
 import { Heading, Paragraph, Tag } from '../typography';
 import { HiOutlineCode, HiOutlineColorSwatch } from 'react-icons/hi';
-import { coreSkills } from '../../data';
+import { capabilities, coreSkills, features } from '../../data';
 
 const Skill = styled.div(() => [
   tw`
@@ -56,7 +56,7 @@ const Skills = () => {
               {coreSkills.map((skill) => {
                 const { id, name, skills } = skill;
                 return (
-                  <TableRow subtitle={name} key={id} skills={skills}>
+                  <TableRow subtitle={name} key={id}>
                     {skills.map((item) => {
                       const { id, name } = item;
                       return <Tag key={id}>{name}</Tag>;
@@ -83,22 +83,49 @@ const Skills = () => {
           <GridColumn col="span-2">
             <SkillHeader>
               <Heading variant="monoBold" align="left" noMargin>
-                <span className="break-words">Capabilities</span>
+                Other Skills
               </Heading>
             </SkillHeader>
           </GridColumn>
 
           <GridColumn col="span-2" align="center" relative>
-            <div className="hidden md:z-20 md:block md:relative md:-top-2 xl:-top-4">
+            <SkillIcon aria-hidden="true">
               <Icon>
-                <HiOutlineCode aria-hidden="true" />
+                <HiOutlineColorSwatch aria-hidden="true" />
               </Icon>
-            </div>
+            </SkillIcon>
           </GridColumn>
 
           <GridColumn col="span-8">
-            <Table />
-            <Table />
+            <Table title="Design skills & tools" clean>
+              {capabilities.map((skill) => {
+                const { id, name, skills } = skill;
+                return (
+                  <TableRow subtitle={name} key={id}>
+                    {skills.map((item) => {
+                      const { id, name } = item;
+                      return <Tag key={id}>{name}</Tag>;
+                    })}
+                  </TableRow>
+                );
+              })}
+            </Table>
+          </GridColumn>
+
+          <GridColumn col="span-8" start="start-5">
+            <Table title="Soft skills" clean>
+              {features.map((skill) => {
+                const { id, skills } = skill;
+                return (
+                  <TableRow key={id} noSub>
+                    {skills.map((item) => {
+                      const { id, name } = item;
+                      return <li key={id}>{name}</li>;
+                    })}
+                  </TableRow>
+                );
+              })}
+            </Table>
           </GridColumn>
         </GridContainer>
       </Skill>

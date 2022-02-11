@@ -39,11 +39,12 @@ export const coreSkills = [
     skills: [
       { id: 1, name: 'Git' },
       { id: 2, name: 'CLI Terminal' },
-      { id: 3, name: 'AWS3 Bucket' },
-      { id: 4, name: 'Firebase Storage' },
-      { id: 5, name: 'Jest' },
-      { id: 6, name: 'Rspec' },
-      { id: 7, name: 'Twin.macro' },
+      { id: 3, name: 'Responsive Layout' },
+      { id: 4, name: 'AWS3 Bucket' },
+      { id: 5, name: 'Firebase Storage' },
+      { id: 6, name: 'Jest' },
+      { id: 7, name: 'Rspec' },
+      { id: 8, name: 'Twin.macro' },
     ],
   },
 ];
@@ -55,8 +56,9 @@ export const capabilities = [
     skills: [
       { id: 1, name: 'Branding' },
       { id: 2, name: 'Typography' },
-      { id: 3, name: 'UI & UX' },
-      { id: 4, name: 'Wireframing (low & high fidelity)' },
+      { id: 3, name: 'Illustration' },
+      { id: 4, name: 'UI & UX' },
+      { id: 5, name: 'Wireframing (low & high fidelity)' },
     ],
   },
   {
