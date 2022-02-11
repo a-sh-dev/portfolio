@@ -1,13 +1,7 @@
 import Image from 'next/image';
 import { Collapsible } from '..';
 import { GridColumn, GridContainer } from '../layout';
-import {
-  EmMed,
-  Heading,
-  TextIcon,
-  Paragraph,
-  SubHeading2,
-} from '../typography';
+import { EmMed, Heading, TextIcon, Paragraph, SubHeading } from '../typography';
 import { FaRegGrinSquint } from 'react-icons/fa';
 
 const FullStory = () => {
@@ -29,7 +23,7 @@ const FullStory = () => {
             <Heading variant="sm" align="autoL">
               The story of <span className="whitespace-nowrap">a-sh.</span>
             </Heading>
-            <SubHeading2 align="autoL">The journey so far...</SubHeading2>
+            <SubHeading align="autoL">The journey so far...</SubHeading>
             <Paragraph>
               <strong>a-sh</strong> is <EmMed>Angeline S Hentri</EmMed>, who
               prefers to be called Angie SH.

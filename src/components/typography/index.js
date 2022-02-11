@@ -1,8 +1,8 @@
 import Heading from './Heading';
 import TextIcon from './TextIcon';
 import Paragraph from './Paragraph';
+import BlockQuote from './BlockQuote';
 import SubHeading from './SubHeading';
-import SubHeading2 from './SubHeading2';
 import BodyIntro from './BodyIntro';
 import AHref from './AHref';
 import Em from './Em';
@@ -14,8 +14,8 @@ export {
   Heading,
   TextIcon,
   Paragraph,
+  BlockQuote,
   SubHeading,
-  SubHeading2,
   BodyIntro,
   AHref,
   Em,

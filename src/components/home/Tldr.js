@@ -5,8 +5,8 @@ import {
   Paragraph,
   Heading,
   TextIcon,
+  BlockQuote,
   SubHeading,
-  SubHeading2,
   AHref,
   Em,
 } from '../typography';
@@ -26,11 +26,11 @@ const Tldr = () => {
         <Heading variant="sm" align="center">
           TL; DR
         </Heading>
-        <SubHeading2 align="center">(long story short...)</SubHeading2>
-        <SubHeading align="center">
+        <SubHeading align="center">(long story short...)</SubHeading>
+        <BlockQuote align="center">
           Learning to code was meant to expand my skillsets as a graphic
           designer.
-        </SubHeading>
+        </BlockQuote>
       </HeaderWrapper>
       <GridColumn col="span-6">
         <div className="md:pr-6 xl:pr-14">

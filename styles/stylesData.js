@@ -12,6 +12,7 @@ export const bgColorVariants = {
   purple: tw`bg-accent-purple`,
   blue: tw`bg-accent-blue`,
   gray: tw`bg-accent-gray`,
+  yellow: tw`bg-accent-yellow`,
   dark: tw`bg-primary-dark`,
   darkest: tw`bg-primary-darkest`,
   light: tw`bg-primary-light`,

@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import { Collapsible } from '..';
 import { GridColumn, GridContainer } from '../layout';
-import { Heading, TextIcon, Paragraph, SubHeading2 } from '../typography';
+import { Heading, TextIcon, Paragraph, SubHeading } from '../typography';
 import { HiOutlineSparkles } from 'react-icons/hi';
 
 const DevLife = () => {
@@ -23,7 +23,7 @@ const DevLife = () => {
             <Heading variant="sm" align="autoL">
               Designer<span className="em-dash-title">---</span>Developer Hybrid
             </Heading>
-            <SubHeading2 align="autoL">The good and the bad</SubHeading2>
+            <SubHeading align="autoL">The good and the bad</SubHeading>
             <Paragraph>
               During planning and development for my projects, I tend to spend
               <em> extra </em>

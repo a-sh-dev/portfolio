@@ -79,7 +79,7 @@ const SloganWrapper = styled.div(() => [
 const Header = styled.header(() => [
   tw`
     text-sm
-    text-accent-teal
+    text-primary-light
   `,
   uniformPadding,
 ]);

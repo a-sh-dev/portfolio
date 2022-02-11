@@ -19,10 +19,9 @@ export default function Home() {
         <Tldr />
         <FullStory />
         <DevLife />
+        <Facts />
         <Skills />
-        <section>
-          <Quote />
-        </section>
+        <Quote />
       </Container>
     </>
   );
