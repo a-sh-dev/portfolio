@@ -2,11 +2,12 @@ import tw, { styled } from 'twin.macro';
 import { BodyIntro } from './typography';
 import { HiOutlineArrowSmDown } from 'react-icons/hi';
 
-const Wrapper = styled.div(() => [
+const Wrapper = styled.div(({ noGutter }) => [
   tw`
     pb-10
     md:pb-16
   `,
+  noGutter && tw`pb-0 md:pb-0`,
 ]);
 
 const dashedLine = `py-4 border-primary-dark border-t border-dashed`;
@@ -30,9 +31,9 @@ const Content = styled.div(({ noSub }) => [
   noSub && tw`${dashedLine} pt-6`,
 ]);
 
-const TableRow = ({ noSub, subtitle, children }) => {
+const TableRow = ({ noSub, subtitle, noGutter, children }) => {
   return (
-    <Wrapper>
+    <Wrapper {...{ noGutter }}>
       {!noSub && (
         <TableRowHeader>
           <span className="self-start pt-1 md:pt-1.5 xl:pt-2">

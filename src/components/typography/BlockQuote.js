@@ -34,12 +34,13 @@ const QuoteBy = styled.p(() => [
   `,
 ]);
 
-const BlockQuote = ({ noMargin, align, color, children }) => {
+const BlockQuote = ({ noMargin, align, color, subline, children }) => {
   return (
     <Wrapper>
       <StyledBlockQuote align={align} color={color} {...{ noMargin }}>
         {children}
       </StyledBlockQuote>
+      <QuoteBy>All projects are crafted with care</QuoteBy>
     </Wrapper>
   );
 };

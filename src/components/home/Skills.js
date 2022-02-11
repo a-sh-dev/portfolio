@@ -117,7 +117,7 @@ const Skills = () => {
               {features.map((skill) => {
                 const { id, skills } = skill;
                 return (
-                  <TableRow key={id} noSub>
+                  <TableRow key={id} noSub noGutter>
                     <UList>
                       {skills.map((item) => {
                         const { id, name } = item;
