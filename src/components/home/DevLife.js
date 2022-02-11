@@ -27,8 +27,9 @@ const DevLife = () => {
             <Paragraph>
               During planning and development for my projects, I tend to spend
               <em> extra </em>
-              time deciding on the branding for the UI, such as the right font,
-              colours, and images. So, perhaps, that is the downside of having
+              time deciding on the branding for the UI. From choosing the right
+              font, colours, image assets to wireframing (including the
+              high-fidelity ones). So, perhaps, that is the downside of having
               this hybrid. However, that extra time is purposeful as part of the
               problem-solving process. I enjoy translating subject matters
               through integrating the technical and the visual aspects of

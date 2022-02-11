@@ -88,6 +88,7 @@ export const headingVariants = {
   page: tw`text-5xl md:text-8xl`,
   sm: tw`text-4xl md:text-6xl`,
   xs: tw`font-bold text-2xl md:text-4xl`,
+  card: tw`font-bold text-xl xl:text-2xl`,
   mono: tw`${monoBase} font-normal`,
   monoBold: tw`${monoBase} font-bold`,
 };
@@ -98,14 +99,26 @@ export const sectionVariants = {
   clean: tw`border-0`,
 };
 
-const gridGap = `gap-x-5 md:gap-x-8 xl:gap-x-10`;
+const gridGap = `gap-x-5 md:gap-8 xl:gap-10`;
 
 export const layoutVariants = {
   grid: tw`grid grid-cols-4 md:grid-cols-12 ${gridGap}`,
   'grid-cols-8': tw`grid md:grid-cols-8 ${gridGap}`,
+  'subgrid-cols-3': tw`grid grid-cols-1 md:grid-cols-3 gap-4`,
+};
+
+export const gridRowVariants = {
+  'rows-1': tw`grid-rows-1`,
+  'rows-2': tw`grid-rows-2`,
+  'rows-3': tw`grid-rows-3`,
+  'rows-4': tw`grid-rows-4`,
+  'rows-5': tw`grid-rows-5`,
+  'rows-6': tw`grid-rows-6`,
+  'rows-none': tw`grid-rows-none`,
 };
 
 export const gridColVariants = {
+  'span-1': tw`col-span-1`,
   'span-2': tw`md:col-span-2`, // 12/2
   'span-3': tw`md:col-span-3`, // 12/3
   'span-4': tw`md:col-span-4`, // third 12/4
@@ -115,7 +128,7 @@ export const gridColVariants = {
   'span-8': tw`md:col-span-8`, // 12/8
   'span-9': tw`md:col-span-9`, // 12/9
   'span-10': tw`md:col-span-10`, // 12/10
-  auto: tw`md:auto-cols-max`,
+  auto: tw`md:col-auto`,
   full: tw`md:col-span-full`,
 };
 
@@ -145,6 +158,6 @@ export const gridColAlignVariants = {
 
 export const iconSizeVariants = {
   normal: tw`text-4xl w-20 h-20 md:text-5xl md:w-24 md:h-24 xl:text-6xl xl:w-36 xl:h-36`,
-  sm: tw`text-2xl w-14 h-14`,
+  sm: tw`text-2xl w-14 h-14 xl:text-3xl xl:w-20 xl:h-20`,
   lg: tw`text-5xl w-28 h-28`,
 };

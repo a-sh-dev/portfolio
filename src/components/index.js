@@ -8,6 +8,7 @@ import MainButton from './MainButton';
 import Icon from './Icon';
 import Table from './Table';
 import TableRow from './TableRow';
+import FactCard from './FactCard';
 
 export {
   Meta,
@@ -20,4 +21,5 @@ export {
   Icon,
   Table,
   TableRow,
+  FactCard,
 };

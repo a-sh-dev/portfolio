@@ -1,22 +1,25 @@
 import tw, { styled } from 'twin.macro';
-import { layoutVariants } from '../../../styles/stylesData';
+import { gridRowVariants, layoutVariants } from '../../../styles/stylesData';
 
 const Wrapper = tw.article`
   relative
 `;
 
-const Layout = styled.div(({ flowCol }) => [
+const Layout = styled.div(({ flowCol, flowRow }) => [
   tw`
-    
+  
   `,
   ({ layout = 'grid' }) => layoutVariants[layout],
-  flowCol && tw`grid-flow-col`,
+  ({ row = '' }) => gridRowVariants[row],
+
+  flowCol && tw`grid-flow-col`, // grid-auto-flow: column
+  flowRow && tw`grid-flow-row`, // grid-auto-flow: row
 ]);
 
-const GridContainer = ({ flowCol, layout, children }) => {
+const GridContainer = ({ row, flowCol, flowRow, layout, children }) => {
   return (
     <Wrapper>
-      <Layout layout={layout} {...{ flowCol }}>
+      <Layout layout={layout} row={row} {...{ flowCol, flowRow }}>
         {children}
       </Layout>
     </Wrapper>

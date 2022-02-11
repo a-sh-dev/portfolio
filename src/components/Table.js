@@ -4,7 +4,8 @@ import { HiOutlineArrowSmDown } from 'react-icons/hi';
 
 const Wrapper = styled.div(() => [
   tw`
-    mb-6
+    relative
+    // mb-6
   `,
 ]);
 
