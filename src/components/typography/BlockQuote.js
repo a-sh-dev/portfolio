@@ -30,7 +30,18 @@ const StyledBlockQuote = styled.p(() => [
 
 const QuoteBy = styled.p(() => [
   tw`
-  
+    text-primary-dark
+    text-lg
+    tracking-wider
+    uppercase
+    md:text-xl
+    xl:text-3xl
+    before:content-['------']
+    before:pr-3
+    before:tracking-[-0.25rem]
+    before:font-thin
+    my-6
+    xl:pt-5
   `,
 ]);
 
@@ -40,7 +51,7 @@ const BlockQuote = ({ noMargin, align, color, subline, children }) => {
       <StyledBlockQuote align={align} color={color} {...{ noMargin }}>
         {children}
       </StyledBlockQuote>
-      <QuoteBy>All projects are crafted with care</QuoteBy>
+      {subline && <QuoteBy>{subline}</QuoteBy>}
     </Wrapper>
   );
 };

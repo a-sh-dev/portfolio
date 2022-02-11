@@ -70,6 +70,7 @@ export const capabilities = [
       { id: 3, name: 'Trello' },
       { id: 4, name: 'Adobe Suite' },
       { id: 5, name: 'Figma' },
+      { id: 6, name: 'Postman' },
     ],
   },
 ];
