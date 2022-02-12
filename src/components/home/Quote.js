@@ -9,22 +9,25 @@ const Wrapper = tw.main`
 `;
 
 const SloganWrapper = tw.div`
-  // absolute
-  // flex
-  // flex-col
-  // w-full
-  // justify-center
-  // -bottom-16
-  // md:-bottom-20
+  relative
+  flex
+  md:flex-col
+  w-full
+  h-full
+  justify-end
+  md:justify-end
+  items-center
+  bottom-14
+  md:bottom-0
 
-  bg-blue-200/20
+  bg-blue-200/50
 `;
 
 const Quote = () => {
   return (
     <Section>
       <Wrapper>
-        <GridContainer>
+        <GridContainer noGap>
           <GridColumn col="span-10">
             <div className="bg-red-300/20">
               <BlockQuote noMargin>

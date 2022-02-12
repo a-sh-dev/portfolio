@@ -7,14 +7,14 @@ const Wrapper = tw.article`
 
 const Layout = styled.div(({ flowCol, flowRow, noGap }) => [
   tw`
-    bg-green-200
+    bg-green-200/50
   `,
   ({ layout = 'grid' }) => layoutVariants[layout],
   ({ row = '' }) => gridRowVariants[row],
 
   flowCol && tw`grid-flow-col`, // grid-auto-flow: column
   flowRow && tw`grid-flow-row`, // grid-auto-flow: row
-  noGap && tw`gap-0`,
+  noGap && tw`md:gap-0`,
 ]);
 
 const GridContainer = ({ row, flowCol, flowRow, layout, noGap, children }) => {

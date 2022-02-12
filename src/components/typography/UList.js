@@ -2,7 +2,7 @@ import tw, { styled } from 'twin.macro';
 
 const StyledUl = styled.ul(() => [
   tw`
-    space-y-2
+    space-y-1.5
   `,
   `
     li {

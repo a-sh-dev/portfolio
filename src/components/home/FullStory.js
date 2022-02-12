@@ -1,8 +1,14 @@
+import tw from 'twin.macro';
 import Image from 'next/image';
 import { Collapsible } from '..';
 import { GridColumn, GridContainer } from '../layout';
 import { EmMed, Heading, TextIcon, Paragraph, SubHeading } from '../typography';
 import { FaRegGrinSquint } from 'react-icons/fa';
+
+const Name = tw.span`
+  whitespace-nowrap
+  font-bold
+`;
 
 const FullStory = () => {
   return (
@@ -24,18 +30,19 @@ const FullStory = () => {
           </Heading>
           <SubHeading align="autoL">The journey so far...</SubHeading>
           <Paragraph>
-            <strong>a-sh</strong> is <EmMed>Angeline S Hentri</EmMed>, who
-            prefers to be called Angie SH.
+            <Name>a-sh </Name>
+            is <EmMed>Angeline S Hentri</EmMed>, who prefers to be called Angie
+            SH.
           </Paragraph>
           <Paragraph>
-            <strong>a-sh</strong> is <EmMed>a small human</EmMed>, literally.
-            Due to her not-so-tall physique, she may be shy at the first
-            meeting. However, people say she is very approachable, friendly, and
-            great to work with.
+            <Name>a-sh</Name> is <EmMed>a small human</EmMed>, literally. Due to
+            her not-so-tall physique, she may be shy at the first meeting.
+            However, people say she is very approachable, friendly, and great to
+            work with.
           </Paragraph>
           <Paragraph>
             In addition to the newly gained coding skills,
-            <strong> a-sh </strong> has been <EmMed>a skilful helper </EmMed>
+            <Name> a-sh </Name> has been <EmMed>a skilful helper </EmMed>
             with 10+ years of solid experience working in multidisciplinary
             design agencies. She loves branding, illustration, typography and
             can be a little bit nerdy with typesetting and file management. She
@@ -44,9 +51,9 @@ const FullStory = () => {
             success.
           </Paragraph>
           <Paragraph>
-            Last but not least, <strong>a-sh</strong> is naturally
+            Last but not least, <Name>a-sh</Name> is naturally
             <EmMed> a shy human</EmMed>. Although <u>not</u> a sweet tooth,
-            <strong> a-sh</strong> is <EmMed>a sweet-heart.</EmMed>
+            <Name> a-sh</Name> is <EmMed>a sweet-heart.</EmMed>
             <TextIcon>
               <FaRegGrinSquint aria-hidden="true" />
             </TextIcon>
