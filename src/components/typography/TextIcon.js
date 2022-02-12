@@ -6,7 +6,6 @@ const IconWrapper = styled.span(({ nudgeTop }) => [
     inline-block
     align-baseline
     mx-1.5
-    text-lg
     relative
     top-0.5
   `,

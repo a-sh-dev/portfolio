@@ -1,26 +1,43 @@
 import tw, { styled } from 'twin.macro';
-import { MainButton, SloganSticker } from '..';
+import { LinkButton, MainButton, SloganSticker } from '..';
 import { GridColumn, GridContainer, Section } from '../layout';
-import { BlockQuote, Heading, Paragraph } from '../typography';
+import {
+  BlockQuote,
+  BodyIntro,
+  Heading,
+  Paragraph,
+  TextIcon,
+} from '../typography';
+import { GiCoffeePot } from 'react-icons/gi';
 
 const Wrapper = tw.main`
-  border-2
-  border-red-400
+  // adjust spacing in mobile
+  pt-5
+  md:p-0
 `;
 
 const SloganWrapper = tw.div`
+  hidden
   relative
-  flex
+  md:flex
   md:flex-col
-  w-full
-  h-full
-  justify-end
+  md:h-full
   md:justify-end
-  items-center
-  bottom-14
+  md:items-center
   md:bottom-0
+  md:right-10
+`;
 
-  bg-blue-200/50
+const SublineWrapper = tw.div`
+  pt-6
+  pb-10
+  pr-10
+  md:pr-20
+`;
+
+const CTA = tw.footer`
+  mx-auto
+  bg-purple-200/50
 `;
 
 const Quote = () => {
@@ -28,14 +45,25 @@ const Quote = () => {
     <Section>
       <Wrapper>
         <GridContainer noGap>
-          <GridColumn col="span-10">
-            <div className="bg-red-300/20">
-              <BlockQuote noMargin>
-                I enjoy problem-solving by integrating the visual and technical
-                aspects of achieving purposeful, systematic UI and effective UX
-                in every project.
-              </BlockQuote>
-            </div>
+          <GridColumn col="span-10" relative>
+            <BlockQuote noMargin>
+              I enjoy problem-solving by integrating the visual and technical
+              aspects of achieving purposeful, systematic UI and effective UX in
+              every project.
+            </BlockQuote>
+
+            <SublineWrapper>
+              <BodyIntro style="medium" noMargin>
+                All projects are crafted with care and (powered by lots of)
+                <span className="whitespace-nowrap">
+                  {' '}
+                  caffeine.
+                  <TextIcon>
+                    <GiCoffeePot />
+                  </TextIcon>
+                </span>
+              </BodyIntro>
+            </SublineWrapper>
           </GridColumn>
 
           <GridColumn col="span-2">
@@ -44,8 +72,10 @@ const Quote = () => {
             </SloganWrapper>
           </GridColumn>
         </GridContainer>
+        <CTA>
+          <LinkButton label="Projects"></LinkButton>
+        </CTA>
       </Wrapper>
-      <MainButton label="Projects"></MainButton>
     </Section>
   );
 };

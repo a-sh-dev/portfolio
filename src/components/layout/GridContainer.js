@@ -7,7 +7,7 @@ const Wrapper = tw.article`
 
 const Layout = styled.div(({ flowCol, flowRow, noGap }) => [
   tw`
-    bg-green-200/50
+  
   `,
   ({ layout = 'grid' }) => layoutVariants[layout],
   ({ row = '' }) => gridRowVariants[row],
