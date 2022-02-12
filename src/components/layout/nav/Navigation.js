@@ -1,6 +1,5 @@
 import { useAppContext } from '../../../context';
 import Link from 'next/link';
-import { useRouter } from 'next/router';
 import tw, { styled } from 'twin.macro';
 import { Container } from '..';
 import { Line } from '../..';
@@ -84,11 +83,8 @@ const MobileBtnCloseMenu = styled.button(() => [
   uniformTransition,
 ]);
 
-const Navigation = () => {
+const Navigation = ({ currentPage }) => {
   const { isNavOpen, openNavMenu, closeNavMenu } = useAppContext();
-
-  const router = useRouter();
-  const currentPage = router.pathname;
 
   return (
     <NavWrapper {...{ isNavOpen }}>

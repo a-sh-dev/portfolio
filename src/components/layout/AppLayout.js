@@ -1,16 +1,29 @@
+import { useRouter } from 'next/router';
+import tw, { styled } from 'twin.macro';
 import { Navigation } from '.';
 import Meta from '../Meta';
 import Footer from './Footer';
 
+const Wrapper = styled.div(() => [
+  tw`
+    flex
+    flex-col
+    min-h-screen
+  `,
+]);
+
 const AppLayout = ({ children }) => {
+  const router = useRouter();
+  const currentPage = router.pathname;
+
   return (
     <>
       <Meta />
-      <div className="flex flex-col min-h-screen">
-        <Navigation />
+      <Wrapper>
+        <Navigation currentPage={currentPage} />
         <div className="flex-1">{children}</div>
-        <Footer />
-      </div>
+        <Footer currentPage={currentPage} />
+      </Wrapper>
     </>
   );
 };
