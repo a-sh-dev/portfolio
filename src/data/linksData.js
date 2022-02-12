@@ -14,27 +14,29 @@ import {
   HomeIcon,
 } from '../components/svgs';
 
-let router;
 export const navLinks = [
   {
     id: 1,
-    name: 'Projects',
-    url: '/projects',
-    current: router?.pathname.includes('/projects'),
-    svg: <HeartIcon />,
+    name: 'Home',
+    url: '/',
+    svg: <HomeIcon />,
   },
   {
     id: 2,
-    name: 'Journal',
-    url: '/journal',
-    current: router?.pathname.includes('/journal'),
-    svg: <JournalIcon />,
+    name: 'Projects',
+    url: '/projects',
+    svg: <HeartIcon />,
   },
   {
     id: 3,
+    name: 'Journal',
+    url: '/journal',
+    svg: <JournalIcon />,
+  },
+  {
+    id: 4,
     name: 'Contact',
     url: '/contact',
-    current: router?.pathname.includes('/contact'),
     svg: <EnvelopeIcon />,
   },
 ];

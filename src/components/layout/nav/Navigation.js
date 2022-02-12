@@ -1,5 +1,6 @@
 import { useAppContext } from '../../../context';
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 import tw, { styled } from 'twin.macro';
 import { Container } from '..';
 import { Line } from '../..';
@@ -86,6 +87,9 @@ const MobileBtnCloseMenu = styled.button(() => [
 const Navigation = () => {
   const { isNavOpen, openNavMenu, closeNavMenu } = useAppContext();
 
+  const router = useRouter();
+  const currentPage = router.pathname;
+
   return (
     <NavWrapper {...{ isNavOpen }}>
       <div className="relative">
@@ -101,7 +105,13 @@ const Navigation = () => {
             </NavLine>
             <NavMenu>
               {navLinks.map((link) => {
-                return <NavItem key={link.id} link={link} />;
+                return (
+                  <NavItem
+                    key={link.id}
+                    link={link}
+                    currentPage={currentPage}
+                  />
+                );
               })}
             </NavMenu>
             <NavLineEnd>

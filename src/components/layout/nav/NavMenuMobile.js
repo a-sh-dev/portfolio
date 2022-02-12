@@ -24,7 +24,7 @@ const NavMenuWrapper = styled.div(() => [
     border-t
     border-dashed
     border-t-primary-light
-    pt-4
+    pt-2
   `,
 
   uniformTransition,
@@ -65,15 +65,10 @@ const SloganWrapper = styled.div(() => [
   tw`
     self-start
     absolute
-    bottom-6
-    right-6
+    -top-24
+    -right-2
   `,
   uniformPadding,
-  `
-    > * {
-      transform: scale(1.5)
-    }
-  `,
 ]);
 
 const Header = styled.header(() => [
@@ -106,6 +101,7 @@ const Footer = tw.footer`
 
 const NavMenuMobile = () => {
   const { isNavOpen, closeNavMenu } = useAppContext();
+
   return (
     <>
       {isNavOpen && (
@@ -133,7 +129,7 @@ const NavMenuMobile = () => {
           </NavMenu>
           <Footer>
             <Copyright className="h-fit">
-              <div className="uppercase">
+              <div className="uppercase pr-24">
                 &copy; {currentYear}
                 <span className="em-dash">--------</span> By a-sh.
                 <br /> {copyright.nav}

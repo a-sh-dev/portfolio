@@ -25,16 +25,14 @@ const StyledParagraph = styled.p(({ noMargin }) => [
 
 const BodyIntro = ({ style, noMargin, align, color, children }) => {
   return (
-    <>
-      <StyledParagraph
-        color={color}
-        align={align}
-        style={style}
-        {...{ noMargin }}
-      >
-        {children}
-      </StyledParagraph>
-    </>
+    <StyledParagraph
+      color={color}
+      align={align}
+      style={style}
+      {...{ noMargin }}
+    >
+      {children}
+    </StyledParagraph>
   );
 };
 

@@ -44,12 +44,13 @@ const IconWrapper = styled.span(() => [
   uniformTransition,
 ]);
 
-const NavItem = ({ link }) => {
-  const { id, name, svg, current, url } = link;
+const NavItem = ({ currentPage, link }) => {
+  const { name, svg, url } = link;
+
   return (
     <>
       <Link href={url} passHref>
-        <div className="group">
+        <div className={currentPage === url ? 'hidden' : 'group'}>
           <ItemContainer className="group-hover:bg-primary-dark">
             <IconWrapper className="group-hover:text-white">{svg}</IconWrapper>
             <ItemName className="group-hover:text-white">{name}</ItemName>
