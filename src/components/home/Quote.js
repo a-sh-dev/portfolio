@@ -12,7 +12,7 @@ import { GiCoffeePot } from 'react-icons/gi';
 
 const Wrapper = tw.main`
   // adjust spacing in mobile
-  pt-5
+  py-5
   md:p-0
 `;
 
@@ -29,14 +29,20 @@ const SloganWrapper = tw.div`
 `;
 
 const SublineWrapper = tw.div`
+  text-primary-dark
+  text-lg
+  font-medium
   pt-6
   pb-10
   pr-10
   md:pr-20
+  md:pt-10
+  md:text-xl
+  xl:text-2xl
 `;
 
 const CTA = tw.footer`
-  mt-6
+  md:mt-6
 `;
 
 const Quote = () => {
@@ -52,7 +58,7 @@ const Quote = () => {
             </BlockQuote>
 
             <SublineWrapper>
-              <BodyIntro style="medium" noMargin>
+              <p>
                 All projects are crafted with care and (powered by lots of)
                 <span className="whitespace-nowrap">
                   {' '}
@@ -61,7 +67,7 @@ const Quote = () => {
                     <GiCoffeePot />
                   </TextIcon>
                 </span>
-              </BodyIntro>
+              </p>
             </SublineWrapper>
           </GridColumn>
 
