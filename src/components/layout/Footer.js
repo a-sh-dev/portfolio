@@ -45,17 +45,16 @@ const Wrapper = styled.footer(() => [
 const MenuBar = styled.div(() => [
   tw`
     flex
-    md:items-center
     text-xs
     flex-col
     uppercase
     font-medium
     tracking-widest
+    md:items-center
     md:flex-row
     md:justify-between
     md:pt-6
     md:text-sm
-    // bg-red-300/30
   `,
 ]);
 
@@ -68,7 +67,6 @@ const SocialLinks = styled.div(() => [
     pb-10
     md:gap-3
     md:py-0
-    // bg-green-300/50
   `,
 ]);
 
@@ -119,7 +117,7 @@ const ContactLink = styled.a(() => [
     justify-center
     w-full
     md:gap-6
-    md:text-7xl
+    md:text-[5.5rem]
     md:py-20
     hover:(text-primary-darkest)
     xl:text-9xl
@@ -143,16 +141,12 @@ const Footer = ({ currentPage }) => {
         {!isContactPage && (
           <ContactCTA>
             <VLineBg length="6rem" />
-            <Sticker
-              text="Thank you, please come again?"
-              noMargin
-              color="pink"
-            />
+            <Sticker text="Thank you, please come again?" noMargin />
             <Link href="/contact" passHref>
               <ContactLink>
                 <p>Let&apos;s get in touch </p>
                 <TextIcon color="dark">
-                  <BsArrowRight />
+                  <BsArrowRight aria-hidden="true" />
                 </TextIcon>
               </ContactLink>
             </Link>
