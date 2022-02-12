@@ -1,12 +1,16 @@
 import Link from 'next/link';
 import tw, { styled } from 'twin.macro';
-import { Container } from '.';
+// import { Container } from '.';
 import { AshLogo } from '../svgs';
 import { BsArrowRight } from 'react-icons/bs';
 import { Button, Line, Sticker, VLineBg } from '..';
 import { TextIcon } from '../typography';
 import { copyright, socialMediaLinks } from '../../data';
 import { currentYear } from '../../utils';
+import {
+  maxWidthVariants,
+  uniformTransition,
+} from '../../../styles/stylesData';
 
 const flexCenter = tw`flex items-center gap-2`;
 
@@ -20,17 +24,23 @@ const Wrapper = styled.footer(() => [
 
     text-primary-dark
     relative
-    // -bottom-20
-    // md:bottom-0
 
     h-full
-    md:pb-12
+    pb-10
+    md:pb-20
     overflow-hidden
-    border-2
-    border-green-500
     flex
     flex-col
-    justify-between
+  `,
+]);
+
+const Container = styled.div(() => [
+  maxWidthVariants['max'],
+  tw`
+    px-7
+    md:px-0
+    md:mx-auto
+    md:container
   `,
 ]);
 
@@ -41,35 +51,49 @@ const MenuBar = styled.div(() => [
     text-xs
     flex-col
     uppercase
+    font-medium
+    tracking-widest
     md:flex-row
     md:justify-between
-    md:font-medium
-    md:tracking-widest
     md:pt-6
     md:text-sm
+    // bg-red-300/30
   `,
 ]);
 
 const SocialLinks = styled.div(() => [
-  flexCenter,
   tw`    
-    
+    flex
+    items-center
+    gap-5
+    justify-center
+    pb-10
+    md:gap-3
+    md:py-0
+    // bg-green-300/50
   `,
 ]);
 
 const SocialIcon = styled.a(() => [
   tw`
-    pl-4
+    text-lg
+    border
+    border-primary-dark
+    rounded-full
+    p-2
+    hover:(bg-primary-dark text-white)
+    md:p-3
+    md:text-xl
   `,
+  uniformTransition,
 ]);
 
 const Copyright = styled.div(() => [
   tw`
     flex
     items-center
-    // flex-col
     gap-2
-    // md:flex-row
+    justify-center
   `,
 ]);
 
@@ -89,25 +113,26 @@ const StickerWrapper = styled.div(() => [
   tw`
     flex
     flex-col
-    // items-end
-    // bottom-0
-    md:h-28
-    border-2
-    border-green-500
   `,
 ]);
 
 const ContactLink = styled.a(() => [
   tw`
     text-3xl
+    gap-2
     font-extrabold
     tracking-tight
-    py-6
+    py-10
     flex
     items-center
+    justify-center
+    w-full
+    md:gap-6
     md:text-9xl
-    md:py-10
+    md:py-20
+    hover:(text-primary-darkest)
   `,
+  uniformTransition,
 ]);
 
 const LineWrapper = tw.div`
@@ -122,17 +147,19 @@ const Footer = ({ currentPage }) => {
 
   return (
     <Wrapper>
-      <Container maxWidth="max">
+      <Container>
         {!isContactPage && (
           <ContactCTA>
-            <VLineBg>
-              <StickerWrapper>
-                <Sticker text="Email me, maybe?" noMargin />
-              </StickerWrapper>
-            </VLineBg>
+            <VLineBg length="6rem" />
+            <StickerWrapper>
+              <Sticker text="Thank you, come again?" noMargin color="pink" />
+            </StickerWrapper>
             <Link href="/contact" passHref>
               <ContactLink>
-                Let&apos;s get in touch.<Button icon> + </Button>
+                <p>Let&apos;s get in touch </p>
+                <TextIcon color="dark">
+                  <BsArrowRight />
+                </TextIcon>
               </ContactLink>
             </Link>
           </ContactCTA>
@@ -140,12 +167,7 @@ const Footer = ({ currentPage }) => {
 
         <MenuBar>
           <SocialLinks>
-            <span className="hidden md:block">
-              Connect now
-              <TextIcon>
-                <BsArrowRight aria-hidden="true" />
-              </TextIcon>
-            </span>
+            <span className="hidden md:block">Connect now</span>
             {socialMediaLinks.map((link) => {
               const { name, icon, url } = link;
               return (
@@ -166,8 +188,8 @@ const Footer = ({ currentPage }) => {
           </LineWrapper>
 
           <Copyright>
-            {copyright?.footer} by
-            <div className="text-5xl">
+            {copyright?.footer}
+            <div className="text-4xl md:text-5xl">
               <AshLogo />
             </div>{' '}
             &copy; {currentYear}

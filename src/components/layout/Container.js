@@ -3,7 +3,7 @@ import { maxWidthVariants } from '../../../styles/stylesData';
 
 // default content max-width screen is 1280px (xl)
 
-const StyledContainer = styled.div(({ relative }) => [
+const StyledContainer = styled.div(({ relative, noGutter }) => [
   tw`
     px-8
     mx-auto
@@ -13,11 +13,12 @@ const StyledContainer = styled.div(({ relative }) => [
   `,
   ({ maxWidth = 'xl' }) => maxWidthVariants[maxWidth],
   relative && tw`relative`,
+  noGutter && tw`p-0 md:p-0`,
 ]);
 
-const Container = ({ relative, maxWidth, children }) => {
+const Container = ({ relative, noGutter, maxWidth, children }) => {
   return (
-    <StyledContainer maxWidth={maxWidth} {...{ relative }}>
+    <StyledContainer maxWidth={maxWidth} {...{ relative, noGutter }}>
       {children}
     </StyledContainer>
   );
