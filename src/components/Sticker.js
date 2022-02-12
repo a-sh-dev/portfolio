@@ -15,7 +15,10 @@ const StickerWrapper = styled.div(({ noMargin }) => [
     border-b-2
     border-primary-light
     text-sm
+    md:px-10
     md:text-lg
+    xl:px-12
+    xl:py-2.5
     xl:text-2xl
   `,
   `

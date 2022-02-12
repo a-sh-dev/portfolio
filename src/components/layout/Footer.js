@@ -7,12 +7,8 @@ import { Button, Line, Sticker, VLineBg } from '..';
 import { TextIcon } from '../typography';
 import { copyright, socialMediaLinks } from '../../data';
 import { currentYear } from '../../utils';
-import {
-  maxWidthVariants,
-  uniformTransition,
-} from '../../../styles/stylesData';
-
-const flexCenter = tw`flex items-center gap-2`;
+import { uniformTransition } from '../../../styles/stylesData';
+import { Container } from '.';
 
 const Wrapper = styled.footer(() => [
   tw`
@@ -27,22 +23,24 @@ const Wrapper = styled.footer(() => [
 
     h-full
     pb-10
-    md:pb-20
     overflow-hidden
     flex
     flex-col
+    md:pb-20
+    md:px-16
+    xl:px-0
   `,
 ]);
 
-const Container = styled.div(() => [
-  maxWidthVariants['max'],
-  tw`
-    px-7
-    md:px-0
-    md:mx-auto
-    md:container
-  `,
-]);
+// const Container = styled.div(() => [
+//   maxWidthVariants['max'],
+//   tw`
+//     px-7
+//     md:px-0
+//     md:mx-auto
+//     md:container
+//   `,
+// ]);
 
 const MenuBar = styled.div(() => [
   tw`
@@ -109,13 +107,6 @@ const ContactCTA = styled.div(() => [
   `,
 ]);
 
-const StickerWrapper = styled.div(() => [
-  tw`
-    flex
-    flex-col
-  `,
-]);
-
 const ContactLink = styled.a(() => [
   tw`
     text-3xl
@@ -128,18 +119,19 @@ const ContactLink = styled.a(() => [
     justify-center
     w-full
     md:gap-6
-    md:text-9xl
+    md:text-7xl
     md:py-20
     hover:(text-primary-darkest)
+    xl:text-9xl
   `,
   uniformTransition,
 ]);
 
 const LineWrapper = tw.div`
   hidden
+  md:flex-1
   md:block
   md:mx-2.5
-  flex-1
 `;
 
 const Footer = ({ currentPage }) => {
@@ -147,13 +139,15 @@ const Footer = ({ currentPage }) => {
 
   return (
     <Wrapper>
-      <Container>
+      <Container maxWidth="max" noGutter>
         {!isContactPage && (
           <ContactCTA>
             <VLineBg length="6rem" />
-            <StickerWrapper>
-              <Sticker text="Thank you, come again?" noMargin color="pink" />
-            </StickerWrapper>
+            <Sticker
+              text="Thank you, please come again?"
+              noMargin
+              color="pink"
+            />
             <Link href="/contact" passHref>
               <ContactLink>
                 <p>Let&apos;s get in touch </p>

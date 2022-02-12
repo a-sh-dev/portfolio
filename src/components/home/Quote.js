@@ -1,13 +1,7 @@
 import tw, { styled } from 'twin.macro';
 import { LinkButton, SloganSticker } from '..';
 import { GridColumn, GridContainer, Section } from '../layout';
-import {
-  BlockQuote,
-  BodyIntro,
-  Heading,
-  Paragraph,
-  TextIcon,
-} from '../typography';
+import { BlockQuote, TextIcon } from '../typography';
 import { GiCoffeePot } from 'react-icons/gi';
 
 const Wrapper = tw.main`
@@ -26,6 +20,7 @@ const SloganWrapper = tw.div`
   md:items-center
   md:bottom-0
   md:right-10
+  xl:-bottom-8
 `;
 
 const SublineWrapper = tw.div`
@@ -73,7 +68,7 @@ const Quote = () => {
 
           <GridColumn col="span-2">
             <SloganWrapper>
-              <SloganSticker withLogo />
+              <SloganSticker withLogo lg />
             </SloganWrapper>
           </GridColumn>
         </GridContainer>

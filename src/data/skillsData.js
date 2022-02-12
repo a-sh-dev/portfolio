@@ -84,12 +84,12 @@ export const features = [
       { id: 1, name: 'Excellent attention to details' },
       {
         id: 2,
-        name: 'Self-motivaed & a dedicated team player who also works well independently',
+        name: 'Self-motivated and a dedicated team player who also works well independently',
       },
-      { id: 3, name: 'Well adapted & organised' },
+      { id: 3, name: 'Well adapted and organised' },
       { id: 4, name: 'Highly committed to quality' },
       { id: 5, name: 'Comfortable working under pressure' },
-      { id: 6, name: 'Determined, eager to learn & a fast learner' },
+      { id: 6, name: 'Determined, eager to learn and a fast learner' },
     ],
   },
 ];
