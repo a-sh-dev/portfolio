@@ -1,10 +1,11 @@
+import Link from 'next/link';
 import tw, { styled } from 'twin.macro';
 import { uniformTransition } from '../../styles/stylesData';
 import { HiArrowNarrowRight, HiArrowNarrowLeft } from 'react-icons/hi';
 
 const outlinedBase = tw`bg-transparent`;
 const btnBase = tw`font-mono text-primary-dark capitalize cursor-pointer hover:(bg-primary-dark text-white)`;
-const iconBase = tw`grid place-items-center text-lg`;
+const iconBase = tw`grid place-items-center text-lg pt-0.5 md:text-xl`;
 
 const BtnContainer = styled.button(({ outlined }) => [
   btnBase,
@@ -16,8 +17,13 @@ const BtnContainer = styled.button(({ outlined }) => [
     border-primary-dark
     rounded-sm
     px-8
-    py-3
+    pt-3
+    pb-4
     whitespace-nowrap
+    md:text-lg
+    md:pt-5
+    md:pb-6
+    md:px-16
     bg-white
   `,
   outlined && outlinedBase,
@@ -27,27 +33,22 @@ const BtnContainer = styled.button(({ outlined }) => [
 const IconWrapper = styled.span(() => [
   iconBase,
   tw`
-    pl-2
+    pl-5
+    md:pl-8
   `,
 ]);
 
-const LinkButton = ({ large, outlined, label, onClick, children }) => {
+const LinkButton = ({ outlined, url, children }) => {
   return (
-    <BtnContainer {...{ outlined, large }} onClick={onClick}>
-      {label}
-      <IconWrapper>{children || <HiArrowNarrowRight />}</IconWrapper>
-    </BtnContainer>
+    <Link href={url} passHref>
+      <BtnContainer {...{ outlined }}>
+        {children}
+        <IconWrapper>
+          <HiArrowNarrowRight />
+        </IconWrapper>
+      </BtnContainer>
+    </Link>
   );
 };
-
-// const NavLogo = React.forwardRef(({ onClick, href }, ref) => {
-//   return (
-//     <a href={href} onClick={onClick} ref={ref}>
-//       <AshLogo />
-//     </a>
-//   );
-// });
-
-// NavLogo.displayName = 'NavLogo';
 
 export default LinkButton;

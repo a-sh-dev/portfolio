@@ -36,8 +36,7 @@ const SublineWrapper = tw.div`
 `;
 
 const CTA = tw.footer`
-  mx-auto
-  bg-purple-200/50
+  mt-6
 `;
 
 const Quote = () => {
@@ -73,7 +72,7 @@ const Quote = () => {
           </GridColumn>
         </GridContainer>
         <CTA>
-          <LinkButton label="Projects"></LinkButton>
+          <LinkButton url="/projects">Projects</LinkButton>
         </CTA>
       </Wrapper>
     </Section>
