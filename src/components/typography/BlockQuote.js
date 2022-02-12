@@ -10,7 +10,7 @@ const Wrapper = styled.div(({ noMargin }) => [
     md:my-16
     xl:my-20
   `,
-  noMargin && tw`m-0 md:m-0`,
+  noMargin && tw`my-0 md:my-0 xl:my-0`,
 ]);
 
 const StyledBlockQuote = styled.p(() => [
@@ -47,8 +47,8 @@ const QuoteBy = styled.p(() => [
 
 const BlockQuote = ({ noMargin, align, color, subline, children }) => {
   return (
-    <Wrapper>
-      <StyledBlockQuote align={align} color={color} {...{ noMargin }}>
+    <Wrapper {...{ noMargin }}>
+      <StyledBlockQuote align={align} color={color}>
         {children}
       </StyledBlockQuote>
       {subline && <QuoteBy>{subline}</QuoteBy>}

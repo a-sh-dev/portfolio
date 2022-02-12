@@ -99,10 +99,11 @@ export const sectionVariants = {
   clean: tw`border-0`,
 };
 
-const gridGap = `gap-x-5 md:gap-8 xl:gap-10`;
+const gridGap = `gap-x-5 md:gap-x-8 xl:gap-x-10`;
 
 export const layoutVariants = {
   grid: tw`grid grid-cols-4 md:grid-cols-12 ${gridGap}`,
+  'grid-xy': tw`grid grid-cols-4 gap-x-5 md:grid-cols-12 md:gap-8 xl:gap-10`,
   'grid-cols-8': tw`grid md:grid-cols-8 ${gridGap}`,
   'subgrid-cols-3': tw`grid grid-cols-1 md:grid-cols-3 gap-4`,
 };
