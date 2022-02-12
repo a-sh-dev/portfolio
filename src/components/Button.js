@@ -44,7 +44,7 @@ const IconWrapper = styled.span(() => [
   `,
 ]);
 
-const MainButton = ({ icon, outlined, label, onClick, children }) => {
+const Button = ({ icon, outlined, label, onClick, children }) => {
   return icon ? (
     <BtnIcon {...{ outlined }} className="h-fit" onClick={onClick}>
       <div className="h-fit aspect-square">{children}</div>
@@ -57,4 +57,4 @@ const MainButton = ({ icon, outlined, label, onClick, children }) => {
   );
 };
 
-export default MainButton;
+export default Button;

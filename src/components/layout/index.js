@@ -5,6 +5,7 @@ import Section from './Section';
 import Navigation from './nav/Navigation';
 import GridColumn from './GridColumn';
 import GridContainer from './GridContainer';
+import Footer from './Footer';
 
 export {
   Header,
@@ -14,4 +15,5 @@ export {
   Navigation,
   GridColumn,
   GridContainer,
+  Footer,
 };

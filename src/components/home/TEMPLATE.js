@@ -1,12 +1,12 @@
 import tw, { styled } from 'twin.macro';
 
-const IconWrapper = styled.div(() => [
+const Wrapper = styled.div(() => [
   tw`
   
   `,
 ]);
 
-const Skills = () => {
+const ChangeName = () => {
   return (
     <div>
       <h1>Core Skills & Capabilities Component</h1>
@@ -14,4 +14,4 @@ const Skills = () => {
   );
 };
 
-export default Skills;
+export default ChangeName;

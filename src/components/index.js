@@ -4,7 +4,7 @@ import SloganSticker from './SloganSticker';
 import Line from './Line';
 import VLineBg from './VLineBg';
 import Collapsible from './Collapsible ';
-import MainButton from './MainButton';
+import Button from './Button';
 import Icon from './Icon';
 import Table from './Table';
 import TableRow from './TableRow';
@@ -18,7 +18,7 @@ export {
   Line,
   VLineBg,
   Collapsible,
-  MainButton,
+  Button,
   Icon,
   Table,
   TableRow,

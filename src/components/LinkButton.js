@@ -2,6 +2,7 @@ import Link from 'next/link';
 import tw, { styled } from 'twin.macro';
 import { uniformTransition } from '../../styles/stylesData';
 import { HiArrowNarrowRight, HiArrowNarrowLeft } from 'react-icons/hi';
+import { BsArrowRight } from 'react-icons/bs';
 
 const outlinedBase = tw`bg-transparent`;
 const btnBase = tw`font-mono text-primary-dark capitalize cursor-pointer hover:(bg-primary-dark text-white)`;
@@ -44,7 +45,7 @@ const LinkButton = ({ outlined, url, children }) => {
       <BtnContainer {...{ outlined }}>
         {children}
         <IconWrapper>
-          <HiArrowNarrowRight />
+          <BsArrowRight aria-hidden="true" />
         </IconWrapper>
       </BtnContainer>
     </Link>

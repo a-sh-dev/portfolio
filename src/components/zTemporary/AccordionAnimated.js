@@ -2,7 +2,7 @@ import Image from 'next/image';
 import { useState, useEffect, useRef } from 'react';
 import tw, { styled } from 'twin.macro';
 import { HiOutlinePlusSm, HiOutlineMinusSm } from 'react-icons/hi';
-import { MainButton } from '.';
+import { Button } from '.';
 import { bgColorVariants } from '../../styles/stylesData';
 import { Heading } from './typography';
 
@@ -62,9 +62,9 @@ const Accordion = ({ color, title, children }) => {
           <Heading variant="mono" noMargin noGutter>
             {showInfo ? 'Hide' : ''} {title}
           </Heading>
-          <MainButton icon>
+          <Button icon>
             {showInfo ? <HiOutlineMinusSm /> : <HiOutlinePlusSm />}
-          </MainButton>
+          </Button>
         </AccordionHeader>
       </div>
 

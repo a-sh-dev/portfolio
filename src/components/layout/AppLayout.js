@@ -1,8 +1,7 @@
 import { useRouter } from 'next/router';
 import tw, { styled } from 'twin.macro';
-import { Navigation } from '.';
+import { Footer, Navigation } from '.';
 import Meta from '../Meta';
-import Footer from './Footer';
 
 const Wrapper = styled.div(() => [
   tw`

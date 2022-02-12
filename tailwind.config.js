@@ -40,7 +40,8 @@ module.exports = {
         'spin-slow': 'spin 30s linear infinite',
       },
       backgroundImage: {
-        profile: "url('/images/il_ash_profile_600x693.png')",
+        'footer-blue': "url('/images/bg_footer_cloud_02t_blue_2560x1081.gif')",
+        'footer-warm': "url('/images/bg_footer_cloud_01t_warm_2560x1081.gif')",
       },
     },
   },
