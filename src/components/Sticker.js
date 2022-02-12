@@ -3,7 +3,7 @@ import { bgColorVariants, uniformTransition } from '../../styles/stylesData';
 
 // ! Sticker is the highlighted label in italic Space Mono
 
-const StickerWrapper = styled.div(() => [
+const StickerWrapper = styled.div(({ noMargin }) => [
   tw`
     inline-block
     px-6
@@ -28,6 +28,7 @@ const StickerWrapper = styled.div(() => [
   ({ color = 'teal' }) => bgColorVariants[color],
 
   uniformTransition,
+  noMargin && tw`m-0`,
 ]);
 
 const Text = tw.h5`
@@ -44,9 +45,9 @@ const Icon = tw.span`
   ml-1.5
 `;
 
-const Sticker = ({ text, color, children }) => {
+const Sticker = ({ text, color, noMargin, children }) => {
   return (
-    <StickerWrapper color={color}>
+    <StickerWrapper color={color} {...{ noMargin }}>
       <Text>
         {text}
         {children && <Icon>{children}</Icon>}
