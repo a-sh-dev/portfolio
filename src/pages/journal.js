@@ -1,6 +1,6 @@
 import { Meta } from '../components';
 import { Container } from '../components/layout';
-import { JournalHeader } from '../components/journal';
+import { JournalHeader, JournalList } from '../components/journal';
 
 const journal = () => {
   return (
@@ -8,6 +8,7 @@ const journal = () => {
       <Meta title="journal" />
       <Container>
         <JournalHeader />
+        <JournalList />
       </Container>
     </>
   );

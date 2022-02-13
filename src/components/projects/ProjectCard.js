@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import tw, { styled } from 'twin.macro';
 
 const Wrapper = styled.div(() => [
@@ -6,7 +7,7 @@ const Wrapper = styled.div(() => [
   `,
 ]);
 
-const Project = () => {
+const ProjectCard = () => {
   return (
     <div>
       <h1>I AM INSIDE PROJECT (EACH PROJECT)</h1>
@@ -14,4 +15,4 @@ const Project = () => {
   );
 };
 
-export default Project;
+export default ProjectCard;

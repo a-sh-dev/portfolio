@@ -9,7 +9,7 @@ const Wrapper = styled.div(() => [
   `,
 ]);
 
-const ProjectHeader = () => {
+const ContactHeader = () => {
   return (
     <Header
       sticker="My pressciousss~!"
@@ -34,4 +34,4 @@ const ProjectHeader = () => {
   );
 };
 
-export default ProjectHeader;
+export default ContactHeader;

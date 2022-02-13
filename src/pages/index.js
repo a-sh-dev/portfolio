@@ -1,5 +1,3 @@
-import Image from 'next/image';
-import 'twin.macro';
 import {
   DevLife,
   Facts,

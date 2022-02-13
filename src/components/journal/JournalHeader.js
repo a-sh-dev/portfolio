@@ -17,11 +17,13 @@ const JournalHeader = () => {
     >
       <BodyIntro>
         Keeping up with the technology can easily be overwhelming.
-      </BodyIntro>{' '}
-      However, new frameworks, libraries and even programming languages are
-      consistently being developed for improvement. Therefore, I like to record
-      my learning progress and milestones for self-motivation that hopefully can
-      also motivate and encourage others.
+      </BodyIntro>
+      <Paragraph>
+        However, new frameworks, libraries and even programming languages are
+        consistently being developed for improvement. Therefore, I like to
+        record my learning progress and milestones for self-motivation that
+        hopefully can also motivate and encourage others.
+      </Paragraph>
     </Header>
   );
 };

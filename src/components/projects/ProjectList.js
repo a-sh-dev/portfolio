@@ -1,6 +1,6 @@
 import tw, { styled } from 'twin.macro';
 import { Section } from '../layout';
-import Project from './Project';
+import ProjectCard from './ProjectCard';
 
 const Wrapper = styled.div(() => [
   tw`
@@ -11,7 +11,7 @@ const Wrapper = styled.div(() => [
 const ProjectList = () => {
   return (
     <Section>
-      <Project>EACH PROJECT</Project>
+      <ProjectCard>EACH PROJECT</ProjectCard>
     </Section>
   );
 };
