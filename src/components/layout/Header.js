@@ -10,7 +10,6 @@ const Wrapper = styled.header(() => [
     md:pb-14
     md:pt-32
     xl:pt-44
-    // bg-blue-300/50
   `,
 ]);
 
@@ -28,7 +27,6 @@ const SideHeader = styled.div(() => [
 
 const IconWrapper = styled.div(() => [
   tw`
-    bg-red-200/50
     w-full
   `,
 ]);
@@ -37,7 +35,7 @@ const Header = ({ title, subline, sticker, color, children }) => {
   return (
     <Wrapper>
       <GridContainer layout="grid-xy">
-        <GridColumn col="span-9">
+        <GridColumn col="span-8">
           <div className="2xl:pr-24">
             <Heading>
               {title}

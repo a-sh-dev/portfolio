@@ -3,13 +3,13 @@ import tw from 'twin.macro';
 
 export const uniformTransition = tw`transition-all delay-75 duration-300 ease-out hover:(ease-in duration-200)`;
 
-export const uniformSlowTransition = tw`transition-all delay-150 duration-500 ease-out hover:(ease-in duration-300)`;
-
 export const paragraphMargin = '1.25rem';
 
 export const sectionPaddingY = tw`py-14 md:py-28 xl:py-44`;
 export const sectionPaddingB = tw`pb-14 md:pb-28 xl:pb-44`;
 export const sectionPaddingT = tw`pt-14 md:pt-28 xl:pt-44`;
+
+export const pagesHeroMax = tw`lg:max-w-screen-md xl:max-w-screen-lg 2xl:max-w-screen-xl lg:mx-auto`;
 
 export const bgColorVariants = {
   teal: tw`bg-accent-teal`,
@@ -92,7 +92,7 @@ export const fontSizeVariants = {
 const monoBase = `font-mono uppercase text-base tracking-widest md:text-xl xl:text-2xl`;
 
 export const headingVariants = {
-  page: tw`text-5xl md:text-8xl xl:text-9xl`,
+  page: tw`text-5xl md:text-[5.5rem] lg:text-8xl xl:text-9xl`,
   sm: tw`text-4xl md:text-6xl`,
   xs: tw`font-bold text-2xl md:text-3xl xl:text-4xl`,
   card: tw`font-bold text-xl xl:text-2xl`,
@@ -134,9 +134,11 @@ export const gridColVariants = {
   'span-6': tw`md:col-span-6`, // half 12/6
   'span-7': tw`md:col-span-7`, // 12/7
   'span-8': tw`md:col-span-8`, // 12/8
-  'span-8-6': tw`md:col-span-8 2xl:col-span-6`, // 12/8
+  'span-8-6': tw`md:col-span-8 2xl:col-span-6`,
   'span-9': tw`md:col-span-9`, // 12/9
+  'span-9-7': tw`md:col-span-9 lg:col-span-7 `, // 12/9
   'span-10': tw`md:col-span-10`, // 12/10
+  'span-10-8': tw`md:col-span-10 xl:col-span-8`, // 12/10
   auto: tw`md:col-auto`,
   full: tw`md:col-span-full`,
 };

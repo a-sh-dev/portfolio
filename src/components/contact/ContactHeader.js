@@ -1,13 +1,14 @@
 import tw, { styled } from 'twin.macro';
-import { Header } from '../layout';
+import { GridColumn, GridContainer, Header } from '../layout';
 import { BodyIntro, Paragraph, TextIcon } from '../typography';
 import { EnvelopeIcon } from '../svgs';
-import { sectionPaddingB } from '../../../styles/stylesData';
+import { pagesHeroMax, sectionPaddingB } from '../../../styles/stylesData';
 
 const Wrapper = styled.div(() => [
   sectionPaddingB,
+  pagesHeroMax,
   tw`
-  
+    
   `,
 ]);
 
@@ -28,15 +29,18 @@ const ContactHeader = () => {
       >
         <EnvelopeIcon />
       </Header>
-      <SubHeader>
-        <BodyIntro noMargin>
-          I would love to chat with you about anything!
-        </BodyIntro>
-        <Paragraph>
-          So, please fill out the form below, and I will get back to you as soon
-          as possible!
-        </Paragraph>
-      </SubHeader>
+      <GridContainer>
+        <GridColumn col="span-11">
+          <BodyIntro noMargin>
+            I would love to chat with you about anything!
+          </BodyIntro>
+
+          <Paragraph>
+            So, please fill out the form below, and I will get back to you as
+            soon as possible!
+          </Paragraph>
+        </GridColumn>
+      </GridContainer>
     </Wrapper>
   );
 };

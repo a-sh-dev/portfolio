@@ -3,12 +3,13 @@ import { GridColumn, GridContainer, Header } from '../layout';
 import { BodyIntro, Em, Paragraph, TextIcon } from '../typography';
 import { FaRegGrinStars } from 'react-icons/fa';
 import { HeartIcon } from '../svgs';
-import { sectionPaddingB } from '../../../styles/stylesData';
+import { pagesHeroMax, sectionPaddingB } from '../../../styles/stylesData';
 
 const Wrapper = styled.div(() => [
   sectionPaddingB,
+  pagesHeroMax,
   tw`
-  
+    
   `,
 ]);
 
@@ -30,7 +31,7 @@ const ProjectHeader = () => {
         <HeartIcon />
       </Header>
       <GridContainer>
-        <GridColumn col="span-8-6">
+        <GridColumn col="span-9">
           <BodyIntro noMargin>
             Once upon a time, building websites for me involved integrating
             Adobe Photoshop and Dreamweaver...
