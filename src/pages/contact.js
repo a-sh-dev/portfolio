@@ -1,6 +1,10 @@
 import { Meta } from '../components';
 import { Container } from '../components/layout';
-import { ContactForm, ContactHeader } from '../components/contact';
+import {
+  ContactForm,
+  ContactHeader,
+  ContactLinks,
+} from '../components/contact';
 
 const contact = () => {
   return (
@@ -9,6 +13,7 @@ const contact = () => {
       <Container>
         <ContactHeader />
         <ContactForm />
+        <ContactLinks />
       </Container>
     </>
   );

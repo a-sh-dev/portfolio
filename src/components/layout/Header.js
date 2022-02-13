@@ -19,12 +19,19 @@ const SubHeader = styled.div(() => [
   `,
 ]);
 
-const Header = ({ title, sticker, color, children }) => {
+const Header = ({ title, subline, sticker, color, children }) => {
   return (
     <Wrapper>
       <GridContainer>
         <GridColumn col="span-8">
-          <Heading>{title}</Heading>
+          <Heading>
+            {title}
+            {subline && (
+              <>
+                <br /> {subline}
+              </>
+            )}
+          </Heading>
           {sticker && <Sticker color={color}>{sticker}</Sticker>}
         </GridColumn>
         <GridColumn col="span-4">

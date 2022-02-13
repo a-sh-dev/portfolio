@@ -1,6 +1,6 @@
 import tw, { styled } from 'twin.macro';
 import { Header } from '../layout';
-import { BodyIntro, Paragraph, TextIcon } from '../typography';
+import { BodyIntro, Em, Paragraph, TextIcon } from '../typography';
 import { FaRegGrinStars } from 'react-icons/fa';
 
 const Wrapper = styled.div(() => [
@@ -16,17 +16,21 @@ const ProjectHeader = () => {
       title="Selected Projects"
       color="purple"
     >
-      <BodyIntro>
-        Once upon a time, building websites for me consisted of utilising Adobe
-        Photoshop to slice down the design mock-up.
+      <BodyIntro noMargin>
+        Once upon a time, building websites for me involved integrating Adobe
+        Photoshop and Dreamweaver.
       </BodyIntro>
       <Paragraph>
-        Then I would convert it to codes automatically in Dreamweaver and then
-        publish it on the web with a few tweaks of HTML and CSS. Fast forward,
-        here are some selected projects built with care and heaps of caffeine
-        since I started my formal coding journey. I look forward to adding more
-        soon!
-        <TextIcon>
+        I would first &apos;slice&apos; the design mock-up then bring it to
+        Dreamweaver to convert it to codes automatically
+        <Em size="base"> (voila, tables everywhere!).</Em> . Then, finally
+        published it on the web with a few HTML and CSS tweaks.
+      </Paragraph>
+      <Paragraph>
+        Fast forward, here are some selected projects built with care and heaps
+        of caffeine since I started my formal coding journey. I look forward to
+        adding more soon!{' '}
+        <TextIcon noMargin>
           <FaRegGrinStars aria-hidden="true" />
         </TextIcon>
       </Paragraph>

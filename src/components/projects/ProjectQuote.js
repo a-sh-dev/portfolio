@@ -46,8 +46,9 @@ const ProjectQuote = () => {
       <Wrapper>
         <GridContainer noGap>
           <GridColumn col="span-10">
-            <BlockQuote noMargin subline="Dave Gray (@yesdavidgray)">
-              Strive for Progress, Not Perfection.
+            <BlockQuote noMargin subline="Dave Gray">
+              Strive for Progress, <br />
+              Not Perfection.
             </BlockQuote>
           </GridColumn>
         </GridContainer>

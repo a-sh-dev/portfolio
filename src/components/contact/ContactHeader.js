@@ -12,23 +12,17 @@ const Wrapper = styled.div(() => [
 const ContactHeader = () => {
   return (
     <Header
-      sticker="My pressciousss~!"
-      title="Selected Projects"
-      color="purple"
+      title="Let's Get"
+      subline="in Touch!"
+      sticker="Email me, maybe?"
+      color="yellow"
     >
-      <BodyIntro>
-        Once upon a time, building websites for me consisted of utilising Adobe
-        Photoshop to slice down the design mock-up.
+      <BodyIntro noMargin>
+        I would love to chat with you about anything!
       </BodyIntro>
       <Paragraph>
-        Then I would convert it to codes automatically in Dreamweaver and then
-        publish it on the web with a few tweaks of HTML and CSS. Fast forward,
-        here are some selected projects built with care and heaps of caffeine
-        since I started my formal coding journey. I look forward to adding more
-        soon!
-        <TextIcon>
-          <FaRegGrinStars aria-hidden="true" />
-        </TextIcon>
+        So, please fill out the form below, and I will get back to you as soon
+        as possible!
       </Paragraph>
     </Header>
   );

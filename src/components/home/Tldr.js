@@ -59,7 +59,7 @@ const Tldr = () => {
           beyond web development. With the dream of making a meaningful
           difference in the tech world for humanity one day, especially as a
           woman! <Em size="base">(and not be intimidated by robots!</Em>
-          <TextIcon>
+          <TextIcon noMargin>
             <FaRobot aria-hidden="true" />
           </TextIcon>
           ).

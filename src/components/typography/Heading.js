@@ -6,7 +6,6 @@ const StyledHeading = styled.h1(({ noGutter, noMargin }) => [
     text-primary-dark
     font-extrabold
     tracking-tight
-    my-2
     md:mb-4
   `,
   noGutter && tw`mb-0 md:mb-0`,
