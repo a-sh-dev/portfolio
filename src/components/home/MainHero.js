@@ -18,11 +18,11 @@ const FluidContainer = styled.header(() => [
 const MainColumn = tw.div`
   grid
   justify-items-center
-  // md:container
   md:flex
   md:flex-col
   md:max-w-screen-sm
   xl:max-w-screen-md
+  2xl:max-w-screen-lg
 `;
 
 const SideColumn = tw.div`
@@ -86,12 +86,13 @@ const IntroWrapper = tw.div`
   pb-7
   border-b
   border-primary-dark
+  relative
   md:flex
   md:relative 
   md:w-full
   md:pt-2
   md:pb-10
-  xl:pb-12
+  lg:pb-12
 `;
 
 const Intro = styled.p(() => [
@@ -100,14 +101,19 @@ const Intro = styled.p(() => [
     font-medium
     px-2
     text-lg
+    
     md:font-normal
     md:text-xl
     md:leading-relaxed
     md:w-3/5
+    md:pr-14
     xl:text-2xl
     xl:leading-[1.8]
+    2xl:text-[1.75rem]
   `,
 ]);
+
+// md - 768; lg - 1024; xl - 1280; 2xl - 1536
 
 const ProfileDesktop = styled.div(() => [
   tw`
@@ -116,14 +122,20 @@ const ProfileDesktop = styled.div(() => [
     md:flex
     md:absolute
     md:p-6
-    md:-top-32
-    md:-right-16
-    xl:-top-28
-    xl:-right-6
+    md:-top-24
+    md:-right-20
+    xl:-top-16
+    xl:-right-12
+    2xl:-top-20
+    2xl:-right-0
   `,
   `
     @media (min-width: 1280px) {
-      transform: scale(1.35);
+      transform: scale(1.17);
+    }
+    
+    @media (min-width: 1539px) {
+      transform: scale(1.6);
     }
   `,
 ]);
@@ -171,14 +183,14 @@ const MainHero = () => {
           <IntroWrapper>
             <Intro>
               An experienced graphic designer based in Melbourne who fell in
-              love with coding and is pursuing a front-end development career.
+              love with coding and is pursuing a frontend development career.
             </Intro>
             <ProfileDesktop>
               <Image
                 src="/images/ash_profile_circle.svg"
                 alt="a-sh profile illustration"
-                width={320}
-                height={320}
+                width={300}
+                height={300}
               />
               <SloganWrapper>
                 <SloganSticker />
