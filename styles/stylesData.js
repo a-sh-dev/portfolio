@@ -92,7 +92,7 @@ export const fontSizeVariants = {
 const monoBase = `font-mono uppercase text-base tracking-widest md:text-xl xl:text-2xl`;
 
 export const headingVariants = {
-  page: tw`text-5xl md:text-8xl xl:text-9xl 2xl:text-10xl`,
+  page: tw`text-5xl md:text-8xl xl:text-9xl`,
   sm: tw`text-4xl md:text-6xl`,
   xs: tw`font-bold text-2xl md:text-3xl xl:text-4xl`,
   card: tw`font-bold text-xl xl:text-2xl`,

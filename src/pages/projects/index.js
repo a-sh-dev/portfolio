@@ -8,11 +8,11 @@ const projects = () => {
     <>
       <Meta title="projects" />
       <Container>
-        <Header sticker="My pressccciiousssh~!" title="Projects" color="purple">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima esse
-          optio perferendis ipsa voluptates eos beatae voluptate illum,
-          blanditiis assumenda!
-        </Header>
+        <Header
+          sticker="My pressccciiousssh~!"
+          title="Selected Projects"
+          color="purple"
+        ></Header>
         <ProjectList />
       </Container>
     </>

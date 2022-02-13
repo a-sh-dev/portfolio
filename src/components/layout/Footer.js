@@ -135,7 +135,7 @@ const Footer = ({ currentPage }) => {
 
           {isContactPage ? (
             <ContactLink {...{ isContactPage }}>
-              <p>Let&apos;s get in touch</p>
+              <p>Chat, soon!</p>
               <TextIcon color="dark">
                 <HiOutlineSparkles aria-hidden="true" />
               </TextIcon>
