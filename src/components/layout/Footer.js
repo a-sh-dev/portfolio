@@ -32,16 +32,6 @@ const Wrapper = styled.footer(() => [
   `,
 ]);
 
-// const Container = styled.div(() => [
-//   maxWidthVariants['max'],
-//   tw`
-//     px-7
-//     md:px-0
-//     md:mx-auto
-//     md:container
-//   `,
-// ]);
-
 const MenuBar = styled.div(() => [
   tw`
     flex
@@ -50,6 +40,7 @@ const MenuBar = styled.div(() => [
     uppercase
     font-medium
     tracking-widest
+    sm:container
     md:items-center
     md:flex-row
     md:justify-between
@@ -107,7 +98,6 @@ const ContactCTA = styled.div(() => [
 
 const ContactLink = styled.a(() => [
   tw`
-    text-3xl
     gap-2
     font-extrabold
     tracking-tight
@@ -116,8 +106,9 @@ const ContactLink = styled.a(() => [
     items-center
     justify-center
     w-full
+    text-3xl
+    md:text-[3.5rem]
     md:gap-6
-    md:text-[5.5rem]
     md:py-20
     hover:(text-primary-darkest)
     xl:text-9xl
@@ -137,7 +128,7 @@ const Footer = ({ currentPage }) => {
 
   return (
     <Wrapper>
-      <Container maxWidth="max" noGutter>
+      <Container maxWidth="max">
         {!isContactPage && (
           <ContactCTA>
             <VLineBg length="6rem" />

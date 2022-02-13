@@ -18,10 +18,11 @@ const FluidContainer = styled.header(() => [
 const MainColumn = tw.div`
   grid
   justify-items-center
+  // md:container
   md:flex
   md:flex-col
-  md:max-w-screen-md
-  xl:max-w-screen-lg
+  md:max-w-screen-sm
+  xl:max-w-screen-md
 `;
 
 const SideColumn = tw.div`

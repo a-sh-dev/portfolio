@@ -7,9 +7,9 @@ const StyledContainer = styled.div(({ relative, noGutter }) => [
   tw`
     px-8
     mx-auto
-    md:container
+    sm:container
     md:px-16
-    xl:px-0
+    2xl:px-0
   `,
   ({ maxWidth = 'xl' }) => maxWidthVariants[maxWidth],
   relative && tw`relative`,
