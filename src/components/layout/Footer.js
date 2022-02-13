@@ -93,7 +93,7 @@ const ContactCTA = styled.div(() => [
   `,
 ]);
 
-const ContactLink = styled.a(() => [
+const ContactLink = styled.a(({ isContactPage }) => [
   tw`
     font-extrabold
     tracking-tight
@@ -109,8 +109,8 @@ const ContactLink = styled.a(() => [
     xl:py-20
     xl:text-[7.4rem]
     2xl:text-10xl
-    hover:(text-primary-darkest)
-  `,
+    `,
+  !isContactPage && tw`hover:text-primary-darkest`,
   uniformTransition,
 ]);
 
@@ -133,18 +133,23 @@ const Footer = ({ currentPage }) => {
             <HiMusicNote aria-hidden="true" />
           </Sticker>
 
-          <Link href="/contact" passHref>
-            <ContactLink>
-              <p>{isContactPage ? `Chat soon! ` : `Let's get in touch`}</p>
+          {isContactPage ? (
+            <ContactLink {...{ isContactPage }}>
+              <p>Let&apos;s get in touch</p>
               <TextIcon color="dark">
-                {isContactPage ? (
-                  <HiOutlineSparkles aria-hidden="true" />
-                ) : (
-                  <FiArrowUpRight aria-hidden="true" />
-                )}
+                <HiOutlineSparkles aria-hidden="true" />
               </TextIcon>
             </ContactLink>
-          </Link>
+          ) : (
+            <Link href="/contact" passHref>
+              <ContactLink {...{ isContactPage }}>
+                <p>Let&apos;s get in touch</p>
+                <TextIcon color="dark">
+                  <FiArrowUpRight aria-hidden="true" />
+                </TextIcon>
+              </ContactLink>
+            </Link>
+          )}
         </ContactCTA>
 
         <MenuBar>
