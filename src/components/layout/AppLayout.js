@@ -8,6 +8,7 @@ const Wrapper = styled.div(() => [
     flex
     flex-col
     min-h-screen
+    overflow-hidden
   `,
 ]);
 
