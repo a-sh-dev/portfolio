@@ -22,7 +22,7 @@ module.exports = {
         mono: ['Space Mono', ...defaultTheme.fontFamily.mono],
       },
       fontSize: {
-        '10xl': '11rem',
+        '10xl': '10rem',
       },
       colors: {
         'primary-light': withOpacityValue('--color-primary-light'),

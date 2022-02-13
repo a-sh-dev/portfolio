@@ -1,14 +1,15 @@
 import Link from 'next/link';
 import tw, { styled } from 'twin.macro';
-// import { Container } from '.';
+import { Container } from '.';
 import { AshLogo } from '../svgs';
-import { BsArrowRight } from 'react-icons/bs';
-import { Button, Line, Sticker, VLineBg } from '..';
+import { AiOutlineSmile } from 'react-icons/ai';
+import { FiArrowUpRight } from 'react-icons/fi';
+import { HiMusicNote, HiOutlineSparkles } from 'react-icons/hi';
+import { Line, Sticker, VLineBg } from '..';
 import { TextIcon } from '../typography';
 import { copyright, socialMediaLinks } from '../../data';
 import { currentYear } from '../../utils';
 import { uniformTransition } from '../../../styles/stylesData';
-import { Container } from '.';
 
 const Wrapper = styled.footer(() => [
   tw`
@@ -98,7 +99,6 @@ const ContactCTA = styled.div(() => [
 
 const ContactLink = styled.a(() => [
   tw`
-    gap-2
     font-extrabold
     tracking-tight
     py-10
@@ -107,11 +107,12 @@ const ContactLink = styled.a(() => [
     justify-center
     w-full
     text-3xl
-    md:text-[3.5rem]
-    md:gap-6
+    md:text-[3.7rem]
     md:py-20
+    lg:text-[5.17rem]
+    xl:text-[7.25rem]
+    2xl:text-10xl
     hover:(text-primary-darkest)
-    xl:text-9xl
   `,
   uniformTransition,
 ]);
@@ -129,20 +130,25 @@ const Footer = ({ currentPage }) => {
   return (
     <Wrapper>
       <Container maxWidth="max">
-        {!isContactPage && (
-          <ContactCTA>
-            <VLineBg length="6rem" />
-            <Sticker text="Thank you, please come again?" noMargin />
-            <Link href="/contact" passHref>
-              <ContactLink>
-                <p>Let&apos;s get in touch </p>
-                <TextIcon color="dark">
-                  <BsArrowRight aria-hidden="true" />
-                </TextIcon>
-              </ContactLink>
-            </Link>
-          </ContactCTA>
-        )}
+        <ContactCTA>
+          <VLineBg length="6rem" />
+          <Sticker text="It is me you're looking for~!" noMargin>
+            <HiMusicNote aria-hidden="true" />
+          </Sticker>
+
+          <Link href="/contact" passHref>
+            <ContactLink>
+              <p>{isContactPage ? `Chat soon! ` : `Let's get in touch`}</p>
+              <TextIcon color="dark">
+                {isContactPage ? (
+                  <HiOutlineSparkles aria-hidden="true" />
+                ) : (
+                  <FiArrowUpRight aria-hidden="true" />
+                )}
+              </TextIcon>
+            </ContactLink>
+          </Link>
+        </ContactCTA>
 
         <MenuBar>
           <SocialLinks>
