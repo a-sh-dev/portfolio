@@ -18,7 +18,7 @@ const NavWrapper = styled.div(() => [
     pt-4
     pb-2
     bg-primary-light
-    md:pt-8
+    xl:pt-8
   `,
   uniformTransition,
 ]);

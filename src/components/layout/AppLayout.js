@@ -8,7 +8,6 @@ const Wrapper = styled.div(() => [
     flex
     flex-col
     min-h-screen
-    overflow-hidden
   `,
 ]);
 
@@ -21,7 +20,7 @@ const AppLayout = ({ children }) => {
       <Meta />
       <Wrapper>
         <Navigation currentPage={currentPage} />
-        <div className="flex-1">{children}</div>
+        <div className="flex-1 overflow-hidden">{children}</div>
         <Footer currentPage={currentPage} />
       </Wrapper>
     </>

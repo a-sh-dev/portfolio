@@ -41,12 +41,15 @@ const MenuBar = styled.div(() => [
     uppercase
     font-medium
     tracking-widest
-    sm:container
-    md:items-center
-    md:flex-row
-    md:justify-between
-    md:pt-6
-    md:text-sm
+    // sm:container
+    xl:items-center
+    xl:flex-row
+    xl:justify-between
+    xl:pt-6
+    xl:text-sm
+    md:bg-red-300/50
+    lg:bg-blue-300/50
+    xl:bg-green-200/50
   `,
 ]);
 
@@ -56,9 +59,11 @@ const SocialLinks = styled.div(() => [
     items-center
     gap-5
     justify-center
-    pb-10
-    md:gap-3
-    md:py-0
+    pb-5
+    md:pb-8
+    md:gap-8
+    xl:gap-3
+    xl:py-0
   `,
 ]);
 
@@ -87,10 +92,8 @@ const Copyright = styled.div(() => [
 
 const ContactCTA = styled.div(() => [
   tw`
-    relative
     flex
     flex-col
-    flex-1
     h-full
     justify-center
     items-center
@@ -108,8 +111,9 @@ const ContactLink = styled.a(() => [
     w-full
     text-3xl
     md:text-[3.7rem]
-    md:py-20
+    md:py-14
     lg:text-[5.17rem]
+    xl:py-20
     xl:text-[7.25rem]
     2xl:text-10xl
     hover:(text-primary-darkest)
@@ -119,9 +123,9 @@ const ContactLink = styled.a(() => [
 
 const LineWrapper = tw.div`
   hidden
-  md:flex-1
-  md:block
-  md:mx-2.5
+  xl:flex-1
+  xl:block
+  xl:mx-2.5
 `;
 
 const Footer = ({ currentPage }) => {
@@ -152,7 +156,7 @@ const Footer = ({ currentPage }) => {
 
         <MenuBar>
           <SocialLinks>
-            <span className="hidden md:block">Connect now</span>
+            <span className="hidden xl:block">Connect now</span>
             {socialMediaLinks.map((link) => {
               const { name, icon, url } = link;
               return (
