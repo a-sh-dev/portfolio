@@ -1,3 +1,5 @@
 import ProjectList from './ProjectList';
+import ProjectHeader from './ProjectHeader';
+import ProjectQuote from './ProjectQuote';
 
-export { ProjectList };
+export { ProjectHeader, ProjectList, ProjectQuote };
