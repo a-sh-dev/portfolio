@@ -12,9 +12,9 @@ const Wrapper = styled.div(() => [
 const JournalHeader = () => {
   return (
     <Header
-      sticker="The journey so far..."
-      title="The Journey"
-      subline="of Perpetual Learning"
+      title="The"
+      subline="Perpetual Learning Journey"
+      sticker="Learning to learn"
       color="pink"
     >
       <BodyIntro noMargin>

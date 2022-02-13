@@ -134,6 +134,7 @@ export const gridColVariants = {
   'span-6': tw`md:col-span-6`, // half 12/6
   'span-7': tw`md:col-span-7`, // 12/7
   'span-8': tw`md:col-span-8`, // 12/8
+  'span-8-6': tw`md:col-span-8 2xl:col-span-6`, // 12/8
   'span-9': tw`md:col-span-9`, // 12/9
   'span-10': tw`md:col-span-10`, // 12/10
   auto: tw`md:col-auto`,
@@ -167,5 +168,5 @@ export const gridColAlignVariants = {
 export const iconSizeVariants = {
   normal: tw`text-4xl w-20 h-20 md:text-5xl md:w-24 md:h-24 xl:text-6xl xl:w-36 xl:h-36`,
   sm: tw`text-2xl w-14 h-14 xl:text-3xl xl:w-20 xl:h-20`,
-  lg: tw`text-5xl w-28 h-28`,
+  lg: tw`text-4xl w-20 h-20 md:text-6xl md:w-36 md:h-36 lg:text-7xl lg:w-44 lg:h-44 xl:text-8xl xl:w-56 xl:h-56 `,
 };

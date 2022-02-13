@@ -8,7 +8,8 @@ const IconWrapper = styled.span(({ nudgeTop, noMargin, noGutter }) => [
     relative
     top-0.5
     mx-1.5
-    xl:mx-2
+    md:mx-2
+    // xl:mx-2.5
   `,
   nudgeTop && tw`top-1`,
   noGutter && tw`top-0`,

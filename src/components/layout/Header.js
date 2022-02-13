@@ -1,42 +1,62 @@
 import tw, { styled } from 'twin.macro';
 import { GridColumn, GridContainer } from '.';
-import { Sticker } from '..';
-import { sectionPaddingB } from '../../../styles/stylesData';
+import { Icon, Sticker } from '..';
 import { Heading } from '../typography';
 
 const Wrapper = styled.header(() => [
-  sectionPaddingB,
   tw`
     pt-10
+    pb-6
+    md:pb-14
     md:pt-32
     xl:pt-44
+    // bg-blue-300/50
   `,
 ]);
 
-const SubHeader = styled.div(() => [
+const SideHeader = styled.div(() => [
   tw`
+    hidden
+    md:pt-8
+    lg:pt-2
+    md:block
+    relative
+  `,
+  `
+  `,
+]);
 
+const IconWrapper = styled.div(() => [
+  tw`
+    bg-red-200/50
+    w-full
   `,
 ]);
 
 const Header = ({ title, subline, sticker, color, children }) => {
   return (
     <Wrapper>
-      <GridContainer>
-        <GridColumn col="span-8">
-          <Heading>
-            {title}
-            {subline && (
-              <>
-                <br /> {subline}
-              </>
-            )}
-          </Heading>
-          {sticker && <Sticker color={color}>{sticker}</Sticker>}
+      <GridContainer layout="grid-xy">
+        <GridColumn col="span-9">
+          <div className="2xl:pr-24">
+            <Heading>
+              {title}
+              {subline && (
+                <>
+                  <br /> {subline}
+                </>
+              )}
+            </Heading>
+            {sticker && <Sticker color={color}>{sticker}</Sticker>}
+          </div>
         </GridColumn>
-        <GridColumn col="span-4">
-          <SubHeader>{children}</SubHeader>
-        </GridColumn>
+        <SideHeader>
+          <GridColumn col="span-3">
+            <IconWrapper>
+              <Icon size="lg">{children}</Icon>
+            </IconWrapper>
+          </GridColumn>
+        </SideHeader>
       </GridContainer>
     </Wrapper>
   );
