@@ -7,6 +7,10 @@ export const uniformSlowTransition = tw`transition-all delay-150 duration-500 ea
 
 export const paragraphMargin = '1.25rem';
 
+export const sectionPaddingY = tw`py-14 md:py-28 xl:py-44`;
+export const sectionPaddingB = tw`pb-14 md:pb-28 xl:pb-44`;
+export const sectionPaddingT = tw`pt-14 md:pt-28 xl:pt-44`;
+
 export const bgColorVariants = {
   teal: tw`bg-accent-teal`,
   olive: tw`bg-accent-olive`,
@@ -88,7 +92,7 @@ export const fontSizeVariants = {
 const monoBase = `font-mono uppercase text-base tracking-widest md:text-xl xl:text-2xl`;
 
 export const headingVariants = {
-  page: tw`text-5xl md:text-8xl`,
+  page: tw`text-5xl md:text-8xl xl:text-9xl 2xl:text-10xl`,
   sm: tw`text-4xl md:text-6xl`,
   xs: tw`font-bold text-2xl md:text-3xl xl:text-4xl`,
   card: tw`font-bold text-xl xl:text-2xl`,

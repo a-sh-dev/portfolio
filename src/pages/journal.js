@@ -1,5 +1,5 @@
 import { Meta } from '../components';
-import { Container } from '../components/layout';
+import { Container, Header } from '../components/layout';
 import { Heading } from '../components/typography';
 
 const journal = () => {
@@ -7,7 +7,15 @@ const journal = () => {
     <>
       <Meta title="journal" />
       <Container>
-        <Heading>The Journey of Perpetual Learning</Heading>
+        <Header
+          sticker="The journey so far..."
+          title="The Journey of Perpetual Learning"
+          color="pink"
+        >
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima esse
+          optio perferendis ipsa voluptates eos beatae voluptate illum,
+          blanditiis assumenda!
+        </Header>
       </Container>
     </>
   );
