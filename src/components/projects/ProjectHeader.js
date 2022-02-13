@@ -38,9 +38,9 @@ const ProjectHeader = () => {
           </BodyIntro>
 
           <Paragraph>
-            Fast forward, here are some selected projects built with care and
-            powered by lots of caffeine since I started my formal coding
-            journey. I look forward to adding more soon!
+            Fast forward, here are some selected projects built from scratch
+            with care and heaps of caffeine since I started my formal coding
+            journey.
             <TextIcon>
               <FaRegGrinStars aria-hidden="true" />
             </TextIcon>

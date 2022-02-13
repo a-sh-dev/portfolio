@@ -64,18 +64,6 @@ export const textAlignVariants = {
   autoR: tw`text-center md:text-right`,
 };
 
-export const fontStyleVariants = {
-  light: tw`font-light`, // 300
-  normal: tw`font-normal`, // 400
-  medium: tw`font-medium`, // 500
-  semibold: tw`font-semibold`, //600
-  bold: tw`font-bold`, // 700
-  extrabold: tw`font-extrabold`, // 800
-  black: tw`font-black`, // 900
-  italic: tw`italic`,
-  'italic-bold': tw`font-bold italic`,
-};
-
 export const fontSizeVariants = {
   paragraph: tw`text-base leading-relaxed md:text-lg xl:text-xl xl:leading-9`,
   base: tw`text-sm md:text-base`, // 1rem
@@ -98,6 +86,19 @@ export const headingVariants = {
   card: tw`font-bold text-xl xl:text-2xl`,
   mono: tw`${monoBase} font-normal`,
   monoBold: tw`${monoBase} font-bold`,
+};
+
+export const fontStyleVariants = {
+  light: tw`font-light`, // 300
+  normal: tw`font-normal`, // 400
+  medium: tw`font-medium`, // 500
+  semibold: tw`font-semibold`, //600
+  bold: tw`font-bold`, // 700
+  extrabold: tw`font-extrabold`, // 800
+  black: tw`font-black`, // 900
+  italic: tw`italic`,
+  'italic-bold': tw`font-bold italic`,
+  monoBold: headingVariants['monoBold'],
 };
 
 export const sectionVariants = {

@@ -20,15 +20,15 @@ const StyledParagraph = styled.p(({ noMargin }) => [
   noMargin && tw`m-0 md:m-0`,
   ({ color = 'dark' }) => textColorVariants[color],
   ({ align = 'left' }) => textAlignVariants[align],
-  ({ style = 'semibold' }) => fontStyleVariants[style],
+  ({ variant = 'semibold' }) => fontStyleVariants[variant],
 ]);
 
-const BodyIntro = ({ style, noMargin, align, color, children }) => {
+const BodyIntro = ({ variant, noMargin, align, color, children }) => {
   return (
     <StyledParagraph
       color={color}
       align={align}
-      style={style}
+      variant={variant}
       {...{ noMargin }}
     >
       {children}
