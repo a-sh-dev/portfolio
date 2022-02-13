@@ -56,20 +56,20 @@ export const socialMediaLinks = [
   },
   {
     id: 3,
-    name: 'Codepen',
-    url: 'https://codepen.io/angiesh/pens/',
-    icon: <FaCodepen />,
-  },
-  {
-    id: 4,
     name: 'Twitter',
     url: 'https://twitter.com/heya_sh',
     icon: <FaTwitter />,
   },
   {
-    id: 5,
+    id: 4,
     name: 'Instagram',
     url: 'https://www.instagram.com/a_sh.is/',
     icon: <FaInstagram />,
+  },
+  {
+    id: 5,
+    name: 'Codepen',
+    url: 'https://codepen.io/angiesh/pens/',
+    icon: <FaCodepen />,
   },
 ];

@@ -24,7 +24,9 @@ const SloganSticker = ({ color, withLogo, sm, lg }) => {
   return (
     <div className={sm && `scale-90`}>
       <StickerWrapper color={color} {...{ lg }}>
-        {withLogo && <AshLogo className="absolute text-5xl md:text-6xl" />}
+        {withLogo && (
+          <AshLogo className="absolute text-5xl md:text-6xl 2xl:text-7xl" />
+        )}
         <span className="animate-spin-slow">
           <CareRingIcon />
         </span>

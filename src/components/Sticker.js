@@ -19,7 +19,8 @@ const StickerWrapper = styled.div(({ noMargin }) => [
     md:text-lg
     xl:px-12
     xl:py-2.5
-    xl:text-2xl
+    xl:text-xl
+    2xl:text-2xl
   `,
   `
     transform: rotate(-1.5deg);

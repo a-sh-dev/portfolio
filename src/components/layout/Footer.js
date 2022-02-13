@@ -20,16 +20,13 @@ const Wrapper = styled.footer(() => [
     bg-cover
 
     text-primary-dark
-    relative
-
     h-full
     pb-10
     overflow-hidden
     flex
     flex-col
-    md:pb-20
-    md:px-16
-    xl:px-0
+    md:pb-14
+    xl:pb-20
   `,
 ]);
 
@@ -41,15 +38,11 @@ const MenuBar = styled.div(() => [
     uppercase
     font-medium
     tracking-widest
-    // sm:container
-    xl:items-center
-    xl:flex-row
-    xl:justify-between
-    xl:pt-6
-    xl:text-sm
-    md:bg-red-300/50
-    lg:bg-blue-300/50
-    xl:bg-green-200/50
+    lg:items-center
+    lg:flex-row
+    lg:justify-between
+    lg:pt-6
+    lg:text-sm
   `,
 ]);
 
@@ -62,8 +55,8 @@ const SocialLinks = styled.div(() => [
     pb-5
     md:pb-8
     md:gap-8
-    xl:gap-3
-    xl:py-0
+    lg:gap-3
+    lg:py-0
   `,
 ]);
 
@@ -110,11 +103,11 @@ const ContactLink = styled.a(() => [
     justify-center
     w-full
     text-3xl
-    md:text-[3.7rem]
+    md:text-[4.25rem]
     md:py-14
-    lg:text-[5.17rem]
+    lg:text-[5.8rem]
     xl:py-20
-    xl:text-[7.25rem]
+    xl:text-[7.4rem]
     2xl:text-10xl
     hover:(text-primary-darkest)
   `,
@@ -123,9 +116,9 @@ const ContactLink = styled.a(() => [
 
 const LineWrapper = tw.div`
   hidden
-  xl:flex-1
-  xl:block
-  xl:mx-2.5
+  lg:flex-1
+  lg:block
+  lg:mx-2.5
 `;
 
 const Footer = ({ currentPage }) => {
@@ -156,7 +149,7 @@ const Footer = ({ currentPage }) => {
 
         <MenuBar>
           <SocialLinks>
-            <span className="hidden xl:block">Connect now</span>
+            <span className="hidden lg:block">Connect now</span>
             {socialMediaLinks.map((link) => {
               const { name, icon, url } = link;
               return (
