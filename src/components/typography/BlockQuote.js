@@ -30,20 +30,25 @@ const StyledBlockQuote = styled.p(() => [
   ({ align = 'left' }) => textAlignVariants[align],
 ]);
 
-const QuoteBy = styled.p(() => [
+const SubLine = styled.div(() => [
   tw`
     flex
-    gap-2
     items-center
+    gap-2
+    mt-6
+    xl:pt-5
+  `,
+]);
+
+const QuoteBy = styled.p(() => [
+  tw`
     text-primary-dark
     text-lg
     tracking-wider
     uppercase
-    mt-6
     md:text-xl
     lg:text-2xl
     xl:text-3xl
-    xl:pt-5
   `,
 ]);
 
@@ -54,12 +59,12 @@ const BlockQuote = ({ noMargin, align, color, subline, children }) => {
         {children}
       </StyledBlockQuote>
       {subline && (
-        <QuoteBy>
+        <SubLine>
           <span className="w-8 md:w-12">
             <Line />
           </span>
-          <span>{subline}</span>
-        </QuoteBy>
+          <QuoteBy>{subline}</QuoteBy>
+        </SubLine>
       )}
     </Wrapper>
   );
