@@ -1,6 +1,12 @@
 import tw, { styled } from 'twin.macro';
 
-export const textFieldBase = tw`bg-white text-primary-dark border border-primary-dark text-base md:text-lg px-6 py-3 rounded-sm placeholder:text-primary-dark font-bold`;
+export const textFieldBase = tw`bg-white text-primary-dark border border-primary-dark text-base md:text-lg px-6 py-3 rounded-sm placeholder:text-primary-dark font-bold focus:outline-none focus:ring-4 focus:ring-primary-dark`;
+
+const InputWrapper = tw.div`
+  flex
+  flex-col
+  gap-1
+`;
 
 const Input = styled.input(() => [
   textFieldBase,
@@ -18,13 +24,16 @@ const FormInput = ({
   ...rest
 }) => {
   return (
-    <Input
-      onChange={onChange}
-      type={type}
-      name={name}
-      placeholder={placeholder}
-      {...rest}
-    />
+    <InputWrapper>
+      <Input
+        onChange={onChange}
+        type={type}
+        name={name}
+        placeholder={placeholder}
+        {...rest}
+      />
+      <span className="text-sm text-red-900/70 pl-1">{errorMessage}</span>
+    </InputWrapper>
   );
 };
 

@@ -4,23 +4,24 @@ import { Em } from './typography';
 import { FaInfo } from 'react-icons/fa';
 import { Icon } from '.';
 
-const Intro = styled.div(({ sectPad }) => [
+const Intro = styled.div(({ sectPad, center }) => [
   sectPad && sectionPaddingB,
   tw`
     text-primary-dark
     text-sm
     flex
-    justify-center
     gap-4
+    justify-center
     md:items-center
     lg:text-base
     xl:text-lg
   `,
+  center && tw`items-center`,
 ]);
 
-const InfoBlurb = ({ sectPad, blurb, children }) => {
+const InfoBlurb = ({ sectPad, blurb, center, children }) => {
   return (
-    <Intro {...{ sectPad }}>
+    <Intro {...{ sectPad, center }}>
       <Icon size="xs">{children || <FaInfo />}</Icon>
       <Em>{blurb}</Em>
     </Intro>

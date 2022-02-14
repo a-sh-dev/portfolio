@@ -1,11 +1,9 @@
 import { useState } from 'react';
 import tw, { styled } from 'twin.macro';
 import Image from 'next/image';
-import { pagesHeroMax, sectionPaddingB } from '../../../styles/stylesData';
+import { sectionPaddingB } from '../../../styles/stylesData';
 import { Section } from '../layout';
-import { Em } from '../typography';
-import { FaInfo } from 'react-icons/fa';
-import { FormButton, Icon, LinkButton } from '..';
+import { FormButton, InfoBlurb } from '..';
 import FormInput, { textFieldBase } from './FormInput';
 import { contactForInputs } from '../../data';
 
@@ -17,9 +15,13 @@ const Wrapper = styled.div(() => [
     w-full
     mx-auto
     mt-4
+    md:rounded-xl
+    md:p-20
+    md:bg-white/30
     md:gap-10
     md:flex-row
-    md:w-4/5
+    // md:w-4/5
+    // xl:w-2/3
   `,
 ]);
 
@@ -27,17 +29,19 @@ const FormColumn = styled.form(() => [
   tw`
     flex
     flex-col
-    gap-6
+    gap-4
     flex-1
     md:w-2/3
+    xl:w-20
   `,
 ]);
 
 const ImgColumn = styled.div(() => [
   tw`
     mt-10
+    self-center
+    md:flex-shrink-0
     md:mt-0
-    mx-auto
   `,
 ]);
 
@@ -66,9 +70,12 @@ const ContactForm = () => {
   };
 
   return (
-    <Section variant="top" noBottomMargin relative>
+    <Section variant="top" relative>
       <Wrapper>
         <FormColumn onSubmit={handleSubmit}>
+          <div className="mb-4">
+            <InfoBlurb blurb="All fields are required." center />
+          </div>
           {contactForInputs.map((input) => {
             return (
               <FormInput
@@ -84,6 +91,7 @@ const ContactForm = () => {
             value={formData.message}
             placeholder="Message"
             onChange={handleChange}
+            rows="5"
           />
           <FormButton>Send Message</FormButton>
         </FormColumn>
