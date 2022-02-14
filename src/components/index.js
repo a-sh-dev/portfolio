@@ -12,6 +12,7 @@ import FactCard from './FactCard';
 import LinkButton from './LinkButton';
 import AHrefButton from './AHrefButton';
 import FormButton from './FormButton';
+import InfoBlurb from './InfoBlurb';
 
 export {
   Meta,
@@ -28,4 +29,5 @@ export {
   LinkButton,
   AHrefButton,
   FormButton,
+  InfoBlurb,
 };
