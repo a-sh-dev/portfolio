@@ -20,8 +20,9 @@ const Wrapper = styled.div(() => [
     md:bg-white/30
     md:gap-10
     md:flex-row
-    // md:w-4/5
-    // xl:w-2/3
+    xl:px-32
+    2xl:w-5/6
+    2xl:p-32
   `,
 ]);
 
@@ -32,7 +33,6 @@ const FormColumn = styled.form(() => [
     gap-4
     flex-1
     md:w-2/3
-    xl:w-20
   `,
 ]);
 
@@ -63,6 +63,7 @@ const ContactForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    console.log('SUBMITTED!', formData);
   };
 
   const handleChange = (e) => {
@@ -93,7 +94,7 @@ const ContactForm = () => {
             onChange={handleChange}
             rows="5"
           />
-          <FormButton>Send Message</FormButton>
+          <FormButton type="submit">Send Message</FormButton>
         </FormColumn>
         <ImgColumn>
           <Image

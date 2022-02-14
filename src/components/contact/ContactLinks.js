@@ -1,4 +1,7 @@
 import tw, { styled } from 'twin.macro';
+import { GridColumn, Section } from '../layout';
+import { BodyIntro, Em, Heading, TextIcon } from '../typography';
+import { HiOutlineArrowSmRight } from 'react-icons/hi';
 
 const Wrapper = styled.div(() => [
   tw`
@@ -8,12 +11,20 @@ const Wrapper = styled.div(() => [
 
 const ContactLinks = () => {
   return (
-    <div>
-      <h1>
-        Let&apos;s be social! Please connect with me through the quick links
-        below! (they are massive, so you won&apos;t miss it!)
-      </h1>
-    </div>
+    <Section layout="grid">
+      <GridColumn col="span-5">
+        <Heading variant="sm">Let&apos;s be social!</Heading>
+        <BodyIntro>
+          Check out the quicklinks!
+          <TextIcon>
+            <HiOutlineArrowSmRight />
+          </TextIcon>
+        </BodyIntro>
+      </GridColumn>
+      <GridColumn>
+        <p>LinkedIn</p>
+      </GridColumn>
+    </Section>
   );
 };
 
