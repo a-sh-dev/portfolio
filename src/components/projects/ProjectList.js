@@ -12,19 +12,18 @@ const Intro = styled.div(() => [
   tw`
     text-primary-dark
     text-sm
-
     flex
-    md:items-center
     justify-center
     gap-4
-
+    md:items-center
     lg:text-base
+    xl:text-lg
   `,
 ]);
 
 const ProjectList = () => {
   return (
-    <Section variant="top">
+    <Section variant="top" noBottomMargin>
       <Intro>
         <Icon size="xs">
           <FaInfo />

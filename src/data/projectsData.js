@@ -8,12 +8,12 @@ export const projectsData = [
     stack: ['ruby on rails', 'bootstrap', 'postgresql', 'aws s3'],
     repo: 'https://github.com/a-sh-dev/rails_pawsomes',
     url: 'https://pawsomes.herokuapp.com/',
-    img: '/images/projects/project_hyd.png',
+    img: '/images/projects/project_pawsomes.png',
   },
   {
     id: 2,
     category: 'ruby',
-    name: '"How You Doin?" (HYD)',
+    name: '"How You, Doin?" (HYD)',
     type: 'Command Line Interface Application',
     desc: `A terminal app that aims to provide a little entertainment to the user, in the form of dad jokes and a mental health log-system to check on how they're doing. The entertainment includes relief, comfort, or a smile to make the user feel better. It then motivates the user to positively respond to any negative feelings they are currently facing. HYD also responds by providing mental health advice and help-line as their call to action when needed.`,
     stack: ['ruby', 'command line', 'shell scripting', 'JSON'],
@@ -23,7 +23,7 @@ export const projectsData = [
   },
   {
     id: 3,
-    category: 'mern',
+    category: 'mern stack',
     name: 'DIY Grooming',
     type: 'Online Blog',
     desc: 'The online blog is a platform to share and find step-by-step DIY dog grooming instructions. The Notting Hill neighbourhood community and anyone interested in DIY dog grooming can access the blog. Additionally, professional groomers can contribute and promote their services, and when needed, registered users can then contact them through the blog.',
@@ -38,7 +38,7 @@ export const projectsData = [
     ],
     repo: 'https://github.com/a-sh-dev/mern_diy_grooming',
     url: 'https://diy-grooming.netlify.app/',
-    img: '/images/projects/project_diygrooming.png',
+    img: '/images/projects/project_diyg.png',
   },
   {
     id: 4,

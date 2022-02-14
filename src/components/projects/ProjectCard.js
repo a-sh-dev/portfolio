@@ -41,7 +41,7 @@ const Title = styled.h1(() => [
     tracking-tight
     font-extrabold
     text-3xl
-    capitalize
+    // capitalize
     md:text-5xl
     md:mb-4
     md:pt-4
