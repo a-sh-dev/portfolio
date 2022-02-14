@@ -1,10 +1,9 @@
-import Link from 'next/link';
 import tw, { styled } from 'twin.macro';
 import { uniformTransition } from '../../styles/stylesData';
 import { BsArrowRight } from 'react-icons/bs';
 
 const outlinedBase = tw`bg-transparent`;
-const btnBase = tw`font-mono text-primary-dark capitalize cursor-pointer hover:(bg-primary-dark text-white)`;
+const btnBase = tw`font-mono text-primary-light capitalize cursor-pointer hover:(bg-primary-darkest text-white)`;
 const iconBase = tw`grid place-items-center text-lg pt-0.5 md:text-xl`;
 
 const BtnContainer = styled.button(({ outlined }) => [
@@ -24,7 +23,7 @@ const BtnContainer = styled.button(({ outlined }) => [
     md:pt-5
     md:pb-6
     md:px-16
-    bg-white
+    bg-primary-dark
   `,
   outlined && outlinedBase,
   uniformTransition,
@@ -38,17 +37,15 @@ const IconWrapper = styled.span(() => [
   `,
 ]);
 
-const LinkButton = ({ outlined, url, children }) => {
+const FormButton = ({ outlined, children }) => {
   return (
-    <Link href={url} passHref>
-      <BtnContainer {...{ outlined }}>
-        {children}
-        <IconWrapper>
-          <BsArrowRight aria-hidden="true" />
-        </IconWrapper>
-      </BtnContainer>
-    </Link>
+    <BtnContainer {...{ outlined }}>
+      {children}
+      <IconWrapper>
+        <BsArrowRight aria-hidden="true" />
+      </IconWrapper>
+    </BtnContainer>
   );
 };
 
-export default LinkButton;
+export default FormButton;

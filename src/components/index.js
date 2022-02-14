@@ -11,6 +11,7 @@ import TableRow from './TableRow';
 import FactCard from './FactCard';
 import LinkButton from './LinkButton';
 import AHrefButton from './AHrefButton';
+import FormButton from './FormButton';
 
 export {
   Meta,
@@ -26,4 +27,5 @@ export {
   FactCard,
   LinkButton,
   AHrefButton,
+  FormButton,
 };

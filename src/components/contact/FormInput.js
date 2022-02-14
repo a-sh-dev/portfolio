@@ -1,35 +1,30 @@
 import tw, { styled } from 'twin.macro';
 
-const Wrapper = styled.div(() => [
+export const textFieldBase = tw`bg-white text-primary-dark border border-primary-dark text-base md:text-lg px-6 py-3 rounded-sm placeholder:text-primary-dark font-bold`;
+
+const Input = styled.input(() => [
+  textFieldBase,
   tw`
-  
   `,
 ]);
 
-const Input = styled.div(() => [
-  tw`
-  
-  `,
-]);
-
-const Label = styled.div(() => [
-  tw`
-  
-  `,
-]);
-
-const FormInput = ({ onChange, type, name, label, placeholder, ...rest }) => {
+const FormInput = ({
+  onChange,
+  type,
+  name,
+  label,
+  errorMessage,
+  placeholder,
+  ...rest
+}) => {
   return (
-    <Wrapper>
-      <Label>{label}</Label>
-      <Input
-        onChange={onChange}
-        type={type}
-        name={name}
-        placeholder={placeholder}
-        {...rest}
-      />
-    </Wrapper>
+    <Input
+      onChange={onChange}
+      type={type}
+      name={name}
+      placeholder={placeholder}
+      {...rest}
+    />
   );
 };
 
