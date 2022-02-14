@@ -44,7 +44,7 @@ export const projectsData = [
     category: 'next.js',
     name: 'a-sh.cc',
     type: 'Personal Portfolio',
-    desc: "The first project in the boot camp was creating a website with only HTML5 and CSS3. Since then, I have revamped the personal portfolio with Next.js (a.k.a, this website you're currently viewing). Initially planned to use only React.js, but I'm sold by how Next.js can make React.js faster and scalable. Plus, with the added SEO friendliness! Obviously, the portfolio has much room for improvement and is still under development. However, I learned a lot from the styling implementation. All thanks to Twin.macro, which combines the best of two worlds of Styled-components and Tailwind CSS. In addition, I plan to utilise more interactivity and add features such as page transitions and perhaps use the MongoDB database for the journal entries.",
+    desc: "The first project in the boot camp was creating a website with only HTML5 and CSS3. Since then, I have revamped the personal portfolio with Next.js (a.k.a, this website you're currently viewing). Initially planned to use only React.js, but I'm sold by how Next.js can make React.js faster and scalable due to its server-side rendering capability. Plus, with the added SEO friendliness! Obviously, the portfolio has much room for improvement and is still under development. However, I learned a lot from the styling implementation. All thanks to Twin.macro, which combines the best of two worlds of Styled-components and Tailwind CSS.",
     stack: [
       'next.js',
       'react.js',
