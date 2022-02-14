@@ -1,4 +1,5 @@
 import tw, { styled } from 'twin.macro';
+import { Line } from '..';
 import {
   textAlignVariants,
   textColorVariants,
@@ -21,6 +22,7 @@ const StyledBlockQuote = styled.p(() => [
    text-3xl
    md:text-5xl
    md:leading-tight
+   lg:text-6xl
    xl:text-7xl
    xl:leading-tight
   `,
@@ -30,17 +32,17 @@ const StyledBlockQuote = styled.p(() => [
 
 const QuoteBy = styled.p(() => [
   tw`
+    flex
+    gap-2
+    items-center
     text-primary-dark
     text-lg
     tracking-wider
     uppercase
+    mt-6
     md:text-xl
+    lg:text-2xl
     xl:text-3xl
-    before:content-['------']
-    before:pr-3
-    before:tracking-[-0.25rem]
-    before:font-thin
-    my-6
     xl:pt-5
   `,
 ]);
@@ -51,7 +53,14 @@ const BlockQuote = ({ noMargin, align, color, subline, children }) => {
       <StyledBlockQuote align={align} color={color}>
         {children}
       </StyledBlockQuote>
-      {subline && <QuoteBy>{subline}</QuoteBy>}
+      {subline && (
+        <QuoteBy>
+          <span className="w-8 md:w-12">
+            <Line />
+          </span>
+          <span>{subline}</span>
+        </QuoteBy>
+      )}
     </Wrapper>
   );
 };

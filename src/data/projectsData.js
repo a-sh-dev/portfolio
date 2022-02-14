@@ -16,7 +16,7 @@ export const projectsData = [
     name: '"How You, Doin?" (HYD)',
     type: 'Command Line Interface Application',
     desc: `A terminal app that aims to provide a little entertainment to the user, in the form of dad jokes and a mental health log-system to check on how they're doing. The entertainment includes relief, comfort, or a smile to make the user feel better. It then motivates the user to positively respond to any negative feelings they are currently facing. HYD also responds by providing mental health advice and help-line as their call to action when needed.`,
-    stack: ['ruby', 'command line', 'shell scripting', 'JSON'],
+    stack: ['ruby', 'command line', 'tty', 'shell scripting', 'JSON'],
     repo: 'https://github.com/a-sh-dev/ruby_hyd_terminal_app',
     url: '',
     img: '/images/projects/project_hyd.png',
