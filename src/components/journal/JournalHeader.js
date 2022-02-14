@@ -18,15 +18,15 @@ const JournalHeader = () => {
     <Wrapper>
       <Header
         title="The"
-        subline="Perpetual Learning Journey"
-        sticker="Learning to learn"
+        subline="Perpetual Learning Journal"
+        sticker="Learning to learn journey"
         color="pink"
       >
         <JournalIcon />
       </Header>
       <GridContainer>
         <GridColumn col="span-11">
-          <BodyIntro noMargin>
+          <BodyIntro noMargin variant="bold">
             Keeping up with the technology can easily be overwhelming.
             <TextIcon>
               <FaRegMeh aria-hidden="true" />

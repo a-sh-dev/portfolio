@@ -10,6 +10,7 @@ const IconWrapper = styled.span(() => [
     grid
     place-items-center
     rounded-full
+    flex-shrink-0
   `,
   ({ size = 'normal' }) => iconSizeVariants[size],
   ({ color = 'dark' }) => textColorVariants[color],

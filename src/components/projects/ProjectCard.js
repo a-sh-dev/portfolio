@@ -6,7 +6,7 @@ import { BodyIntro, Heading, Paragraph, SubHeading, Tag } from '../typography';
 
 const Wrapper = styled.article(() => [
   tw`
-    
+    text-primary-dark
   `,
 ]);
 
@@ -20,25 +20,69 @@ const PicColumn = styled.div(() => [
   `,
 ]);
 
+const Header = styled.header(() => [
+  tw`
+    
+    border-t
+    border-primary-dark
+
+    col-span-full
+    md:col-span-6
+    md:border-t-0
+  `,
+]);
+
+const Title = styled.h1(() => [
+  tw`
+    tracking-tight
+    font-bold
+    text-3xl
+    mb-1
+    md:text-5xl
+    md:mb-4
+  `,
+]);
+
+const Type = styled.h2(() => [
+  tw`
+    font-mono
+    italic
+    text-lg
+    mb-4
+  `,
+]);
+
 const DescColumn = styled.div(() => [
   tw`
     col-span-full
-    md:col-span-6
+    md:col-span-8
+    xl:col-span-10
     pt-4
   `,
 ]);
 
 const Category = styled.div(() => [
   tw`
+    uppercase
+    font-mono
+    font-bold
+    tracking-widest
+    pt-8
+    pb-2
+
+    md:mt-1
     md:border-primary-dark
     md:border-t
     md:py-4
+    xl:mt-4
+    xl:text-lg
+    2xl:text-xl
   `,
 ]);
 
 const LinkContainer = styled.div(() => [
   tw`
-    p-4
+    col-span-full
   `,
 ]);
 
@@ -46,6 +90,11 @@ const ProjectCard = () => {
   return (
     <Wrapper>
       <GridContainer>
+        <Header>
+          <Category>Ruby</Category>
+          <Title>How You Doin? (HYD)</Title>
+          <Type>Command Line Terminal App</Type>
+        </Header>
         <PicColumn>
           <Image
             src="/images/projects/project_hyd.png"
@@ -54,16 +103,8 @@ const ProjectCard = () => {
             width={1200}
             height={1160}
           />
-          <LinkContainer>
-            <LinkButton url="/">Github</LinkButton>
-          </LinkContainer>
         </PicColumn>
         <DescColumn>
-          <Category>
-            <BodyIntro variant="monoBold">RUBY</BodyIntro>
-          </Category>
-          <Heading variant="sm">How You Doin? (HYD)</Heading>
-          <SubHeading>Command Line Terminal App</SubHeading>
           <TableRow subtitle="About the project">
             <Paragraph>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Non
@@ -77,6 +118,9 @@ const ProjectCard = () => {
             <Tag>CSS3</Tag>
           </TableRow>
         </DescColumn>
+        <LinkContainer>
+          <LinkButton url="/">Github</LinkButton>
+        </LinkContainer>
       </GridContainer>
     </Wrapper>
   );

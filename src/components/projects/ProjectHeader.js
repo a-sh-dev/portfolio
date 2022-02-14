@@ -32,7 +32,7 @@ const ProjectHeader = () => {
       </Header>
       <GridContainer>
         <GridColumn col="span-9">
-          <BodyIntro noMargin>
+          <BodyIntro noMargin variant="bold">
             Once upon a time, building websites for me involved integrating
             Adobe Photoshop and Dreamweaver...
           </BodyIntro>

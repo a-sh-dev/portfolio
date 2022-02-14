@@ -31,7 +31,7 @@ const ContactHeader = () => {
       </Header>
       <GridContainer>
         <GridColumn col="span-11">
-          <BodyIntro noMargin>
+          <BodyIntro noMargin variant="bold">
             I would love to chat with you about anything!
           </BodyIntro>
 
