@@ -1,10 +1,11 @@
 import tw, { styled } from 'twin.macro';
 import { sectionPaddingB } from '../../../styles/stylesData';
 import { Section } from '../layout';
-import { Em, SubHeading, TextIcon } from '../typography';
+import { Em } from '../typography';
 import ProjectCard from './ProjectCard';
 import { FaInfo } from 'react-icons/fa';
 import { Icon } from '..';
+import { projectsData } from '../../data';
 
 const Intro = styled.div(() => [
   sectionPaddingB,
@@ -33,6 +34,7 @@ const ProjectList = () => {
           information.
         </Em>
       </Intro>
+      <ProjectCard />
       <ProjectCard />
     </Section>
   );

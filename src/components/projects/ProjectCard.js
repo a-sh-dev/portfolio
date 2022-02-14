@@ -10,36 +10,42 @@ const Wrapper = styled.article(() => [
   `,
 ]);
 
-const PicColumn = styled.div(() => [
+const PicColumn = styled.div(({ reverse }) => [
   tw`
     relative
     col-span-full
     md:col-span-6
-    // p-4
-    // md:pl-10
   `,
+  reverse && tw`md:col-start-1 md:row-start-1`,
 ]);
 
-const Header = styled.header(() => [
+const HeaderColumn = styled.header(({ reverse }) => [
   tw`
-    
     border-t
     border-primary-dark
 
     col-span-full
     md:col-span-6
     md:border-t-0
+    md:border-b
+    md:border-dashed
+    md:mb-1
+    xl:mb-3
   `,
+  reverse && tw`md:col-start-7 md:row-start-1`,
 ]);
 
 const Title = styled.h1(() => [
   tw`
     tracking-tight
-    font-bold
+    font-extrabold
     text-3xl
-    mb-1
     md:text-5xl
     md:mb-4
+    md:pt-4
+    xl:text-7xl
+    2xl:pt-32
+    
   `,
 ]);
 
@@ -48,16 +54,17 @@ const Type = styled.h2(() => [
     font-mono
     italic
     text-lg
-    mb-4
+    mb-6
+    lg:text-xl
+    xl:text-2xl
+    2xl:mb-24
   `,
 ]);
 
 const DescColumn = styled.div(() => [
   tw`
     col-span-full
-    md:col-span-8
-    xl:col-span-10
-    pt-4
+    pt-2
   `,
 ]);
 
@@ -68,7 +75,7 @@ const Category = styled.div(() => [
     font-bold
     tracking-widest
     pt-8
-    pb-2
+    pl-0.5
 
     md:mt-1
     md:border-primary-dark
@@ -80,22 +87,35 @@ const Category = styled.div(() => [
   `,
 ]);
 
-const LinkContainer = styled.div(() => [
+const LinkColumn = styled.div(() => [
   tw`
     col-span-full
+    bg-green-200/20
+    flex
+    justify-center
   `,
 ]);
 
-const ProjectCard = () => {
+const ProjectCard = ({ project, reverse, children }) => {
+  // const { id, category, name, type, desc, tech, repo, url, img } = project;
+  const copiedSubtitle = 'main technologies';
+
   return (
     <Wrapper>
       <GridContainer>
-        <Header>
+        <HeaderColumn {...{ reverse }}>
           <Category>Ruby</Category>
           <Title>How You Doin? (HYD)</Title>
           <Type>Command Line Terminal App</Type>
-        </Header>
-        <PicColumn>
+          <div className="hidden lg:block">
+            <TableRow subtitle={copiedSubtitle}>
+              <Tag>HTML5</Tag>
+              <Tag>CSS3</Tag>
+            </TableRow>
+          </div>
+        </HeaderColumn>
+
+        <PicColumn {...{ reverse }}>
           <Image
             src="/images/projects/project_hyd.png"
             alt="project name"
@@ -104,8 +124,9 @@ const ProjectCard = () => {
             height={1160}
           />
         </PicColumn>
+
         <DescColumn>
-          <TableRow subtitle="About the project">
+          <TableRow subtitle="About the project" noDashed dense>
             <Paragraph>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Non
               accusantium tempore illum numquam quidem nam cupiditate, cum
@@ -113,14 +134,17 @@ const ProjectCard = () => {
               quas possimus similique, autem nulla obcaecati!
             </Paragraph>
           </TableRow>
-          <TableRow subtitle="Tech stack">
-            <Tag>HTML5</Tag>
-            <Tag>CSS3</Tag>
-          </TableRow>
+          <div className="lg:hidden">
+            <TableRow subtitle={copiedSubtitle}>
+              <Tag>HTML5</Tag>
+              <Tag>CSS3</Tag>
+            </TableRow>
+          </div>
         </DescColumn>
-        <LinkContainer>
-          <LinkButton url="/">Github</LinkButton>
-        </LinkContainer>
+
+        <LinkColumn>
+          <LinkButton url="https://www.google.com">Github</LinkButton>
+        </LinkColumn>
       </GridContainer>
     </Wrapper>
   );
