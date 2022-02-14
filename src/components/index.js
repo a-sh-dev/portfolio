@@ -10,6 +10,7 @@ import Table from './Table';
 import TableRow from './TableRow';
 import FactCard from './FactCard';
 import LinkButton from './LinkButton';
+import AHrefButton from './AHrefButton';
 
 export {
   Meta,
@@ -24,4 +25,5 @@ export {
   TableRow,
   FactCard,
   LinkButton,
+  AHrefButton,
 };

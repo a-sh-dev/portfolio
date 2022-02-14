@@ -34,8 +34,14 @@ const ProjectList = () => {
           information.
         </Em>
       </Intro>
-      <ProjectCard />
-      <ProjectCard />
+      <main>
+        {projectsData.map((project, index) => {
+          let reverse = index % 2 === 0;
+          return (
+            <ProjectCard key={project.id} project={project} reverse={reverse} />
+          );
+        })}
+      </main>
     </Section>
   );
 };

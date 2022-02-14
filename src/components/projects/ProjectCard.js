@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import tw, { styled } from 'twin.macro';
-import { LinkButton, Table, TableRow } from '..';
+import { AHrefButton, LinkButton, Table, TableRow } from '..';
+import { paragraphMargin } from '../../../styles/stylesData';
 import { GridColumn, GridContainer } from '../layout';
 import { BodyIntro, Heading, Paragraph, SubHeading, Tag } from '../typography';
 
@@ -40,6 +41,7 @@ const Title = styled.h1(() => [
     tracking-tight
     font-extrabold
     text-3xl
+    capitalize
     md:text-5xl
     md:mb-4
     md:pt-4
@@ -55,6 +57,7 @@ const Type = styled.h2(() => [
     italic
     text-lg
     mb-6
+    capitalize
     lg:text-xl
     xl:text-2xl
     2xl:mb-24
@@ -90,35 +93,41 @@ const Category = styled.div(() => [
 const LinkColumn = styled.div(() => [
   tw`
     col-span-full
-    bg-green-200/20
+    mb-10
+    md:mb-24
     flex
-    justify-center
+  `,
+  `
+    a + a {
+      margin-left: ${paragraphMargin};
+    }
   `,
 ]);
 
-const ProjectCard = ({ project, reverse, children }) => {
-  // const { id, category, name, type, desc, tech, repo, url, img } = project;
+const ProjectCard = ({ project, reverse }) => {
+  const { category, name, type, desc, stack, repo, url, img } = project;
   const copiedSubtitle = 'main technologies';
 
   return (
     <Wrapper>
       <GridContainer>
         <HeaderColumn {...{ reverse }}>
-          <Category>Ruby</Category>
-          <Title>How You Doin? (HYD)</Title>
-          <Type>Command Line Terminal App</Type>
+          <Category>{category}</Category>
+          <Title>{name}</Title>
+          <Type>{type}</Type>
           <div className="hidden lg:block">
             <TableRow subtitle={copiedSubtitle}>
-              <Tag>HTML5</Tag>
-              <Tag>CSS3</Tag>
+              {stack.map((tech) => {
+                return <Tag key={tech}>{tech}</Tag>;
+              })}
             </TableRow>
           </div>
         </HeaderColumn>
 
         <PicColumn {...{ reverse }}>
           <Image
-            src="/images/projects/project_hyd.png"
-            alt="project name"
+            src={img}
+            alt={name}
             layout="responsive"
             width={1200}
             height={1160}
@@ -127,23 +136,20 @@ const ProjectCard = ({ project, reverse, children }) => {
 
         <DescColumn>
           <TableRow subtitle="About the project" noDashed dense>
-            <Paragraph>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Non
-              accusantium tempore illum numquam quidem nam cupiditate, cum
-              distinctio reprehenderit ab, culpa fugiat exercitationem sapiente
-              quas possimus similique, autem nulla obcaecati!
-            </Paragraph>
+            <Paragraph>{desc}</Paragraph>
           </TableRow>
           <div className="lg:hidden">
             <TableRow subtitle={copiedSubtitle}>
-              <Tag>HTML5</Tag>
-              <Tag>CSS3</Tag>
+              {stack.map((tech) => {
+                return <Tag key={tech}>{tech}</Tag>;
+              })}
             </TableRow>
           </div>
         </DescColumn>
 
         <LinkColumn>
-          <LinkButton url="https://www.google.com">Github</LinkButton>
+          <AHrefButton href={repo}>Repository</AHrefButton>
+          {url && <AHrefButton href={url}>Live</AHrefButton>}
         </LinkColumn>
       </GridContainer>
     </Wrapper>
