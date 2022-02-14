@@ -33,14 +33,16 @@ const ProjectHeader = () => {
       <GridContainer>
         <GridColumn col="span-9">
           <BodyIntro noMargin variant="bold">
-            Once upon a time, building websites for me involved integrating
-            Adobe Photoshop and Dreamweaver...
+            Once upon a time, building websites for me only involved integrating
+            Adobe Photoshop & (Macromedia) Dreamweaver with a few tweaks of HTML
+            and CSS.
           </BodyIntro>
 
           <Paragraph>
-            Fast forward, here are some selected projects built from scratch
-            with care and heaps of caffeine since I started my formal coding
-            journey.
+            Fast forward today; the following are some selected projects, not
+            limited to websites. Each was built from scratch with care and lots
+            of caffeine since I started my formal coding journey. I look forward
+            to adding more soon!
             <TextIcon>
               <FaRegGrinStars aria-hidden="true" />
             </TextIcon>
