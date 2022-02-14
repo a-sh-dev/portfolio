@@ -10,8 +10,8 @@ const Wrapper = styled.div(() => [
 
 const ProjectList = () => {
   return (
-    <Section>
-      <ProjectCard>EACH PROJECT</ProjectCard>
+    <Section variant="top">
+      <ProjectCard />
     </Section>
   );
 };

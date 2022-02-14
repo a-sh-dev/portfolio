@@ -51,9 +51,8 @@ const ProjectCard = () => {
             src="/images/projects/project_hyd.png"
             alt="project name"
             layout="responsive"
-            width={1201}
-            height={961}
-            // objectFit="contain"
+            width={1200}
+            height={1160}
           />
           <LinkContainer>
             <LinkButton url="/">Github</LinkButton>
