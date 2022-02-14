@@ -23,12 +23,11 @@ export const projectsData = [
   },
   {
     id: 3,
-    category: 'mern stack',
+    category: 'mern stack - team project',
     name: 'DIY Grooming',
     type: 'Online Blog',
-    desc: 'The online blog is a platform to share and find step-by-step DIY dog grooming instructions. The Notting Hill neighbourhood community and anyone interested in DIY dog grooming can access the blog. Additionally, professional groomers can contribute and promote their services, and when needed, registered users can then contact them through the blog.',
+    desc: 'The final project of the coding boot camp consists of team collaboration to create a full-stack web application. DIY Grooming is an online blog dedicated to dog owners as a platform to share and find step-by-step DIY dog grooming instructions. It was intended for the Notting Hill neighbourhood, where one team member lives. The local community and anyone interested in DIY dog grooming can access the blog. Additionally, professional groomers can contribute and promote their services. When required, registered users can use the contact form to enquire about any professional assistance.',
     stack: [
-      'team project',
       'express.js',
       'react.js',
       'mongoDB',
@@ -45,7 +44,7 @@ export const projectsData = [
     category: 'next.js',
     name: 'a-sh.cc',
     type: 'Personal Portfolio',
-    desc: "The first project in the boot camp was creating a website with only HTML5 and CSS3. Since then, I have revamped the personal portfolio with Next.js (a.k.a, this website you're currently viewing). Obviously, it is nowhere perfect and is still under development. However, I learned a lot from the styling implementation, particularly the responsive layout. All thanks to Twin.macro, which combines the best of two worlds of Styled-components and Tailwind CSS. In addition, I plan to utilise more interactivity and features such as page transitions and perhaps use the MongoDB database for the journal entries.",
+    desc: "The first project in the boot camp was creating a website with only HTML5 and CSS3. Since then, I have revamped the personal portfolio with Next.js (a.k.a, this website you're currently viewing). Initially planned to use only React.js, but I'm sold by how Next.js can make React.js faster and scalable. Plus, with the added SEO friendliness! Obviously, the portfolio has much room for improvement and is still under development. However, I learned a lot from the styling implementation. All thanks to Twin.macro, which combines the best of two worlds of Styled-components and Tailwind CSS. In addition, I plan to utilise more interactivity and add features such as page transitions and perhaps use the MongoDB database for the journal entries.",
     stack: [
       'next.js',
       'react.js',

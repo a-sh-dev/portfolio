@@ -33,9 +33,9 @@ const DevLife = () => {
           </Paragraph>
           <Paragraph>
             However, that extra time is purposeful as part of the
-            problem-solving process. I enjoy translating subject matters by
-            integrating the technical and visual aspects of achieving a
-            well-presented UI and effective UX in every project.
+            problem-solving process. In addition, I enjoy translating subject
+            matters by integrating the technical and visual aspects of achieving
+            a well-presented UI and effective UX in every project.
           </Paragraph>
           <Paragraph>
             Having experience working in a team and independently, I work better

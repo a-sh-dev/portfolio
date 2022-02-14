@@ -16,8 +16,8 @@ const Wrapper = styled.header(() => [
 const SideHeader = styled.div(() => [
   tw`
     hidden
-    md:pt-8
-    lg:pt-2
+    md:pt-5
+    lg:pt-3
     md:block
     relative
   `,

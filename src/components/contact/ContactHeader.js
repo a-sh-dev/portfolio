@@ -30,7 +30,7 @@ const ContactHeader = () => {
         <EnvelopeIcon />
       </Header>
       <GridContainer>
-        <GridColumn col="span-11">
+        <GridColumn col="span-9">
           <BodyIntro noMargin variant="bold">
             I would love to chat with you about anything!
           </BodyIntro>
