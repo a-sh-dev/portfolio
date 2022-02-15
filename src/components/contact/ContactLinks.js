@@ -2,7 +2,7 @@ import tw, { styled } from 'twin.macro';
 import { GridColumn, Section } from '../layout';
 import { BodyIntro, Em, Heading, TextIcon } from '../typography';
 import { HiOutlineArrowSmRight, HiOutlineArrowSmDown } from 'react-icons/hi';
-import { Button, Icon } from '..';
+import { BoxedLink, Button, Icon } from '..';
 import { shortSocialLinks } from '../../data';
 
 const DesktopWrapper = styled.div(() => [
@@ -41,7 +41,12 @@ const CTAFooter = styled.div(() => [
 
 const LinksColumn = styled.div(() => [
   tw`
-  
+    col-span-full
+    flex
+    flex-col
+    w-full
+    bg-red-200/50
+    lg:col-span-7
   `,
 ]);
 
@@ -71,7 +76,16 @@ const ContactLinks = () => {
       </CTAColumn>
       <LinksColumn>
         {shortSocialLinks.map((link) => {
-          return <p key={link.id}>{link.name}</p>;
+          return (
+            <BoxedLink
+              key={link.id}
+              href={link.url}
+              name={link.name}
+              color={link.color}
+            >
+              {link.icon}
+            </BoxedLink>
+          );
         })}
       </LinksColumn>
     </Section>

@@ -10,6 +10,7 @@ import { Button } from '.';
 import {
   bgColorVariants,
   bigElementUniformPadding,
+  uniformTransition,
 } from '../../styles/stylesData';
 import { Heading } from './typography';
 
@@ -37,6 +38,7 @@ const Header = styled.header(({ showInfo }) => [
     hover:bg-black/5
   `,
   showInfo && tw`border-dashed`,
+  uniformTransition,
 ]);
 
 const Content = styled.main`

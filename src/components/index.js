@@ -13,6 +13,7 @@ import LinkButton from './LinkButton';
 import AHrefButton from './AHrefButton';
 import FormButton from './FormButton';
 import InfoBlurb from './InfoBlurb';
+import BoxedLink from './BoxedLink';
 
 export {
   Meta,
@@ -30,4 +31,5 @@ export {
   AHrefButton,
   FormButton,
   InfoBlurb,
+  BoxedLink,
 };

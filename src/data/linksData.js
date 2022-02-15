@@ -47,30 +47,35 @@ export const socialMediaLinks = [
     name: 'LinkedIn',
     url: 'https://www.linkedin.com/in/angiehentri/',
     icon: <FaLinkedinIn />,
+    color: 'teal',
   },
   {
     id: 2,
     name: 'Github',
     url: 'https://github.com/a-sh-dev',
     icon: <FaGithub />,
+    color: 'gray',
   },
   {
     id: 3,
     name: 'Twitter',
     url: 'https://twitter.com/heya_sh',
     icon: <FaTwitter />,
+    color: 'blue',
   },
   {
     id: 4,
     name: 'Instagram',
     url: 'https://www.instagram.com/a_sh.is/',
     icon: <FaInstagram />,
+    color: 'pink',
   },
   {
     id: 5,
     name: 'Codepen',
     url: 'https://codepen.io/angiesh/pens/',
     icon: <FaCodepen />,
+    color: 'purple',
   },
 ];
 
