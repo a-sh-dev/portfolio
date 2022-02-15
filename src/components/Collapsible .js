@@ -7,10 +7,11 @@ import {
   HiOutlineChevronUp,
 } from 'react-icons/hi';
 import { Button } from '.';
-import { bgColorVariants } from '../../styles/stylesData';
+import {
+  bgColorVariants,
+  bigElementUniformPadding,
+} from '../../styles/stylesData';
 import { Heading } from './typography';
-
-const uniformPadding = tw`p-6 pb-10 md:p-10`;
 
 const Container = styled.article((showInfo) => [
   tw`
@@ -23,7 +24,7 @@ const Container = styled.article((showInfo) => [
 ]);
 
 const Header = styled.header(({ showInfo }) => [
-  uniformPadding,
+  bigElementUniformPadding,
   tw`
     flex
     items-center
@@ -39,7 +40,7 @@ const Header = styled.header(({ showInfo }) => [
 ]);
 
 const Content = styled.main`
-  ${uniformPadding};
+  ${bigElementUniformPadding};
   padding: ${tw`md:(px-12 pt-14 pb-16) xl:(px-16)`};
   border-bottom: ${({ showInfo }) =>
     showInfo ? tw`border border-b border-primary-dark` : tw`border-b-0`};

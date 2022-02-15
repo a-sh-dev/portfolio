@@ -73,3 +73,10 @@ export const socialMediaLinks = [
     icon: <FaCodepen />,
   },
 ];
+
+export const shortSocialLinks = [
+  socialMediaLinks[0],
+  socialMediaLinks[2],
+  socialMediaLinks[3],
+  socialMediaLinks[1],
+];

@@ -3,6 +3,8 @@ import { GridColumn, GridContainer, Header } from '../layout';
 import { BodyIntro, Paragraph, TextIcon } from '../typography';
 import { EnvelopeIcon } from '../svgs';
 import { pagesHeroMax, sectionPaddingB } from '../../../styles/stylesData';
+import { FaRegHandPointDown } from 'react-icons/fa';
+import { ImPointDown } from 'react-icons/im';
 
 const Wrapper = styled.div(() => [
   sectionPaddingB,
@@ -37,7 +39,10 @@ const ContactHeader = () => {
 
           <Paragraph>
             But while I am still working on the contact form, I can be contacted
-            through social media, so...
+            through social media, therefore...
+            <TextIcon>
+              <ImPointDown />
+            </TextIcon>
           </Paragraph>
         </GridColumn>
       </GridContainer>

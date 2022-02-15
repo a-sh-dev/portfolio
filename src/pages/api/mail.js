@@ -13,8 +13,8 @@ export default async function sendMail(req, res) {
 
   try {
     await mail.send({
-      to: 'ashentri.w@gmail.com',
-      from: 'hello.angie@ymail.com',
+      to: 'TO BE UPDATED',
+      from: 'TO BE UPDATED',
       subject: '👋🏻 New message from a-sh.cc contact!',
       text: message,
       html: message.replace(/\r\n/g, '<br/>'),

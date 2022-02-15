@@ -3,6 +3,7 @@ import { GridColumn, Section } from '../layout';
 import { BodyIntro, Em, Heading, TextIcon } from '../typography';
 import { HiOutlineArrowSmRight, HiOutlineArrowSmDown } from 'react-icons/hi';
 import { Button, Icon } from '..';
+import { shortSocialLinks } from '../../data';
 
 const DesktopWrapper = styled.div(() => [
   tw`
@@ -69,7 +70,9 @@ const ContactLinks = () => {
         </CTAFooter>
       </CTAColumn>
       <LinksColumn>
-        <p>LinkedIn</p>
+        {shortSocialLinks.map((link) => {
+          return <p key={link.id}>{link.name}</p>;
+        })}
       </LinksColumn>
     </Section>
   );

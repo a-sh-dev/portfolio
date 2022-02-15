@@ -4,6 +4,7 @@ import tw from 'twin.macro';
 export const uniformTransition = tw`transition-all delay-75 duration-300 ease-out hover:(ease-in duration-200)`;
 
 export const paragraphMargin = '1.25rem';
+export const bigElementUniformPadding = tw`p-6 pb-10 md:p-10`;
 
 export const sectionPaddingY = tw`py-14 md:py-28 xl:py-44`;
 export const sectionPaddingB = tw`pb-14 md:pb-28 xl:pb-44`;
