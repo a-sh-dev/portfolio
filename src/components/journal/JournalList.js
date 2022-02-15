@@ -3,6 +3,8 @@ import { Icon } from '..';
 import { sectionPaddingB } from '../../../styles/stylesData';
 import { Section } from '../layout';
 import { Heading } from '../typography';
+import { journalDays } from '../../data';
+import { formatDay } from '../../utils';
 import JournalCard from './JournalCard';
 import { HiOutlineCalendar } from 'react-icons/hi';
 
@@ -32,6 +34,9 @@ const JournalGridContainer = styled.div(() => [
     2xl:grid-cols-4
   `,
 ]);
+
+// sort journalData
+const sortedJournals = journalDays.sort((a, b) => b.day - a.day);
 
 const JournalList = () => {
   return (
