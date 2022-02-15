@@ -3,6 +3,7 @@ import {
   textAlignVariants,
   textColorVariants,
   fontStyleVariants,
+  fontSizeVariants,
 } from '../../../styles/stylesData';
 
 const StyledParagraph = styled.p(({ noMargin }) => [
@@ -21,14 +22,16 @@ const StyledParagraph = styled.p(({ noMargin }) => [
   ({ color = 'dark' }) => textColorVariants[color],
   ({ align = 'left' }) => textAlignVariants[align],
   ({ variant = 'semibold' }) => fontStyleVariants[variant],
+  ({ size = '' }) => fontSizeVariants[size],
 ]);
 
-const BodyIntro = ({ variant, noMargin, align, color, children }) => {
+const BodyIntro = ({ variant, noMargin, align, color, size, children }) => {
   return (
     <StyledParagraph
       color={color}
       align={align}
       variant={variant}
+      size={size}
       {...{ noMargin }}
     >
       {children}

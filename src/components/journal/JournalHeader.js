@@ -26,7 +26,7 @@ const JournalHeader = () => {
       </Header>
       <GridContainer>
         <GridColumn col="span-11">
-          <BodyIntro noMargin variant="bold">
+          <BodyIntro noMargin variant="bold" size="intro">
             Keeping up with the technology can easily be overwhelming.
             <TextIcon>
               <FaRegMeh aria-hidden="true" />

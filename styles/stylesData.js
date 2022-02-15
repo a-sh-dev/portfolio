@@ -67,6 +67,7 @@ export const textAlignVariants = {
 export const fontSizeVariants = {
   paragraph: tw`text-base leading-relaxed md:text-lg xl:text-xl xl:leading-9`,
   base: tw`text-sm md:text-base`, // 1rem
+  intro: tw`text-xl leading-relaxed md:text-2xl xl:text-2xl`,
   sm: tw`text-sm`, // 0.875rem
   xs: tw`text-xs`, // 0.75rem
   lg: tw`text-lg`, // 1.125rem
