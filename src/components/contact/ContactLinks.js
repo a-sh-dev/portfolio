@@ -22,10 +22,11 @@ const CTAColumn = styled.div(() => [
   tw`
     col-span-full
     justify-self-center
-    lg:justify-self-auto
+    mb-4
+    lg:mb-0
+    lg:justify-self-start
     lg:col-span-5
-    lg:items-center
-    
+    lg:self-center
   `,
 ]);
 
@@ -45,7 +46,8 @@ const LinksColumn = styled.div(() => [
     flex
     flex-col
     w-full
-    bg-red-200/50
+    mb-4
+    lg:mb-0
     lg:col-span-7
   `,
 ]);
