@@ -1,14 +1,12 @@
 import { useState } from 'react';
 import tw, { styled } from 'twin.macro';
 import Image from 'next/image';
-import { sectionPaddingB } from '../../../styles/stylesData';
 import { Section } from '../layout';
 import { FormButton, InfoBlurb } from '..';
 import FormInput, { textFieldBase } from './FormInput';
 import { contactForInputs } from '../../data';
 
 const Wrapper = styled.div(() => [
-  sectionPaddingB,
   tw`
     flex
     flex-col
@@ -19,7 +17,7 @@ const Wrapper = styled.div(() => [
     md:p-20
     md:bg-white/30
     md:gap-10
-    md:flex-row
+    lg:flex-row
     xl:px-32
     2xl:w-5/6
     2xl:p-32
@@ -32,7 +30,6 @@ const FormColumn = styled.form(() => [
     flex-col
     gap-4
     flex-1
-    md:w-2/3
   `,
 ]);
 
@@ -41,7 +38,7 @@ const ImgColumn = styled.div(() => [
     mt-10
     self-center
     md:flex-shrink-0
-    md:mt-0
+    lg:mt-0
   `,
 ]);
 
@@ -52,18 +49,19 @@ const MessageInput = styled.textarea(() => [
   `,
 ]);
 
-const initialData = {
+const initialValue = {
   name: '',
   email: '',
   message: '',
 };
 
 const ContactForm = () => {
-  const [formData, setFormData] = useState(initialData);
+  const [formData, setFormData] = useState(initialValue);
 
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log('SUBMITTED!', formData);
+    setFormData(initialValue);
   };
 
   const handleChange = (e) => {
@@ -93,13 +91,16 @@ const ContactForm = () => {
             placeholder="Message"
             onChange={handleChange}
             rows="5"
+            required
           />
-          <FormButton type="submit">Send Message</FormButton>
+          <FormButton type="submit" fullWidthSm>
+            Submit
+          </FormButton>
         </FormColumn>
         <ImgColumn>
           <Image
             src="/images/cuppa_circle.svg"
-            alt="a cup of tea illustration"
+            alt="let's grab a coffee or tea, maybe?"
             width={300}
             height={300}
           />

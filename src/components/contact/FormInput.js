@@ -32,7 +32,6 @@ const FormInput = ({
         placeholder={placeholder}
         {...rest}
       />
-      <span className="text-sm text-red-900/70 pl-1">{errorMessage}</span>
     </InputWrapper>
   );
 };
