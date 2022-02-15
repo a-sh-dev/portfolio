@@ -53,7 +53,7 @@ const ContactForm = ({ formData, handleSubmit, handleChange }) => {
   return (
     <Section variant="top" relative>
       <Wrapper>
-        <FormColumn onSubmit={handleSubmit}>
+        <FormColumn onSubmit={handleSubmit} method="post">
           <div className="mb-4">
             <InfoBlurb blurb="All fields are required." center />
           </div>

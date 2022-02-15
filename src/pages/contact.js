@@ -16,8 +16,20 @@ const initialValue = {
 export default function Contact() {
   const [formData, setFormData] = useState(initialValue);
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
+
+    // return empty values
+    Array.from(e.currentTarget.elements).forEach((field) => {
+      if (!field.name) return;
+      formData[field.name] = field.value;
+    });
+
+    await fetch('/api/mail', {
+      method: 'POST',
+      body: JSON.stringify(formData),
+    });
+
     console.log('SUBMITTED!', formData);
     setFormData(initialValue);
   };
