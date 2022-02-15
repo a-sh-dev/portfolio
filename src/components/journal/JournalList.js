@@ -24,7 +24,12 @@ const Circa = styled.div(() => [
 
 const JournalGridContainer = styled.div(() => [
   tw`
-  
+    grid
+    grid-cols-1
+    gap-1
+    md:grid-cols-2
+    xl:grid-cols-3
+    2xl:grid-cols-4
   `,
 ]);
 
@@ -53,6 +58,9 @@ const JournalList = () => {
       <div className="border-t border-primary-dark border-dashed">
         <Section variant="bottom">
           <JournalGridContainer>
+            <JournalCard />
+            <JournalCard />
+            <JournalCard />
             <JournalCard />
           </JournalGridContainer>
         </Section>
