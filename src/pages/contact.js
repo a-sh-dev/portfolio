@@ -30,7 +30,6 @@ export default function Contact() {
       body: JSON.stringify(formData),
     });
 
-    console.log('SUBMITTED!', formData);
     setFormData(initialValue);
   };
 
@@ -43,7 +42,7 @@ export default function Contact() {
       <Meta title="contact" />
       <Container>
         <ContactHeader />
-        <ContactForm {...{ formData, handleSubmit, handleChange }} />
+        {/* <ContactForm {...{ formData, handleSubmit, handleChange }} /> */}
         <ContactLinks />
       </Container>
     </>

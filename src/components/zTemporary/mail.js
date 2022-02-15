@@ -13,7 +13,7 @@ export default async function sendMail(req, res) {
 
   try {
     await mail.send({
-      to: 'ashentri.w@gmail.com',
+      to: 'hello.angie@ymail.com',
       from: 'hello.angie@ymail.com',
       subject: '👋🏻 New message from a-sh.cc contact!',
       text: message,

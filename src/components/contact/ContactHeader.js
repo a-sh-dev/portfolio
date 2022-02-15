@@ -36,8 +36,8 @@ const ContactHeader = () => {
           </BodyIntro>
 
           <Paragraph>
-            So, please fill out the form below, and I will get back to you as
-            soon as possible!
+            But while I am still working on the contact form, I can be contacted
+            through social media, so...
           </Paragraph>
         </GridColumn>
       </GridContainer>

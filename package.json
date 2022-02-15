@@ -4,7 +4,7 @@
   "author": "a-sh-dev",
   "scripts": {
     "dev": "next dev -p 5007",
-    "build": "next build",
+    "build": "next build && next export",
     "start": "next start",
     "lint": "next lint"
   },
