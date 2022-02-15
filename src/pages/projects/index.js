@@ -6,7 +6,7 @@ import {
   ProjectQuote,
 } from '../../components/projects';
 
-const projects = () => {
+export default function Projects() {
   return (
     <>
       <Meta title="projects" />
@@ -17,6 +17,4 @@ const projects = () => {
       </Container>
     </>
   );
-};
-
-export default projects;
+}

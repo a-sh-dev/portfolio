@@ -2,7 +2,7 @@ import { Meta } from '../components';
 import { Container } from '../components/layout';
 import { JournalHeader, JournalList } from '../components/journal';
 
-const journal = () => {
+export default function Journal() {
   return (
     <>
       <Meta title="journal" />
@@ -12,6 +12,4 @@ const journal = () => {
       </Container>
     </>
   );
-};
-
-export default journal;
+}
