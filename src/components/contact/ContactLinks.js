@@ -6,19 +6,21 @@ import { HiOutlineArrowSmRight, HiOutlineArrowSmDown } from 'react-icons/hi';
 const DesktopWrapper = styled.div(() => [
   tw`
     hidden
-    md:block
+    lg:block
   `,
 ]);
 
 const MobileWrapper = styled.div(() => [
   tw`
-    md:hidden
+    lg:hidden
   `,
 ]);
 
 const CTAColumn = styled.div(() => [
   tw`
     col-span-full
+    lg:col-span-5
+    lg:items-center
     
   `,
 ]);
@@ -34,7 +36,7 @@ const subline = 'Check out these quicklinks!';
 const ContactLinks = () => {
   return (
     <Section layout="grid">
-      <GridColumn col="span-4">
+      <CTAColumn>
         <MobileWrapper>
           <Heading variant="sm">Let&apos;s be social!</Heading>
         </MobileWrapper>
@@ -47,15 +49,15 @@ const ContactLinks = () => {
         <BodyIntro noMargin>
           {subline}
           <TextIcon>
-            <div className="rotate-90 md:rotate-0">
+            <div className="rotate-90 lg:rotate-0">
               <HiOutlineArrowSmRight />
             </div>
           </TextIcon>
         </BodyIntro>
-      </GridColumn>
-      <GridColumn>
+      </CTAColumn>
+      <LinksColumn>
         <p>LinkedIn</p>
-      </GridColumn>
+      </LinksColumn>
     </Section>
   );
 };
