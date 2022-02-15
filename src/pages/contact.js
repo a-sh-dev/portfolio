@@ -5,6 +5,7 @@ import {
   ContactForm,
   ContactHeader,
   ContactLinks,
+  ContactQuote,
 } from '../components/contact';
 
 const initialValue = {
@@ -44,6 +45,7 @@ export default function Contact() {
         <ContactHeader />
         {/* <ContactForm {...{ formData, handleSubmit, handleChange }} /> */}
         <ContactLinks />
+        <ContactQuote />
       </Container>
     </>
   );

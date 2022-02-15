@@ -26,7 +26,7 @@ const ContactHeader = () => {
       <Header
         title="Let's Get"
         subline="in Touch!"
-        sticker="Email me, maybe?"
+        sticker="Chat soon, maybe?"
         color="yellow"
       >
         <EnvelopeIcon />
@@ -38,8 +38,8 @@ const ContactHeader = () => {
           </BodyIntro>
 
           <Paragraph>
-            But while I am still working on the contact form, I can be contacted
-            through social media, therefore...
+            While I am fixing the contact form, I can be contacted through
+            social media, therefore... ...
             <TextIcon>
               <ImPointDown />
             </TextIcon>
