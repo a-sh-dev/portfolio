@@ -49,25 +49,7 @@ const MessageInput = styled.textarea(() => [
   `,
 ]);
 
-const initialValue = {
-  name: '',
-  email: '',
-  message: '',
-};
-
-const ContactForm = () => {
-  const [formData, setFormData] = useState(initialValue);
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log('SUBMITTED!', formData);
-    setFormData(initialValue);
-  };
-
-  const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
-  };
-
+const ContactForm = ({ formData, handleSubmit, handleChange }) => {
   return (
     <Section variant="top" relative>
       <Wrapper>

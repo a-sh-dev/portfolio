@@ -1,4 +1,4 @@
-import React from 'react';
+import { useState } from 'react';
 import { Meta } from '../components';
 import { Container } from '../components/layout';
 import {
@@ -7,12 +7,14 @@ import {
   ContactLinks,
 } from '../components/contact';
 
-const contact = () => {
-  const [formData, setFormData] = React.useState({
-    name: '',
-    email: '',
-    message: '',
-  });
+const initialValue = {
+  name: '',
+  email: '',
+  message: '',
+};
+
+export default function Contact() {
+  const [formData, setFormData] = useState(initialValue);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -29,11 +31,9 @@ const contact = () => {
       <Meta title="contact" />
       <Container>
         <ContactHeader />
-        <ContactForm {...{}} />
+        <ContactForm {...{ formData, handleSubmit, handleChange }} />
         <ContactLinks />
       </Container>
     </>
   );
-};
-
-export default contact;
+}
