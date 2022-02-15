@@ -68,7 +68,7 @@ export const textAlignVariants = {
 export const fontSizeVariants = {
   paragraph: tw`text-base leading-relaxed md:text-lg xl:text-xl xl:leading-9`,
   base: tw`text-sm md:text-base`, // 1rem
-  intro: tw`text-xl leading-relaxed md:text-2xl xl:text-2xl`,
+  intro: tw`text-xl md:leading-relaxed md:text-2xl xl:text-2xl xl:leading-9`,
   sm: tw`text-sm lg:text-lg`, // 0.875rem
   xs: tw`text-xs`, // 0.75rem
   lg: tw`text-lg`, // 1.125rem
@@ -143,6 +143,7 @@ export const gridColVariants = {
   'span-9-7': tw`md:col-span-9 lg:col-span-7 `, // 12/9
   'span-10': tw`md:col-span-10`, // 12/10
   'span-10-8': tw`md:col-span-10 xl:col-span-8`, // 12/10
+  'span-11': tw`md:col-span-11`, // 12/10
   auto: tw`md:col-auto`,
   full: tw`md:col-span-full`,
 };

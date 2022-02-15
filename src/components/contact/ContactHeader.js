@@ -32,7 +32,7 @@ const ContactHeader = () => {
         <EnvelopeIcon />
       </Header>
       <GridContainer>
-        <GridColumn col="span-9">
+        <GridColumn col="span-10-8" className="xl:col-span-11">
           <BodyIntro noMargin variant="bold" size="intro">
             I would love to chat with you about anything!
           </BodyIntro>

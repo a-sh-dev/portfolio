@@ -9,7 +9,6 @@ const Wrapper = styled.div(() => [
   sectionPaddingB,
   pagesHeroMax,
   tw`
-    
   `,
 ]);
 
@@ -38,8 +37,7 @@ const JournalHeader = () => {
 
           <Paragraph>
             The most crucial lesson from the boot camp is to have a growth
-            mindset as we
-            <Em> &apos;learn to learn&apos;</Em> instead of a fixed mindset. A
+            mindset as we<Em> learn to learn</Em> instead of a fixed mindset. A
             growth mindset says,{' '}
             <EmMed>
               &quot;Mistakes help me learn. I will know how to do this.&quot;{' '}
@@ -49,7 +47,7 @@ const JournalHeader = () => {
           </Paragraph>
           <Paragraph>
             I may not have <Em>fully</Em> grasped what I have been learning so
-            far <span className="em-dash">---</span> and that is ok. But, I will
+            far<span className="em-dash">---</span>and that is ok. But, I will
             eventually grow in my understanding and get better. Honestly, we may
             not be able to be experts at EVERYthing! Therefore, I like to record
             my learning progress and milestones for self-motivation that
