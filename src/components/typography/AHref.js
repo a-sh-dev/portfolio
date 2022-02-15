@@ -1,7 +1,7 @@
 import tw, { styled } from 'twin.macro';
 import { uniformTransition } from '../../../styles/stylesData';
 
-const StyledAHref = styled.a(() => [
+const StyledAHref = styled.a(({ noBold }) => [
   tw`
     border-b
     border-white
@@ -14,11 +14,17 @@ const StyledAHref = styled.a(() => [
     box-shadow: inset 0 -1px 0 white;
   `,
   uniformTransition,
+  noBold && tw`font-normal`,
 ]);
 
-const AHref = ({ href, children }) => {
+const AHref = ({ href, noBold, children }) => {
   return (
-    <StyledAHref href={href} target="_blank" rel="noopener noreferrer">
+    <StyledAHref
+      href={href}
+      target="_blank"
+      rel="noopener noreferrer"
+      {...{ noBold }}
+    >
       {children}
     </StyledAHref>
   );

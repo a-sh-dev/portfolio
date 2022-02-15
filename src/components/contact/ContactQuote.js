@@ -8,24 +8,32 @@ const Wrapper = tw.main`
   md:p-0
 `;
 
+const Subline = tw.div`
+  mt-2
+  lg:mt-4
+`;
+
 const ContactQuote = () => {
   return (
-    <Section relative>
+    <Section variant="bottom">
       <Wrapper>
         <GridContainer noGap>
-          <GridColumn col="span-10">
+          <GridColumn col="span-8">
             <BlockQuote noMargin>
-              How did pirates collaborate before computers ?
-              <BodyIntro variant="semibold" size="intro">
-                Pier to pier networking
-              </BodyIntro>
-              <Paragraph size="sm">
-                Source <span className="em-dash">--- </span>
-                <AHref href="https://www.reddit.com/r/ProgrammerDadJokes/comments/51wqd2/how_did_pirates_collaborate_before_computers/">
+              How did pirates collaborate before computers?
+            </BlockQuote>
+            <Subline>
+              <Paragraph size="2xl">Pier to pier networking</Paragraph>
+              <Paragraph size="sm" noMargin>
+                Source<span className="em-dash">---</span>
+                <AHref
+                  href="https://www.reddit.com/r/ProgrammerDadJokes/comments/51wqd2/how_did_pirates_collaborate_before_computers/"
+                  noBold
+                >
                   Reddit/ProgrammerDadJokes
                 </AHref>
               </Paragraph>
-            </BlockQuote>
+            </Subline>
           </GridColumn>
         </GridContainer>
       </Wrapper>

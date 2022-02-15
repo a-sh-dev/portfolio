@@ -39,7 +39,7 @@ const ContactHeader = () => {
 
           <Paragraph>
             While I am fixing the contact form, I can be contacted through
-            social media, therefore... ...
+            social media, therefore...
             <TextIcon>
               <ImPointDown />
             </TextIcon>

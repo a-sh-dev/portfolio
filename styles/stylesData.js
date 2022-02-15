@@ -69,11 +69,11 @@ export const fontSizeVariants = {
   paragraph: tw`text-base leading-relaxed md:text-lg xl:text-xl xl:leading-9`,
   base: tw`text-sm md:text-base`, // 1rem
   intro: tw`text-xl leading-relaxed md:text-2xl xl:text-2xl`,
-  sm: tw`text-sm`, // 0.875rem
+  sm: tw`text-sm lg:text-lg`, // 0.875rem
   xs: tw`text-xs`, // 0.75rem
   lg: tw`text-lg`, // 1.125rem
   xl: tw`text-xl`, // 1.25rem
-  '2xl': tw`text-2xl`, // 1.5rem
+  '2xl': tw`text-2xl md:text-3xl lg:text-5xl`, // 1.5rem
   '3xl': tw`text-3xl`, // 1.875rem
   '4xl': tw`text-4xl`, // 2.25rem
   '5xl': tw`text-5xl`, // 3rem
@@ -106,6 +106,7 @@ export const fontStyleVariants = {
 export const sectionVariants = {
   default: tw`border-t border-b`,
   top: tw`border-t`,
+  bottom: tw`border-b`,
   clean: tw`border-0`,
 };
 
