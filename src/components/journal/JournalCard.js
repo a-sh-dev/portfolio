@@ -1,12 +1,12 @@
 import tw, { styled } from 'twin.macro';
-import emoji from 'react-easy-emoji';
 import { Icon, Line } from '..';
 import { bgColorVariants } from '../../../styles/stylesData';
-import { formatDay } from '../../utils';
-import { Paragraph, Tag } from '../typography';
 import svgEmoji from '../../utils/emoji';
+import { formatDay } from '../../utils';
+import { Tag } from '../typography';
 
 const lineFlex = tw`flex items-center gap-2`;
+const toggleReverse = tw`flex-row-reverse md:flex-row`;
 
 const Wrapper = styled.article(() => [
   tw`
@@ -19,11 +19,12 @@ const Wrapper = styled.article(() => [
   ({ color = '' }) => bgColorVariants[color],
 ]);
 
-const CardHeader = styled.header(() => [
+const CardHeader = styled.header(({ reverse }) => [
   lineFlex,
   tw`
     
   `,
+  reverse && toggleReverse,
 ]);
 
 const Day = styled.p(() => [
@@ -66,17 +67,18 @@ const Note = tw.p`
   
 `;
 
-const CardFooter = styled.footer(() => [
+const CardFooter = styled.footer(({ reverse }) => [
   lineFlex,
   tw`
     
   `,
+  reverse && toggleReverse,
 ]);
 
 const JournalCard = ({ reverse }) => {
   return (
     <Wrapper color="teal">
-      <CardHeader>
+      <CardHeader {...{ reverse }}>
         <Day>047</Day>
         <Line stretch />
         <Category>Initial Commit</Category>
@@ -94,7 +96,7 @@ const JournalCard = ({ reverse }) => {
         </Note>
       </CardContent>
 
-      <CardFooter>
+      <CardFooter {...{ reverse }}>
         <Date>21.03.21</Date>
         <Line stretch />
         <Icon size="xs" emoji>
