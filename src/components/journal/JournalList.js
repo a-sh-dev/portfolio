@@ -51,15 +51,12 @@ const JournalList = () => {
               Coding journey circa
             </Heading>
             <Heading variant="xs" noMargin noGutter>
-              Day 001
-              <span className="em-dash-title" aria-hidden="true">
-                -----
-              </span>
               22 March 2021
             </Heading>
           </div>
         </Circa>
       </Section>
+
       <div className="border-t border-primary-dark border-dashed">
         <Section variant="bottom">
           <JournalGridContainer>

@@ -18,6 +18,8 @@ const Wrapper = styled.span(({ withMargin }) => [
     font-medium
     whitespace-nowrap
     break-normal
+    flex-grow-0
+    self-start
     md:text-sm
     md:px-4
   `,

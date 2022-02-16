@@ -7,11 +7,11 @@ export const circa = new Date(2021, 3, 21);
 const dateFormat = 'dd MMM yy';
 
 const tags = {
-  mo: 'moment',
-  ic: 'initial commit',
-  ac: 'achievement',
-  ex: 'exploring',
-  wi: 'wip',
+  mo: { label: 'moment', color: 'purple' },
+  ic: { label: 'initial commit', color: 'teal' },
+  ac: { label: 'achievement', color: 'pink' },
+  ex: { label: 'exploring', color: 'blue' },
+  wi: { label: 'wip', color: 'olive' },
 };
 
 export const journalDays = [
