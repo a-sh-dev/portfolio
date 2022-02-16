@@ -8,10 +8,10 @@ const dateFormat = 'dd.MM.yy';
 
 const tags = {
   mo: { label: 'moment', color: 'purple', note: 'special' },
-  ic: { label: 'initial commit', color: 'teal', note: 'code' },
-  ac: { label: 'achievement', color: 'pink', note: 'special' },
-  ex: { label: 'exploring', color: 'blue', note: 'code' },
-  wi: { label: 'wip', color: 'olive', note: 'standard' },
+  ic: { label: 'initial commit', color: 'pink', note: 'code' },
+  ac: { label: 'achievement', color: 'yellow', note: 'special' },
+  ex: { label: 'exploring', color: 'teal', note: 'code' },
+  wi: { label: 'WIP', color: 'purple', note: 'standard' },
 };
 
 export const journalDays = [
@@ -148,7 +148,7 @@ export const journalDays = [
     day: differenceInCalendarDays(new Date(2021, 12, 3), circa),
     tag: tags.mo,
     code: '',
-    note: `Really trying to embrace 'learning by doing' as a team despite not (fully)understanding everything...`,
+    note: `Really trying to embrace 'learning by doing' as a team despite not (fully) understanding everything...`,
     emoji: svgEmoji('🔥'),
   },
   {
