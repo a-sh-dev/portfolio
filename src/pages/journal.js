@@ -1,6 +1,10 @@
 import { Meta } from '../components';
 import { Container } from '../components/layout';
-import { JournalHeader, JournalList } from '../components/journal';
+import {
+  JournalHeader,
+  JournalList,
+  JournalQuote,
+} from '../components/journal';
 
 export default function Journal() {
   return (
@@ -9,6 +13,7 @@ export default function Journal() {
       <Container>
         <JournalHeader />
         <JournalList />
+        <JournalQuote />
       </Container>
     </>
   );

@@ -23,7 +23,7 @@ const ProjectList = () => {
         </SloganWrapper>
       </SloganWrapper>
       <InfoBlurb
-        blurb="Please refer to the project's repository for detailed information"
+        blurb="Please refer to the project's repository for detailed information."
         sectPad
       />
       <main className="last:mb-10 mb:last:mb-14 xl:last:mb-20 2xl:last:mb-24">

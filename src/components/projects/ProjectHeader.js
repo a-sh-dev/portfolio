@@ -38,9 +38,9 @@ const ProjectHeader = () => {
 
           <Paragraph>
             Fast forward today; the following are some selected projects, not
-            limited to websites. Each was built from scratch with care and lots
-            of caffeine since I started my formal coding journey. I look forward
-            to adding more soon!
+            limited to web applications. Each was built from scratch with care
+            (and lots of caffeine) since I started my formal coding journey. I
+            look forward to adding more soon!
             <TextIcon>
               <FaRegGrinStars aria-hidden="true" />
             </TextIcon>

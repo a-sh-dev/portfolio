@@ -18,7 +18,7 @@ const JournalHeader = () => {
       <Header
         title="The"
         subline="Perpetual Learning Journal"
-        sticker="Learning to learn journey"
+        sticker="Journey of learning to learn"
         color="pink"
       >
         <JournalIcon />
@@ -47,11 +47,16 @@ const JournalHeader = () => {
           </Paragraph>
           <Paragraph>
             I may not have <Em>fully</Em> grasped what I have been learning so
-            far<span className="em-dash">---</span>and that is ok. But, I will
-            eventually grow in my understanding and get better. Honestly, we may
-            not be able to be experts at EVERYthing! Therefore, I like to record
-            my learning progress and milestones for self-motivation that
-            hopefully can also motivate and encourage others.
+            far<span className="em-dash">-----</span>and that is ok. But, I will
+            eventually grow in my understanding and get better. Many of my
+            seniors have counselled, &quot;Honestly, we may not be able to be
+            experts at EVERYthing!&quot;.
+          </Paragraph>
+          <Paragraph>
+            Therefore, I like to record my learning progress and milestones by
+            counting them in days since I started my coding journey for
+            self-motivation. Hopefully, it can also motivate and encourage
+            others.
           </Paragraph>
         </GridColumn>
       </GridContainer>

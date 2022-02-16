@@ -64,7 +64,8 @@ a {
 }
 
 .em-dash {
-  padding-inline: 0.2rem;
+  padding-right: 0.2rem;
+  padding-left: 0;
   letter-spacing: -0.25rem;
 }
 

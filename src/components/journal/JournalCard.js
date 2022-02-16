@@ -25,8 +25,6 @@ const Wrapper = styled.article(() => [
 
 const CardHeader = styled.header(({ reverse }) => [
   lineFlex,
-  tw`
-  `,
   reverse && toggleReverse,
 ]);
 

@@ -1,5 +1,5 @@
 import tw, { styled } from 'twin.macro';
-import { Icon } from '..';
+import { Button, Icon } from '..';
 import { sectionPaddingB } from '../../../styles/stylesData';
 import { Section } from '../layout';
 import { Heading } from '../typography';
@@ -24,6 +24,12 @@ const Circa = styled.div(() => [
   `,
 ]);
 
+const FilterWrapper = styled.aside(() => [
+  tw`
+  
+  `,
+]);
+
 const JournalGridContainer = styled.div(() => [
   tw`
     grid
@@ -37,7 +43,7 @@ const JournalGridContainer = styled.div(() => [
 ]);
 
 // sort journalData
-const sortedJournals = journalDays.sort((a, b) => b.day - a.day);
+const sortedJournals = journalDays.sort((a, b) => a.day - b.day);
 
 const JournalList = () => {
   // console.log('CHECK--', sortedJournals);
@@ -58,9 +64,8 @@ const JournalList = () => {
           </div>
         </Circa>
       </Section>
-
       <div className="border-t border-primary-dark border-dashed">
-        <Section variant="bottom">
+        <Section variant="clean">
           <JournalGridContainer>
             {sortedJournals.map((journal, index) => {
               let reverse = index % 2 === 0;
