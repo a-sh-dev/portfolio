@@ -1,4 +1,4 @@
-# Personal Portfolio
+# ✨ Personal Portfolio
 
 ```
 version 1.0
@@ -20,7 +20,7 @@ By no means this portfolio is entirely complete. There are many rooms for improv
 
 
 
-### Tech Stack & NPM Packages
+### ⚙️ Tech Stack & NPM Packages ( & tools )
 
 - Next.js
 - Node.js `v16.13.0`
@@ -36,23 +36,28 @@ By no means this portfolio is entirely complete. There are many rooms for improv
 
 
 
-### Future Improvements
+### 💪🏼  Future Improvements
 
 - Filterable `Journal` cards and `Project` cards.
 - Individual page for every `Project` with detailed information and more images.
-- More projects to be added.
+- Page transitions (with `Framer motion`) for additional features and overall UI improvements.
+- Integrating `MongoDB` for `Journal` entries.
+- Add more projects!
 
 
 
-### Known Issues
+### 🛠  Known Issues
 
 - Currently working on fixing the contact form with SendGrid integration due to an unknown issue. I tried testing all the API form-post. The report received 200 status on the delivery post, yet I never received any emails in the mailbox. 
+- I tried to animate the heights of the collapsible component on the about me section (on the home page). Yet, it has resulted in weird unwanted extra spacing to the remaining content. I may use a third party to help with this additional interactivity.
 
 
 
-### Personal Reflections
+### 🌝  Personal Reflections
 
-I didn't expect the overall development to consume a lot of time! As the first Tailwind CSS project, I truly recommend it! It makes things faster and highly more customisable. I learn a lot more about flexbox and grid layout. At the moment, the responsive design uses a lot of manual tweaking for each breakpoint. Perhaps spending more time configuring the design system would save more time and effort in the responsive UI styling, for example, figuring out the margins and paddings etc. <sub>Yes, these things (really) matter to designers 🤣.</sub>
+I didn't expect the overall development to consume a lot of time! However, I sweat on the content and styling, and I am very proud of what I've done so far! 
+
+As a first-timer using `Tailwind CSS`, I genuinely recommend it! It makes styling faster and is highly customisable. I learned a lot more about flexbox and grid layout in this project (as often it drives me insane!). At the moment, the responsive design uses a lot of manual tweaking for each breakpoint (which I'm not happy about). Perhaps spending more time configuring the design system and typography would save more time and effort in the responsive UI styling for future projects, for example, figuring out the resposnive font sizes, margins and paddings etc... <sub>Yes, these things (really) matter to designers 🤣.</sub>
 
 
 
