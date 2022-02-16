@@ -11,7 +11,6 @@ import JournalCard from './JournalCard';
 import { HiOutlineCalendar } from 'react-icons/hi';
 
 const Wrapper = styled.main(() => [
-  // sectionHalfPaddingB,
   tw`
     mb-8
   `,
