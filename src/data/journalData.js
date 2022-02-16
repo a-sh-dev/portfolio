@@ -11,10 +11,29 @@ const tags = {
   ic: { label: 'initial commit', color: 'pink', note: 'code' },
   ac: { label: 'achievement', color: 'yellow', note: 'special' },
   ex: { label: 'exploring', color: 'teal', note: 'code' },
-  wi: { label: 'WIP', color: 'purple', note: 'standard' },
+  wi: { label: 'WIP', color: 'blue', note: 'standard' },
+  qu: { label: 'quote', color: 'gray', note: 'quote' },
 };
 
 export const journalDays = [
+  {
+    date: format(new Date('2021/7/7'), dateFormat),
+    day: differenceInCalendarDays(new Date(2021, 7, 7), circa),
+    tag: tags.qu,
+    code: '',
+    note: 'Strive for Progress, Not Perfection.',
+    sub: 'Dave Gray (@yesdavidgray)',
+    emoji: svgEmoji('🙏🏻'),
+  },
+  {
+    date: format(new Date('2021/4/14'), dateFormat),
+    day: differenceInCalendarDays(new Date(2021, 4, 14), circa),
+    tag: tags.qu,
+    code: '',
+    note: 'To be an effective programmer, you need to get used to seeing errors.',
+    sub: 'Alex B (Coder Academy Educator)',
+    emoji: svgEmoji('🚫'),
+  },
   {
     date: format(new Date('2021/3/22'), dateFormat),
     day: differenceInCalendarDays(new Date(2021, 3, 22), circa),
@@ -36,7 +55,7 @@ export const journalDays = [
     day: differenceInCalendarDays(new Date(2021, 3, 30), circa),
     tag: tags.ic,
     code: 'scss',
-    note: 'Extremely helpful to manage CSS.',
+    note: 'Extremely helpful to manage CSS and so much more!',
     emoji: svgEmoji('😍'),
   },
   {
@@ -44,7 +63,7 @@ export const journalDays = [
     day: differenceInCalendarDays(new Date(2021, 4, 28), circa),
     tag: tags.ic,
     code: 'ruby',
-    note: 'First OOP language. Everything is an object in Ruby. Simplicity and productivity emphases.',
+    note: 'First OOP language. Simple, clean and everything is an object in Ruby.',
     emoji: svgEmoji('🤓'),
   },
   {
@@ -68,7 +87,7 @@ export const journalDays = [
     day: differenceInCalendarDays(new Date(2021, 6, 14), circa),
     tag: tags.ex,
     code: 'postgresql',
-    note: "Relational database. It's quite complex to setup, but great for handling complex data",
+    note: "Relational database. It's quite complex to setup, but great for handling complex data.",
     emoji: svgEmoji('👥'),
   },
   {
@@ -140,7 +159,7 @@ export const journalDays = [
     day: differenceInCalendarDays(new Date(2021, 12, 2), circa),
     tag: tags.wi,
     code: '',
-    note: `First group project & Git collaboration`,
+    note: `First group project & Git collaboration.`,
     emoji: svgEmoji('🤝'),
   },
   {
@@ -156,7 +175,7 @@ export const journalDays = [
     day: differenceInCalendarDays(new Date(2021, 12, 10), circa),
     tag: tags.ex,
     code: 'material ui',
-    note: `A level up from Bootstrap. CSS-in-JS based for styling UI with a lot of interactivity and also customisable.`,
+    note: `A level up from Bootstrap. Customisable CSS-in-JS based for styling UI with a lot of interactivity.`,
     emoji: svgEmoji('😳'),
   },
   {
@@ -212,7 +231,7 @@ export const journalDays = [
     day: differenceInCalendarDays(new Date(2022, 1, 26), circa),
     tag: tags.ex,
     code: 'twin.macro',
-    note: `Helps blend the magic of Tailwind CSS with the flexibility of CSS-in-JS. Getting the best of both utilities!`,
+    note: `Blends the magic of Tailwind CSS & CSS-in-JS. Getting the best of both utilities!`,
     emoji: svgEmoji('😳'),
   },
 ];

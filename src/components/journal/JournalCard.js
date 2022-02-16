@@ -1,9 +1,8 @@
 import tw, { styled } from 'twin.macro';
 import { Icon, Line } from '..';
 import { bgColorVariants, noteVariants } from '../../../styles/stylesData';
-import svgEmoji from '../../utils/emoji';
 import { formatDay } from '../../utils';
-import { Tag } from '../typography';
+import { Tag, TextIcon } from '../typography';
 
 const lineFlex = tw`flex items-center gap-2`;
 const toggleReverse = tw`flex-row-reverse md:flex-row`;
@@ -11,8 +10,8 @@ const toggleReverse = tw`flex-row-reverse md:flex-row`;
 const Wrapper = styled.article(() => [
   tw`
     relative
-    py-4
-    px-5
+    py-5
+    px-6
     bg-accent-teal
     rounded-md
     text-primary-dark
@@ -57,6 +56,7 @@ const CardContent = styled.main(() => [
   tw`
     space-y-4
     p-4
+    // self-center
   `,
 ]);
 
@@ -76,6 +76,8 @@ const CardFooter = styled.footer(({ reverse }) => [
 
 const JournalCard = ({ journal, reverse }) => {
   // const { date, day, tag, emoji, code, note } = journal;
+  const isQuote = journal?.tag.note === 'quote';
+
   return (
     <Wrapper color={journal?.tag?.color}>
       <CardHeader {...{ reverse }}>
@@ -88,16 +90,27 @@ const JournalCard = ({ journal, reverse }) => {
       </CardHeader>
 
       <CardContent>
-        {/* ONLY FOR CODE NOTE TYPE */}
         {journal?.tag?.note === 'code' ? (
           <>
-            <span className="pt-2">
-              <Tag bg="white50">{journal.code}</Tag>
+            <span className="py-2">
+              <Tag bg="white">{journal.code}</Tag>
             </span>
             <p>{journal.note}</p>
           </>
         ) : (
-          <Note variant={journal?.tag?.note}>{journal?.note}</Note>
+          <>
+            <Note variant={journal?.tag?.note}>{journal?.note}</Note>
+            {isQuote && (
+              <div className="flex items-center gap-x-0.5">
+                <span className="w-4">
+                  <Line />
+                </span>
+                <p className="text-xs font-medium capitalize tracking-wide">
+                  {journal?.sub}
+                </p>
+              </div>
+            )}
+          </>
         )}
       </CardContent>
 

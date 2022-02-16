@@ -186,5 +186,6 @@ const specialBase = `py-2 font-mono italic border-l-4 pl-6 border-white/50 lg:ml
 
 export const noteVariants = {
   special: tw`${specialBase}`,
-  standard: tw`text-base font-semibold`,
+  standard: tw`font-semibold`,
+  quote: tw`text-lg font-bold leading-snug`,
 };
