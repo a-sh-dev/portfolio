@@ -47,7 +47,6 @@ const JournalGridContainer = styled.div(() => [
 const sortedJournals = journalDays.sort((a, b) => a.day - b.day);
 
 const JournalList = () => {
-  // console.log('CHECK--', sortedJournals);
   return (
     <Wrapper>
       <Section variant="top" halfMargin>

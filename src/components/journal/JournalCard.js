@@ -1,9 +1,9 @@
 import tw, { styled } from 'twin.macro';
 import { Icon, Line } from '..';
 import { bgColorVariants, noteVariants } from '../../../styles/stylesData';
-import svgEmoji from '../../utils/emoji';
 import { formatDay } from '../../utils';
-import { Tag } from '../typography';
+import { Tag, TextIcon } from '../typography';
+import { HiOutlineSpeakerphone } from 'react-icons/hi';
 
 const lineFlex = tw`flex items-center gap-2`;
 const toggleReverse = tw`flex-row-reverse md:flex-row`;
@@ -76,6 +76,8 @@ const CardFooter = styled.footer(({ reverse }) => [
 
 const JournalCard = ({ journal, reverse }) => {
   // const { date, day, tag, emoji, code, note } = journal;
+  const isQuote = journal?.tag.note === 'quote';
+
   return (
     <Wrapper color={journal?.tag?.color}>
       <CardHeader {...{ reverse }}>
@@ -88,16 +90,30 @@ const JournalCard = ({ journal, reverse }) => {
       </CardHeader>
 
       <CardContent>
-        {/* ONLY FOR CODE NOTE TYPE */}
         {journal?.tag?.note === 'code' ? (
           <>
             <span className="pt-2">
-              <Tag bg="white50">{journal.code}</Tag>
+              <Tag bg="white">{journal.code}</Tag>
             </span>
             <p>{journal.note}</p>
           </>
         ) : (
-          <Note variant={journal?.tag?.note}>{journal?.note}</Note>
+          <>
+            {isQuote && (
+              <TextIcon>
+                <HiOutlineSpeakerphone />
+              </TextIcon>
+            )}
+            <Note variant={journal?.tag?.note}>{journal?.note}</Note>
+            {isQuote && (
+              <div className="flex items-center gap-2">
+                <span className="w-4">
+                  <Line />
+                </span>
+                <p className="text-sm uppercase">{journal?.sub}</p>
+              </div>
+            )}
+          </>
         )}
       </CardContent>
 

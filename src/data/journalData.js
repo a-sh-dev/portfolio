@@ -11,10 +11,29 @@ const tags = {
   ic: { label: 'initial commit', color: 'pink', note: 'code' },
   ac: { label: 'achievement', color: 'yellow', note: 'special' },
   ex: { label: 'exploring', color: 'teal', note: 'code' },
-  wi: { label: 'WIP', color: 'purple', note: 'standard' },
+  wi: { label: 'WIP', color: 'olive', note: 'standard' },
+  qu: { label: 'quote', color: 'blue', note: 'quote' },
 };
 
 export const journalDays = [
+  {
+    date: format(new Date('2021/7/7'), dateFormat),
+    day: differenceInCalendarDays(new Date(2021, 7, 7), circa),
+    tag: tags.qu,
+    code: '',
+    note: 'Strive for Progress, Not Perfection',
+    sub: 'Dave Gray (@yesdavidgray)',
+    emoji: svgEmoji('🙏🏻'),
+  },
+  {
+    date: format(new Date('2021/4/14'), dateFormat),
+    day: differenceInCalendarDays(new Date(2021, 4, 14), circa),
+    tag: tags.qu,
+    code: '',
+    note: 'To be an effective programmer, you need to get used to seeing errors.',
+    sub: 'Alex B (Coder Academy Educator)',
+    emoji: svgEmoji('🚫'),
+  },
   {
     date: format(new Date('2021/3/22'), dateFormat),
     day: differenceInCalendarDays(new Date(2021, 3, 22), circa),
