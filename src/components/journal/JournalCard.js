@@ -3,7 +3,6 @@ import { Icon, Line } from '..';
 import { bgColorVariants, noteVariants } from '../../../styles/stylesData';
 import { formatDay } from '../../utils';
 import { Tag, TextIcon } from '../typography';
-import { HiOutlineSpeakerphone } from 'react-icons/hi';
 
 const lineFlex = tw`flex items-center gap-2`;
 const toggleReverse = tw`flex-row-reverse md:flex-row`;
@@ -11,8 +10,8 @@ const toggleReverse = tw`flex-row-reverse md:flex-row`;
 const Wrapper = styled.article(() => [
   tw`
     relative
-    py-4
-    px-5
+    py-5
+    px-6
     bg-accent-teal
     rounded-md
     text-primary-dark
@@ -57,6 +56,7 @@ const CardContent = styled.main(() => [
   tw`
     space-y-4
     p-4
+    // self-center
   `,
 ]);
 
@@ -92,25 +92,22 @@ const JournalCard = ({ journal, reverse }) => {
       <CardContent>
         {journal?.tag?.note === 'code' ? (
           <>
-            <span className="pt-2">
+            <span className="py-2">
               <Tag bg="white">{journal.code}</Tag>
             </span>
             <p>{journal.note}</p>
           </>
         ) : (
           <>
-            {isQuote && (
-              <TextIcon>
-                <HiOutlineSpeakerphone />
-              </TextIcon>
-            )}
             <Note variant={journal?.tag?.note}>{journal?.note}</Note>
             {isQuote && (
-              <div className="flex items-center gap-2">
+              <div className="flex items-center gap-x-0.5">
                 <span className="w-4">
                   <Line />
                 </span>
-                <p className="text-sm uppercase">{journal?.sub}</p>
+                <p className="text-xs font-medium capitalize tracking-wide">
+                  {journal?.sub}
+                </p>
               </div>
             )}
           </>

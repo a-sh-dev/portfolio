@@ -46,17 +46,18 @@ const JournalHeader = () => {
             I am not good at this; I give up!&quot;.
           </Paragraph>
           <Paragraph>
-            I may not have <Em>fully</Em> grasped what I have been learning so
-            far<span className="em-dash">-----</span>and that is ok. But, I will
-            eventually grow in my understanding and get better. Many of my
-            seniors have counselled, &quot;Honestly, we may not be able to be
-            experts at EVERYthing!&quot;.
+            I often fall into the latter mindset, but over time although I may
+            not have <Em>fully</Em> grasped what I have been learning so far
+            <span className="em-dash">-----</span>I learn to accept it and know
+            that it is OK. Eventually, I will grow in my understanding and get
+            better for sure. Many of my seniors have counselled, &quot;Honestly,
+            we can&apos;t be experts at EVERYthing!&quot;.
           </Paragraph>
           <Paragraph>
-            Therefore, I like to record my learning progress and milestones by
-            counting them in days since I started my coding journey for
-            self-motivation. Hopefully, it can also motivate and encourage
-            others.
+            So, for self-motivation, I like to record my learning progress and
+            milestones by counting them in days since I started my coding
+            journey. Hopefully, it can also motivate and encourage others not to
+            give up.
           </Paragraph>
         </GridColumn>
       </GridContainer>

@@ -11,8 +11,8 @@ const tags = {
   ic: { label: 'initial commit', color: 'pink', note: 'code' },
   ac: { label: 'achievement', color: 'yellow', note: 'special' },
   ex: { label: 'exploring', color: 'teal', note: 'code' },
-  wi: { label: 'WIP', color: 'olive', note: 'standard' },
-  qu: { label: 'quote', color: 'blue', note: 'quote' },
+  wi: { label: 'WIP', color: 'blue', note: 'standard' },
+  qu: { label: 'quote', color: 'gray', note: 'quote' },
 };
 
 export const journalDays = [
@@ -21,7 +21,7 @@ export const journalDays = [
     day: differenceInCalendarDays(new Date(2021, 7, 7), circa),
     tag: tags.qu,
     code: '',
-    note: 'Strive for Progress, Not Perfection',
+    note: 'Strive for Progress, Not Perfection.',
     sub: 'Dave Gray (@yesdavidgray)',
     emoji: svgEmoji('🙏🏻'),
   },
@@ -55,7 +55,7 @@ export const journalDays = [
     day: differenceInCalendarDays(new Date(2021, 3, 30), circa),
     tag: tags.ic,
     code: 'scss',
-    note: 'Extremely helpful to manage CSS.',
+    note: 'Extremely helpful to manage CSS and so much more!',
     emoji: svgEmoji('😍'),
   },
   {
@@ -63,7 +63,7 @@ export const journalDays = [
     day: differenceInCalendarDays(new Date(2021, 4, 28), circa),
     tag: tags.ic,
     code: 'ruby',
-    note: 'First OOP language. Everything is an object in Ruby. Simplicity and productivity emphases.',
+    note: 'First OOP language. Simple, clean and everything is an object in Ruby.',
     emoji: svgEmoji('🤓'),
   },
   {
@@ -87,7 +87,7 @@ export const journalDays = [
     day: differenceInCalendarDays(new Date(2021, 6, 14), circa),
     tag: tags.ex,
     code: 'postgresql',
-    note: "Relational database. It's quite complex to setup, but great for handling complex data",
+    note: "Relational database. It's quite complex to setup, but great for handling complex data.",
     emoji: svgEmoji('👥'),
   },
   {
