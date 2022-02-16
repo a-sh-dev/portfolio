@@ -1,16 +1,19 @@
 import tw, { styled } from 'twin.macro';
 import { Button, Icon } from '..';
-import { sectionPaddingB } from '../../../styles/stylesData';
+import {
+  sectionHalfPaddingB,
+  sectionPaddingB,
+} from '../../../styles/stylesData';
 import { Section } from '../layout';
 import { Heading } from '../typography';
 import { journalDays } from '../../data';
-import { formatDay } from '../../utils';
 import JournalCard from './JournalCard';
 import { HiOutlineCalendar } from 'react-icons/hi';
 
 const Wrapper = styled.main(() => [
+  // sectionHalfPaddingB,
   tw`
-  
+    mb-8
   `,
 ]);
 
@@ -20,7 +23,6 @@ const Circa = styled.div(() => [
     gap-4
     items-center
     justify-center
-    // bg-red-300/50
   `,
 ]);
 

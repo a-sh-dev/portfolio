@@ -9,6 +9,9 @@ export const bigElementUniformPadding = tw`p-6 pb-10 md:p-10`;
 export const sectionPaddingY = tw`py-14 md:py-28 xl:py-44`;
 export const sectionPaddingB = tw`pb-14 md:pb-28 xl:pb-44`;
 export const sectionPaddingT = tw`pt-14 md:pt-28 xl:pt-44`;
+export const sectionHalfPaddingY = tw`md:py-14 xl:py-20`;
+export const sectionHalfPaddingB = tw`md:pb-14 xl:pb-20`;
+export const sectionHalfPaddingT = tw`md:pt-14 xl:pt-20`;
 
 export const pagesHeroMax = tw`lg:max-w-screen-md xl:max-w-screen-lg 2xl:max-w-screen-xl lg:mx-auto`;
 
