@@ -1,7 +1,7 @@
 # ✨ Personal Portfolio
 
 ```
-👉🏻 version 1.0
+ → version 1.0
 ```
 
 
@@ -14,7 +14,7 @@ The most enjoyable learning in this project is building reusable components and 
 
 By no means this portfolio is entirely complete. There are many rooms for improvements. But here I am applying the agile methodology and deploying this version – that I think is presentable despite its imperfectness and known issues.
 
-> Live  →   [www.a-sh.cc](https;//www.a-sh.cc)
+> Live  👉🏻   [***a-sh.cc***](https://www.a-sh.cc)
 
 <sub>&darr;   Please check the following known issues and upcoming improvement plans (any help or issues report is much appreciated!). </sub>
 
