@@ -159,7 +159,7 @@ export const journalDays = [
     day: differenceInCalendarDays(new Date(2021, 12, 2), circa),
     tag: tags.wi,
     code: '',
-    note: `First group project & Git collaboration`,
+    note: `First group project & Git collaboration.`,
     emoji: svgEmoji('🤝'),
   },
   {
@@ -175,7 +175,7 @@ export const journalDays = [
     day: differenceInCalendarDays(new Date(2021, 12, 10), circa),
     tag: tags.ex,
     code: 'material ui',
-    note: `A level up from Bootstrap. CSS-in-JS based for styling UI with a lot of interactivity and also customisable.`,
+    note: `A level up from Bootstrap. Customisable CSS-in-JS based for styling UI with a lot of interactivity.`,
     emoji: svgEmoji('😳'),
   },
   {
@@ -231,7 +231,7 @@ export const journalDays = [
     day: differenceInCalendarDays(new Date(2022, 1, 26), circa),
     tag: tags.ex,
     code: 'twin.macro',
-    note: `Helps blend the magic of Tailwind CSS with the flexibility of CSS-in-JS. Getting the best of both utilities!`,
+    note: `Blends the magic of Tailwind CSS & CSS-in-JS. Getting the best of both utilities!`,
     emoji: svgEmoji('😳'),
   },
 ];
