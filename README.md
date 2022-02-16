@@ -42,6 +42,8 @@ By no means this portfolio is entirely complete. There are many rooms for improv
 - Individual page for every `Project` with detailed information and more images.
 - Page transitions (with `Framer motion`) for additional features and overall UI improvements.
 - Integrating `MongoDB` for `Journal` entries.
+- SEO improvements
+- Accesibility improvements 
 - Add more projects!
 
 
