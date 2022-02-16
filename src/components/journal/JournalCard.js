@@ -1,17 +1,19 @@
 import tw, { styled } from 'twin.macro';
+import emoji from 'react-easy-emoji';
 import { Icon, Line } from '..';
 import { bgColorVariants } from '../../../styles/stylesData';
 import { formatDay } from '../../utils';
 import { Paragraph, Tag } from '../typography';
+import svgEmoji from '../../utils/emoji';
 
 const lineFlex = tw`flex items-center gap-2`;
-const dateCategoryBase = tw``;
 
 const Wrapper = styled.article(() => [
   tw`
-    p-4
+    py-4
+    px-5
     bg-accent-teal
-    rounded-sm
+    rounded-md
     text-primary-dark
   `,
   ({ color = '' }) => bgColorVariants[color],
@@ -59,6 +61,11 @@ const CardContent = styled.main(() => [
   `,
 ]);
 
+const Note = tw.p`
+  text-base
+  
+`;
+
 const CardFooter = styled.footer(() => [
   lineFlex,
   tw`
@@ -66,27 +73,33 @@ const CardFooter = styled.footer(() => [
   `,
 ]);
 
-const JournalCard = () => {
+const JournalCard = ({ reverse }) => {
   return (
     <Wrapper color="teal">
       <CardHeader>
         <Day>047</Day>
         <Line stretch />
         <Category>Initial Commit</Category>
-        <div className="w-4">
+        <div className="w-3">
           <Line />
         </div>
       </CardHeader>
 
       <CardContent>
-        <Tag bg="white">Next.js</Tag>
-        <Paragraph>Start of coding journey!</Paragraph>
+        <span className="pt-2">
+          <Tag bg="white50">twin.macro</Tag>
+        </span>
+        <Note>
+          Blends the magic of Tailwind CSS with the flexibility of CSS-in-JS.
+        </Note>
       </CardContent>
 
       <CardFooter>
-        <Date>21 Mar 21</Date>
+        <Date>21.03.21</Date>
         <Line stretch />
-        <Icon size="xs">🤩</Icon>
+        <Icon size="xs" emoji>
+          {svgEmoji('🤩')}
+        </Icon>
       </CardFooter>
     </Wrapper>
   );
