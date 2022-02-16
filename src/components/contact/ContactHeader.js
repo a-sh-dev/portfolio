@@ -3,7 +3,6 @@ import { GridColumn, GridContainer, Header } from '../layout';
 import { BodyIntro, Paragraph, TextIcon } from '../typography';
 import { EnvelopeIcon } from '../svgs';
 import { pagesHeroMax, sectionPaddingB } from '../../../styles/stylesData';
-import { FaRegHandPointDown } from 'react-icons/fa';
 import { ImPointDown } from 'react-icons/im';
 
 const Wrapper = styled.div(() => [

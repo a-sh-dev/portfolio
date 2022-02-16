@@ -66,7 +66,7 @@ const ContactLinks = () => {
           </Heading>
         </DesktopWrapper>
         <CTAFooter>
-          <BodyIntro noMargin>Check out these quicklinks!</BodyIntro>
+          <BodyIntro noMargin>Check out the quicklinks!</BodyIntro>
           <div className="animate-bounce my-2 lg:my-0 lg:animate-none">
             <div aria-hidden="true" className="rotate-90 lg:rotate-0">
               <Icon size="xs">

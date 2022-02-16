@@ -9,6 +9,8 @@ const Wrapper = tw.main`
 `;
 
 const Subline = tw.div`
+  space-y-6
+  lg:space-y-14
   mt-2
   lg:mt-4
 `;
@@ -23,7 +25,7 @@ const ContactQuote = () => {
               How did pirates collaborate before computers?
             </BlockQuote>
             <Subline>
-              <Paragraph size="2xl">Pier to pier networking</Paragraph>
+              <Paragraph size="2xl">Pier to pier networking.</Paragraph>
               <Paragraph size="sm" noMargin>
                 Source<span className="em-dash">---</span>
                 <AHref

@@ -1,4 +1,5 @@
 import tw, { styled } from 'twin.macro';
+import emoji from 'react-easy-emoji';
 import { GridColumn, GridContainer, Header } from '../layout';
 import { BodyIntro, Em, Paragraph, TextIcon } from '../typography';
 import { FaRegGrinStars } from 'react-icons/fa';
@@ -10,12 +11,6 @@ const Wrapper = styled.div(() => [
   pagesHeroMax,
   tw`
     
-  `,
-]);
-
-const SubHeader = styled.div(() => [
-  tw`
-  
   `,
 ]);
 
@@ -34,8 +29,11 @@ const ProjectHeader = () => {
         <GridColumn col="span-9">
           <BodyIntro noMargin variant="bold" size="intro">
             Once upon a time, building websites for me only involved integrating
-            Adobe Photoshop & (Macromedia) Dreamweaver with a few tweaks of HTML
-            and CSS.
+            Adobe Photoshop &{' '}
+            <span className="line-through decoration-primary-dark decoration-2">
+              (Macromedia)
+            </span>{' '}
+            Dreamweaver with a few tweaks of HTML and CSS.
           </BodyIntro>
 
           <Paragraph>
