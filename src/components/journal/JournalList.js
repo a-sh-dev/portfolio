@@ -40,6 +40,7 @@ const JournalGridContainer = styled.div(() => [
 const sortedJournals = journalDays.sort((a, b) => b.day - a.day);
 
 const JournalList = () => {
+  // console.log('CHECK--', sortedJournals);
   return (
     <Wrapper>
       <Section variant="top" halfMargin>
@@ -61,10 +62,16 @@ const JournalList = () => {
       <div className="border-t border-primary-dark border-dashed">
         <Section variant="bottom">
           <JournalGridContainer>
-            <JournalCard />
-            <JournalCard reverse />
-            <JournalCard />
-            <JournalCard reverse />
+            {sortedJournals.map((journal, index) => {
+              let reverse = index % 2 === 0;
+              return (
+                <JournalCard
+                  key={journal.day}
+                  reverse={reverse}
+                  journal={journal}
+                />
+              );
+            })}
           </JournalGridContainer>
         </Section>
       </div>

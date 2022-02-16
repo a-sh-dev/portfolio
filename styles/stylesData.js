@@ -178,3 +178,10 @@ export const iconSizeVariants = {
   sm: tw`text-2xl w-14 h-14 xl:text-3xl xl:w-20 xl:h-20`,
   lg: tw`text-4xl w-20 h-20 md:text-6xl md:w-36 md:h-36 lg:text-7xl lg:w-44 lg:h-44 xl:text-8xl xl:w-56 xl:h-56 `,
 };
+
+const specialBase = `py-2 font-mono italic border-l-4 pl-6 border-white/50 lg:ml-1`;
+
+export const noteVariants = {
+  special: tw`${specialBase}`,
+  standard: tw`text-base font-semibold`,
+};
