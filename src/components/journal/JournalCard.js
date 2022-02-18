@@ -1,6 +1,10 @@
 import tw, { styled } from 'twin.macro';
 import { Icon, Line } from '..';
-import { bgColorVariants, noteVariants } from '../../../styles/stylesData';
+import {
+  bgColorVariants,
+  noteVariants,
+  uniformTransition,
+} from '../../../styles/stylesData';
 import { formatDay } from '../../utils';
 import { Tag, TextIcon } from '../typography';
 
@@ -18,8 +22,10 @@ const Wrapper = styled.article(() => [
     flex
     flex-col
     justify-between
+    hover:text-primary-darkest
   `,
   ({ color = '' }) => bgColorVariants[color],
+  uniformTransition,
 ]);
 
 const CardHeader = styled.header(({ reverse }) => [
@@ -56,7 +62,6 @@ const CardContent = styled.main(() => [
   tw`
     space-y-4
     p-4
-    // self-center
   `,
 ]);
 
@@ -76,7 +81,7 @@ const CardFooter = styled.footer(({ reverse }) => [
 
 const JournalCard = ({ journal, reverse }) => {
   // const { date, day, tag, emoji, code, note } = journal;
-  const isQuote = journal?.tag.note === 'quote';
+  const isReminder = journal?.tag.note === 'reminder';
 
   return (
     <Wrapper color={journal?.tag?.color}>
@@ -91,24 +96,35 @@ const JournalCard = ({ journal, reverse }) => {
 
       <CardContent>
         {journal?.tag?.note === 'code' ? (
-          <>
-            <span className="py-2">
+          <div className="mt-4 mb-2">
+            <div className="relative -left-0.5 mb-4">
               <Tag bg="white">{journal.code}</Tag>
-            </span>
+            </div>
             <p>{journal.note}</p>
-          </>
+          </div>
         ) : (
           <>
-            <Note variant={journal?.tag?.note}>{journal?.note}</Note>
-            {isQuote && (
-              <div className="flex items-center gap-x-0.5">
-                <span className="w-4">
-                  <Line />
-                </span>
-                <p className="text-xs font-medium capitalize tracking-wide">
-                  {journal?.sub}
-                </p>
+            {isReminder ? (
+              <div>
+                <Note
+                  variant={journal?.tag?.note}
+                  className="underline-offset-1"
+                >
+                  {journal?.note}
+                </Note>
+                {journal?.sub && (
+                  <div className="flex items-center gap-x-0.5">
+                    <span className="w-4">
+                      <Line />
+                    </span>
+                    <p className="text-xs font-medium capitalize tracking-wide">
+                      {journal?.sub}
+                    </p>
+                  </div>
+                )}
               </div>
+            ) : (
+              <Note variant={journal?.tag?.note}>{journal?.note}</Note>
             )}
           </>
         )}
