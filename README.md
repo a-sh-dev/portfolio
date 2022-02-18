@@ -51,16 +51,8 @@ By no means this portfolio is entirely complete. There are many rooms for improv
 
 ### 🛠  Known Issues
 
-- Due to an unknown issue, I'm currently fixing the `SendGrid` integrated contact form. I tried testing the form submission to the `Next.js` endpoints, yet despite the 200 status delivery reports, I never received any emails in the mailbox. 🥲
+- Due to an unknown problem, I'm currently fixing the `SendGrid` integrated contact form. I tried testing the form submission to the `Next.js` endpoints, yet despite the 200 status delivery reports, I never received any emails in the mailbox. 🥲
 - I tried to animate the heights of the collapsible component on the about me section (on the home page). Yet, it has resulted in weird unwanted extra spacing to the remaining content. I may use a third-party package to help with this additional interactivity.
-
-
-
-### 🌝  Personal Reflections
-
-I didn't expect the overall development to consume more time! However, I sweat on the content, flow and styling, and I am very proud of what I've done so far and learned a lot!
-
-As a first-timer using `Tailwind CSS`, I genuinely recommend it. Not only it is highly customisable, but it also makes styling faster. I learned more about flexbox and grid layout in this project despite how often it drives me insane! Currently, the responsive design uses a lot of manual tweaking for each breakpoint (which I'm not happy about). There should be a smarter and D.R.Yer way to solve this. Maybe planning and spending more effort configuring the design system before development would save more time and effort in the overall responsive UI styling for future projects. For example, figuring out the responsive font sizes, margins and paddings etc. (Yes, these things (really) matter to designers 🤣) Well, I look forward to learning more and improving!
 
 
 
