@@ -10,11 +10,11 @@ This project is the second personal portfolio built since I've begun my coding j
 
 After completing the boot camp, I initially planned to use only `React.js`, but I'm sold by how `Next.js` features a faster and more scalable app due to its server-side rendering capability. `Next.js` is an extension framework of the `React.js` library plus the added SEO friendliness and built-in router improvements. Generally, it's faster due to its server-side rendering functionality, especially for generating static websites.
 
-The most enjoyable learning in this project is building reusable components and working on conditional rendering. In addition, I try to limit the number of folders and too nested components by combining the styling in one file. All the UI styling are only made possible (and faster) thanks to `twin.macro`, which significantly assists in blending the best of two worlds between `Tailwind CSS` and `Styled-Components`. 
+The most enjoyable learning in this project is building reusable components and working on conditional rendering through data iterations. All the UI styling are only made possible (and faster) thanks to `twin.macro`, which significantly assists in blending the best of two worlds between `Tailwind CSS` and `Styled-Components`. 
 
-By no means this portfolio is entirely complete. There are many rooms for improvements. But here I am applying the agile methodology and deploying this version – that I think is presentable despite its imperfectness and known issues.
+By no means this portfolio is entirely complete. There are many rooms for improvements. But I'm happy to release this version while at the same time working for further development and refinement.
 
-> Live  👉🏻   [***a-sh.cc***](https://www.a-sh.cc)
+> Live   👉🏻    [***a-sh.cc***](https://www.a-sh.cc)
 
 <sub>&darr;   Please check the following known issues and upcoming improvement plans (any help or issues report is much appreciated!). </sub>
 
@@ -58,7 +58,11 @@ By no means this portfolio is entirely complete. There are many rooms for improv
 
 ---
 
+
+
 <sub>This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app). Built with `Node v16.13.0`, packaged with `Yarn`.</sub>
+
+
 
 ---
 
