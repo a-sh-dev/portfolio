@@ -17,6 +17,24 @@ const tags = {
 
 export const journalDays = [
   {
+    date: format(new Date('2021/10/21'), dateFormat),
+    day: differenceInCalendarDays(new Date(2021, 10, 21), circa),
+    tag: tags.re,
+    code: '',
+    note: `Do not fear failure but rather fear not trying.`,
+    sub: 'Roy T. Bennet',
+    emoji: svgEmoji('💥'),
+  },
+  {
+    date: format(new Date('2022/2/18'), dateFormat),
+    day: differenceInCalendarDays(new Date(2022, 2, 18), circa),
+    tag: tags.re,
+    code: '',
+    note: `There is no failure except in no longer trying.`,
+    sub: 'Elbert Hubbard',
+    emoji: svgEmoji('💪🏼'),
+  },
+  {
     date: format(new Date('2022/1/3'), dateFormat),
     day: differenceInCalendarDays(new Date(2022, 1, 3), circa),
     tag: tags.re,
