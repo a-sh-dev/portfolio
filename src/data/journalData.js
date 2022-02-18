@@ -12,14 +12,23 @@ const tags = {
   ac: { label: 'achievement', color: 'yellow', note: 'special' },
   ex: { label: 'exploring', color: 'teal', note: 'code' },
   wi: { label: 'WIP', color: 'blue', note: 'standard' },
-  qu: { label: 'quote', color: 'gray', note: 'quote' },
+  re: { label: 'reminder', color: 'gray', note: 'reminder' },
 };
 
 export const journalDays = [
   {
+    date: format(new Date('2022/1/3'), dateFormat),
+    day: differenceInCalendarDays(new Date(2022, 1, 3), circa),
+    tag: tags.re,
+    code: '',
+    note: `Fixed mindset, "I will never be smart, I'm not good at this, I give up!". Growth mindset, "Mistakes help me learn, I'll learn how to do this."`,
+    sub: '',
+    emoji: svgEmoji('🙌🏼'),
+  },
+  {
     date: format(new Date('2021/7/7'), dateFormat),
     day: differenceInCalendarDays(new Date(2021, 7, 7), circa),
-    tag: tags.qu,
+    tag: tags.re,
     code: '',
     note: 'Strive for Progress, Not Perfection.',
     sub: 'Dave Gray (@yesdavidgray)',
@@ -28,7 +37,7 @@ export const journalDays = [
   {
     date: format(new Date('2021/4/14'), dateFormat),
     day: differenceInCalendarDays(new Date(2021, 4, 14), circa),
-    tag: tags.qu,
+    tag: tags.re,
     code: '',
     note: 'To be an effective programmer, you need to get used to seeing errors.',
     sub: 'Alex B (Coder Academy Educator)',
@@ -169,6 +178,14 @@ export const journalDays = [
     code: '',
     note: `Really trying to embrace 'learning by doing' as a team despite not (fully) understanding everything...`,
     emoji: svgEmoji('🔥'),
+  },
+  {
+    date: format(new Date('2022/2/16'), dateFormat),
+    day: differenceInCalendarDays(new Date(2022, 2, 16), circa),
+    tag: tags.mo,
+    code: '',
+    note: `a-sh.cc is finally live!`,
+    emoji: svgEmoji('🎉'),
   },
   {
     date: format(new Date('2021/12/10'), dateFormat),
