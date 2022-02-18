@@ -1,10 +1,12 @@
 import svgEmoji from '../utils/emoji';
-import { format, differenceInCalendarDays } from 'date-fns';
-import { FaSass } from 'react-icons/fa';
+import { format, differenceInCalendarDays, parseISO } from 'date-fns';
+import { todaysDate } from '../utils';
 
 // minus one day so it counts 001 from the start (original date: 2021,3,22)
 export const circa = new Date(2021, 3, 21);
 const dateFormat = 'dd.MM.yy';
+
+export const todaysCodingDay = differenceInCalendarDays(todaysDate, circa);
 
 const tags = {
   mo: { label: 'moment', color: 'purple', note: 'special' },
