@@ -20,7 +20,7 @@ export default function Contact() {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    // return empty values
+    // prevent submit with empty values
     Array.from(e.currentTarget.elements).forEach((field) => {
       if (!field.name) return;
       formData[field.name] = field.value;
@@ -43,7 +43,7 @@ export default function Contact() {
       <Meta title="contact" />
       <Container>
         <ContactHeader />
-        {/* <ContactForm {...{ formData, handleSubmit, handleChange }} /> */}
+        <ContactForm {...{ formData, handleSubmit, handleChange }} />
         <ContactLinks />
         <ContactQuote />
       </Container>

@@ -13,14 +13,14 @@ export default async function sendMail(req, res) {
 
   try {
     await mail.send({
-      to: 'TO BE UPDATED',
-      from: 'TO BE UPDATED',
-      subject: '👋🏻 New message from a-sh.cc contact!',
+      to: 'hello.angie@ymail.com',
+      from: 'iam.angie@ymail.com',
+      subject: `👋🏻 New message from ${body.name}!`,
       text: message,
       html: message.replace(/\r\n/g, '<br/>'),
     });
   } catch (error) {
-    console.log(error);
+    // console.log(error);
     return res.status(error.statusCode || 500).json({ error: error.message });
   }
 
