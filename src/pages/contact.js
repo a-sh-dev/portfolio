@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Meta } from '../components';
 import { Container } from '../components/layout';
 import {
@@ -16,9 +16,12 @@ const initialValue = {
 
 export default function Contact() {
   const [formData, setFormData] = useState(initialValue);
+  const [loading, setLoading] = useState(false);
+  const [success, setSuccess] = useState(false);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setLoading(true);
 
     // prevent submit with empty values
     Array.from(e.currentTarget.elements).forEach((field) => {
@@ -32,7 +35,20 @@ export default function Contact() {
     });
 
     setFormData(initialValue);
+    setLoading(false);
+    setSuccess(true);
   };
+
+  useEffect(() => {
+    if (success) {
+      const timeout = setTimeout(() => {
+        setSuccess(false);
+      }, 3000);
+      return () => {
+        clearTimeout(timeout);
+      };
+    }
+  }, [success]);
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -43,7 +59,9 @@ export default function Contact() {
       <Meta title="contact" />
       <Container>
         <ContactHeader />
-        <ContactForm {...{ formData, handleSubmit, handleChange }} />
+        <ContactForm
+          {...{ formData, handleSubmit, handleChange, loading, success }}
+        />
         <ContactLinks />
         <ContactQuote />
       </Container>

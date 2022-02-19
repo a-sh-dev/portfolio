@@ -6,9 +6,10 @@ const outlinedBase = tw`bg-transparent`;
 const btnBase = tw`font-mono text-primary-light capitalize cursor-pointer hover:(bg-primary-darkest text-white)`;
 const iconBase = tw`grid place-items-center text-lg pt-0.5 md:text-xl`;
 
-const BtnContainer = styled.button(({ outlined, fullWidth, fullWidthSm }) => [
-  btnBase,
-  tw`
+const BtnContainer = styled.button(
+  ({ outlined, fullWidth, fullWidthSm, disabled }) => [
+    btnBase,
+    tw`
     flex
     justify-center
     items-center
@@ -27,12 +28,15 @@ const BtnContainer = styled.button(({ outlined, fullWidth, fullWidthSm }) => [
     md:pb-6
     md:px-16
   `,
-  outlined && outlinedBase,
-  fullWidth && tw`justify-self-auto self-auto`,
-  fullWidthSm &&
-    tw`justify-self-auto self-auto lg:justify-self-start lg:self-start`,
-  uniformTransition,
-]);
+    outlined && outlinedBase,
+    fullWidth && tw`justify-self-auto self-auto`,
+    fullWidthSm &&
+      tw`justify-self-auto self-auto lg:justify-self-start lg:self-start`,
+    disabled &&
+      tw`bg-accent-gray border-accent-gray cursor-not-allowed hover:(bg-accent-gray text-primary-light)`,
+    uniformTransition,
+  ],
+);
 
 const IconWrapper = styled.span(() => [
   iconBase,
@@ -42,9 +46,15 @@ const IconWrapper = styled.span(() => [
   `,
 ]);
 
-const FormButton = ({ outlined, fullWidth, fullWidthSm, children }) => {
+const FormButton = ({
+  outlined,
+  fullWidth,
+  fullWidthSm,
+  disabled,
+  children,
+}) => {
   return (
-    <BtnContainer {...{ outlined, fullWidth, fullWidthSm }}>
+    <BtnContainer {...{ outlined, fullWidth, fullWidthSm, disabled }}>
       {children}
       <IconWrapper>
         <BsArrowRight aria-hidden="true" />
