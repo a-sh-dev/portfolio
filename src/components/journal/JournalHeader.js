@@ -51,13 +51,14 @@ const JournalHeader = () => {
             <span className="em-dash">-----</span>I learn to accept it and know
             that it is OK. Eventually, I will grow in my understanding and get
             better for sure. Many of my seniors have counselled, &quot;Honestly,
-            we can&apos;t be experts at EVERYthing!&quot;.
+            we can&apos;t be experts at EVERYthing! But make sure to enjoy the
+            learning and have fun!&quot;.
           </Paragraph>
           <Paragraph>
-            So, for self-motivation, I like to record my learning progress and
-            milestones by counting them in days since I started my coding
-            journey. Hopefully, it can also motivate and encourage others not to
-            give up.
+            So, I like to record my learning progress, milestones and reminders
+            for self-motivation by marking them in days since I started my
+            coding journey. Hopefully, it can also motivate and encourage others
+            not to give up.
           </Paragraph>
         </GridColumn>
       </GridContainer>
