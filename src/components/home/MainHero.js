@@ -1,7 +1,7 @@
 import tw, { styled } from 'twin.macro';
 import Image from 'next/image';
-import { Line, SloganSticker, Sticker, VLineBg } from '..';
-import { HiMusicNote } from 'react-icons/hi';
+import { Icon, Line, SloganSticker, Sticker, VLineBg } from '..';
+import { HiMusicNote, HiOutlineArrowSmDown } from 'react-icons/hi';
 
 const FluidContainer = styled.header(() => [
   tw`
@@ -207,6 +207,14 @@ const MainHero = () => {
 
       <VLineBg>
         <div className="h-fit grid grid-flow-row place-items-center">
+          <div
+            className="hidden md:block md:animate-bounce md:relative md:top-14 2xl:top-56"
+            aria-hidden="true"
+          >
+            <Icon size="xs">
+              <HiOutlineArrowSmDown />
+            </Icon>
+          </div>
           <Profile>
             <Image
               src="/images/ash_profile_circle.svg"
@@ -218,6 +226,11 @@ const MainHero = () => {
               <SloganSticker />
             </SloganWrapper>
           </Profile>
+          <div className="animate-bounce absolute md:hidden" aria-hidden="true">
+            <Icon size="xs">
+              <HiOutlineArrowSmDown />
+            </Icon>
+          </div>
           <StickerWrapper>
             <Sticker text="Is it me you're looking for~?">
               <HiMusicNote aria-hidden="true" />
