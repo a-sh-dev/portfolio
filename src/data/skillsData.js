@@ -45,6 +45,7 @@ export const coreSkills = [
       { id: 6, name: 'Jest' },
       { id: 7, name: 'Rspec' },
       { id: 8, name: 'Twin.macro' },
+      { id: 9, name: 'Documentation' },
     ],
   },
 ];
@@ -60,7 +61,6 @@ export const capabilities = [
       { id: 4, name: 'UI & UX' },
       { id: 5, name: 'Wireframing' },
       { id: 6, name: 'Design System' },
-      { id: 7, name: 'Documentation' },
     ],
   },
   {
