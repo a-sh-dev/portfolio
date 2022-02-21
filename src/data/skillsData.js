@@ -60,6 +60,7 @@ export const capabilities = [
       { id: 4, name: 'UI & UX' },
       { id: 5, name: 'Wireframing' },
       { id: 6, name: 'Design System' },
+      { id: 7, name: 'Documentation' },
     ],
   },
   {
