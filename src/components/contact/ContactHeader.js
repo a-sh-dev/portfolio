@@ -13,12 +13,6 @@ const Wrapper = styled.div(() => [
   `,
 ]);
 
-const SubHeader = styled.div(() => [
-  tw`
-  
-  `,
-]);
-
 const ContactHeader = () => {
   return (
     <Wrapper>
@@ -37,8 +31,8 @@ const ContactHeader = () => {
           </BodyIntro>
 
           <Paragraph>
-            So, please fill out the form below, and I will get back to you as
-            soon as possible!
+            While I am fixing the contact form, I can be contacted through
+            social media, therefore...
             <TextIcon>
               <ImPointDown />
             </TextIcon>

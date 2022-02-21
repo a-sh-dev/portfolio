@@ -51,7 +51,7 @@ By no means this portfolio is entirely complete. There are many rooms for improv
 
 ### 🛠  Known Issues
 
-- FIXED. <s>Due to an unknown problem, I'm currently fixing the `SendGrid` integrated contact form. I tried testing the form submission to the `Next.js` endpoints, yet despite the 200 status delivery reports, I never received any emails in the mailbox. 🥲</s>
+- Due to an unknown problem, I'm currently fixing the `SendGrid` integrated contact form. I tried testing the form submission to the `Next.js` endpoints, yet despite the 200 status delivery reports, I never received any emails in the mailbox. 🥲
 - I tried to animate the heights of the collapsible component on the about me section (on the home page). Yet, it has resulted in weird unwanted extra spacing to the remaining content. I may use a third-party package to help with this additional interactivity.
 
 

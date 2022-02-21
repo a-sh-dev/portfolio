@@ -59,9 +59,9 @@ export default function Contact() {
       <Meta title="contact" />
       <Container>
         <ContactHeader />
-        <ContactForm
+        {/* <ContactForm
           {...{ formData, handleSubmit, handleChange, loading, success }}
-        />
+        /> */}
         <ContactLinks />
         <ContactQuote />
       </Container>
