@@ -1,8 +1,6 @@
-import Image from 'next/image';
 import { FactCard, Collapsible } from '..';
 import { randomFacts } from '../../data';
 import { GridColumn, GridContainer } from '../layout';
-import { Heading, TextIcon, Paragraph, SubHeading } from '../typography';
 
 const Facts = () => {
   return (

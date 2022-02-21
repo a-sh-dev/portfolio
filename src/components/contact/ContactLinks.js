@@ -1,8 +1,8 @@
 import tw, { styled } from 'twin.macro';
-import { GridColumn, Section } from '../layout';
-import { BodyIntro, Em, Heading, TextIcon } from '../typography';
-import { HiOutlineArrowSmRight, HiOutlineArrowSmDown } from 'react-icons/hi';
-import { BoxedLink, Button, Icon } from '..';
+import { Section } from '../layout';
+import { BodyIntro, Heading } from '../typography';
+import { HiOutlineArrowSmRight } from 'react-icons/hi';
+import { BoxedLink, Icon } from '..';
 import { shortSocialLinks } from '../../data';
 
 const DesktopWrapper = styled.div(() => [

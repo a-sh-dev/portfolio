@@ -84,7 +84,7 @@ export const journalDays = [
     day: differenceInCalendarDays(new Date(2021, 3, 30), circa),
     tag: tags.ic,
     code: 'scss',
-    note: 'Extremely helpful to manage CSS and so much more!',
+    note: 'Extremely helpful CSS preprocessor to manage CSS with additional programmatic features.',
     emoji: svgEmoji('😍'),
   },
   {
@@ -92,7 +92,7 @@ export const journalDays = [
     day: differenceInCalendarDays(new Date(2021, 4, 28), circa),
     tag: tags.ic,
     code: 'ruby',
-    note: 'First OOP language. Simple, clean and everything is an object in Ruby.',
+    note: 'First OOP language to learn. Simple, clean and everything is an object in Ruby.',
     emoji: svgEmoji('🤓'),
   },
   {

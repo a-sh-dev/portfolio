@@ -1,10 +1,10 @@
-import { useState } from 'react';
 import tw, { styled } from 'twin.macro';
 import Image from 'next/image';
 import { Section } from '../layout';
 import { FormButton, InfoBlurb } from '..';
 import FormInput, { textFieldBase } from './FormInput';
 import { contactForInputs } from '../../data';
+import { uniformTransition } from '../../../styles/stylesData';
 
 const Wrapper = styled.div(() => [
   tw`
@@ -49,14 +49,42 @@ const MessageInput = styled.textarea(() => [
   `,
 ]);
 
-const ContactForm = ({ formData, handleSubmit, handleChange }) => {
+const Alert = styled.div(({ success }) => [
+  tw`
+    mb-4
+    p-5
+    pb-6
+    rounded-sm
+    bg-accent-yellow
+    opacity-100
+  `,
+  !success && tw`opacity-0`,
+  uniformTransition,
+]);
+
+const ContactForm = ({
+  formData,
+  handleSubmit,
+  handleChange,
+  loading,
+  success,
+}) => {
   return (
     <Section variant="top" relative>
       <Wrapper>
         <FormColumn onSubmit={handleSubmit} method="post">
-          <div className="mb-4">
-            <InfoBlurb blurb="All fields are required." center />
-          </div>
+          {success ? (
+            <Alert {...{ success }}>
+              <InfoBlurb
+                blurb="Thank you for your message! I will get back to you as soon as possible."
+                center
+              />
+            </Alert>
+          ) : (
+            <div className="mb-4">
+              <InfoBlurb blurb="All fields are required." center />
+            </div>
+          )}
           {contactForInputs.map((input) => {
             return (
               <FormInput
@@ -75,8 +103,8 @@ const ContactForm = ({ formData, handleSubmit, handleChange }) => {
             rows="5"
             required
           />
-          <FormButton type="submit" fullWidthSm>
-            Submit
+          <FormButton type="submit" fullWidthSm disabled={loading}>
+            {loading ? 'Sending' : 'Submit'}
           </FormButton>
         </FormColumn>
         <ImgColumn>
