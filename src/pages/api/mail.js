@@ -14,7 +14,7 @@ export default async function sendMail(req, res) {
   try {
     await mail.send({
       to: 'hello.angie@ymail.com',
-      from: 'iam.angie@ymail.com',
+      from: 'hello@a-sh.cc',
       subject: `👋🏻 New message from ${body.name}!`,
       text: message,
       html: message.replace(/\r\n/g, '<br/>'),
