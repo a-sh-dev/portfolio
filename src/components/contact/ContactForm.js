@@ -1,10 +1,10 @@
-import { useState } from 'react';
 import tw, { styled } from 'twin.macro';
 import Image from 'next/image';
 import { Section } from '../layout';
 import { FormButton, InfoBlurb } from '..';
 import FormInput, { textFieldBase } from './FormInput';
 import { contactForInputs } from '../../data';
+import { uniformTransition } from '../../../styles/stylesData';
 
 const Wrapper = styled.div(() => [
   tw`
@@ -49,6 +49,19 @@ const MessageInput = styled.textarea(() => [
   `,
 ]);
 
+const Alert = styled.div(({ success }) => [
+  tw`
+    mb-4
+    p-5
+    pb-6
+    rounded-sm
+    bg-accent-yellow
+    opacity-100
+  `,
+  !success && tw`opacity-0`,
+  uniformTransition,
+]);
+
 const ContactForm = ({
   formData,
   handleSubmit,
@@ -61,12 +74,12 @@ const ContactForm = ({
       <Wrapper>
         <FormColumn onSubmit={handleSubmit} method="post">
           {success ? (
-            <div className="mb-4 bg-accent-yellow p-5 pb-6 rounded-sm">
+            <Alert {...{ success }}>
               <InfoBlurb
                 blurb="Thank you for your message! I will get back to you as soon as possible."
                 center
               />
-            </div>
+            </Alert>
           ) : (
             <div className="mb-4">
               <InfoBlurb blurb="All fields are required." center />

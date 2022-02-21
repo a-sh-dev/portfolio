@@ -43,7 +43,7 @@ export default function Contact() {
     if (success) {
       const timeout = setTimeout(() => {
         setSuccess(false);
-      }, 3000);
+      }, 4500);
       return () => {
         clearTimeout(timeout);
       };
