@@ -123,7 +123,8 @@ const ProfileDesktop = styled.div(() => [
     md:absolute
     md:p-6
     md:-top-24
-    md:-right-20
+    md:-right-16
+    lg:-right-20
     xl:-top-16
     xl:-right-12
     2xl:-top-20

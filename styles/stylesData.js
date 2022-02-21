@@ -91,6 +91,7 @@ export const headingVariants = {
   card: tw`font-bold text-xl xl:text-2xl`,
   mono: tw`${monoBase} font-normal`,
   monoBold: tw`${monoBase} font-bold`,
+  monoXs: tw`${monoBase} text-2xl md:text-3xl xl:text-4xl font-normal`,
 };
 
 export const fontStyleVariants = {

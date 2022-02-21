@@ -6,9 +6,10 @@ import {
 } from '../../../styles/stylesData';
 import { Section } from '../layout';
 import { Heading } from '../typography';
-import { journalDays } from '../../data';
+import { journalDays, todaysCodingDay } from '../../data';
 import JournalCard from './JournalCard';
 import { HiOutlineCalendar } from 'react-icons/hi';
+import { formatDay } from '../../utils';
 
 const Wrapper = styled.main(() => [
   tw`
@@ -20,8 +21,19 @@ const Circa = styled.div(() => [
   tw`
     flex
     gap-4
-    items-center
+    items-start
     justify-center
+    md:items-center
+  `,
+]);
+
+const CircaContent = styled.div(() => [
+  tw`
+    flex
+    flex-col
+    gap-4
+    md:gap-10
+    md:flex-row
   `,
 ]);
 
@@ -54,14 +66,24 @@ const JournalList = () => {
           <Icon>
             <HiOutlineCalendar />
           </Icon>
-          <div>
-            <Heading variant="monoBold" align="left" noMargin noGutter>
-              Coding journey circa
-            </Heading>
-            <Heading variant="xs" noMargin noGutter>
-              22 March 2021
-            </Heading>
-          </div>
+          <CircaContent>
+            <div>
+              <Heading variant="monoBold" align="left" noMargin noGutter>
+                Journey circa
+              </Heading>
+              <Heading variant="xs" noMargin noGutter>
+                22 March 2021
+              </Heading>
+            </div>
+            <div className="border-primary-dark border-t pt-4 md:border-t-0 md:border-l md:pt-0 md:pl-10">
+              <Heading variant="monoBold" align="left" noMargin noGutter>
+                Today marks
+              </Heading>
+              <Heading variant="monoXs" noMargin noGutter>
+                Day#{todaysCodingDay}
+              </Heading>
+            </div>
+          </CircaContent>
         </Circa>
       </Section>
       <div className="border-t border-primary-dark border-dashed">

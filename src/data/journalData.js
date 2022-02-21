@@ -1,10 +1,12 @@
 import svgEmoji from '../utils/emoji';
-import { format, differenceInCalendarDays } from 'date-fns';
-import { FaSass } from 'react-icons/fa';
+import { format, differenceInCalendarDays, parseISO } from 'date-fns';
+import { todaysDate } from '../utils';
 
 // minus one day so it counts 001 from the start (original date: 2021,3,22)
 export const circa = new Date(2021, 3, 21);
 const dateFormat = 'dd.MM.yy';
+
+export const todaysCodingDay = differenceInCalendarDays(todaysDate, circa);
 
 const tags = {
   mo: { label: 'moment', color: 'purple', note: 'special' },
@@ -16,6 +18,24 @@ const tags = {
 };
 
 export const journalDays = [
+  {
+    date: format(new Date('2021/10/21'), dateFormat),
+    day: differenceInCalendarDays(new Date(2021, 10, 21), circa),
+    tag: tags.re,
+    code: '',
+    note: `Do not fear failure but rather fear not trying.`,
+    sub: 'Roy T. Bennet',
+    emoji: svgEmoji('💥'),
+  },
+  {
+    date: format(new Date('2022/2/18'), dateFormat),
+    day: differenceInCalendarDays(new Date(2022, 2, 18), circa),
+    tag: tags.re,
+    code: '',
+    note: `There is no failure except in no longer trying.`,
+    sub: 'Elbert Hubbard',
+    emoji: svgEmoji('💪🏼'),
+  },
   {
     date: format(new Date('2022/1/3'), dateFormat),
     day: differenceInCalendarDays(new Date(2022, 1, 3), circa),

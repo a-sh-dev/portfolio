@@ -84,7 +84,7 @@ const JournalCard = ({ journal, reverse }) => {
   const isReminder = journal?.tag.note === 'reminder';
 
   return (
-    <Wrapper color={journal?.tag?.color}>
+    <Wrapper color={journal?.tag?.color} className="aspect-square">
       <CardHeader {...{ reverse }}>
         <Day>{formatDay(journal?.day)}</Day>
         <Line stretch />
