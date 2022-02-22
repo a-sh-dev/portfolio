@@ -144,12 +144,10 @@ const ContactFormFS = () => {
     <Section variant="top" relative>
       <Wrapper>
         <FormColumn onSubmit={handleOnSubmit}>
-          {!status.info.error && status.info.msg ? (
-            alert && (
-              <Alert>
-                <InfoBlurb blurb={status.info.msg} center />
-              </Alert>
-            )
+          {!status.info.error && status.info.msg && alert ? (
+            <Alert>
+              <InfoBlurb blurb={status.info.msg} center />
+            </Alert>
           ) : (
             <div className="mb-4">
               <InfoBlurb blurb="All fields are required." center />
@@ -179,14 +177,10 @@ const ContactFormFS = () => {
             required
           />
           <FormButton type="submit" fullWidthSm disabled={status.submitting}>
-            {!status.submitting
-              ? !status.submitted
-                ? 'Submit'
-                : 'Submitted'
-              : 'Sending...'}
+            {!status.submitting ? 'Submit' : 'Sending...'}
           </FormButton>
           {status.info.error && (
-            <div className="text-sm text-red-400">Oopps! {status.info.msg}</div>
+            <div className="text-sm text-red-500">Oopps! {status.info.msg}</div>
           )}
         </FormColumn>
         <ImgColumn>
