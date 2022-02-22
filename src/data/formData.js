@@ -18,3 +18,20 @@ export const contactForInputs = [
     required: true,
   },
 ];
+
+export const contactFormInputsFS = [
+  {
+    id: 'name',
+    name: 'name',
+    type: 'text',
+    placeholder: 'Name',
+    required: true,
+  },
+  {
+    id: 'email',
+    name: '_replyto',
+    type: 'email',
+    placeholder: 'Email address',
+    required: true,
+  },
+];

@@ -31,8 +31,8 @@ const ContactHeader = () => {
           </BodyIntro>
 
           <Paragraph>
-            While I am fixing the contact form, I can be contacted through
-            social media, therefore...
+            So, please fill out the form below, and I will get back to you as
+            soon as possible!
             <TextIcon>
               <ImPointDown />
             </TextIcon>
