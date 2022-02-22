@@ -51,8 +51,9 @@ By no means this portfolio is entirely complete. There are many rooms for improv
 ### 🛠  Known Issues
 
 - <s>Due to an unknown problem, I'm currently fixing the `SendGrid` integrated contact form. I tried testing the form submission to the `Next.js` endpoints, yet despite the 200 status delivery reports, I never received any emails in the mailbox. 🥲</s> 
-  - After several fix attempts, I finally used the `SendGrid` alternative, `Formspree` (as recommended by [Next](https://vercel.com/guides/deploying-react-forms-using-formspree-with-vercel)). The `SendGrid` contact form finally worked in development, and I could receive the submitted messages. However, unfortunately, it failed on production/deployment. I will investigate further. Special thanks to *Manu Arora* ([manuarora700](https://github.com/manuarora700)) for the kind help in trying to solve the `SendGrid` issues! 🙌🏼
-
+  - After several fix attempts, I finally used the `SendGrid` alternative, `Formspree` (as recommended by [Next](https://vercel.com/guides/deploying-react-forms-using-formspree-with-vercel)). The `SendGrid` contact form finally worked in development, and I could receive the submitted messages. However, unfortunately, it failed on production/deployment (even with neccessary environment variables already added to Vercel's settings, and redeployed). I will investigate further.
+  - Special thanks to *Manu Arora* ([manuarora700](https://github.com/manuarora700)) for the kind help in trying to solve the `SendGrid` issues! 🙌🏼
+  
 - I tried to animate the heights of the collapsible component on the about me section (on the home page). Yet, it has resulted in weird unwanted extra spacing to the remaining content. I may use a third-party package to help with this additional interactivity.
 
 
