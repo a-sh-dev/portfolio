@@ -31,7 +31,7 @@ By no means this portfolio is entirely complete. There are many rooms for improv
 - React-easy-emoji
 - @svgr – for custom svg conversions into functional components
 - Date-fns
-- SendGrid for contact form integration
+- <s>SendGrid</s> Formspree for contact form integration
 - Vercel for deployment
 - Responsive Viewer chrome extension – an absolute gem!
 
@@ -39,19 +39,20 @@ By no means this portfolio is entirely complete. There are many rooms for improv
 
 ### 💪🏼  Future Improvements
 
+- Integrating `Sanity` for headless CMS content management.
 - Filterable `Journal` cards and `Project` cards.
 - Individual page for every `Project` with detailed information and more images.
 - Page transitions or loading (with `Framer motion`) for additional features and overall UI improvements.
 - Branded 404 error page
-- Integrating `MongoDB` for `Journal` entries.
-- SEO and accesibility improvements 
-- Add more projects!
+- SEO and accessibility improvements 
 
 
 
 ### 🛠  Known Issues
 
-- Due to an unknown problem, I'm currently fixing the `SendGrid` integrated contact form. I tried testing the form submission to the `Next.js` endpoints, yet despite the 200 status delivery reports, I never received any emails in the mailbox. 🥲
+- <s>Due to an unknown problem, I'm currently fixing the `SendGrid` integrated contact form. I tried testing the form submission to the `Next.js` endpoints, yet despite the 200 status delivery reports, I never received any emails in the mailbox. 🥲</s> 
+  - After several fix attempts, I finally used the `SendGrid` alternative, `Formspree` (as recommended by [Next](https://vercel.com/guides/deploying-react-forms-using-formspree-with-vercel)). The `SendGrid` contact form finally worked in development, and I could receive the submitted messages. However, unfortunately, it failed on production/deployment. I will investigate further. Special thanks to *Manu Arora* ([manuarora700](https://github.com/manuarora700)) for the kind help in trying to solve the `SendGrid` issues! 🙌🏼
+
 - I tried to animate the heights of the collapsible component on the about me section (on the home page). Yet, it has resulted in weird unwanted extra spacing to the remaining content. I may use a third-party package to help with this additional interactivity.
 
 
