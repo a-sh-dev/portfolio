@@ -17,7 +17,7 @@ export const randomFacts = [
   {
     id: 1,
     title: 'Great things come from a small package.',
-    desc: 'I am 149.31cm, which equals 4.8986 feet or 58.7835 inches.',
+    desc: 'I am 149.31 cm, which equals 4.8986 feet or 58.7835 inches.',
     icon: <HiOutlineGift />,
     emoji: <FaRegKissBeam />,
   },
