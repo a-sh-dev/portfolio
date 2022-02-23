@@ -29,7 +29,7 @@ const ProjectHeader = () => {
         <GridColumn col="span-9">
           <BodyIntro noMargin variant="bold" size="intro">
             Once upon a time, building websites for me only involved integrating
-            Adobe Photoshop &{' '}
+            Adobe Photoshop and{' '}
             <span className="line-through decoration-primary-dark decoration-2">
               (Macromedia)
             </span>{' '}
