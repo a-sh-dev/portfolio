@@ -10,7 +10,7 @@ This project is the second personal portfolio built since I've begun my coding j
 
 After completing the boot camp, I initially planned to use only `React.js`, but I'm sold by how `Next.js` features a faster and more scalable app due to its server-side rendering capability. `Next.js` is an extension framework of the `React.js` library plus the added SEO friendliness and built-in router improvements. Generally, it's faster due to its server-side rendering functionality, especially for generating static websites.
 
-The most enjoyable learning in this project is building reusable components and working on conditional rendering through data iterations. All the UI styling are only made possible (and faster) thanks to `twin.macro`, which significantly assists in blending the best of two worlds between `Tailwind CSS` and `Styled-Components`. 
+The most enjoyable learning in this project is creating *design patterns* →  building reusable components, and working on conditional rendering through data iterations for better maintainability. All the UI styling are only made possible (and faster) thanks to `twin.macro`, which significantly assists in blending the best of two worlds between `Tailwind CSS` and `Styled-Components`. 
 
 By no means this portfolio is entirely complete. There are many rooms for improvements. But I'm happy to release this version while at the same time working for further development and refinement.
 
