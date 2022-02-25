@@ -80,6 +80,14 @@ export const journalDays = [
     emoji: svgEmoji('🤩'),
   },
   {
+    date: format(new Date('2022/2/24'), dateFormat),
+    day: differenceInCalendarDays(new Date(2022, 2, 24), circa),
+    tag: tags.ic,
+    code: 'TypeScript',
+    note: 'The superset of JS, with Types features to improve JS codes readability and validations.',
+    emoji: svgEmoji('🤓'),
+  },
+  {
     date: format(new Date('2021/3/30'), dateFormat),
     day: differenceInCalendarDays(new Date(2021, 3, 30), circa),
     tag: tags.ic,
