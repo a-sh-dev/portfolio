@@ -6,9 +6,15 @@
 
 
 
-This project is the second personal portfolio built since I've begun my coding journey. A revamped of the first one that I built by only using HTML5 and SASS. <sub> [Check the GitHub repo for the first project.](https://github.com/a-sh-dev/T1A2_Portfolio)</sub>
+This project is the second personal portfolio built since I've begun my coding journey. A revamped of the first one that I built by only using `HTML5` and `SASS`. <sub> [Check the GitHub repo for the first project.](https://github.com/a-sh-dev/T1A2_Portfolio)</sub>
 
-After completing the boot camp, I initially planned to use only `React.js`, but I'm sold by how `Next.js` features a faster and more scalable app due to its server-side rendering capability. `Next.js` is an extension framework of the `React.js` library plus the added SEO friendliness and built-in router improvements. Generally, it's faster due to its server-side rendering functionality, especially for generating static websites.
+### 🤔 Problem
+
+Using `HTML5` and `SASS` alone is not practical to maintain a scalable portfolio. I need a templating or pattern system that I can utilise as reusable components in the portfolio and enforce a cohesive and consistent look to the UI.
+
+### 💡 Solution
+
+After completing the boot camp, I initially planned to use only `React.js`, but I'm sold by how `Next.js` features a faster and more scalable app due to its server-side rendering capability. `Next.js` is an extension framework of the `React.js` library plus the added SEO friendliness and built-in router improvements. Generally, it's faster due to its server-side rendering functionality, especially for generating static websites.  
 
 The most enjoyable learning in this project is creating *design patterns* →  building reusable components, and working on conditional rendering through data iterations for better maintainability. All the UI styling are only made possible (and faster) thanks to `twin.macro`, which significantly assists in blending the best of two worlds between `Tailwind CSS` and `Styled-Components`. 
 
@@ -31,6 +37,7 @@ By no means this portfolio is entirely complete. There are many rooms for improv
 - React-easy-emoji
 - @svgr – for custom svg conversions into functional components
 - Date-fns
+- Axios
 - <s>SendGrid</s> Formspree for contact form integration
 - Vercel for deployment
 - Responsive Viewer chrome extension – an absolute gem!
@@ -39,10 +46,10 @@ By no means this portfolio is entirely complete. There are many rooms for improv
 
 ### 💪🏼  Future Improvements
 
-- Integrating `Sanity` for headless CMS content management.
-- Filterable `Journal` cards and `Project` cards.
-- Individual page for every `Project` with detailed information and more images.
-- Page transitions or loading (with `Framer motion`) for additional features and overall UI improvements.
+- Integrating `Sanity` for headless CMS content management
+- Filterable `Journal` cards and `Project` cards
+- Individual page for every `Project` with detailed information and more images
+- Page transitions or loading (with `Framer motion`) for additional features and overall UI improvements
 - Branded 404 error page
 - SEO and accessibility improvements 
 
@@ -68,4 +75,4 @@ By no means this portfolio is entirely complete. There are many rooms for improv
 
 ---
 
-**Crafted with care ❤ (and powered by lots of caffeine ☕️ 🍵 🫖) by a-sh. © 2022**
+<sub>**Crafted with care ❤ (and powered by lots of caffeine ☕️ 🍵 🫖) by a-sh. © 2022**</sub>
