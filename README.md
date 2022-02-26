@@ -12,6 +12,8 @@ This project is the second personal portfolio built since I've begun my coding j
 
 Using `HTML5` and `SASS` alone is not practical to maintain a scalable portfolio. I need a templating or pattern system that I can utilise as reusable components in the portfolio and enforce a cohesive and consistent look to the UI.
 
+For styling, I want to experiment using `Tailwind CSS` and utilise the flexibility of `Styled-Components`. 
+
 ### 💡 Solution
 
 After completing the boot camp, I initially planned to use only `React.js`, but I'm sold by how `Next.js` features a faster and more scalable app due to its server-side rendering capability. `Next.js` is an extension framework of the `React.js` library plus the added SEO friendliness and built-in router improvements. Generally, it's faster due to its server-side rendering functionality, especially for generating static websites.  
