@@ -164,7 +164,7 @@ export const journalDays = [
     day: differenceInCalendarDays(new Date(2022, 3, 18), circa),
     tag: tags.ex,
     code: 'GraphQL',
-    note: `APIs query language that allows developers control over specific requests on multiple aspects of that query in one request.`,
+    note: `APIs query language that allows devs to get requests on multiple aspects of that query in one request.`,
     emoji: svgEmoji('⚙️'),
   },
   {
@@ -220,7 +220,7 @@ export const journalDays = [
     day: differenceInCalendarDays(new Date(2022, 3, 22), circa),
     tag: tags.mo,
     code: '',
-    note: `Anniversary of when the coding journey started.`,
+    note: `Celebrating a year of coding journey.`,
     emoji: svgEmoji('🧁'),
   },
   {
