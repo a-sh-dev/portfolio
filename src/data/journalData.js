@@ -160,6 +160,14 @@ export const journalDays = [
     emoji: svgEmoji('🙄'),
   },
   {
+    date: format(new Date('2022/3/18'), dateFormat),
+    day: differenceInCalendarDays(new Date(2022, 3, 18), circa),
+    tag: tags.ex,
+    code: 'GraphQL',
+    note: `APIs query language that allows devs to get requests on multiple aspects of that query in one request.`,
+    emoji: svgEmoji('⚙️'),
+  },
+  {
     date: format(new Date('2021/9/1'), dateFormat),
     day: differenceInCalendarDays(new Date(2021, 9, 1), circa),
     tag: tags.ex,
@@ -206,6 +214,14 @@ export const journalDays = [
     code: '',
     note: `Really trying to embrace 'learning by doing' as a team despite not (fully) understanding everything...`,
     emoji: svgEmoji('🔥'),
+  },
+  {
+    date: format(new Date('2022/3/22'), dateFormat),
+    day: differenceInCalendarDays(new Date(2022, 3, 22), circa),
+    tag: tags.mo,
+    code: '',
+    note: `Celebrating a year of coding journey.`,
+    emoji: svgEmoji('🧁'),
   },
   {
     date: format(new Date('2022/2/16'), dateFormat),

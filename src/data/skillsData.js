@@ -6,8 +6,9 @@ export const coreSkills = [
       { id: 1, name: 'HTML5' },
       { id: 2, name: 'CSS3' },
       { id: 3, name: 'Sass' },
-      { id: 4, name: 'JavaScript' },
-      { id: 5, name: 'Ruby' },
+      { id: 4, name: 'Ruby' },
+      { id: 5, name: 'JavaScript' },
+      { id: 6, name: 'TypeScript' },
     ],
   },
   {
