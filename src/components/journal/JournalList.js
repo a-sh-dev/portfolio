@@ -32,6 +32,8 @@ const CircaContent = styled.div(() => [
     flex
     flex-col
     gap-4
+    ml-2
+    md:ml-4
     md:gap-10
     md:flex-row
   `,
