@@ -19,6 +19,15 @@ const tags = {
 
 export const journalDays = [
   {
+    date: format(new Date('2022/4/7'), dateFormat),
+    day: differenceInCalendarDays(new Date(2022, 4, 7), circa),
+    tag: tags.re,
+    code: '',
+    note: `Design is not just what it looks like and feels like. Design is how it works.`,
+    sub: 'Steve Jobs',
+    emoji: svgEmoji('⚜️'),
+  },
+  {
     date: format(new Date('2021/10/21'), dateFormat),
     day: differenceInCalendarDays(new Date(2021, 10, 21), circa),
     tag: tags.re,
