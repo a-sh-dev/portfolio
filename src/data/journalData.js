@@ -90,6 +90,14 @@ export const journalDays = [
     emoji: svgEmoji('🔰'),
   },
   {
+    date: format(new Date('2022/4/1'), dateFormat),
+    day: differenceInCalendarDays(new Date(2022, 4, 1), circa),
+    tag: tags.ac,
+    code: '',
+    note: 'Officially graduated from Coder Academy & formally obtained a certificate of Diploma in IT.',
+    emoji: svgEmoji('🎖'),
+  },
+  {
     date: format(new Date('2021/4/25'), dateFormat),
     day: differenceInCalendarDays(new Date(2021, 4, 25), circa),
     tag: tags.ac,
