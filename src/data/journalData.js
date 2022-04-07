@@ -34,7 +34,7 @@ export const journalDays = [
     code: '',
     note: `Design is not just what it looks like and feels like. Design is how it works.`,
     sub: 'Steve Jobs',
-    emoji: svgEmoji('🌝'),
+    emoji: svgEmoji('🪄'),
   },
   {
     date: format(new Date('2021/10/21'), dateFormat),
@@ -319,6 +319,6 @@ export const journalDays = [
     tag: tags.ex,
     code: 'twin.macro',
     note: `Blends the magic of Tailwind CSS & CSS-in-JS. Getting the best of both utilities!`,
-    emoji: svgEmoji('😳'),
+    emoji: svgEmoji('🔗'),
   },
 ];
