@@ -23,9 +23,18 @@ export const journalDays = [
     day: differenceInCalendarDays(new Date(2022, 4, 7), circa),
     tag: tags.re,
     code: '',
+    note: `Even simple questions are powerful. Asking "Why?" provokes reflection. Asking "Why not?" drives innovation.`,
+    sub: 'Nathan Young',
+    emoji: svgEmoji('💬'),
+  },
+  {
+    date: format(new Date('2022/1/24'), dateFormat),
+    day: differenceInCalendarDays(new Date(2022, 1, 24), circa),
+    tag: tags.re,
+    code: '',
     note: `Design is not just what it looks like and feels like. Design is how it works.`,
     sub: 'Steve Jobs',
-    emoji: svgEmoji('⚜️'),
+    emoji: svgEmoji('🌝'),
   },
   {
     date: format(new Date('2021/10/21'), dateFormat),
@@ -173,7 +182,7 @@ export const journalDays = [
     day: differenceInCalendarDays(new Date(2022, 3, 18), circa),
     tag: tags.ex,
     code: 'GraphQL',
-    note: `APIs query language that allows devs to get requests on multiple aspects of that query in one request.`,
+    note: `APIs query language to get requests on multiple aspects of that query in one request.`,
     emoji: svgEmoji('⚙️'),
   },
   {
