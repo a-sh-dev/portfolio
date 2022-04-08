@@ -94,7 +94,7 @@ export const journalDays = [
     day: differenceInCalendarDays(new Date(2022, 4, 1), circa),
     tag: tags.ac,
     code: '',
-    note: 'Officially graduated from Coder Academy & formally obtained a certificate of Diploma in IT.',
+    note: 'Officially graduated from Coder Academy & formally obtained a Diploma of IT.',
     emoji: svgEmoji('🎖'),
   },
   {
