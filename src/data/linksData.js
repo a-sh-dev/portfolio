@@ -90,7 +90,8 @@ export const socialMediaLinks = [
 
 export const shortSocialLinks = [
   socialMediaLinks[0],
+  socialMediaLinks[1],
   socialMediaLinks[2],
   socialMediaLinks[3],
-  socialMediaLinks[1],
+  socialMediaLinks[5],
 ];
