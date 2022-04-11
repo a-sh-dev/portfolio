@@ -81,7 +81,7 @@ export const socialMediaLinks = [
   },
   {
     id: 6,
-    name: 'Hasnode',
+    name: 'Hashnode',
     url: 'https://a-sh.hashnode.dev',
     icon: <SiHashnode />,
     color: 'purple',
