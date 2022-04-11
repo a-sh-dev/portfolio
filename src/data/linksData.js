@@ -7,6 +7,8 @@ import {
   FaGithub,
 } from 'react-icons/fa';
 
+import { SiHashnode } from 'react-icons/si';
+
 import {
   EnvelopeIcon,
   JournalIcon,
@@ -75,13 +77,21 @@ export const socialMediaLinks = [
     name: 'Codepen',
     url: 'https://codepen.io/angiesh/pens/',
     icon: <FaCodepen />,
+    color: 'yellow',
+  },
+  {
+    id: 6,
+    name: 'Hasnode',
+    url: 'https://a-sh.hashnode.dev',
+    icon: <SiHashnode />,
     color: 'purple',
   },
 ];
 
 export const shortSocialLinks = [
   socialMediaLinks[0],
+  socialMediaLinks[1],
   socialMediaLinks[2],
   socialMediaLinks[3],
-  socialMediaLinks[1],
+  socialMediaLinks[5],
 ];

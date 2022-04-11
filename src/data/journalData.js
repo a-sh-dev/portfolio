@@ -82,6 +82,14 @@ export const journalDays = [
     emoji: svgEmoji('🚫'),
   },
   {
+    date: format(new Date('2022/4/11'), dateFormat),
+    day: differenceInCalendarDays(new Date(2022, 4, 11), circa),
+    tag: tags.mo,
+    code: '',
+    note: 'Published the first tech related blog article on Hashnode!',
+    emoji: svgEmoji('📡'),
+  },
+  {
     date: format(new Date('2021/3/22'), dateFormat),
     day: differenceInCalendarDays(new Date(2021, 3, 22), circa),
     tag: tags.mo,
