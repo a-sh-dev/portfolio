@@ -42,11 +42,10 @@ export const coreSkills = [
     name: 'others',
     skills: [
       { id: 1, name: 'Git' },
-      { id: 2, name: 'CLI Terminal' },
-      { id: 3, name: 'Responsive Layout' },
-      { id: 4, name: 'AWS S3 Bucket' },
-      { id: 5, name: 'Firebase Storage' },
-      { id: 6, name: 'Documentation' },
+      { id: 2, name: 'Responsive Layout' },
+      { id: 3, name: 'AWS S3 Bucket' },
+      { id: 4, name: 'Firebase Storage' },
+      { id: 5, name: 'Documentation' },
     ],
   },
 ];
