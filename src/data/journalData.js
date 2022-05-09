@@ -82,6 +82,15 @@ export const journalDays = [
     emoji: svgEmoji('🚫'),
   },
   {
+    date: format(new Date('2022/5/2'), dateFormat),
+    day: differenceInCalendarDays(new Date(2022, 5, 2), circa),
+    tag: tags.re,
+    code: '',
+    note: `The feeling of confusion (about an explanation of a new concept) is your friend, it means you're learning!`,
+    sub: 'MPJME (Fun Fun Function)',
+    emoji: svgEmoji('🤨'),
+  },
+  {
     date: format(new Date('2022/4/11'), dateFormat),
     day: differenceInCalendarDays(new Date(2022, 4, 11), circa),
     tag: tags.mo,
@@ -152,6 +161,14 @@ export const journalDays = [
     code: 'ruby on rails',
     note: 'Quick full-stack Ruby framework that compress the complexity of modern web apps.',
     emoji: svgEmoji('🚂'),
+  },
+  {
+    date: format(new Date('2022/4/21'), dateFormat),
+    day: differenceInCalendarDays(new Date(2022, 4, 21), circa),
+    tag: tags.ex,
+    code: 'React TypeScript',
+    note: 'Learning TypeScript integration with React by building a simple todo app.',
+    emoji: svgEmoji('😋'),
   },
   {
     date: format(new Date('2021/6/14'), dateFormat),
