@@ -167,7 +167,7 @@ export const journalDays = [
     day: differenceInCalendarDays(new Date(2022, 3, 20), circa),
     tag: tags.ic,
     code: 'React TypeScript',
-    note: `The more 'type'ing is (actually) helpful for validations and maintainability as the app scales.`,
+    note: `The more 'type'ing is (actually) useful for validations and maintainability.`,
     emoji: svgEmoji('😋'),
   },
   {
