@@ -19,8 +19,8 @@ const tags = {
 
 export const journalDays = [
   {
-    date: format(new Date('2022/4/7'), dateFormat),
-    day: differenceInCalendarDays(new Date(2022, 4, 7), circa),
+    date: format(new Date('2022/4/9'), dateFormat),
+    day: differenceInCalendarDays(new Date(2022, 4, 9), circa),
     tag: tags.re,
     code: '',
     note: `Even simple questions are powerful. Asking "Why?" provokes reflection. Asking "Why not?" drives innovation.`,
@@ -163,12 +163,20 @@ export const journalDays = [
     emoji: svgEmoji('🚂'),
   },
   {
-    date: format(new Date('2022/4/21'), dateFormat),
-    day: differenceInCalendarDays(new Date(2022, 4, 21), circa),
-    tag: tags.ex,
+    date: format(new Date('2022/3/20'), dateFormat),
+    day: differenceInCalendarDays(new Date(2022, 3, 20), circa),
+    tag: tags.ic,
     code: 'React TypeScript',
-    note: 'Learning TypeScript integration with React by building a simple todo app.',
+    note: '',
     emoji: svgEmoji('😋'),
+  },
+  {
+    date: format(new Date('2022/3/25'), dateFormat),
+    day: differenceInCalendarDays(new Date(2022, 3, 25), circa),
+    tag: tags.wi,
+    code: '',
+    note: 'Pair programming with a Senior Dev friend to learn TypeScript integration with React by building a simple todo app.',
+    emoji: svgEmoji('✅'),
   },
   {
     date: format(new Date('2021/6/14'), dateFormat),
