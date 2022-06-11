@@ -19,6 +19,15 @@ const tags = {
 
 export const journalDays = [
   {
+    date: format(new Date('2022/6/11'), dateFormat),
+    day: differenceInCalendarDays(new Date(2022, 6, 11), circa),
+    tag: tags.re,
+    code: '',
+    note: `Any fool can write code that a computer can understand. Good programmers write code that humans can understand.`,
+    sub: 'Martin Fowler',
+    emoji: svgEmoji('💬'),
+  },
+  {
     date: format(new Date('2022/4/9'), dateFormat),
     day: differenceInCalendarDays(new Date(2022, 4, 9), circa),
     tag: tags.re,
@@ -369,5 +378,13 @@ export const journalDays = [
     code: 'twin.macro',
     note: `Blends the magic of Tailwind CSS & CSS-in-JS. Getting the best of both utilities!`,
     emoji: svgEmoji('🔗'),
+  },
+  {
+    date: format(new Date('2022/5/23'), dateFormat),
+    day: differenceInCalendarDays(new Date(2022, 5, 23), circa),
+    tag: tags.ex,
+    code: 'Jest & RTL',
+    note: `Deepening unit testing practice with Jest & React Testing Library. Testing is crucial, indeed!`,
+    emoji: svgEmoji('🧪'),
   },
 ];
