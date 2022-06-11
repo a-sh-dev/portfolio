@@ -25,7 +25,7 @@ export const journalDays = [
     code: '',
     note: `Any fool can write code that a computer can understand. Good programmers write code that humans can understand.`,
     sub: 'Martin Fowler',
-    emoji: svgEmoji('💬'),
+    emoji: svgEmoji('👀'),
   },
   {
     date: format(new Date('2022/4/9'), dateFormat),
