@@ -1,5 +1,5 @@
 import svgEmoji from '../utils/emoji';
-import { format, differenceInCalendarDays, parseISO } from 'date-fns';
+import { format, differenceInCalendarDays } from 'date-fns';
 import { todaysDate } from '../utils';
 
 // minus one day so it counts 001 from the start (original date: 2021,3,22)
@@ -186,6 +186,14 @@ export const journalDays = [
     code: 'React TypeScript',
     note: `The more 'type'ing is (actually) useful for validations and maintainability.`,
     emoji: svgEmoji('😋'),
+  },
+  {
+    date: format(new Date('2022/6/13'), dateFormat),
+    day: differenceInCalendarDays(new Date(2022, 6, 13), circa),
+    tag: tags.wi,
+    code: '',
+    note: 'AWS Developer Certification training',
+    emoji: svgEmoji('📚'),
   },
   {
     date: format(new Date('2022/3/25'), dateFormat),
