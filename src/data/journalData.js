@@ -192,7 +192,7 @@ export const journalDays = [
     day: differenceInCalendarDays(new Date(2022, 6, 13), circa),
     tag: tags.wi,
     code: '',
-    note: 'AWS Developer Certification training',
+    note: 'AWS certification group training. Hands-on learning through real-life experience, hope to succeed in the exams and contribute better to the team!',
     emoji: svgEmoji('📚'),
   },
   {
