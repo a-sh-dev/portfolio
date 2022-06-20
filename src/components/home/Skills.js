@@ -1,5 +1,5 @@
 import tw, { styled } from 'twin.macro';
-import { Icon, Line, Table, TableRow } from '..';
+import { Icon, Table, TableRow } from '..';
 import { GridColumn, GridContainer, Section } from '../layout';
 import { Heading, Paragraph, Tag, UList } from '../typography';
 import { HiOutlineCode, HiOutlineColorSwatch } from 'react-icons/hi';
