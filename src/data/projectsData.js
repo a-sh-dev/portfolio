@@ -7,7 +7,7 @@ export const projectsData = [
     desc: "Pawsomes is an online community platform prototype that caters 'pet-sharing' between pet owners and pet owners-to-be. Real pet owners can 'share' their journey being a 'pawrent' through photo pet journaling. Other users can become 'suppawters' through supporting funds. In short, Pawsomes is when Instagram meets Patreon.",
     stack: ['ruby on rails', 'bootstrap', 'postgresql', 'aws s3'],
     repo: 'https://github.com/a-sh-dev/rails_pawsomes',
-    url: 'https://pawsomes.herokuapp.com/',
+    url: '',
     img: '/images/projects/project_pawsomes.png',
   },
   {
