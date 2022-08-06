@@ -73,6 +73,15 @@ export const journalDays = [
     emoji: svgEmoji('🙌🏼'),
   },
   {
+    date: format(new Date('2022/8/3'), dateFormat),
+    day: differenceInCalendarDays(new Date(2022, 8, 3), circa),
+    tag: tags.re,
+    code: '',
+    note: `To become really good at anything, you have to practice and repeat, ...until the technique becomes intuitive.`,
+    sub: 'Paulo Coelho',
+    emoji: svgEmoji('🔁'),
+  },
+  {
     date: format(new Date('2021/7/7'), dateFormat),
     day: differenceInCalendarDays(new Date(2021, 7, 7), circa),
     tag: tags.re,
@@ -190,9 +199,9 @@ export const journalDays = [
   {
     date: format(new Date('2022/6/13'), dateFormat),
     day: differenceInCalendarDays(new Date(2022, 6, 13), circa),
-    tag: tags.wi,
-    code: '',
-    note: 'AWS certification group training. Learning through real-life experience, hope to succeed in the exams and contribute better to the team!',
+    tag: tags.ic,
+    code: 'AWS Developer',
+    note: 'Group training to improve team collaboration and to succeed in the exams.',
     emoji: svgEmoji('📚'),
   },
   {
