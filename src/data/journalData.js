@@ -17,6 +17,8 @@ const tags = {
   re: { label: 'reminder', color: 'gray', note: 'reminder' },
 };
 
+export const tagsLabel = Object.keys(tags).map((key) => tags[key].label);
+
 export const journalDays = [
   {
     date: format(new Date('2022/6/11'), dateFormat),

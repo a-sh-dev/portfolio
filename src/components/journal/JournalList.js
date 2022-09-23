@@ -6,7 +6,7 @@ import {
 } from '../../../styles/stylesData';
 import { Section } from '../layout';
 import { Heading } from '../typography';
-import { journalDays, todaysCodingDay } from '../../data';
+import { journalDays, tagsLabel, todaysCodingDay } from '../../data';
 import JournalCard from './JournalCard';
 import { HiOutlineCalendar } from 'react-icons/hi';
 import { formatDay } from '../../utils';
@@ -41,7 +41,9 @@ const CircaContent = styled.div(() => [
 
 const FilterWrapper = styled.aside(() => [
   tw`
-  
+    flex
+    justify-center
+    gap-3
   `,
 ]);
 
@@ -59,6 +61,9 @@ const JournalGridContainer = styled.div(() => [
 
 // sort journalData
 const sortedJournals = journalDays.sort((a, b) => a.day - b.day);
+const momentJournals = sortedJournals.filter(
+  (journal) => journal.tag.label === 'moment',
+);
 
 const JournalList = () => {
   return (
@@ -89,21 +94,32 @@ const JournalList = () => {
         </Circa>
       </Section>
       <div className="border-t border-primary-dark border-dashed">
-        <Section variant="clean">
-          <JournalGridContainer>
-            {sortedJournals.map((journal, index) => {
-              let reverse = index % 2 === 0;
+        <Section variant="clean" halfMargin>
+          <FilterWrapper>
+            {tagsLabel.map((tag) => {
               return (
-                <JournalCard
-                  key={journal.day}
-                  reverse={reverse}
-                  journal={journal}
-                />
+                <Button outlined key={tag}>
+                  {tag}
+                </Button>
               );
             })}
-          </JournalGridContainer>
+          </FilterWrapper>
         </Section>
       </div>
+      <Section variant="clean" halfMargin>
+        <JournalGridContainer>
+          {sortedJournals.map((journal, index) => {
+            let reverse = index % 2 === 0;
+            return (
+              <JournalCard
+                key={journal.day}
+                reverse={reverse}
+                journal={journal}
+              />
+            );
+          })}
+        </JournalGridContainer>
+      </Section>
     </Wrapper>
   );
 };
