@@ -17,7 +17,8 @@ const tags = {
   re: { label: 'reminder', color: 'gray', note: 'reminder' },
 };
 
-export const tagsLabel = Object.keys(tags).map((key) => tags[key].label);
+const tagsLabel = Object.keys(tags).map((key) => tags[key].label);
+export const categories = ['all', ...tagsLabel];
 
 export const journalDays = [
   {

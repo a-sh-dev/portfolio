@@ -1,5 +1,5 @@
 import tw, { styled } from 'twin.macro';
-import { uniformTransition } from '../../styles/stylesData';
+import { uniformTransition, bgColorVariants } from '../../styles/stylesData';
 
 const outlinedBase = tw`bg-transparent`;
 const btnBase = tw`p-2 font-mono text-primary-dark capitalize text-sm cursor-pointer hover:(bg-primary-dark text-white)`;
@@ -16,8 +16,8 @@ const BtnContainer = styled.button(({ outlined }) => [
     rounded-sm
     px-5
     whitespace-nowrap
-    bg-white
   `,
+  ({ bgColor = 'white' }) => bgColorVariants[bgColor],
   outlined && outlinedBase,
   uniformTransition,
 ]);
@@ -44,15 +44,15 @@ const IconWrapper = styled.span(() => [
   `,
 ]);
 
-const Button = ({ icon, outlined, label, onClick, children }) => {
+const Button = ({ icon, outlined, label, onClick, children, bgColor }) => {
   return icon ? (
     <BtnIcon {...{ outlined }} className="h-fit" onClick={onClick}>
       <div className="h-fit aspect-square">{children}</div>
     </BtnIcon>
   ) : (
-    <BtnContainer {...{ outlined }} onClick={onClick}>
+    <BtnContainer {...{ outlined }} onClick={onClick} bgColor={bgColor}>
       {label}
-      <IconWrapper>{children}</IconWrapper>
+      {children && <IconWrapper>{children}</IconWrapper>}
     </BtnContainer>
   );
 };

@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import tw, { styled } from 'twin.macro';
 import { Button, Icon } from '..';
 import {
@@ -6,10 +7,14 @@ import {
 } from '../../../styles/stylesData';
 import { Section } from '../layout';
 import { Heading } from '../typography';
-import { journalDays, tagsLabel, todaysCodingDay } from '../../data';
+import {
+  categories,
+  journalDays,
+  tagsLabel,
+  todaysCodingDay,
+} from '../../data';
 import JournalCard from './JournalCard';
 import { HiOutlineCalendar } from 'react-icons/hi';
-import { formatDay } from '../../utils';
 
 const Wrapper = styled.main(() => [
   tw`
@@ -41,7 +46,8 @@ const CircaContent = styled.div(() => [
 
 const FilterWrapper = styled.aside(() => [
   tw`
-    flex
+    hidden
+    lg:flex
     justify-center
     gap-3
   `,
@@ -61,11 +67,21 @@ const JournalGridContainer = styled.div(() => [
 
 // sort journalData
 const sortedJournals = journalDays.sort((a, b) => a.day - b.day);
-const momentJournals = sortedJournals.filter(
-  (journal) => journal.tag.label === 'moment',
-);
 
 const JournalList = () => {
+  const [journalData, setJournalData] = useState(sortedJournals);
+
+  const handleFilterClick = (category) => {
+    if (category === 'all') {
+      setJournalData(sortedJournals);
+    } else {
+      const filteredJournals = sortedJournals.filter(
+        (journal) => journal.tag.label === category,
+      );
+      setJournalData(filteredJournals);
+    }
+  };
+
   return (
     <Wrapper>
       <Section variant="top" halfMargin>
@@ -96,19 +112,21 @@ const JournalList = () => {
       <div className="border-t border-primary-dark border-dashed">
         <Section variant="clean" halfMargin>
           <FilterWrapper>
-            {tagsLabel.map((tag) => {
+            {categories.map((category) => {
               return (
-                <Button outlined key={tag}>
-                  {tag}
-                </Button>
+                <Button
+                  key={category}
+                  label={category}
+                  onClick={() => handleFilterClick(category)}
+                />
               );
             })}
           </FilterWrapper>
         </Section>
       </div>
-      <Section variant="clean" halfMargin>
+      <Section variant="clean" noTopMargin>
         <JournalGridContainer>
-          {sortedJournals.map((journal, index) => {
+          {journalData.map((journal, index) => {
             let reverse = index % 2 === 0;
             return (
               <JournalCard
