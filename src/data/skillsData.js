@@ -9,6 +9,7 @@ export const coreSkills = [
       { id: 4, name: 'Ruby' },
       { id: 5, name: 'JavaScript' },
       { id: 6, name: 'TypeScript' },
+      { id: 7, name: 'GraphQL' },
     ],
   },
   {
@@ -34,7 +35,7 @@ export const coreSkills = [
       { id: 7, name: 'Material UI' },
       { id: 8, name: 'Twin.macro' },
       { id: 9, name: 'Jest' },
-      { id: 10, name: 'RSpec' },
+      { id: 10, name: 'React Testing Library' },
     ],
   },
   {
@@ -73,6 +74,7 @@ export const capabilities = [
       { id: 4, name: 'Adobe Suite' },
       { id: 5, name: 'Figma' },
       { id: 6, name: 'Postman' },
+      { id: 7, name: 'Atlassian Jira' },
     ],
   },
 ];
