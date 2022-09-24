@@ -17,7 +17,20 @@ const tags = {
   re: { label: 'reminder', color: 'gray', note: 'reminder' },
 };
 
+const tagsLabel = Object.keys(tags).map((key) => tags[key].label);
+export const categories = ['all', ...tagsLabel];
+
+// Date format: YYYY/M/D
 export const journalDays = [
+  {
+    date: format(new Date('2022/9/16'), dateFormat),
+    day: differenceInCalendarDays(new Date(2022, 9, 16), circa),
+    tag: tags.wi,
+    code: '',
+    note: `Learning and getting deeper into Typescript through "Execute Program". Highly recommended!`,
+    sub: '',
+    emoji: svgEmoji('💻'),
+  },
   {
     date: format(new Date('2022/6/11'), dateFormat),
     day: differenceInCalendarDays(new Date(2022, 6, 11), circa),
