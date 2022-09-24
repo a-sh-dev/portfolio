@@ -1,7 +1,7 @@
 # ✨ Personal Portfolio
 
 ```
- → version 1.0
+ → version 1.1
 ```
 
 
@@ -49,12 +49,14 @@ By no means this portfolio is entirely complete. There are many rooms for improv
 ### 💪🏼  Future Improvements
 
 - Integrating `Sanity` for headless CMS content management
-- Filterable `Journal` cards and `Project` cards
+- <s>Filterable `Journal` cards</s> and `Project` cards
+- Filterable `Journal` cards for Mobile screens
 - Individual page for every `Project` with detailed information and more images
 - Page transitions or loading (with `Framer motion`) for additional features and overall UI improvements
 - Branded 404 error page
-- SEO and accessibility improvements 
-
+- SEO and accessibility improvements
+- Typescript integrations
+- Unit testing integrations 
 
 
 ### 🛠  Known Issues
@@ -66,15 +68,10 @@ By no means this portfolio is entirely complete. There are many rooms for improv
 - I tried to animate the heights of the collapsible component on the about me section (on the home page). Yet, it has resulted in weird unwanted extra spacing to the remaining content. I may use a third-party package to help with this additional interactivity.
 
 
-
 ---
-
-
 
 <sub>This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app). Built with `Node v16.13.0`, packaged with `Yarn`.</sub>
 
-
-
 ---
 
-<sub>**Crafted with care ❤ (and powered by lots of caffeine ☕️ 🍵 🫖) by a-sh. © 2022**</sub>
+<sub>**Crafted with care ❤ (and powered by lots of caffeine ☕️ 🍵 🫖) by a-sh. © Since 2022**</sub>

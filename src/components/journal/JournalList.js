@@ -7,12 +7,7 @@ import {
 } from '../../../styles/stylesData';
 import { Section } from '../layout';
 import { Heading } from '../typography';
-import {
-  categories,
-  journalDays,
-  tagsLabel,
-  todaysCodingDay,
-} from '../../data';
+import { categories, journalDays, todaysCodingDay } from '../../data';
 import JournalCard from './JournalCard';
 import { HiOutlineCalendar } from 'react-icons/hi';
 
