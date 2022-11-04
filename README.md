@@ -30,7 +30,7 @@ By no means this portfolio is entirely complete. There are many rooms for improv
 
 ### ⚙️ Tech Stack & NPM Packages ( & tools )
 
-- Next.js
+- Next.js `v12`
 - Node.js `v16.13.0`
 - Tailwind CSS
 - Styled-Components
@@ -45,18 +45,18 @@ By no means this portfolio is entirely complete. There are many rooms for improv
 - Responsive Viewer chrome extension – an absolute gem!
 
 
-
 ### 💪🏼  Future Improvements
 
-- Integrating `Sanity` for headless CMS content management
-- <s>Filterable `Journal` cards</s> and `Project` cards
-- Filterable `Journal` cards for Mobile screens
-- Individual page for every `Project` with detailed information and more images
-- Page transitions or loading (with `Framer motion`) for additional features and overall UI improvements
-- Branded 404 error page
-- SEO and accessibility improvements
-- Typescript integrations
-- Unit testing integrations 
+- [ ] Integrating `Sanity` for headless CMS content management
+- [x] <s>Filterable `Journal` cards and `Project` card</s>s
+- [ ] Filterable `Journal` cards for Mobile screens
+- [ ] Filterable `Project` cards
+- [ ] Individual page for every `Project` with detailed information and more images
+- [ ] Page transitions or loading (with `Framer motion`) for additional features and overall UI improvements
+- [ ] Branded 404 error page
+- [ ] Accessibility improvements
+- [ ] Typescript integrations
+- [ ] Unit testing integrations 
 
 
 ### 🛠  Known Issues
