@@ -274,6 +274,14 @@ export const journalDays = [
     emoji: svgEmoji('🙄'),
   },
   {
+    date: format(new Date('2022/11/11'), dateFormat),
+    day: differenceInCalendarDays(new Date(2022, 11, 11), circa),
+    tag: tags.ex,
+    code: 'Knex.js',
+    note: `Batteries included' PostgresSQL query builder, flexible, portable, and fun to use.`,
+    emoji: svgEmoji('🔋'),
+  },
+  {
     date: format(new Date('2022/3/18'), dateFormat),
     day: differenceInCalendarDays(new Date(2022, 3, 18), circa),
     tag: tags.ex,
