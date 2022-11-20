@@ -27,7 +27,7 @@ export const journalDays = [
     day: differenceInCalendarDays(new Date(2022, 9, 16), circa),
     tag: tags.wi,
     code: '',
-    note: `Learning and getting deeper into Typescript through "Execute Program". Highly recommended!`,
+    note: `Learning & getting deeper into Typescript through "Execute Program". Highly recommended!`,
     sub: '',
     emoji: svgEmoji('💻'),
   },
@@ -54,7 +54,7 @@ export const journalDays = [
     day: differenceInCalendarDays(new Date(2022, 1, 24), circa),
     tag: tags.re,
     code: '',
-    note: `Design is not just what it looks like and feels like. Design is how it works.`,
+    note: `Design is not just what it looks like & feels like. Design is how it works.`,
     sub: 'Steve Jobs',
     emoji: svgEmoji('🪄'),
   },
@@ -90,7 +90,7 @@ export const journalDays = [
     day: differenceInCalendarDays(new Date(2022, 8, 3), circa),
     tag: tags.re,
     code: '',
-    note: `To become really good at anything, you have to practice and repeat, ...until the technique becomes intuitive.`,
+    note: `To become really good at anything, you have to practice & repeat, ...until the technique becomes intuitive.`,
     sub: 'Paulo Coelho',
     emoji: svgEmoji('🔁'),
   },
@@ -166,7 +166,7 @@ export const journalDays = [
     day: differenceInCalendarDays(new Date(2022, 2, 24), circa),
     tag: tags.ic,
     code: 'TypeScript',
-    note: 'The superset of JS, with Types features to improve JS codes readability and validations.',
+    note: 'The superset of JS, with Types features to improve JS codes readability & validations.',
     emoji: svgEmoji('🤓'),
   },
   {
@@ -182,7 +182,7 @@ export const journalDays = [
     day: differenceInCalendarDays(new Date(2021, 4, 28), circa),
     tag: tags.ic,
     code: 'ruby',
-    note: 'First OOP language to learn. Simple, clean and everything is an object in Ruby.',
+    note: 'First OOP language to learn. Simple, clean & (almost) everything is an object in Ruby.',
     emoji: svgEmoji('🤓'),
   },
   {
@@ -206,7 +206,7 @@ export const journalDays = [
     day: differenceInCalendarDays(new Date(2022, 3, 20), circa),
     tag: tags.ic,
     code: 'React TypeScript',
-    note: `The more 'type'ing is (actually) useful for validations and maintainability.`,
+    note: `The more "type"ing is (actually) useful for validations & maintainability.`,
     emoji: svgEmoji('😋'),
   },
   {
@@ -214,7 +214,7 @@ export const journalDays = [
     day: differenceInCalendarDays(new Date(2022, 6, 13), circa),
     tag: tags.ic,
     code: 'AWS Developer',
-    note: 'Group training to improve team collaboration and to succeed in the exams.',
+    note: 'Group training to improve team collaboration & to succeed in the exams.',
     emoji: svgEmoji('📚'),
   },
   {
@@ -230,7 +230,7 @@ export const journalDays = [
     day: differenceInCalendarDays(new Date(2021, 6, 14), circa),
     tag: tags.ex,
     code: 'postgresql',
-    note: "Relational database. It's quite complex to setup, but great for handling complex data.",
+    note: `Relational database. It's quite complex to setup, but great for handling complex data.`,
     emoji: svgEmoji('👥'),
   },
   {
@@ -270,7 +270,7 @@ export const journalDays = [
     day: differenceInCalendarDays(new Date(2021, 8, 23), circa),
     tag: tags.ic,
     code: 'Javascript',
-    note: `Compared to Ruby, this 'only built in 10 days' language has many gotchas to be aware of.`,
+    note: `Compared to Ruby, this "only built in 10 days" language has many gotchas to be aware of.`,
     emoji: svgEmoji('🙄'),
   },
   {
@@ -278,7 +278,7 @@ export const journalDays = [
     day: differenceInCalendarDays(new Date(2022, 11, 11), circa),
     tag: tags.ex,
     code: 'Knex.js',
-    note: `Batteries included' PostgresSQL query builder, flexible, portable, and fun to use.`,
+    note: `"Batteries included" PostgresSQL (& other SQLs) query builder, flexible, portable, & fun to use.`,
     emoji: svgEmoji('🔋'),
   },
   {
@@ -310,7 +310,7 @@ export const journalDays = [
     day: differenceInCalendarDays(new Date(2021, 10, 12), circa),
     tag: tags.ex,
     code: 'Styled-components',
-    note: `At first I hated it. But in fact, very helpful to combine both CSS and JS to style UI.`,
+    note: `At first I hated it. But in fact, very helpful to combine both CSS & JS to style UI.`,
     emoji: svgEmoji('💅🏼'),
   },
   {
@@ -318,7 +318,7 @@ export const journalDays = [
     day: differenceInCalendarDays(new Date(2021, 11, 6), circa),
     tag: tags.ex,
     code: 'MERN',
-    note: `Hope to get deeper in each of the stack, esp. MongoDB and Express.js.`,
+    note: `Hope to get deeper in each of the stack, esp. MongoDB & Express.js.`,
     emoji: svgEmoji('🌞'),
   },
   {
@@ -334,7 +334,7 @@ export const journalDays = [
     day: differenceInCalendarDays(new Date(2021, 12, 3), circa),
     tag: tags.mo,
     code: '',
-    note: `Really trying to embrace 'learning by doing' as a team despite not (fully) understanding everything...`,
+    note: `Really trying to embrace "learning by doing" as a team despite not (fully) understanding everything...`,
     emoji: svgEmoji('🔥'),
   },
   {
@@ -366,7 +366,7 @@ export const journalDays = [
     day: differenceInCalendarDays(new Date(2021, 12, 26), circa),
     tag: tags.ic,
     code: 'next.js',
-    note: `React.js framework that enables server-side rendering and generate static websites.`,
+    note: `React.js framework that enables server-side rendering & generate static websites.`,
     emoji: svgEmoji('👍🏼'),
   },
   {
@@ -398,7 +398,7 @@ export const journalDays = [
     day: differenceInCalendarDays(new Date(2022, 1, 20), circa),
     tag: tags.wi,
     code: '',
-    note: `Revisiting and re-exploring Vanilla JavaScript.`,
+    note: `Revisiting & re-exploring Vanilla JavaScript.`,
     emoji: svgEmoji('🤯'),
   },
   {
