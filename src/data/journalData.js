@@ -246,7 +246,7 @@ export const journalDays = [
     day: differenceInCalendarDays(new Date(2023, 2, 15), circa),
     tag: tags.ex,
     code: 'i18next',
-    note: 'Facilitate component translation into multiple languages to enhance user and developer experience.',
+    note: 'Facilitates component translation into multiple languages to enhance user and developer experience.',
     emoji: emoji('🌏'),
   },
   {
