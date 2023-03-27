@@ -354,6 +354,14 @@ export const journalDays = [
     emoji: emoji('🧁'),
   },
   {
+    date: format(new Date('2023/3/22'), dateFormat),
+    day: differenceInCalendarDays(new Date(2023, 3, 22), circa),
+    tag: tags.mo,
+    code: '',
+    note: `Celebrating two years of coding journey!`,
+    emoji: emoji('🍻'),
+  },
+  {
     date: format(new Date('2022/2/16'), dateFormat),
     day: differenceInCalendarDays(new Date(2022, 2, 16), circa),
     tag: tags.mo,
