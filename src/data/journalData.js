@@ -330,6 +330,14 @@ export const journalDays = [
     emoji: emoji('🌞'),
   },
   {
+    date: format(new Date('2023/7/4'), dateFormat),
+    day: differenceInCalendarDays(new Date(2023, 7, 4), circa),
+    tag: tags.ex,
+    code: 'E2E testing',
+    note: `Cypress + Cucumber simplify & streamline E2E testing. The visual test runner is also very helpful!`,
+    emoji: emoji('🥒'),
+  },
+  {
     date: format(new Date('2021/12/2'), dateFormat),
     day: differenceInCalendarDays(new Date(2021, 12, 2), circa),
     tag: tags.wi,
