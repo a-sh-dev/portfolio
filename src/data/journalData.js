@@ -151,7 +151,7 @@ export const journalDays = [
     tag: tags.ac,
     code: '',
     note: 'First (minor) contribution to open source!',
-    emoji: emoji('🤓'),
+    emoji: emoji('👋🏼'),
   },
   {
     date: format(new Date('2021/4/25'), dateFormat),
