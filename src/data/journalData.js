@@ -150,7 +150,7 @@ export const journalDays = [
     day: differenceInCalendarDays(new Date(2023, 9, 8), circa),
     tag: tags.ac,
     code: '',
-    note: 'First (minor) contribution to open source!',
+    note: 'First (minor) contribution to an open source!',
     emoji: emoji('👋🏼'),
   },
   {
