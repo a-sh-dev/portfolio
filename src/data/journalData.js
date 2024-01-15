@@ -45,7 +45,7 @@ export const journalDays = [
     day: differenceInCalendarDays(new Date(2024, 1, 15), circa),
     tag: tags.re,
     code: '',
-    note: `Every great developer you know got there by solving problems they're unqualified to solve 'til they actually did it.`,
+    note: `Every great developer you know got there by solving problems they were unqualified to solve until they actually did it.`,
     sub: 'Patrick McKenzie',
     emoji: emoji('⭐️'),
   },
