@@ -4,7 +4,7 @@ import { todaysDate } from '../utils';
 
 // minus one day so it counts 001 from the start (original date: 2021,3,22)
 export const circa = new Date(2021, 3, 21);
-const dateFormat = 'dd.MM.yy';
+const dateFormat = 'dd.MMM.yy';
 
 export const todaysCodingDay = differenceInCalendarDays(todaysDate, circa);
 
@@ -185,6 +185,14 @@ export const journalDays = [
     code: 'TypeScript',
     note: 'The superset of JS, with Types features to improve JS codes readability & validations.',
     emoji: emoji('🤓'),
+  },
+  {
+    date: format(new Date('2024/2/1'), dateFormat),
+    day: differenceInCalendarDays(new Date(2024, 2, 1), circa),
+    tag: tags.ic,
+    code: 'Python',
+    note: 'Easy to learn, in-demand, & opens doors to web dev, data science, and beyond.',
+    emoji: emoji('🐍'),
   },
   {
     date: format(new Date('2021/3/30'), dateFormat),
