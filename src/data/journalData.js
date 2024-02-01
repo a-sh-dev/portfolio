@@ -4,7 +4,7 @@ import { todaysDate } from '../utils';
 
 // minus one day so it counts 001 from the start (original date: 2021,3,22)
 export const circa = new Date(2021, 3, 21);
-const dateFormat = 'dd.MM.yy';
+const dateFormat = 'dd.MMM.yy';
 
 export const todaysCodingDay = differenceInCalendarDays(todaysDate, circa);
 
