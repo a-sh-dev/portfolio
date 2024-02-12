@@ -17,10 +17,11 @@ export const coreSkills = [
     name: 'backend (database & tech stack)',
     skills: [
       { id: 1, name: 'Node.js' },
-      { id: 2, name: 'PostgreSQL' },
-      { id: 3, name: 'MongoDB' },
+      { id: 2, name: 'SQL' },
+      { id: 3, name: 'PostgreSQL' },
       { id: 4, name: 'MERN Stack' },
       { id: 5, name: 'PostGraphile' },
+      { id: 6, name: 'MongoDB' },
     ],
   },
   {
@@ -38,6 +39,8 @@ export const coreSkills = [
       { id: 9, name: 'Jest' },
       { id: 10, name: 'React Testing Library' },
       { id: 11, name: 'Cypress & Cucumber' },
+      { id: 12, name: 'Storybook' },
+      { id: 13, name: 'Chromatic' },
     ],
   },
   {
@@ -49,7 +52,8 @@ export const coreSkills = [
       { id: 3, name: 'AWS S3 Bucket' },
       { id: 4, name: 'Firebase Storage' },
       { id: 5, name: 'Documentation' },
-      { id: 6, name: 'E2E Testing' },
+      { id: 6, name: 'Unit Testing' },
+      { id: 7, name: 'E2E Testing' },
     ],
   },
 ];
@@ -80,7 +84,8 @@ export const capabilities = [
       { id: 7, name: 'Atlassian Jira' },
       { id: 8, name: 'Datadog' },
       { id: 9, name: 'Zendesk' },
-      { id: 10, name: 'Buildkite' },
+      { id: 10, name: 'Jotform' },
+      { id: 11, name: 'Buildkite' },
     ],
   },
 ];
