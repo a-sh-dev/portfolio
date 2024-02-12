@@ -41,6 +41,15 @@ export const journalDays = [
     emoji: emoji('👀'),
   },
   {
+    date: format(new Date('2024/2/12'), dateFormat),
+    day: differenceInCalendarDays(new Date(2024, 2, 12), circa),
+    tag: tags.re,
+    code: '',
+    note: `Don't be nervous about AI replacing you. Instead, be nervous about people who can use AI replacing you.`,
+    sub: 'Amantha Imber',
+    emoji: emoji('🤖'),
+  },
+  {
     date: format(new Date('2024/1/15'), dateFormat),
     day: differenceInCalendarDays(new Date(2024, 1, 15), circa),
     tag: tags.re,
