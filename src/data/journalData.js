@@ -20,7 +20,7 @@ const tags = {
 const tagsLabel = Object.keys(tags).map((key) => tags[key].label);
 export const categories = ['all', ...tagsLabel];
 
-// Date format: YYYY/M/D
+// Date format for input: YYYY/M/D
 export const journalDays = [
   {
     date: format(new Date('2022/9/16'), dateFormat),
@@ -402,6 +402,14 @@ export const journalDays = [
     code: '',
     note: `Celebrating two years of coding journey!`,
     emoji: emoji('🍻'),
+  },
+  {
+    date: format(new Date('2024/3/22'), dateFormat),
+    day: differenceInCalendarDays(new Date(2024, 3, 22), circa),
+    tag: tags.mo,
+    code: '',
+    note: `Celebrating three years of coding journey!`,
+    emoji: emoji('🌟'),
   },
   {
     date: format(new Date('2022/2/16'), dateFormat),
