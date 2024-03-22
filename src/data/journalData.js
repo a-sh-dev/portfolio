@@ -405,7 +405,7 @@ export const journalDays = [
   },
   {
     date: format(new Date('2024/3/22'), dateFormat),
-    day: differenceInCalendarDays(new Date('2024/3/22'), circa),
+    day: differenceInCalendarDays(new Date(2024, 3, 22), circa),
     tag: tags.mo,
     code: '',
     note: `Celebrating three years of coding journey!`,
