@@ -41,7 +41,7 @@ export const journalDays = [
     emoji: emoji('👀'),
   },
   {
-    date: format(new Date('2024/2/12'), dateFormat),
+    date: format(new Date(2024, 2, 12), dateFormat),
     day: differenceInCalendarDays(new Date(2024, 2, 12), circa),
     tag: tags.re,
     code: '',
@@ -396,7 +396,7 @@ export const journalDays = [
     emoji: emoji('🧁'),
   },
   {
-    date: format(new Date('2023/3/22'), dateFormat),
+    date: format(new Date(2023, 3, 22), dateFormat),
     day: differenceInCalendarDays(new Date(2023, 3, 22), circa),
     tag: tags.mo,
     code: '',
@@ -412,7 +412,7 @@ export const journalDays = [
     emoji: emoji('🌟'),
   },
   {
-    date: format(new Date('2022/2/16'), dateFormat),
+    date: format(new Date(2022, 2, 16), dateFormat),
     day: differenceInCalendarDays(new Date(2022, 2, 16), circa),
     tag: tags.mo,
     code: '',
