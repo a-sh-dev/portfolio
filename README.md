@@ -1,7 +1,7 @@
 # ✨ Personal Portfolio
 
 ```
- → version 1.1
+ → version 1.2
 ```
 
 
@@ -34,6 +34,7 @@ By no means this portfolio is entirely complete. There are many rooms for improv
 - Tailwind CSS
 - Styled-Components
 - Twin.macro
+- Framer Motion
 - React-icons
 - React-easy-emoji
 - @svgr – for custom svg conversions into functional components
@@ -51,11 +52,11 @@ By no means this portfolio is entirely complete. There are many rooms for improv
 - [ ] Filterable `Journal` cards for Mobile screens
 - [ ] Filterable `Project` cards
 - [ ] Individual page for every `Project` with detailed information and more images
-- [ ] Page transitions or loading (with `Framer motion`) for additional features and overall UI improvements
+- [x] Page transitions or loading (with `Framer motion`) for additional features and overall UI improvements
 - [ ] Branded 404 error page
 - [ ] Accessibility improvements
 - [ ] Typescript integrations
-- [ ] Unit testing integrations 
+- [ ] Unit testing integrations
 
 
 ### 🛠  Known Issues

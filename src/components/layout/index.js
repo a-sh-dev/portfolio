@@ -6,6 +6,7 @@ import Navigation from './nav/Navigation';
 import GridColumn from './GridColumn';
 import GridContainer from './GridContainer';
 import Footer from './Footer';
+import PageTransition from './PageTransition';
 
 export {
   Header,
@@ -16,4 +17,5 @@ export {
   GridColumn,
   GridContainer,
   Footer,
+  PageTransition,
 };

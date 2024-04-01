@@ -1,5 +1,5 @@
 import { Meta } from '../components';
-import { Container } from '../components/layout';
+import { Container, PageTransition } from '../components/layout';
 import {
   ContactFormFS,
   ContactHeader,
@@ -11,12 +11,14 @@ export default function Contact() {
   return (
     <>
       <Meta title="contact" />
-      <Container>
-        <ContactHeader />
-        <ContactFormFS />
-        <ContactLinks />
-        <ContactQuote />
-      </Container>
+      <PageTransition>
+        <Container>
+          <ContactHeader />
+          <ContactFormFS />
+          <ContactLinks />
+          <ContactQuote />
+        </Container>
+      </PageTransition>
     </>
   );
 }

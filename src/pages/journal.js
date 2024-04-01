@@ -1,5 +1,5 @@
 import { Meta } from '../components';
-import { Container } from '../components/layout';
+import { Container, PageTransition } from '../components/layout';
 import {
   JournalHeader,
   JournalList,
@@ -10,11 +10,13 @@ export default function Journal() {
   return (
     <>
       <Meta title="journal" />
-      <Container>
-        <JournalHeader />
-        <JournalList />
-        <JournalQuote />
-      </Container>
+      <PageTransition>
+        <Container>
+          <JournalHeader />
+          <JournalList />
+          <JournalQuote />
+        </Container>
+      </PageTransition>
     </>
   );
 }
