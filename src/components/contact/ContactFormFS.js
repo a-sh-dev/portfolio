@@ -70,6 +70,7 @@ const initialValue = {
 
 const FS_FORM_ENDPOINT = 'https://formspree.io/f/mnqwdwjl';
 
+// ContactForm for FormSpree version
 const ContactFormFS = () => {
   const [status, setStatus] = useState({
     submitted: false,
