@@ -41,6 +41,7 @@ export const coreSkills = [
       { id: 11, name: 'Cypress & Cucumber' },
       { id: 12, name: 'Storybook' },
       { id: 13, name: 'Chromatic' },
+      { id: 14, name: 'Framer Motion' },
     ],
   },
   {
