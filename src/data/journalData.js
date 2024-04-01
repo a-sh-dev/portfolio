@@ -385,7 +385,7 @@ export const journalDays = [
     tag: tags.mo,
     code: '',
     note: `Really trying to embrace "learning by doing" as a team despite not (fully) understanding everything...`,
-    emoji: emoji('🔥'),
+    emoji: emoji('🤔'),
   },
   {
     date: format(new Date('2022/3/22'), dateFormat),
@@ -410,6 +410,22 @@ export const journalDays = [
     code: '',
     note: `Celebrating three years of coding journey!`,
     emoji: emoji('🌟'),
+  },
+  {
+    date: format(new Date('2024/3/24'), dateFormat),
+    day: differenceInCalendarDays(new Date(2024, 3, 24), circa),
+    tag: tags.ex,
+    code: 'framer motion',
+    note: `A powerful React motion library that adds stunning interactions and animations to your web apps.`,
+    emoji: emoji('🔮'),
+  },
+  {
+    date: format(new Date('2024/3/27'), dateFormat),
+    day: differenceInCalendarDays(new Date(2024, 3, 27), circa),
+    tag: tags.mo,
+    code: '',
+    note: `Mass layoffs are tough, but let's use this as a chance for growth and self-discovery. Don't give up!`,
+    emoji: emoji('🔥'),
   },
   {
     date: format(new Date('2022/2/16'), dateFormat),
