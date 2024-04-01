@@ -51,7 +51,7 @@ By no means this portfolio is entirely complete. There are many rooms for improv
 - [ ] Filterable `Journal` cards for Mobile screens
 - [ ] Filterable `Project` cards
 - [ ] Individual page for every `Project` with detailed information and more images
-- [ ] Page transitions or loading (with `Framer motion`) for additional features and overall UI improvements
+- [x] Page transitions or loading (with `Framer motion`) for additional features and overall UI improvements
 - [ ] Branded 404 error page
 - [ ] Accessibility improvements
 - [ ] Typescript integrations
