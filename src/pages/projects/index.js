@@ -1,5 +1,5 @@
 import { Meta } from '../../components';
-import { Container } from '../../components/layout';
+import { Container, PageTransition } from '../../components/layout';
 import {
   ProjectHeader,
   ProjectList,
@@ -10,11 +10,13 @@ export default function Projects() {
   return (
     <>
       <Meta title="projects" />
-      <Container>
-        <ProjectHeader />
-        <ProjectList />
-        <ProjectQuote />
-      </Container>
+      <PageTransition>
+        <Container>
+          <ProjectHeader />
+          <ProjectList />
+          <ProjectQuote />
+        </Container>
+      </PageTransition>
     </>
   );
 }

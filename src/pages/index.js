@@ -7,11 +7,11 @@ import {
   Skills,
   Tldr,
 } from '../components/home';
-import { Container } from '../components/layout';
+import { Container, PageTransition } from '../components/layout';
 
 export default function Home() {
   return (
-    <>
+    <PageTransition>
       <MainHero />
       <Container>
         <Tldr />
@@ -21,6 +21,6 @@ export default function Home() {
         <Skills />
         <Quote />
       </Container>
-    </>
+    </PageTransition>
   );
 }
