@@ -31,7 +31,6 @@ By no means this portfolio is entirely complete. There are many rooms for improv
 ### ⚙️ Tech Stack & NPM Packages ( & tools )
 
 - Next.js `v12`
-- Node.js `v16.13.0`
 - Tailwind CSS
 - Styled-Components
 - Twin.macro

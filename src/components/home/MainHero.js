@@ -227,7 +227,10 @@ const MainHero = () => {
               <SloganSticker />
             </SloganWrapper>
           </Profile>
-          <div className="animate-bounce absolute md:hidden" aria-hidden="true">
+          <div
+            className="animate-bounce relative -top-40 md:hidden"
+            aria-hidden="true"
+          >
             <Icon size="xs">
               <HiOutlineArrowSmDown />
             </Icon>
