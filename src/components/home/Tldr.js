@@ -25,44 +25,54 @@ const Tldr = () => {
         <Heading variant="sm" align="center">
           TL; DR
         </Heading>
-        <SubHeading align="center">(long story short...)</SubHeading>
+        <SubHeading align="center">(sort of...)</SubHeading>
         <BlockQuote align="center">
-          Learning to code was meant to expand my skillsets as a graphic
-          designer.
+          Learning to code changed my life.
         </BlockQuote>
       </HeaderWrapper>
       <GridColumn col="span-10" start="start-md-2">
         <BodyIntro>
-          They said, <em>&quot;Coding is easy-peasy&quot;</em>, and in 10
-          months, I could get certified with an IT Diploma. So, I jumped into
-          the{' '}
-          <AHref href="https://www.coderacademy.edu.au">
-            Coder Academy Fullstack Bootcamp
-          </AHref>{' '}
-          and began my journey... But, honestly, it was not easy at all!
+          For over a decade, I thrived as a graphic designer. I loved creating
+          stunning branding and layouts that captured the essence of a business
+          or product. But deep down, I knew there was more to the digital world
+          that I wanted to explore.
         </BodyIntro>
       </GridColumn>
       <GridColumn col="span-5" start="start-md-2">
         <Paragraph align="justify-xl">
-          Surprisingly, despite its challenges, I came to
-          <em> really, really, really </em>
-          enjoy coding. Especially the learning part. The passion has grown so
-          much that I want to pursue this career
-          <span className="em-dash">-----</span>not (just) as a graphic designer
-          who can code but as a developer who understands visual communication
-          design.
+          Driven by the prospect of expanding my skills, I embarked on a{' '}
+          <AHref href="https://www.coderacademy.edu.au">coding boot camp</AHref>{' '}
+          journey. Little did I know that the path ahead would challenge me in
+          ways I never imagined. Let&apos;s just say it wasn&apos;t exactly
+          &quot;easy-peasy&quot; as advertised. There were moments of
+          frustration, nights battling syntax errors, and a healthy dose of
+          self-doubt and panic attacks. I even questioned if I should have stuck
+          with design work.
+        </Paragraph>
+        <Paragraph align="justify-xl">
+          Through the struggles, I realised that coding was not just a skill but
+          a passion waiting to be unleashed. The frustrations turned into
+          problem-solving satisfactions, and the late nights became exhilarating
+          journeys of discovery. I found myself captivated by the constant
+          learning, the thrill of seeing my code come to life (
+          <em>&quot;Woohooo, it works!!&quot;</em> moments) and being part of
+          the supportive developer community drove me forward.
         </Paragraph>
       </GridColumn>
       <GridColumn col="span-5" start="start-7">
         <Paragraph align="justify-xl" smMargin>
-          Furthermore, I hope to gain professional experience while learning
-          beyond web development. With the dream of making a meaningful
-          difference in the tech world for humanity one day, especially as a
-          woman! <Em size="base">(and not be intimidated by robots!</Em>
-          <TextIcon noMargin>
-            <FaRobot aria-hidden="true" />
-          </TextIcon>
-          ).
+          Now, several years into my professional coding journey, I remain a
+          perpetual student, continuously honing my skills and expanding my
+          horizons as a software engineer. Every day, I look forward to diving
+          into the world of code, collaborating with brilliant minds, and
+          contributing my skills to meaningful work.
+        </Paragraph>
+        <Paragraph align="justify-xl" smMargin>
+          This journey has been anything but easy, but it&apos;s been rewarding.
+          It&apos;s been a journey of self-discovery, growth, and resilience. I
+          want to encourage more women considering a leap into the world of code
+          to embrace the challenges because they are empowering. The learning is
+          endless, and the impact you can make is limitless!
         </Paragraph>
       </GridColumn>
     </Section>
