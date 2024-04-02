@@ -183,8 +183,9 @@ const MainHero = () => {
           </Line2>
           <IntroWrapper>
             <Intro>
-              An experienced graphic designer based in Melbourne who fell in
-              love with coding and is pursuing a frontend development career.
+              As a full-stack developer with graphic design experience, I bring
+              designs to life by crafting beautiful, meaningful projects with
+              code.
             </Intro>
             <ProfileDesktop>
               <Image

@@ -26,12 +26,12 @@ const JournalHeader = () => {
       <GridContainer>
         <GridColumn col="span-11">
           <BodyIntro noMargin variant="bold" size="intro">
-            Keeping up with the technology can easily be overwhelming.
+            Keeping up with technology can be overwhelming.
             <TextIcon>
               <FaRegMeh aria-hidden="true" />
             </TextIcon>
-            However, new frameworks, libraries and even programming languages
-            are consistently being developed for improvement, which is meant to
+            However, new frameworks, libraries, and even programming languages
+            are consistently being developed to improve them, which is meant to
             help developers.
           </BodyIntro>
 
@@ -47,18 +47,18 @@ const JournalHeader = () => {
           </Paragraph>
           <Paragraph>
             I often fall into the latter mindset, but over time although I may
-            not have <Em>fully</Em> grasped what I have been learning so far
-            <span className="em-dash">-----</span>I learn to accept it and know
-            that it is OK. Eventually, I will grow in my understanding and get
-            better for sure. Many of my seniors have counselled, &quot;Honestly,
+            not have <Em>fully</Em> grasped what I have been learning,
+            <span className="em-dash">-----</span>I have learned to accept it
+            and know that it is OK. Eventually, I will grow in my understanding
+            and get better. Many of my seniors have counselled, &quot;Honestly,
             we can&apos;t be experts at EVERYthing! But make sure to enjoy the
             learning and have fun!&quot;.
           </Paragraph>
           <Paragraph>
-            So, I like to record my learning progress, milestones and reminders
-            for self-motivation by marking them in days since I started my
-            coding journey. Hopefully, it can also motivate and encourage others
-            not to give up.
+            I like to record my learning progress, milestones and reminders for
+            self-motivation by marking them in days since I started my coding
+            journey. Hopefully, it can also motivate and encourage others not to
+            give up.
           </Paragraph>
         </GridColumn>
       </GridContainer>

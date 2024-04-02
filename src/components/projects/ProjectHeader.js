@@ -37,10 +37,10 @@ const ProjectHeader = () => {
           </BodyIntro>
 
           <Paragraph>
-            Fast forward today; the following are some selected projects, not
+            Fast forward to today; the following are some selected projects, not
             limited to web applications. Each was built from scratch with care
-            (and lots of caffeine) since I started my formal coding journey. I
-            look forward to adding more soon!
+            (and fueled with lots of caffeine). I look forward to adding more
+            soon!
             <TextIcon>
               <FaRegGrinStars aria-hidden="true" />
             </TextIcon>

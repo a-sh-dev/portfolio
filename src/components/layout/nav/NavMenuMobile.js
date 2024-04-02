@@ -8,6 +8,7 @@ import { navLinks, copyright } from '../../../data';
 import { uniformTransition } from '../../../../styles/stylesData';
 import { GiCoffeePot } from 'react-icons/gi';
 import { HiMusicNote } from 'react-icons/hi';
+import { Fragment } from 'react';
 
 const uniformPadding = tw`p-8`;
 
@@ -26,7 +27,6 @@ const NavMenuWrapper = styled.div(() => [
     border-t-primary-light
     pt-2
   `,
-
   uniformTransition,
 ]);
 
@@ -113,17 +113,16 @@ const NavMenuMobile = () => {
             </TextIcon>
           </Header>
           <NavMenu>
-            {navLinks.map((navItem) => {
-              const { id, name, url, svg } = navItem;
+            {navLinks.map(({ id, name, url, svg }) => {
               return (
-                <>
+                <Fragment key={id}>
                   <Link href={url} passHref>
-                    <NavMobileItem key={id} onClick={closeNavMenu}>
+                    <NavMobileItem onClick={closeNavMenu}>
                       <NavMobileIconWrapper>{svg}</NavMobileIconWrapper>
                       {name}
                     </NavMobileItem>
                   </Link>
-                </>
+                </Fragment>
               );
             })}
           </NavMenu>
