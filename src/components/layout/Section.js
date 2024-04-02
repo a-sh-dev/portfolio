@@ -4,7 +4,7 @@ import { layoutVariants, sectionVariants } from '../../../styles/stylesData';
 const StyledSection = styled.section(
   ({ relative, noTopMargin, noBottomMargin, halfMargin }) => [
     tw`
-    py-14
+    py-12
     md:py-28
     xl:py-44
     border-primary-dark
