@@ -49,6 +49,7 @@ export const coreSkills = [
     name: 'others',
     skills: [
       { id: 1, name: 'Git' },
+      { id: 8, name: 'Design Systems' },
       { id: 2, name: 'Responsive Layout' },
       { id: 3, name: 'AWS S3 Bucket' },
       { id: 4, name: 'Firebase Storage' },
@@ -69,7 +70,6 @@ export const capabilities = [
       { id: 3, name: 'Illustration' },
       { id: 4, name: 'UI & UX' },
       { id: 5, name: 'Wireframing' },
-      { id: 6, name: 'Design System' },
     ],
   },
   {
@@ -96,15 +96,25 @@ export const features = [
     id: 1,
     name: 'personal attributes',
     skills: [
-      { id: 1, name: 'Excellent attention to details' },
+      {
+        id: 1,
+        name: 'Exceptional attention to detail with a commitment to high-quality deliverables',
+      },
       {
         id: 2,
-        name: 'Self-motivated and a dedicated team player who also works well independently',
+        name: 'Growth mindset and eagerness to learn and adapt quickly ',
       },
-      { id: 3, name: 'Well adapted and organised' },
-      { id: 4, name: 'Highly committed to quality' },
-      { id: 5, name: 'Comfortable working under pressure' },
-      { id: 6, name: 'Determined, eager to learn and a fast learner' },
+      {
+        id: 3,
+        name: 'Self-motivated and dedicated team player with the ability to work autonomously',
+      },
+      {
+        id: 4,
+        name: 'Passionate about supporting and motivating people to foster a positive and collaborative environment',
+      },
+      { id: 5, name: 'Skilled in project management and can handle pressure' },
+      { id: 6, name: 'Excellent communicator with agency experience' },
+      { id: 7, name: 'Genuinely appreciate dad jokes' },
     ],
   },
 ];
