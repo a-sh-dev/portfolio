@@ -31,24 +31,23 @@ const FullStory = () => {
           <SubHeading align="autoL">The journey so far...</SubHeading>
           <Paragraph>
             <Name>a-sh </Name>
-            is <EmMed>Angeline S Hentri</EmMed>, who prefers to be called Angie
-            SH.
+            is <EmMed>Angie SH</EmMed>, a name she prefers to be called with.
           </Paragraph>
           <Paragraph>
             <Name>a-sh</Name> is <EmMed>a small human</EmMed>, literally. Due to
             her not-so-tall physique, she may be shy at the first meeting.
-            However, people say she is very approachable, friendly, and great to
-            work with.
+            However, people say she is approachable, friendly, and great to work
+            with.
           </Paragraph>
           <Paragraph>
             In addition to the newly gained coding skills,
-            <Name> a-sh </Name> has been <EmMed>a skilful helper </EmMed>
+            <Name> a-sh </Name> has been <EmMed>a skilled helper </EmMed>
             with 10+ years of solid experience working in multidisciplinary
             design agencies. She loves branding, illustration, typography and
-            can be a little bit nerdy with typesetting and file management. She
-            is recognised as a dedicated team player who appreciates being
-            challenged to adapt to various demands to improve mutual growth and
-            success.
+            can be slightly nerdy with typesetting and file management. She is
+            known for her dedicated team spirit, appreciation of constructive
+            feedback, and willingness to take on new challenges that can help
+            her grow and contribute to the team&apos;s success.
           </Paragraph>
           <Paragraph>
             Last but not least, <Name>a-sh</Name> is naturally
