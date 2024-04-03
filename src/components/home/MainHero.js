@@ -183,9 +183,8 @@ const MainHero = () => {
           </Line2>
           <IntroWrapper>
             <Intro>
-              As a full-stack developer with graphic design experience, I bring
-              designs to life by crafting beautiful, meaningful projects with
-              code.
+              Bridging design and code, I craft user-centric solutions with a
+              decade of visual expertise and empathetic problem-solving.
             </Intro>
             <ProfileDesktop>
               <Image
