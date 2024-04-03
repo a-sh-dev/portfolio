@@ -61,18 +61,22 @@ const Tldr = () => {
       </GridColumn>
       <GridColumn col="span-5" start="start-7">
         <Paragraph align="justify-xl" smMargin>
-          Now, several years into my professional coding journey, I remain a
-          perpetual student, continuously honing my skills and expanding my
-          horizons as a software engineer. Every day, I look forward to diving
-          into the world of code, collaborating with brilliant minds, and
-          contributing my skills to meaningful work.
+          So far, working as a professional software engineer has been a
+          fulfilling experience for me. I appreciate the constant learning that
+          comes with this career path. I am surrounded by talented colleagues
+          who inspire me to push my boundaries and challenge myself in new ways.
+          Collaborating with bright minds and contributing my skills to
+          meaningful projects is a thrilling experience I look forward to each
+          day.
         </Paragraph>
         <Paragraph align="justify-xl" smMargin>
-          This journey has been anything but easy, but it&apos;s been rewarding.
-          It&apos;s been a journey of self-discovery, growth, and resilience. I
-          want to encourage more women considering a leap into the world of code
-          to embrace the challenges because they are empowering. The learning is
-          endless, and the impact you can make is limitless!
+          Although the tech industry can be challenging, I am grateful for every
+          experience, good and bad, as it has contributed to my self-discovery,
+          growth, and resilience. I believe that with the right mindset and
+          attitude, anyone can thrive in this industry and make a real impact on
+          the world. I want to encourage more women considering a leap into
+          coding to embrace the challenges because they are empowering. The
+          learning is endless, and the impact you can make is limitless!
         </Paragraph>
       </GridColumn>
     </Section>
