@@ -6,13 +6,13 @@ import '../../styles/globals.css';
 function MyApp({ Component, pageProps, router }) {
   return (
     <>
-      <AnimatePresence mode="wait">
-        <AppProvider>
+      <AppProvider>
+        <AnimatePresence mode="wait">
           <AppLayout>
             <Component key={router.route} {...pageProps} />
           </AppLayout>
-        </AppProvider>
-      </AnimatePresence>
+        </AnimatePresence>
+      </AppProvider>
     </>
   );
 }

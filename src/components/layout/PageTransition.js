@@ -9,7 +9,7 @@ const PageTransition = ({ children }) => {
       y: 0,
       transition: { type: 'easeIn', duration: 0.7 },
     },
-    exit: { opacity: 1, y: 30 },
+    exit: { opacity: 0, y: 30 },
   };
 
   return <motion.div {...animate(transition)}>{children}</motion.div>;
