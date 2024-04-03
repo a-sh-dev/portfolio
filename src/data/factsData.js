@@ -16,7 +16,7 @@ import { BsFillCloudRainFill } from 'react-icons/bs';
 export const randomFacts = [
   {
     id: 1,
-    title: 'Great things come from a small package.',
+    title: 'Great things come in a small package.',
     desc: 'I am 149.31 cm, which equals 4.8986 feet or 58.7835 inches.',
     icon: <HiOutlineGift />,
     emoji: <FaRegKissBeam />,
@@ -24,7 +24,7 @@ export const randomFacts = [
   {
     id: 2,
     title: 'Born in Jakarta, Indonesia.',
-    desc: 'Came to Melbourne in 1998 as an international student and then became an Australian citizen in 2007.',
+    desc: 'I came to Melbourne as an international student in 1998 and became an Australian citizen in 2007.',
     icon: <GiAustralia />,
     emoji: <FaRegSmileWink />,
   },
@@ -46,15 +46,15 @@ export const randomFacts = [
   {
     id: 5,
     title: "Find cloud gazing and puddles' reflections therapeutic.",
-    desc: "Before the pandemic, I used to take lots of (fluffy) cloud photos. I also enjoy observing puddles' reflections on drizzling days. They are therapeutically fascinating!",
+    desc: "Before the pandemic, I took many (fluffy) cloud photos. I also enjoy observing puddles' reflections on drizzling days. They are therapeutically fascinating!",
     icon: <BsFillCloudRainFill />,
     emoji: <FaRegGrinStars />,
   },
 
   {
     id: 6,
-    title: '(Still) have a dream to be a children book illustrator.',
-    desc: 'I collect many children illustrated books for inspiration. Some of the favourites are Rebecca Green, Oliver Jeffers, Teagan White and Vivian Mineker.',
+    title: "(Still) have a dream of being a children's book illustrator.",
+    desc: "I collect many children's illustrated books for inspiration. Some of my favourites are Rebecca Green, Oliver Jeffers, Teagan White, and Vivian Mineker.",
     icon: <FaBook />,
     emoji: <FaRegSmileBeam />,
   },
