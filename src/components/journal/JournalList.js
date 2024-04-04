@@ -1,10 +1,6 @@
 import { useState } from 'react';
 import tw, { styled } from 'twin.macro';
 import { Button, Icon } from '..';
-import {
-  sectionHalfPaddingB,
-  sectionPaddingB,
-} from '../../../styles/stylesData';
 import { Section } from '../layout';
 import { Heading } from '../typography';
 import { categories, journalDays, todaysCodingDay } from '../../data';

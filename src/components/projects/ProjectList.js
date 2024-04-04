@@ -1,4 +1,4 @@
-import tw, { styled } from 'twin.macro';
+import tw from 'twin.macro';
 import { Section } from '../layout';
 import ProjectCard from './ProjectCard';
 import { InfoBlurb, SloganSticker } from '..';

@@ -1,4 +1,4 @@
-import tw, { styled } from 'twin.macro';
+import tw from 'twin.macro';
 import { GridColumn, GridContainer, Section } from '../layout';
 import { BlockQuote } from '../typography';
 

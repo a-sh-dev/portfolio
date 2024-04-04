@@ -5,7 +5,7 @@ import Image from 'next/image';
 import { Section } from '../layout';
 import { FormButton, InfoBlurb } from '..';
 import FormInput, { textFieldBase } from './FormInput';
-import { contactForInputs, contactFormInputsFS } from '../../data';
+import { contactFormInputsFS } from '../../data';
 import { uniformTransition } from '../../../styles/stylesData';
 
 const Wrapper = styled.div(() => [

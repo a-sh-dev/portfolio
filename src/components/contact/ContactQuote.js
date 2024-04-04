@@ -1,6 +1,6 @@
-import tw, { styled } from 'twin.macro';
+import tw from 'twin.macro';
 import { GridColumn, GridContainer, Section } from '../layout';
-import { AHref, BlockQuote, BodyIntro, Paragraph } from '../typography';
+import { AHref, BlockQuote, Paragraph } from '../typography';
 
 const Wrapper = tw.main`
   // adjust spacing in mobile
