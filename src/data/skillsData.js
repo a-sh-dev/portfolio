@@ -48,8 +48,8 @@ export const coreSkills = [
     id: 4,
     name: 'others',
     skills: [
-      { id: 1, name: 'Git' },
       { id: 8, name: 'Design Systems' },
+      { id: 1, name: 'Git' },
       { id: 2, name: 'Responsive Layout' },
       { id: 3, name: 'AWS' },
       { id: 4, name: 'Firebase Storage' },
