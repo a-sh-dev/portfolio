@@ -6,7 +6,7 @@ import {
   uniformTransition,
 } from '../../../styles/stylesData';
 import { formatDay } from '../../utils';
-import { Tag, TextIcon } from '../typography';
+import { Tag } from '../typography';
 
 const lineFlex = tw`flex items-center gap-2`;
 const toggleReverse = tw`flex-row-reverse md:flex-row`;
@@ -80,7 +80,6 @@ const CardFooter = styled.footer(({ reverse }) => [
 ]);
 
 const JournalCard = ({ journal, reverse }) => {
-  // const { date, day, tag, emoji, code, note } = journal;
   const isReminder = journal?.tag.note === 'reminder';
 
   return (

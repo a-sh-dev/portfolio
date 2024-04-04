@@ -1,7 +1,6 @@
 import tw, { styled } from 'twin.macro';
-import emoji from 'react-easy-emoji';
 import { GridColumn, GridContainer, Header } from '../layout';
-import { BodyIntro, Em, Paragraph, TextIcon } from '../typography';
+import { BodyIntro, Paragraph, TextIcon } from '../typography';
 import { FaRegGrinStars } from 'react-icons/fa';
 import { HeartIcon } from '../svgs';
 import { pagesHeroMax, sectionPaddingB } from '../../../styles/stylesData';

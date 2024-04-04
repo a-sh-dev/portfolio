@@ -2,7 +2,6 @@ import Link from 'next/link';
 import tw, { styled } from 'twin.macro';
 import { Container } from '.';
 import { AshLogo } from '../svgs';
-import { AiOutlineSmile } from 'react-icons/ai';
 import { FiArrowUpRight } from 'react-icons/fi';
 import { HiMusicNote, HiOutlineSparkles } from 'react-icons/hi';
 import { Line, Sticker, VLineBg } from '..';

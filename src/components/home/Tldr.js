@@ -1,4 +1,4 @@
-import tw, { styled } from 'twin.macro';
+import tw from 'twin.macro';
 import { GridColumn, Section } from '../layout';
 import {
   BodyIntro,
@@ -8,9 +8,9 @@ import {
   BlockQuote,
   SubHeading,
   AHref,
-  Em,
 } from '../typography';
-import { FaRobot } from 'react-icons/fa';
+import { HiOutlineSparkles } from 'react-icons/hi';
+import { TbConfetti } from 'react-icons/tb';
 
 const HeaderWrapper = tw.article`
   col-span-full
@@ -55,8 +55,12 @@ const Tldr = () => {
           into problem-solving satisfactions, and the late nights became
           exhilarating journeys of discovery. I found myself captivated by the
           constant learning, the thrill of seeing my code come to life (
-          <em>&quot;Woohooo, it works!!&quot;</em> moments) and being part of
-          the supportive developer community drove me forward.
+          <em>&quot;Woohooo, it works!!&quot;</em>
+          <TextIcon>
+            <TbConfetti aria-hidden="true" />
+          </TextIcon>
+          moments) and being part of the supportive developer community drove me
+          forward.
         </Paragraph>
       </GridColumn>
       <GridColumn col="span-5" start="start-7">
@@ -73,11 +77,13 @@ const Tldr = () => {
           Although the tech industry can be challenging, I am grateful for every
           experience, good and bad, as it has contributed to my self-discovery,
           growth, and resilience. I believe that with the right mindset and
-          attitude, anyone can thrive in this industry and make a real impact on
-          the world. That&apos;s why I want to encourage more women considering
-          a leap into coding to embrace the challenges because they are
-          empowering. The learning is endless, and the impact you can make is
-          limitless!
+          attitude, anyone can thrive in this industry and make a real impact.
+          <TextIcon color="dark">
+            <HiOutlineSparkles aria-hidden="true" />
+          </TextIcon>
+          That&apos;s why I want to encourage more women considering a leap into
+          coding to embrace the challenges because they are empowering. The
+          learning is endless, and the impact you can make is limitless!
         </Paragraph>
       </GridColumn>
     </Section>

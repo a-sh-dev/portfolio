@@ -1,4 +1,4 @@
-import tw, { styled } from 'twin.macro';
+import tw from 'twin.macro';
 import { LinkButton, SloganSticker } from '..';
 import { GridColumn, GridContainer, Section } from '../layout';
 import { BlockQuote, TextIcon } from '../typography';

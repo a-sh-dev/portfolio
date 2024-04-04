@@ -1,9 +1,9 @@
 import Image from 'next/image';
 import tw, { styled } from 'twin.macro';
-import { AHrefButton, LinkButton, Table, TableRow } from '..';
+import { AHrefButton, TableRow } from '..';
 import { paragraphMargin } from '../../../styles/stylesData';
-import { GridColumn, GridContainer } from '../layout';
-import { BodyIntro, Heading, Paragraph, SubHeading, Tag } from '../typography';
+import { GridContainer } from '../layout';
+import { Paragraph, Tag } from '../typography';
 
 const Wrapper = styled.article(() => [
   tw`
