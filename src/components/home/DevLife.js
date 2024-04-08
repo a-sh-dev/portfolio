@@ -32,10 +32,10 @@ const DevLife = () => {
             with a fresh mindset, leading to innovative, user-centric solutions.
           </Paragraph>
           <Paragraph>
-            I'm a developer who speaks design and a designer who understands
-            development. This unique blend enables me to navigate effortlessly
-            between these disciplines, fostering a more efficient and effective
-            development process.
+            I&apos;m a developer who speaks design and a designer who
+            understands development. This unique blend enables me to navigate
+            effortlessly between these disciplines, fostering a more efficient
+            and effective development process.
           </Paragraph>
           <Paragraph>
             Grounded in design thinking, I tackle projects through an

@@ -30,32 +30,48 @@ const FullStory = () => {
           </Heading>
           <SubHeading align="autoL">The journey so far...</SubHeading>
           <Paragraph>
+            The name <Name>a-sh </Name> is a personal branding that encapsulates
+            the journey of <EmMed>Angie SH</EmMed>. Behind the seemingly simple
+            letters lies a tale of growth, passion, and unwavering determination
+            that has seamlessly bridged the worlds of design and software
+            development.
+          </Paragraph>
+          <Paragraph>
+            While <Name>a-sh </Name> may initially come across as
+            <EmMed> a shy human </EmMed>
+            due to her petite frame, her warmth and approachability quickly
+            shine through, solidifying her reputation as
+            <EmMed> a sweet-heart </EmMed>and someone who is excellent to work
+            with. As <EmMed>a steadfast helper</EmMed>, her dedication to
+            continuous learning and growth makes her invaluable, armed with a
+            wealth of experience spanning over a decade in the multidisciplinary
+            design realm.
+          </Paragraph>
+          <Paragraph>
+            With a keen eye for branding, illustration, and typography,{' '}
             <Name>a-sh </Name>
-            is <EmMed>Angie SH</EmMed>, a name she prefers to be called with.
+            is an<EmMed> artistic savant</EmMed>, often delving into the
+            intricacies of typesetting and file management with a touch of
+            endearing nerdiness. Her collaborative spirit and openness to
+            constructive feedback foster an environment of trust and teamwork,
+            making her an invaluable asset to any project she undertakes.
           </Paragraph>
           <Paragraph>
-            <Name>a-sh</Name> is <EmMed>a small human</EmMed>, literally. Due to
-            her not-so-tall physique, she may be shy at the first meeting.
-            However, people say she is approachable, friendly, and great to work
-            with.
+            But <Name>a-sh </Name> is not just a creative designer; she is
+            <EmMed> a skillful hybrid</EmMed>, merging her design prowess with a
+            newfound passion for software development. With an unwavering
+            commitment to crafting sleek, user-friendly, and functional
+            solutions through clean coding and effective collaborative
+            development, she seamlessly integrates design thinking into the
+            development process, ensuring a harmonious fusion of form and
+            function.
           </Paragraph>
           <Paragraph>
-            In addition to the newly gained coding skills,
-            <Name> a-sh </Name> has been <EmMed>a skilled helper </EmMed>
-            with 10+ years of solid experience working in multidisciplinary
-            design agencies. She loves branding, illustration, typography and
-            can be slightly nerdy with typesetting and file management. She is
-            known for her dedicated team spirit, appreciation of constructive
-            feedback, and willingness to take on new challenges that can help
-            her grow and contribute to the team&apos;s success.
-          </Paragraph>
-          <Paragraph>
-            Last but not least, <Name>a-sh</Name> is naturally
-            <EmMed> a shy human</EmMed>. Although <u>not</u> a sweet tooth,
-            <Name> a-sh</Name> is <EmMed>a sweet-heart.</EmMed>
-            <TextIcon>
-              <FaRegGrinSquint aria-hidden="true" />
-            </TextIcon>
+            In essence, <Name>a-sh </Name> is an
+            <EmMed> adept shapeshifter</EmMed>, deftly navigating the realms of
+            design and technology, always eager to contribute her multifaceted
+            expertise to purpose-driven and meaningful projects that push
+            boundaries and inspire innovation.
           </Paragraph>
         </GridColumn>
       </GridContainer>
