@@ -4,9 +4,9 @@
  → version 1.2
 ```
 
+This project is the second personal portfolio built since I've begun my coding journey. A revamped of the first one that I built by only using `HTML5` and `SASS`.
 
-
-This project is the second personal portfolio built since I've begun my coding journey. A revamped of the first one that I built by only using `HTML5` and `SASS`. <sub> [Check the GitHub repo for the first project.](https://github.com/a-sh-dev/T1A2_Portfolio)</sub>
+<sub> [Check the GitHub repo for the first project.](https://github.com/a-sh-dev/T1A2_Portfolio)</sub>
 
 ### 🤔 Problem
 
@@ -25,8 +25,6 @@ By no means this portfolio is entirely complete. There are many rooms for improv
 > Live   👉🏻    [***a-sh.cc***](https://www.a-sh.cc)
 
 <sub>&darr;   Please check the following known issues and upcoming improvement plans (any help or issues report is much appreciated!). </sub>
-
-
 
 ### ⚙️ Tech Stack & NPM Packages ( & tools )
 
@@ -48,11 +46,11 @@ By no means this portfolio is entirely complete. There are many rooms for improv
 ### 💪🏼  Future Improvements
 
 - [ ] Integrating `Sanity` for headless CMS content management
-- [x] <s>Filterable `Journal` cards and `Project` card</s>s
+- [x] Filterable `Journal` cards and `Project` cards
 - [ ] Filterable `Journal` cards for Mobile screens
-- [ ] Filterable `Project` cards
+- [ ] Filterable `Project` cards (when there are more content)
 - [ ] Individual page for every `Project` with detailed information and more images
-- [x] Page transitions or loading (with `Framer motion`) for additional features and overall UI improvements
+- [x] Page transitions or loading (with `Framer motion`) for additional features and overall UI improvements. Note: I need to upgrade the `Next.js` version so the "exit" page transitions work well.
 - [ ] Branded 404 error page
 - [ ] Accessibility improvements
 - [ ] Typescript integrations
@@ -65,8 +63,7 @@ By no means this portfolio is entirely complete. There are many rooms for improv
   - After several fix attempts, I finally used the `SendGrid` alternative, `Formspree` (as recommended by [Next](https://vercel.com/guides/deploying-react-forms-using-formspree-with-vercel)). The `SendGrid` contact form finally worked in development, and I could receive the submitted messages. However, unfortunately, it failed on production/deployment (even with neccessary environment variables already added to Vercel's settings, and redeployed). I will investigate further.
   - Special thanks to *Manu Arora* ([manuarora700](https://github.com/manuarora700)) for the kind help in trying to solve the `SendGrid` issues! 🙌🏼
   
-- I tried to animate the heights of the collapsible component on the about me section (on the home page). Yet, it has resulted in weird unwanted extra spacing to the remaining content. I may use a third-party package to help with this additional interactivity.
-
+- I tried to animate the heights of the collapsible component on the about me section (on the home page) without any framework. Yet, it has resulted in weird unwanted extra spacing to the remaining content. I may use a third-party package to help with this additional interactivity.
 
 ---
 
