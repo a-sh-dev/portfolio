@@ -1,9 +1,8 @@
-import tw from 'twin.macro';
 import Image from 'next/image';
+import tw from 'twin.macro';
 import { Collapsible } from '..';
 import { GridColumn, GridContainer } from '../layout';
-import { EmMed, Heading, TextIcon, Paragraph, SubHeading } from '../typography';
-import { FaRegGrinSquint } from 'react-icons/fa';
+import { EmMed, Heading, Paragraph, SubHeading } from '../typography';
 
 const Name = tw.span`
   whitespace-nowrap
