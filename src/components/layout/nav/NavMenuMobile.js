@@ -1,14 +1,14 @@
 import Link from 'next/link';
-import tw, { styled } from 'twin.macro';
-import { SloganSticker } from '../..';
-import { Em, TextIcon } from '../../typography';
-import { useAppContext } from '../../../context';
-import { currentYear } from '../../../utils';
-import { navLinks, copyright } from '../../../data';
-import { uniformTransition } from '../../../../styles/stylesData';
+import { Fragment } from 'react';
 import { GiCoffeePot } from 'react-icons/gi';
 import { HiMusicNote } from 'react-icons/hi';
-import { Fragment } from 'react';
+import tw, { styled } from 'twin.macro';
+import { SloganSticker } from '../..';
+import { uniformTransition } from '../../../../styles/stylesData';
+import { useAppContext } from '../../../context';
+import { copyright, navLinks } from '../../../data';
+import { currentYear } from '../../../utils';
+import { Em, TextIcon } from '../../typography';
 
 const uniformPadding = tw`p-8`;
 
@@ -130,7 +130,7 @@ const NavMenuMobile = () => {
             <Copyright className="h-fit">
               <div className="uppercase pr-24">
                 &copy; {currentYear}
-                <span className="em-dash">--------</span> By a-sh.
+                <span className="em-dash">--------</span>By a-sh.
                 <br /> {copyright.nav}
                 <TextIcon color="teal">
                   <GiCoffeePot aria-hidden="true" />

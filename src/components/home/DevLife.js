@@ -6,7 +6,7 @@ import { HiOutlineSparkles } from 'react-icons/hi';
 
 const DevLife = () => {
   return (
-    <Collapsible color="blue" title="Developer/Designer Hybrid">
+    <Collapsible color="blue" title="Developer-Designer Hybrid">
       <GridContainer flowCol>
         <GridColumn col="span-4" start="start-9">
           <div className="text-center my-4 md:my-0 w-full md:grid">

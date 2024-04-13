@@ -1,9 +1,8 @@
-import tw from 'twin.macro';
 import Image from 'next/image';
+import tw from 'twin.macro';
 import { Collapsible } from '..';
 import { GridColumn, GridContainer } from '../layout';
-import { EmMed, Heading, TextIcon, Paragraph, SubHeading } from '../typography';
-import { FaRegGrinSquint } from 'react-icons/fa';
+import { EmMed, Heading, Paragraph, SubHeading } from '../typography';
 
 const Name = tw.span`
   whitespace-nowrap
@@ -30,8 +29,8 @@ const FullStory = () => {
           </Heading>
           <SubHeading align="autoL">The journey so far...</SubHeading>
           <Paragraph>
-            The name <Name>a-sh </Name> is a personal branding that encapsulates
-            the journey of <EmMed>Angie SH</EmMed>. Behind the seemingly simple
+            <Name>a-sh </Name> is a personal branding that encapsulates the
+            journey of <EmMed>Angie SH</EmMed>. Behind the seemingly simple
             letters lies a tale of growth, passion, and unwavering determination
             that has seamlessly bridged the worlds of design and software
             development.
