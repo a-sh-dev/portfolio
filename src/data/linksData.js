@@ -1,18 +1,12 @@
-import {
-  FaLinkedinIn,
-  FaTwitter,
-  FaInstagram,
-  FaCodepen,
-  FaGithub,
-} from 'react-icons/fa';
-
+import { FaCodepen, FaGithub, FaInstagram, FaLinkedinIn } from 'react-icons/fa';
+import { FaXTwitter } from 'react-icons/fa6';
 import { SiHashnode } from 'react-icons/si';
 
 import {
   EnvelopeIcon,
-  JournalIcon,
   HeartIcon,
   HomeIcon,
+  JournalIcon,
 } from '../components/svgs';
 
 export const navLinks = [
@@ -59,9 +53,9 @@ export const socialMediaLinks = [
   },
   {
     id: 3,
-    name: 'Twitter',
+    name: 'X-Twitter',
     url: 'https://twitter.com/heya_sh',
-    icon: <FaTwitter />,
+    icon: <FaXTwitter />,
     color: 'blue',
   },
   {
