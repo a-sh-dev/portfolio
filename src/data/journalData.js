@@ -1,5 +1,5 @@
+import { differenceInCalendarDays, format } from 'date-fns';
 import emoji from 'react-easy-emoji';
-import { format, differenceInCalendarDays } from 'date-fns';
 import { todaysDate } from '../utils';
 
 // minus one day so it counts 001 from the start (original date: 2021,3,22)
@@ -15,6 +15,7 @@ const tags = {
   ex: { label: 'exploring', color: 'teal', note: 'code' },
   wi: { label: 'WIP', color: 'blue', note: 'standard' },
   re: { label: 'reminder', color: 'gray', note: 'reminder' },
+  rd: { label: 'random', color: 'olive', note: 'reminder' },
 };
 
 const tagsLabel = Object.keys(tags).map((key) => tags[key].label);
@@ -93,6 +94,16 @@ export const journalDays = [
     note: `There is no failure except in no longer trying.`,
     sub: 'Elbert Hubbard',
     emoji: emoji('💪🏼'),
+  },
+  {
+    date: format(new Date('2024/4/22'), dateFormat),
+    day: differenceInCalendarDays(new Date(2024, 4, 22), circa),
+    tag: tags.rd,
+    code: '',
+    note: `Why did the developer and git get into a fight?`,
+    subNote: `Because the developer couldn't properly commit and kept trying to force it!`,
+    sub: 'Jade Wilson',
+    emoji: emoji('😬'),
   },
   {
     date: format(new Date('2022/1/3'), dateFormat),
