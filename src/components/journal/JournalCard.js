@@ -81,6 +81,7 @@ const CardFooter = styled.footer(({ reverse }) => [
 
 const JournalCard = ({ journal, reverse }) => {
   const isReminder = journal?.tag.note === 'reminder';
+  const hasSubNote = !!journal?.subNote;
 
   return (
     <Wrapper color={journal?.tag?.color} className="aspect-square">
@@ -107,10 +108,11 @@ const JournalCard = ({ journal, reverse }) => {
               <div>
                 <Note
                   variant={journal?.tag?.note}
-                  className="underline-offset-1"
+                  className={!hasSubNote && 'underline'}
                 >
                   {journal?.note}
                 </Note>
+                {hasSubNote && <p>{journal.subNote}</p>}
                 {journal?.sub && (
                   <div className="flex items-center gap-x-0.5">
                     <span className="w-4">
