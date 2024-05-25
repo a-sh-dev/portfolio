@@ -163,8 +163,8 @@ export const journalDays = [
     day: differenceInCalendarDays(new Date(2024, 5, 7), circa),
     tag: tags.mo,
     code: '',
-    note: 'First live coding technical interview - nerves and pressure were real! But I know this will only make me stronger.',
-    emoji: emoji('🔥'),
+    note: 'First live coding interview - nerves & pressure were real! This will only make me stronger.',
+    emoji: emoji('💪'),
   },
   {
     date: format(new Date('2021/3/22'), dateFormat),
