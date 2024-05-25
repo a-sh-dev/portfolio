@@ -39,6 +39,7 @@ export const coreSkills = [
       { id: 9, name: 'Jest' },
       { id: 10, name: 'React Testing Library' },
       { id: 11, name: 'Cypress & Cucumber' },
+      { id: 15, name: 'Vitest' },
       { id: 12, name: 'Storybook' },
       { id: 13, name: 'Chromatic' },
       { id: 14, name: 'Framer Motion' },

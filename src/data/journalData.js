@@ -159,6 +159,14 @@ export const journalDays = [
     emoji: emoji('📡'),
   },
   {
+    date: format(new Date('2024/5/7'), dateFormat),
+    day: differenceInCalendarDays(new Date(2024, 5, 7), circa),
+    tag: tags.mo,
+    code: '',
+    note: 'First live coding interview - nerves & pressure were real! This will only make me stronger.',
+    emoji: emoji('💪'),
+  },
+  {
     date: format(new Date('2021/3/22'), dateFormat),
     day: differenceInCalendarDays(new Date(2021, 3, 22), circa),
     tag: tags.mo,
@@ -277,6 +285,14 @@ export const journalDays = [
     code: 'postgresql',
     note: `Relational database. It's quite complex to setup, but great for handling complex data.`,
     emoji: emoji('👥'),
+  },
+  {
+    date: format(new Date('2024/5/25'), dateFormat),
+    day: differenceInCalendarDays(new Date(2024, 5, 25), circa),
+    tag: tags.ex,
+    code: 'CI/CD',
+    note: `Automates testing, building, and deployment, leading to improved code quality and faster release cycles.`,
+    emoji: emoji('🔄'),
   },
   {
     date: format(new Date('2022/5/19'), dateFormat),
