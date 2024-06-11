@@ -291,7 +291,7 @@ export const journalDays = [
     day: differenceInCalendarDays(new Date(2024, 6, 7), circa),
     tag: tags.ex,
     code: 'Webflow',
-    note: `Visually design and build responsive websites without manual coding for quicker prototyping and greater design freedom.`,
+    note: `Visually build responsive websites without manual coding for quick prototyping and greater design freedom.`,
     emoji: emoji('👀'),
   },
   {
