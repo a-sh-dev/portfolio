@@ -1,9 +1,9 @@
-import tw, { styled } from 'twin.macro';
-import { GridColumn, GridContainer, Header } from '../layout';
-import { BodyIntro, Em, EmMed, Paragraph, TextIcon } from '../typography';
 import { FaRegMeh } from 'react-icons/fa';
+import tw, { styled } from 'twin.macro';
 import { pagesHeroMax, sectionPaddingB } from '../../../styles/stylesData';
+import { GridColumn, GridContainer, Header } from '../layout';
 import { JournalIcon } from '../svgs';
+import { BodyIntro, Em, EmMed, Paragraph, TextIcon } from '../typography';
 
 const Wrapper = styled.div(() => [
   sectionPaddingB,
@@ -36,23 +36,27 @@ const JournalHeader = () => {
           </BodyIntro>
 
           <Paragraph>
-            The most crucial lesson from the boot camp is to have a growth
-            mindset as we<Em> learn to learn</Em> instead of a fixed mindset. A
-            growth mindset says,{' '}
+            I&apos;ve come to understand the importance of having a
+            <Em> growth mindset</Em>, which involves embracing challenges and
+            viewing mistakes as opportunities for learning. A growth mindset
+            acknowledges that mistakes contribute to learning and encourages the
+            belief that{' '}
             <EmMed>
-              &quot;Mistakes help me learn. I will know how to do this.&quot;{' '}
-            </EmMed>{' '}
-            On the contrary, a fixed mindset says, &quot;I will never be smart;
-            I am not good at this; I give up!&quot;.
+              &quot;I will learn from this. I can figure it out.&quot;{' '}
+            </EmMed>
+            On the other hand, a fixed mindset tends to say, &quot; I&apos;ll
+            never be good at this. I give up.&quot;
           </Paragraph>
           <Paragraph>
-            I often fall into the latter mindset, but over time although I may
-            not have <Em>fully</Em> grasped what I have been learning,
-            <span className="em-dash">-----</span>I have learned to accept it
-            and know that it is OK. Eventually, I will grow in my understanding
-            and get better. Many of my seniors have counselled, &quot;Honestly,
-            we can&apos;t be experts at EVERYthing! But make sure to enjoy the
-            learning and have fun!&quot;.
+            Although I often adopt the latter mindset, I&apos;ve gradually
+            learned to accept it and understand that it&apos;s alright. I know
+            that with time, I will improve my understanding and abilities. My
+            mentors have advised,{' '}
+            <EmMed>
+              &quot;We can&apos;t be experts at everything! Instead, focus on
+              enjoying the learning process and have fun!&quot; mentors have
+              advised,{' '}
+            </EmMed>
           </Paragraph>
           <Paragraph>
             I like to record my learning progress, milestones and reminders for
