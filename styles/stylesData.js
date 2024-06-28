@@ -98,7 +98,7 @@ export const fontStyleVariants = {
   light: tw`font-light`, // 300
   normal: tw`font-normal`, // 400
   medium: tw`font-medium`, // 500
-  semibold: tw`font-semibold`, //600
+  semibold: tw`font-semibold`, // 600
   bold: tw`font-bold`, // 700
   extrabold: tw`font-extrabold`, // 800
   black: tw`font-black`, // 900
