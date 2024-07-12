@@ -4,25 +4,28 @@
  → version 1.2
 ```
 
+> [!NOTE]
+> 🚧 _Currently upgrading to version 2 with the latest Next.js & TypeScript._
+
 This project is the second personal portfolio built since I've begun my coding journey. A revamped of the first one that I built by only using `HTML5` and `SASS`.
 
-<sub> [Check the GitHub repo for the first project.](https://github.com/a-sh-dev/T1A2_Portfolio)</sub>
+<sub> ➡️ [Check the GitHub repo for the first project.](https://github.com/a-sh-dev/T1A2_Portfolio)</sub>
 
 ### 🤔 Problem
 
 Using `HTML5` and `SASS` alone is not practical to maintain a scalable portfolio. I need a templating or pattern system that I can utilise as reusable components in the portfolio and enforce a cohesive and consistent look to the UI.
 
-For styling, I want to experiment using `Tailwind CSS` and utilise the flexibility of `Styled-Components`. 
+For styling, I want to experiment using `Tailwind CSS` and utilise the flexibility of `Styled-Components`.
 
 ### 💡 Solution
 
-After completing the boot camp, I initially planned to use only `React.js`, but I'm sold by how `Next.js` features a faster and more scalable app due to its server-side rendering capability. `Next.js` is an extension framework of the `React.js` library plus the added SEO friendliness and built-in router improvements. Generally, it's faster due to its server-side rendering functionality, especially for generating static websites.  
+After completing the boot camp, I initially planned to use only `React.js`, but I'm sold by how `Next.js` features a faster and more scalable app due to its server-side rendering capability. `Next.js` is an extension framework of the `React.js` library plus the added SEO friendliness and built-in router improvements. Generally, it's faster due to its server-side rendering functionality, especially for generating static websites.
 
-The most enjoyable learning in this project is creating *design patterns* →  building reusable components, and working on conditional rendering through data iterations for better maintainability. All the UI styling are only made possible (and faster) thanks to `twin.macro`, which significantly assists in blending the best of two worlds between `Tailwind CSS` and `Styled-Components`. 
+The most enjoyable learning in this project is creating _design patterns_ → building reusable components, and working on conditional rendering through data iterations for better maintainability. All the UI styling are only made possible (and faster) thanks to `twin.macro`, which significantly assists in blending the best of two worlds between `Tailwind CSS` and `Styled-Components`.
 
 By no means this portfolio is entirely complete. There are many rooms for improvements. But I'm happy to release this version while at the same time working for further development and refinement.
 
-> Live   👉🏻    [***a-sh.cc***](https://www.a-sh.cc)
+> Live 👉🏻 [**_a-sh.cc_**](https://www.a-sh.cc)
 
 <sub>&darr;   Please check the following known issues and upcoming improvement plans (any help or issues report is much appreciated!). </sub>
 
@@ -42,8 +45,7 @@ By no means this portfolio is entirely complete. There are many rooms for improv
 - Vercel for deployment
 - Responsive Viewer chrome extension – an absolute gem!
 
-
-### 💪🏼  Future Improvements
+### 💪🏼 Future Improvements
 
 - [ ] Integrating `Sanity` for headless CMS content management
 - [x] Filterable `Journal` cards and `Project` cards
@@ -56,13 +58,11 @@ By no means this portfolio is entirely complete. There are many rooms for improv
 - [ ] Typescript integrations
 - [ ] Unit testing integrations
 
+### 🛠 Known Issues
 
-### 🛠  Known Issues
-
-- <s>Due to an unknown problem, I'm currently fixing the `SendGrid` integrated contact form. I tried testing the form submission to the `Next.js` endpoints, yet despite the 200 status delivery reports, I never received any emails in the mailbox. 🥲</s> 
+- <s>Due to an unknown problem, I'm currently fixing the `SendGrid` integrated contact form. I tried testing the form submission to the `Next.js` endpoints, yet despite the 200 status delivery reports, I never received any emails in the mailbox. 🥲</s>
   - After several fix attempts, I finally used the `SendGrid` alternative, `Formspree` (as recommended by [Next](https://vercel.com/guides/deploying-react-forms-using-formspree-with-vercel)). The `SendGrid` contact form finally worked in development, and I could receive the submitted messages. However, unfortunately, it failed on production/deployment (even with neccessary environment variables already added to Vercel's settings, and redeployed). I will investigate further.
-  - Special thanks to *Manu Arora* ([manuarora700](https://github.com/manuarora700)) for the kind help in trying to solve the `SendGrid` issues! 🙌🏼
-  
+  - Special thanks to _Manu Arora_ ([manuarora700](https://github.com/manuarora700)) for the kind help in trying to solve the `SendGrid` issues! 🙌🏼
 - I tried to animate the heights of the collapsible component on the about me section (on the home page) without any framework. Yet, it has resulted in weird unwanted extra spacing to the remaining content. I may use a third-party package to help with this additional interactivity.
 
 ---
