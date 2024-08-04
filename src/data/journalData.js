@@ -42,6 +42,15 @@ export const journalDays = [
     emoji: emoji('👀'),
   },
   {
+    date: format(new Date('2024/7/15'), dateFormat),
+    day: differenceInCalendarDays(new Date(2024, 7, 15), circa),
+    tag: tags.re,
+    code: '',
+    note: `Testing leads to failure, and failure leads to understanding.`,
+    sub: 'Andrew Hunt',
+    emoji: emoji('💥'),
+  },
+  {
     date: format(new Date('2024/2/12'), dateFormat),
     day: differenceInCalendarDays(new Date(2024, 2, 12), circa),
     tag: tags.re,
@@ -199,8 +208,8 @@ export const journalDays = [
     emoji: emoji('🤩'),
   },
   {
-    date: format(new Date('2022/5/17'), dateFormat),
-    day: differenceInCalendarDays(new Date(2022, 5, 17), circa),
+    date: format(new Date('2022/4/17'), dateFormat),
+    day: differenceInCalendarDays(new Date(2022, 4, 17), circa),
     tag: tags.ac,
     code: '',
     note: 'Grateful to be part of making a positive impact in healthcare as an Associate Software Engineer at Seer.',
@@ -285,6 +294,14 @@ export const journalDays = [
     code: 'postgresql',
     note: `Relational database. It's quite complex to setup, but great for handling complex data.`,
     emoji: emoji('👥'),
+  },
+  {
+    date: format(new Date('2024/8/1'), dateFormat),
+    day: differenceInCalendarDays(new Date(2024, 8, 1), circa),
+    tag: tags.ex,
+    code: 'C#',
+    note: `Empowers you to build robust, scalable full-stack applications efficiently.`,
+    emoji: emoji('#️⃣'),
   },
   {
     date: format(new Date('2024/6/7'), dateFormat),
