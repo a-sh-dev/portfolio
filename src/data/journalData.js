@@ -208,8 +208,8 @@ export const journalDays = [
     emoji: emoji('🤩'),
   },
   {
-    date: format(new Date('2022/5/17'), dateFormat),
-    day: differenceInCalendarDays(new Date(2022, 5, 17), circa),
+    date: format(new Date('2022/4/17'), dateFormat),
+    day: differenceInCalendarDays(new Date(2022, 4, 17), circa),
     tag: tags.ac,
     code: '',
     note: 'Grateful to be part of making a positive impact in healthcare as an Associate Software Engineer at Seer.',
