@@ -287,6 +287,14 @@ export const journalDays = [
     emoji: emoji('👥'),
   },
   {
+    date: format(new Date('2024/8/1'), dateFormat),
+    day: differenceInCalendarDays(new Date(2024, 8, 1), circa),
+    tag: tags.ex,
+    code: 'C#',
+    note: `Empowers you to build robust, scalable full-stack applications efficiently.`,
+    emoji: emoji('#️⃣'),
+  },
+  {
     date: format(new Date('2024/6/7'), dateFormat),
     day: differenceInCalendarDays(new Date(2024, 6, 7), circa),
     tag: tags.ex,
