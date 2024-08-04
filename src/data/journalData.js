@@ -42,6 +42,15 @@ export const journalDays = [
     emoji: emoji('👀'),
   },
   {
+    date: format(new Date('2024/7/15'), dateFormat),
+    day: differenceInCalendarDays(new Date(2024, 7, 15), circa),
+    tag: tags.re,
+    code: '',
+    note: `Testing leads to failure, and failure leads to understanding.`,
+    sub: 'Andrew Hunt',
+    emoji: emoji('💥'),
+  },
+  {
     date: format(new Date('2024/2/12'), dateFormat),
     day: differenceInCalendarDays(new Date(2024, 2, 12), circa),
     tag: tags.re,
