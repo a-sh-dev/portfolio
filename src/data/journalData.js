@@ -308,7 +308,7 @@ export const journalDays = [
   {
     date: format(new Date('2024/8/1'), dateFormat),
     day: differenceInCalendarDays(new Date(2024, 8, 1), circa),
-    tag: tags.ex,
+    tag: tags.ic,
     code: 'C#',
     note: `Empowers you to build robust, scalable full-stack applications efficiently.`,
     emoji: emoji('#️⃣'),
