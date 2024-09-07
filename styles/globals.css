@@ -49,7 +49,7 @@ body {
   padding: 0;
   margin: 0;
   font-family: "Work Sans", sans-serif;
-  background-color: #e4dfd7;
+  background-color: var(--color-css-primary-light);
 }
 
 a {

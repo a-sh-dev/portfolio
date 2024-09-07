@@ -54,9 +54,9 @@ const JournalHeader = () => {
             mentors have advised,{' '}
             <EmMed>
               &quot;We can&apos;t be experts at everything! Instead, focus on
-              enjoying the learning process and have fun!&quot; mentors have
-              advised,{' '}
+              enjoying the learning process and have fun!&quot;
             </EmMed>
+            .
           </Paragraph>
           <Paragraph>
             I like to record my learning progress, milestones and reminders for
