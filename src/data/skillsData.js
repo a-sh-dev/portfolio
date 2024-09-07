@@ -90,7 +90,8 @@ export const capabilities = [
       { id: 9, name: 'Zendesk' },
       { id: 10, name: 'Jotform' },
       { id: 11, name: 'Buildkite' },
-      { id: 12, name: 'Webflow' },
+      { id: 13, name: 'Webflow' },
+      { id: 14, name: 'XCode' },
     ],
   },
 ];
